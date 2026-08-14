@@ -1,0 +1,9 @@
+version: 1
+ruleset: ads
+format: assertions
+required:
+  - {kind: domain_suffix, value: ping0.cc}
+  - {kind: domain, value: sgameicon.ecology.smoba.qq.com}
+  - {kind: domain, value: youxi.xunlei.com}
+  - {kind: domain_keyword, value: vrdesktop}
+forbidden: []

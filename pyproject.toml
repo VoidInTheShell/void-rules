@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "void-rules"
+version = "0.1.0"
+description = "Reproducible multi-upstream rule-set aggregation and publishing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "VoidInTheShell" }]
+dependencies = [
+  "idna>=3.10,<4",
+  "jsonschema>=4.23,<5",
+  "PyYAML>=6.0.2,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.15,<2",
+  "pytest>=8.3,<9",
+  "pytest-cov>=6,<7",
+  "ruff>=0.9,<1",
+  "types-jsonschema>=4.23",
+  "types-PyYAML>=6.0.12",
+]
+
+[project.scripts]
+void-rules = "void_rules.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/void_rules"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --strict-config -p no:cacheprovider --basetemp=.work/pytest"
+testpaths = ["tests"]
+markers = ["integration: exercises pinned native MRS/DAT codecs"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["void_rules"]

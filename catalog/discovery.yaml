@@ -1,0 +1,40 @@
+version: 1
+candidate_store: generated/discovery/candidates.json.gz
+summary_store: generated/discovery/summary.json
+rejection_store: overlays/discovery/rejected.yaml
+policies:
+  auto_promote:
+    require_all:
+      - parser_confidence_at_least: 1.0
+      - no_new_host: true
+      - no_cross_action_conflict: true
+    require_any:
+      - independent_vetted_sources_at_least: 2
+      - inside_approved_official_root: true
+      - authoritative_registered_api_field: true
+  always_review:
+    - new_source_repository
+    - new_download_host
+    - executable_or_archive_member
+    - html_selector_change
+    - registrable_domain_outside_approved_roots
+discoverers:
+  - id: meta-companion-views
+    type: github-tree
+    repository: MetaCubeX/meta-rules-dat
+    ref: meta
+    allowed_hosts: [api.github.com, raw.githubusercontent.com]
+    roots: [geo/geosite, geo/geoip]
+    group_by_stem: true
+    include_regex: '^geo/(geosite|geoip)/.+\.(list|yaml|mrs)$'
+    purpose: Detect readable companions for registered MetaCubeX MRS assets.
+    promotion: candidate-only
+    max_candidates: 20000
+  - id: cross-border-card-catalog
+    type: json-api
+    url: https://card.lengziyu.cn/api/cards?limit=1000&offset=0
+    allowed_hosts: [card.lengziyu.cn]
+    json_paths: ['$.items[*].id', '$.data[*].id', '$.cards[*].id']
+    purpose: Discover exchange/card IDs; official domains still require independent verification.
+    promotion: candidate-only
+    max_candidates: 5000

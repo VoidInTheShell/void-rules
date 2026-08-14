@@ -1,0 +1,8 @@
+version: 1
+ruleset: fake-ip-bypass
+format: selectors
+selectors:
+  - kind: opaque_domain
+    value: 'Mijia Cloud'
+    source_id: shellcrash-fakeip
+    reason: ShellCrash treats this as a sniffer skip-domain marker and excludes it from DNS rules.

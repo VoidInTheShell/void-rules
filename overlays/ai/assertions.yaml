@@ -1,0 +1,9 @@
+version: 1
+ruleset: ai
+format: assertions
+required:
+  - {kind: domain_suffix, value: openai.com}
+  - {kind: domain_suffix, value: chatgpt.com}
+  - {kind: domain_suffix, value: anthropic.com}
+  - {kind: domain_suffix, value: claude.ai}
+forbidden: []

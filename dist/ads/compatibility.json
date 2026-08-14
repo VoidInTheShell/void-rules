@@ -1,0 +1,1735 @@
+{
+  "outputs": {
+    "adguard-allow": {
+      "examples": [],
+      "represented": 0,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "adguard-block": {
+      "examples": [],
+      "represented": 198983,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "jsonl": {
+      "examples": [],
+      "represented": 198983,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-text": {
+      "examples": [],
+      "represented": 198983,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-yaml": {
+      "examples": [],
+      "represented": 198983,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-mrs": {
+      "examples": [
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.sm.cn"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.video.yximgs.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.wtzw.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-be-pack-sign.pglstatp-toutiao.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-normal.zijieapi.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "vrdesktop"
+        }
+      ],
+      "represented": 198977,
+      "skipped": 6,
+      "skipped_by_kind": {
+        "domain_keyword": 6
+      }
+    },
+    "mihomo-domain-text": {
+      "examples": [
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.sm.cn"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.video.yximgs.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.wtzw.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-be-pack-sign.pglstatp-toutiao.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-normal.zijieapi.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "vrdesktop"
+        }
+      ],
+      "represented": 198977,
+      "skipped": 6,
+      "skipped_by_kind": {
+        "domain_keyword": 6
+      }
+    },
+    "mihomo-domain-yaml": {
+      "examples": [
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.sm.cn"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.video.yximgs.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.wtzw.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-be-pack-sign.pglstatp-toutiao.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-normal.zijieapi.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "vrdesktop"
+        }
+      ],
+      "represented": 198977,
+      "skipped": 6,
+      "skipped_by_kind": {
+        "domain_keyword": 6
+      }
+    },
+    "mihomo-ipcidr-text": {
+      "examples": [
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500020991.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500022744.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500026601.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1l-hit.mail.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1l-hit.vkplay.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "8le8le.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "8rn1y79f02-1.algolianet.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "a0.app.xiaomi.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "aaid.umeng.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "abtest-ch.snssdk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-cdn.qingting.fm"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-channel.diwodiwo.xyz"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-display.diwodiwo.xyz"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-scope.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-scope.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-sdk-config.youdao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-splash-tracking.hktvmall.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-splash.hktvmall.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.12306.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.51wnl.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.api.3g.youku.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.bwton.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.cctv.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.cyapi.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.doubleclick.net"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.gameley.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.iot.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.jia.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.life.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.ozone.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.partner.gifshow.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.qingting.fm"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.qq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.richmob.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.shenshiads.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.shunchangzhixing.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.toutiao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.v3mh.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.weibo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.winrar.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.ximalaya.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.xunkids.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.zijieapi.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad4.mail.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adapi.izuiyou.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adapi.yynetwk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashbc.ut.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashx.m.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashxgc.ut.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adblogger.vk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adblogger.vk.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adc.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcdn.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcdn.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adclick.g.doubleclick.net"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adclick.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcolony.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "addata.jd.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adeng.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adeventtracker.spotify.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexp.chinaliftoff.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexp.liftoff.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexpo.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adfilter.imtt.qq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adfstat.yandex.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adguanggao.eee114.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adimg.uve.weibo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adjust.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adjust.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adks.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adlink-api.huan.tv"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adm.funshion.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api-o.api.leiniao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api.twitter.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-gate.wildberries.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img-al.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img-qc.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img.mozilla.org"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-integration.rustore.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-jp.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-marketing-vivofs.vivo.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-media.wildberries.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-sdk-api.ranfenghd.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-sg.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-video-al.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-video-qc.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.95516.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.adfunlink.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.auctions.yahoo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.cup.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.dahlmessenger.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.google.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.huan.tv"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.huantest.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.icloseli.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.icq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.inmobi.com"
+        }
+      ],
+      "represented": 0,
+      "skipped": 198983,
+      "skipped_by_kind": {
+        "domain": 1045,
+        "domain_keyword": 6,
+        "domain_suffix": 197932
+      }
+    },
+    "mihomo-ipcidr-yaml": {
+      "examples": [
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500020991.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500022744.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500026601.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1l-hit.mail.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1l-hit.vkplay.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "8le8le.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "8rn1y79f02-1.algolianet.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "a0.app.xiaomi.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "aaid.umeng.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "abtest-ch.snssdk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-cdn.qingting.fm"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-channel.diwodiwo.xyz"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-display.diwodiwo.xyz"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-scope.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-scope.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-sdk-config.youdao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-splash-tracking.hktvmall.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-splash.hktvmall.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.12306.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.51wnl.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.api.3g.youku.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.bwton.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.cctv.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.cyapi.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.doubleclick.net"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.gameley.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.iot.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.jia.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.life.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.ozone.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.partner.gifshow.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.qingting.fm"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.qq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.richmob.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.shenshiads.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.shunchangzhixing.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.toutiao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.v3mh.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.weibo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.winrar.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.ximalaya.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.xunkids.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.zijieapi.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad4.mail.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adapi.izuiyou.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adapi.yynetwk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashbc.ut.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashx.m.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashxgc.ut.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adblogger.vk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adblogger.vk.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adc.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcdn.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcdn.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adclick.g.doubleclick.net"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adclick.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcolony.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "addata.jd.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adeng.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adeventtracker.spotify.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexp.chinaliftoff.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexp.liftoff.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexpo.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adfilter.imtt.qq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adfstat.yandex.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adguanggao.eee114.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adimg.uve.weibo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adjust.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adjust.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adks.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adlink-api.huan.tv"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adm.funshion.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api-o.api.leiniao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api.twitter.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-gate.wildberries.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img-al.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img-qc.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img.mozilla.org"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-integration.rustore.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-jp.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-marketing-vivofs.vivo.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-media.wildberries.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-sdk-api.ranfenghd.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-sg.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-video-al.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-video-qc.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.95516.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.adfunlink.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.auctions.yahoo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.cup.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.dahlmessenger.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.google.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.huan.tv"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.huantest.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.icloseli.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.icq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.inmobi.com"
+        }
+      ],
+      "represented": 0,
+      "skipped": 198983,
+      "skipped_by_kind": {
+        "domain": 1045,
+        "domain_keyword": 6,
+        "domain_suffix": 197932
+      }
+    },
+    "plain-domain": {
+      "examples": [
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.sm.cn"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.video.yximgs.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-ad.wtzw.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-be-pack-sign.pglstatp-toutiao.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "-normal.zijieapi.com"
+        },
+        {
+          "kind": "domain_keyword",
+          "reason": "not representable",
+          "value": "vrdesktop"
+        }
+      ],
+      "represented": 198977,
+      "skipped": 6,
+      "skipped_by_kind": {
+        "domain_keyword": 6
+      }
+    },
+    "plain-ip": {
+      "examples": [
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500020991.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500022744.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1500026601.vodplayer.wxamedia.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1l-hit.mail.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "1l-hit.vkplay.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "8le8le.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "8rn1y79f02-1.algolianet.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "a0.app.xiaomi.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "aaid.umeng.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "abtest-ch.snssdk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-cdn.qingting.fm"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-channel.diwodiwo.xyz"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-display.diwodiwo.xyz"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-scope.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-scope.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-sdk-config.youdao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-splash-tracking.hktvmall.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad-splash.hktvmall.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.12306.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.51wnl.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.api.3g.youku.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.bwton.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.cctv.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.cyapi.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.doubleclick.net"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.gameley.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.iot.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.jia.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.life.360.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.ozone.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.partner.gifshow.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.qingting.fm"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.qq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.richmob.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.shenshiads.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.shunchangzhixing.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.toutiao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.v3mh.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.weibo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.winrar.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.ximalaya.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.xunkids.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad.zijieapi.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ad4.mail.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adapi.izuiyou.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adapi.yynetwk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashbc.ut.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashx.m.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adashxgc.ut.taobao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adblogger.vk.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adblogger.vk.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adc.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcdn.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcdn.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adclick.g.doubleclick.net"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adclick.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adcolony.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "addata.jd.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adeng.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adeventtracker.spotify.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexp.chinaliftoff.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexp.liftoff.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adexpo.tencentmusic.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adfilter.imtt.qq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adfstat.yandex.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adguanggao.eee114.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adimg.uve.weibo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adjust.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adjust.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adks.hpplay.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adlink-api.huan.tv"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "adm.funshion.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api-o.api.leiniao.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-api.twitter.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-gate.wildberries.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img-al.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img-qc.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-img.mozilla.org"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-integration.rustore.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-jp.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-marketing-vivofs.vivo.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-media.wildberries.ru"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-sdk-api.ranfenghd.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-sg.tiktok.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-video-al.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads-video-qc.xhscdn.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.95516.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.adfunlink.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.auctions.yahoo.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.cup.com.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.dahlmessenger.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.google.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.huan.tv"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.huantest.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.icloseli.cn"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.icq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "ads.inmobi.com"
+        }
+      ],
+      "represented": 0,
+      "skipped": 198983,
+      "skipped_by_kind": {
+        "domain": 1045,
+        "domain_keyword": 6,
+        "domain_suffix": 197932
+      }
+    },
+    "xray-domain-list": {
+      "examples": [],
+      "represented": 198983,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "xray-geosite-dat": {
+      "examples": [],
+      "represented": 198983,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    }
+  }
+}

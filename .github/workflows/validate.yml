@@ -1,0 +1,75 @@
+name: Validate rules
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: cmd/void-rules-geodata/go.mod
+          cache-dependency-path: cmd/void-rules-geodata/go.sum
+
+      - name: Install Python project and pinned codecs
+        run: |
+          python -m pip install -e ".[dev]"
+          python -m void_rules install-tools
+
+      - name: Rebuild discovery and rule artifacts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python -m void_rules validate-catalog
+          python -m void_rules discover
+          python -m void_rules sync
+          python -m void_rules discover --offline --check
+          python -m void_rules sync --offline --check
+
+      - name: Run Python quality gates
+        run: |
+          python -m ruff format --check src tests
+          python -m ruff check src tests
+          python -m mypy src
+          python -m pytest -q
+
+      - name: Run Go tests
+        working-directory: cmd/void-rules-geodata
+        run: go test ./...
+
+      - name: Verify generators touched only committed generated artifacts
+        run: |
+          git diff --exit-code -- catalog recipes overlays schemas src tests cmd pyproject.toml
+          git diff --exit-code -- dist generated
+          test -z "$(git status --porcelain --untracked-files=all)"
+
+      - name: Upload failure reports
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: void-rules-validation-reports
+          path: generated/reports
+          if-no-files-found: ignore
+          retention-days: 7

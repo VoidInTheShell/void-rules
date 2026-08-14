@@ -1,0 +1,8 @@
+version: 1
+ruleset: global-legal
+format: assertions
+required:
+  - {kind: domain_suffix, value: asrock.com}
+  - {kind: domain_suffix, value: nvidia.com}
+  - {kind: domain_suffix, value: intel.com}
+forbidden: []

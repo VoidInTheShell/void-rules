@@ -1,0 +1,23 @@
+version: 1
+id: cross-border-finance
+description: Global banks, payments, brokers, exchanges, crypto platforms, carriers and regional probes.
+action: match
+sources:
+  - void-finance-fallback
+  - metacubex-finance
+  - metacubex-cryptocurrency
+rulesets: []
+include: overlays/cross-border-finance/include.yaml
+exclude: overlays/cross-border-finance/exclude.yaml
+assertions: overlays/cross-border-finance/assertions.yaml
+outputs:
+  - jsonl
+  - plain-domain
+  - mihomo-classical-yaml
+  - mihomo-classical-text
+  - mihomo-domain-yaml
+  - mihomo-domain-text
+  - mihomo-domain-mrs
+  - xray-domain-list
+  - xray-geosite-dat
+limits: {min_rules: 500, max_rules: 2000000, max_growth_ratio: 4.0, max_shrink_ratio: 0.5}

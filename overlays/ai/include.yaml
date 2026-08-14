@@ -1,0 +1,14 @@
+version: 1
+ruleset: ai
+format: clash-classical
+default_reason: Critical AI roots remain present if a category upstream regresses.
+rules:
+  - 'DOMAIN-SUFFIX,openai.com'
+  - 'DOMAIN-SUFFIX,chatgpt.com'
+  - 'DOMAIN-SUFFIX,oaistatic.com'
+  - 'DOMAIN-SUFFIX,oaiusercontent.com'
+  - 'DOMAIN-SUFFIX,anthropic.com'
+  - 'DOMAIN-SUFFIX,claude.ai'
+  - 'DOMAIN-SUFFIX,claude.com'
+  - 'DOMAIN-SUFFIX,twitter.com'
+  - 'DOMAIN-SUFFIX,x.com'

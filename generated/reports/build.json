@@ -1,0 +1,228 @@
+{
+  "fake_ip_conflicts": {
+    "items": [
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "battle.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "blizzard.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "blizzardgearstore.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "blz-contentstack.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "diablo3.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "diabloimmortal.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "firesidegatherings.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "heroesofthestorm.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "joox.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": true,
+        "protected_force": false,
+        "value": "msftconnecttest.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": true,
+        "protected_force": false,
+        "value": "msftncsi.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": true,
+        "protected_force": false,
+        "value": "nflxvideo.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "playhearthstone.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "playoverwatch.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "playwarcraft3.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": true,
+        "protected_force": false,
+        "value": "pool.ntp.org",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "starcraft.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "starcraft2.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": true,
+        "protected_force": false,
+        "value": "steamcontent.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "steamserver.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "steamusercontent.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ts.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": true,
+        "protected_force": false,
+        "value": "wargaming.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "worldofwarcraft.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "xboxlive.cn",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "xboxlive.com",
+        "winner": "fake-ip-bypass"
+      }
+    ],
+    "total": 26
+  },
+  "rejected_lines": [],
+  "review_reasons": [],
+  "review_required": false,
+  "selected_rulesets": [
+    "ads",
+    "ai",
+    "cross-border-finance",
+    "fake-ip-bypass",
+    "fake-ip-force",
+    "global-legal",
+    "pcdn"
+  ],
+  "version": 1
+}

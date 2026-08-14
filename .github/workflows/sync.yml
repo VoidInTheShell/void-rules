@@ -1,0 +1,110 @@
+name: Synchronize upstream rules
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: void-rules-upstream-sync
+  cancel-in-progress: false
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out main with history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: cmd/void-rules-geodata/go.mod
+          cache-dependency-path: cmd/void-rules-geodata/go.sum
+
+      - name: Install project and pinned codecs
+        run: |
+          python -m pip install -e ".[dev]"
+          python -m void_rules install-tools
+
+      - name: Refresh discovery and all rulesets
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python -m void_rules validate-catalog
+          python -m void_rules discover
+          python -m void_rules sync
+          python -m void_rules discover --offline --check
+          python -m void_rules sync --offline --check
+
+      - name: Verify protected inputs were not modified
+        run: git diff --exit-code -- . ':(exclude)dist/**' ':(exclude)generated/**'
+
+      - name: Run quality gates
+        run: |
+          python -m ruff format --check src tests
+          python -m ruff check src tests
+          python -m mypy src
+          python -m pytest -q
+          (cd cmd/void-rules-geodata && go test ./...)
+
+      - name: Classify generated update
+        id: decision
+        run: python -m void_rules ci-decision --github-output "$GITHUB_OUTPUT"
+
+      - name: Configure automation identity
+        if: steps.decision.outputs.changed == 'true'
+        run: |
+          git config user.name "void-rules[bot]"
+          git config user.email "void-rules[bot]@users.noreply.github.com"
+
+      - name: Commit safe routine update directly
+        if: steps.decision.outputs.mode == 'direct'
+        run: |
+          git add -- dist generated
+          git commit -m "chore(rules): sync upstream datasets"
+          git push origin HEAD:main
+
+      - name: Publish review branch and open pull request
+        if: steps.decision.outputs.mode == 'review'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEW_REASON: ${{ steps.decision.outputs.reason }}
+        run: |
+          git switch -C automation/rules-sync
+          git add -- dist generated
+          git commit -m "chore(rules): prepare reviewed upstream sync"
+          git fetch origin automation/rules-sync:refs/remotes/origin/automation/rules-sync || true
+          git push --force-with-lease origin HEAD:automation/rules-sync
+          existing="$(gh pr list --base main --head automation/rules-sync --state open --json number --jq '.[0].number')"
+          if [ -z "$existing" ]; then
+            gh pr create \
+              --base main \
+              --head automation/rules-sync \
+              --title "chore(rules): review upstream synchronization" \
+              --body "Automated synchronization requires review. Reason: ${REVIEW_REASON}"
+          fi
+
+      - name: Upload failure reports
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: void-rules-sync-reports
+          path: generated/reports
+          if-no-files-found: ignore
+          retention-days: 7

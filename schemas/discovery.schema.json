@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/schemas/discovery.schema.json",
+  "title": "void-rules discovery policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version", "candidate_store", "summary_store", "rejection_store", "policies", "discoverers"
+  ],
+  "properties": {
+    "version": { "const": 1 },
+    "candidate_store": { "type": "string", "minLength": 1 },
+    "summary_store": { "type": "string", "minLength": 1 },
+    "rejection_store": { "type": "string", "minLength": 1 },
+    "policies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auto_promote", "always_review"],
+      "properties": {
+        "auto_promote": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["require_all", "require_any"],
+          "properties": {
+            "require_all": { "type": "array", "items": { "type": "object" } },
+            "require_any": { "type": "array", "items": { "type": "object" } }
+          }
+        },
+        "always_review": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "discoverers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/discoverer" }
+    }
+  },
+  "$defs": {
+    "discoverer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "allowed_hosts", "purpose", "promotion"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "type": { "enum": ["github-tree", "json-api"] },
+        "repository": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+        "ref": { "type": "string", "minLength": 1 },
+        "include_regex": { "type": "string", "minLength": 1 },
+        "roots": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*$" }
+        },
+        "group_by_stem": { "type": "boolean" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "json_paths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "allowed_hosts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9.-]+$" }
+        },
+        "purpose": { "type": "string", "minLength": 1 },
+        "promotion": { "enum": ["candidate-only", "policy"] },
+        "max_candidates": { "type": "integer", "minimum": 1, "maximum": 100000 }
+      }
+    }
+  }
+}

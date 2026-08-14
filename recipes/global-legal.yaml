@@ -1,0 +1,31 @@
+version: 1
+id: global-legal
+description: Globally operated technology vendors that are normally reachable directly in mainland China.
+action: match
+sources:
+  - blackmatrix-nvidia
+  - blackmatrix-samsung
+  - blackmatrix-intel
+  - blackmatrix-amd
+  - blackmatrix-lenovo
+  - blackmatrix-dell
+rulesets: []
+include: overlays/global-legal/include.yaml
+exclude: overlays/global-legal/exclude.yaml
+assertions: overlays/global-legal/assertions.yaml
+outputs:
+  - jsonl
+  - plain-domain
+  - plain-ip
+  - mihomo-classical-yaml
+  - mihomo-classical-text
+  - mihomo-domain-yaml
+  - mihomo-domain-text
+  - mihomo-domain-mrs
+  - mihomo-ipcidr-yaml
+  - mihomo-ipcidr-text
+  - mihomo-ipcidr-mrs
+  - xray-domain-list
+  - xray-geosite-dat
+  - xray-geoip-dat
+limits: {min_rules: 20, max_rules: 500000, max_growth_ratio: 5.0, max_shrink_ratio: 0.3}

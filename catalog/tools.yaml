@@ -1,0 +1,24 @@
+version: 1
+tools:
+  mihomo:
+    repository: MetaCubeX/mihomo
+    tag: v1.19.28
+    commit: cbd11db1e13a75d8e680e0fe7742c95be4cba2be
+    purpose: Decode and encode Mihomo MRS v1 rule sets.
+    source_warning: The repository default branch was unrelated when this pin was created; never follow main implicitly.
+    assets:
+      windows-amd64:
+        url: https://github.com/MetaCubeX/mihomo/releases/download/v1.19.28/mihomo-windows-amd64-compatible-v1.19.28.zip
+        format: zip
+        sha256: 6d8a079d01b3631e73e56b7b42a067afc14f9e3ad99f2880d38bb141cf8fcbe7
+        size: 17730845
+      linux-amd64:
+        url: https://github.com/MetaCubeX/mihomo/releases/download/v1.19.28/mihomo-linux-amd64-compatible-v1.19.28.gz
+        format: gzip
+        sha256: 70d01cfb8cb7bf7a92fd1af16cb4b9553d90bb4eecde3b5c4849103e27c80ddb
+        size: 18134851
+  geodata:
+    module: ./cmd/void-rules-geodata
+    dependencies:
+      v2ray-core: v5.52.0
+      protobuf: v1.36.12

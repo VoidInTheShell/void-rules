@@ -1,0 +1,702 @@
+{
+  "outputs": {
+    "adguard-allow": {
+      "examples": [],
+      "represented": 0,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "adguard-block": {
+      "examples": [],
+      "represented": 127,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "jsonl": {
+      "examples": [],
+      "represented": 127,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-text": {
+      "examples": [],
+      "represented": 127,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-yaml": {
+      "examples": [],
+      "represented": 127,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-mrs": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-(.+)\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-pull\\.(video|live)-voip\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-p2p\\-.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-pcdn\\-.*\\.biliapi\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2p\\.huya\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2ptun\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.pcdn\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.yfp2p\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^config\\-p2p\\-.*\\.vcloud\\.ks\\-live\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^dyp2p\\-.*\\.douyucdn2\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2p\\-punch\\-.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pable\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pchunk\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^seeds.*\\-darwin\\.xycdn\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.qvb\\.qcloud\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
+        }
+      ],
+      "represented": 96,
+      "skipped": 31,
+      "skipped_by_kind": {
+        "domain_regex": 31
+      }
+    },
+    "mihomo-domain-text": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-(.+)\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-pull\\.(video|live)-voip\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-p2p\\-.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-pcdn\\-.*\\.biliapi\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2p\\.huya\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2ptun\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.pcdn\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.yfp2p\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^config\\-p2p\\-.*\\.vcloud\\.ks\\-live\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^dyp2p\\-.*\\.douyucdn2\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2p\\-punch\\-.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pable\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pchunk\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^seeds.*\\-darwin\\.xycdn\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.qvb\\.qcloud\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
+        }
+      ],
+      "represented": 96,
+      "skipped": 31,
+      "skipped_by_kind": {
+        "domain_regex": 31
+      }
+    },
+    "mihomo-domain-yaml": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-(.+)\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-pull\\.(video|live)-voip\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-p2p\\-.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-pcdn\\-.*\\.biliapi\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2p\\.huya\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2ptun\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.pcdn\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.yfp2p\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^config\\-p2p\\-.*\\.vcloud\\.ks\\-live\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^dyp2p\\-.*\\.douyucdn2\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2p\\-punch\\-.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pable\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pchunk\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^seeds.*\\-darwin\\.xycdn\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.qvb\\.qcloud\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
+        }
+      ],
+      "represented": 96,
+      "skipped": 31,
+      "skipped_by_kind": {
+        "domain_regex": 31
+      }
+    },
+    "plain-domain": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": ".*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-(.+)\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p-pull\\.(video|live)-voip\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^(.+)-p2p\\.pull\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-p2p\\-.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\-pcdn\\-.*\\.biliapi\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2p\\.huya\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.p2ptun\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.pcdn\\.yximgs\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.yfp2p\\.net$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*douyucdn\\.cn"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*p2p.*qq\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*biliapi\\.net"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^config\\-p2p\\-.*\\.vcloud\\.ks\\-live\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^dyp2p\\-.*\\.douyucdn2\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2p\\-punch\\-.*\\.xxpkg\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pable\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^p2pchunk\\-.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^seeds.*\\-darwin\\.xycdn\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.chat\\.bilibili\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.douyucdn\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^stun.*\\.qvb\\.qcloud\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
+        }
+      ],
+      "represented": 96,
+      "skipped": 31,
+      "skipped_by_kind": {
+        "domain_regex": 31
+      }
+    },
+    "xray-domain-list": {
+      "examples": [],
+      "represented": 127,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "xray-geosite-dat": {
+      "examples": [],
+      "represented": 127,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    }
+  }
+}

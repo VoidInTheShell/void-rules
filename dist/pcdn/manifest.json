@@ -1,0 +1,119 @@
+{
+  "action": "block",
+  "composition": {
+    "excluded_protected_rules": 0,
+    "excluded_rules": 0
+  },
+  "counts": {
+    "by_action": {
+      "block": 127
+    },
+    "by_kind": {
+      "domain": 30,
+      "domain_regex": 31,
+      "domain_suffix": 66
+    },
+    "protected": 0,
+    "total": 127
+  },
+  "description": "PCDN and P2P-CDN block rules synchronized from the existing aggregate and its five upstreams.",
+  "outputs": {
+    "adguard-allow": {
+      "path": "adguard-allow.txt",
+      "represented_rules": 0,
+      "sha256": "e98a812e8c83d6c5a6029b4f9dcf5147b3f2c09d988d59f2ab4bbb389fe5798d",
+      "size": 42,
+      "skipped_rules": 0
+    },
+    "adguard-block": {
+      "path": "adguard-block.txt",
+      "represented_rules": 127,
+      "sha256": "0cdbf4b542676db85eff43ce0d207e0a53041e69d107a2186fb54764edf9be95",
+      "size": 2946,
+      "skipped_rules": 0
+    },
+    "jsonl": {
+      "path": "rules.jsonl.gz",
+      "represented_rules": 127,
+      "sha256": "c0f45f1712684ec60f8950e1490c62e619848eaada9fb1fdd2f9d1e94d0b9e0f",
+      "size": 3358,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-text": {
+      "path": "mihomo-classical.list",
+      "represented_rules": 127,
+      "sha256": "f7858f145a5a8e8bdc336cad1e7a95fa08e621059c9564638e7cb0446428e2a8",
+      "size": 4121,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-yaml": {
+      "path": "mihomo-classical.yaml",
+      "represented_rules": 127,
+      "sha256": "09d53b79a2c4437bedcf91202b19164b9f6fd6ac7f0fcf79f206d37bdaefc118",
+      "size": 4384,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-mrs": {
+      "compacted_rules": 30,
+      "path": "mihomo-domain.mrs",
+      "represented_rules": 96,
+      "sha256": "71dfd029e40f3980b3083e77afdb6ebf35ef614f817b77b053a5c3bda7f78bf7",
+      "size": 788,
+      "skipped_rules": 31
+    },
+    "mihomo-domain-text": {
+      "path": "mihomo-domain.list",
+      "represented_rules": 96,
+      "sha256": "65409de1d5bb40ae3e29e2adcb8a7f63b945526c9c73718954ee1da8c4ce6715",
+      "size": 1935,
+      "skipped_rules": 31
+    },
+    "mihomo-domain-yaml": {
+      "path": "mihomo-domain.yaml",
+      "represented_rules": 96,
+      "sha256": "b70b0a9d5c1c119eb40f7c316ef3100c5a05ec275b17fd31d05fd2bf1e21594d",
+      "size": 2136,
+      "skipped_rules": 31
+    },
+    "plain-domain": {
+      "path": "plain-domain.txt",
+      "represented_rules": 96,
+      "sha256": "65409de1d5bb40ae3e29e2adcb8a7f63b945526c9c73718954ee1da8c4ce6715",
+      "size": 1935,
+      "skipped_rules": 31
+    },
+    "xray-domain-list": {
+      "path": "xray-domain-list.txt",
+      "represented_rules": 127,
+      "sha256": "906a1adaabae05b3cca906f79bec646ffaf6f11e67c5bcf62bdf6901547c7627",
+      "size": 3413,
+      "skipped_rules": 0
+    },
+    "xray-geosite-dat": {
+      "path": "xray-geosite.dat",
+      "represented_rules": 127,
+      "sha256": "04f313a27cf5fdf5d9af6e29c91f2d6e83954407c3d14f4161ffee7eff235256",
+      "size": 3228,
+      "skipped_rules": 0
+    }
+  },
+  "ruleset": "pcdn",
+  "rulesets": [],
+  "source_contributions": {
+    "anti-ad-pcdn": 30,
+    "block-pcdn-domains": 24,
+    "my-ad-block-rules-p2pcdn": 43,
+    "pcdnfilter-chn": 37,
+    "uselibrary-pcdn": 36,
+    "void-pcdn-aggregate": 81
+  },
+  "sources": [
+    "void-pcdn-aggregate",
+    "uselibrary-pcdn",
+    "anti-ad-pcdn",
+    "block-pcdn-domains",
+    "pcdnfilter-chn",
+    "my-ad-block-rules-p2pcdn"
+  ],
+  "version": 1
+}

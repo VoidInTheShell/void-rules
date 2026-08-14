@@ -1,0 +1,2432 @@
+{
+  "outputs": {
+    "jsonl": {
+      "examples": [],
+      "represented": 3148,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-text": {
+      "examples": [],
+      "represented": 3148,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-yaml": {
+      "examples": [],
+      "represented": 3148,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-mrs": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^Mijia\\sCloud$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.apple\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.edu\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.gov$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.41/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.56/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.118.25/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.16/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.209/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.53/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.71.154.241/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.126.92.132/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.238.16.0/23"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.114.233/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.115.248/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.7.28.0/22"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.17/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.18/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.34/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "118.24.63.156/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "119.147.8.78/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "120.41.44.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "122.5.0.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.107.244/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.3.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "137.221.105.2/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.239.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.28.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.138.137.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.139.143.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.116.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.132.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.135.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.92.170.253/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.157/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.158/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.114.159/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "193.112.159.225/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.254/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.59/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.66.81.98/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.69.111.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.242.235.6/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.71.148.11/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.115.104.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.234.110.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "222.231.22.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "223.252.199.66/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.30.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.62.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "27.159.95.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.175.128/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.63.80/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "45.254.48.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "47.100.127.239/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.104.145/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.107.12/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.94.196.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "58.58.81.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.195/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.197/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.179.214/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.155/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.35/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.38/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.60/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.19.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.21.14/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.238.29/32"
+        }
+      ],
+      "represented": 3048,
+      "skipped": 100,
+      "skipped_by_kind": {
+        "domain_regex": 29,
+        "ip_cidr": 71
+      }
+    },
+    "mihomo-domain-text": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^Mijia\\sCloud$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.apple\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.edu\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.gov$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.41/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.56/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.118.25/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.16/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.209/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.53/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.71.154.241/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.126.92.132/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.238.16.0/23"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.114.233/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.115.248/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.7.28.0/22"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.17/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.18/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.34/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "118.24.63.156/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "119.147.8.78/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "120.41.44.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "122.5.0.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.107.244/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.3.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "137.221.105.2/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.239.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.28.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.138.137.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.139.143.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.116.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.132.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.135.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.92.170.253/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.157/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.158/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.114.159/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "193.112.159.225/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.254/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.59/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.66.81.98/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.69.111.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.242.235.6/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.71.148.11/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.115.104.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.234.110.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "222.231.22.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "223.252.199.66/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.30.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.62.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "27.159.95.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.175.128/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.63.80/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "45.254.48.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "47.100.127.239/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.104.145/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.107.12/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.94.196.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "58.58.81.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.195/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.197/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.179.214/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.155/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.35/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.38/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.60/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.19.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.21.14/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.238.29/32"
+        }
+      ],
+      "represented": 3048,
+      "skipped": 100,
+      "skipped_by_kind": {
+        "domain_regex": 29,
+        "ip_cidr": 71
+      }
+    },
+    "mihomo-domain-yaml": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^Mijia\\sCloud$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.apple\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.edu\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.gov$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.41/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.56/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.118.25/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.16/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.209/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.53/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.71.154.241/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.126.92.132/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.238.16.0/23"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.114.233/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.115.248/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.7.28.0/22"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.17/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.18/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.34/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "118.24.63.156/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "119.147.8.78/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "120.41.44.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "122.5.0.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.107.244/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.3.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "137.221.105.2/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.239.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.28.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.138.137.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.139.143.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.116.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.132.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.135.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.92.170.253/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.157/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.158/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.114.159/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "193.112.159.225/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.254/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.59/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.66.81.98/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.69.111.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.242.235.6/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.71.148.11/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.115.104.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.234.110.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "222.231.22.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "223.252.199.66/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.30.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.62.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "27.159.95.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.175.128/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.63.80/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "45.254.48.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "47.100.127.239/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.104.145/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.107.12/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.94.196.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "58.58.81.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.195/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.197/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.179.214/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.155/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.35/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.38/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.60/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.19.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.21.14/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.238.29/32"
+        }
+      ],
+      "represented": 3048,
+      "skipped": 100,
+      "skipped_by_kind": {
+        "domain_regex": 29,
+        "ip_cidr": 71
+      }
+    },
+    "plain-domain": {
+      "examples": [
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^Mijia\\sCloud$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^ntp\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time1\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time2\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time3\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time4\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time5\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time6\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time7\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.apple\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.edu\\.cn$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^time\\.[^.]+\\.gov$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.41/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.56/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.118.25/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.16/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.209/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.53/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.71.154.241/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.126.92.132/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.238.16.0/23"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.114.233/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.115.248/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.7.28.0/22"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.17/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.18/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.34/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "118.24.63.156/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "119.147.8.78/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "120.41.44.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "122.5.0.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.107.244/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.3.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "137.221.105.2/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.239.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.28.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.138.137.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.139.143.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.116.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.132.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.135.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.92.170.253/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.157/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.158/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.114.159/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "193.112.159.225/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.254/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.59/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.66.81.98/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.69.111.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.242.235.6/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.71.148.11/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.115.104.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.234.110.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "222.231.22.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "223.252.199.66/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.30.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.62.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "27.159.95.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.175.128/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.63.80/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "45.254.48.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "47.100.127.239/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.104.145/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.107.12/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.94.196.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "58.58.81.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.195/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.197/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.179.214/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.155/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.35/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.38/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.60/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.19.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.21.14/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.238.29/32"
+        }
+      ],
+      "represented": 3048,
+      "skipped": 100,
+      "skipped_by_kind": {
+        "domain_regex": 29,
+        "ip_cidr": 71
+      }
+    },
+    "xray-domain-list": {
+      "examples": [
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.41/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.104.56/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.118.25/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.16/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.209/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.32.133.53/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "101.71.154.241/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.126.92.132/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.238.16.0/23"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.114.233/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.4.115.248/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "103.7.28.0/22"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.17/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.119.18/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "112.13.122.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.118.34/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "115.236.121.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "118.24.63.156/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "119.147.8.78/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "120.41.44.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "122.5.0.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.107.244/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "129.226.3.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "137.221.105.2/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.239.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "140.249.28.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.138.137.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "150.139.143.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.116.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.132.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.162.135.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "182.92.170.253/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.157/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.112.158/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "185.60.114.159/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "193.112.159.225/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.254/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "202.9.67.59/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.66.81.98/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "203.69.111.4/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.242.235.6/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "210.71.148.11/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.115.104.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "211.234.110.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "222.231.22.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "223.252.199.66/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.30.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "24.105.62.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "27.159.95.0/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.175.128/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "39.105.63.80/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "45.254.48.1/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "47.100.127.239/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.104.145/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.207.107.12/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "54.94.196.47/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "58.58.81.129/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.195/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.160.197/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.179.214/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.155/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.35/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.38/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.181.60/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.19.33/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.21.14/31"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "59.111.238.29/32"
+        }
+      ],
+      "represented": 3077,
+      "skipped": 71,
+      "skipped_by_kind": {
+        "ip_cidr": 71
+      }
+    },
+    "xray-geosite-dat": {
+      "examples": [],
+      "represented": 3077,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    }
+  }
+}

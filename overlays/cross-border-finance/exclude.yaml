@@ -1,0 +1,7 @@
+version: 1
+ruleset: cross-border-finance
+format: selectors
+selectors:
+  - kind: domain_suffix
+    value: plasma.io
+    reason: Domain collision; it is not the official Plasma One service root.

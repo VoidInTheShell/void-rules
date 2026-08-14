@@ -1,0 +1,21 @@
+version: 1
+ruleset: fake-ip-force
+format: mihomo-domain
+default_reason: Durable proxy-side Fake-IP roots for finance and AI regional consistency.
+rules:
+  - '+.openai.com'
+  - '+.chatgpt.com'
+  - '+.oaistatic.com'
+  - '+.oaiusercontent.com'
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  - '+.bybit.com'
+  - '+.bybit.eu'
+  - '+.bybit.nl'
+  - '+.okx.com'
+  - '+.plasma.org'
+  - '+.plasma.to'
+  - '+.standardchartered.com'
+  - '+.n26.com'
+  - '+.ifastcorp.com'
+  - '+.ifastglobalbank.com'

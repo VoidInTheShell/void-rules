@@ -1,0 +1,11 @@
+version: 1
+ruleset: fake-ip-bypass
+format: assertions
+required:
+  - {kind: domain_wildcard, value: '*.lan'}
+  - {kind: domain_suffix, value: pool.ntp.org}
+  - {kind: domain_suffix, value: 3gppnetwork.org}
+  - {kind: domain_suffix, value: cmbchina.com}
+  - {kind: domain, value: time1.cloud.tencent.com}
+forbidden:
+  - {kind: opaque_domain, value: Mijia Cloud}

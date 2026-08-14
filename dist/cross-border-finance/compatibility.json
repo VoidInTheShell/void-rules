@@ -1,0 +1,58 @@
+{
+  "outputs": {
+    "jsonl": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-text": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-yaml": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-mrs": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-text": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-yaml": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "plain-domain": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "xray-domain-list": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "xray-geosite-dat": {
+      "examples": [],
+      "represented": 1273,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    }
+  }
+}

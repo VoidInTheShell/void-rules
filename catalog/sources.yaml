@@ -1,0 +1,493 @@
+version: 1
+sources:
+  # Fake-IP bypass sources
+  - id: dustinwin-fakeip
+    name: DustinWin domain-list-custom fakeip-filter
+    url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/fakeip-filter.list
+    format: clash-classical-text
+    behavior: classical
+    license: MIT
+    homepage: https://github.com/DustinWin/domain-list-custom
+    allowed_hosts: [github.com, release-assets.githubusercontent.com, objects.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 256, max_bytes: 2097152, min_rules: 20, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+    notes: Preferred readable source for DustinWin's derived fakeip-filter MRS.
+
+  - id: rfm-fakeip
+    name: xixu-me RFM fake-ip-filter
+    url: https://raw.githubusercontent.com/xixu-me/RFM/basic/yaml/fake-ip-filter.yaml
+    format: mihomo-domain-yaml
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/xixu-me/RFM
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 256, max_bytes: 2097152, min_rules: 20, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+
+  - id: quixotic-fakeip
+    name: QuixoticHeart fake-ip-filter domain list
+    url: https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/meta/domain/fake-ip-filter.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/QuixoticHeart/rule-set
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 256, max_bytes: 2097152, min_rules: 20, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+
+  - id: shellcrash-fakeip
+    name: ShellCrash public fake_ip_filter
+    url: https://raw.githubusercontent.com/juewuy/ShellCrash/dev/public/fake_ip_filter.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/juewuy/ShellCrash
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 256, max_bytes: 2097152, min_rules: 20, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+    notes: Data file only; upstream scripts are never executed.
+
+  - id: metacubex-connectivity-check
+    name: MetaCubeX connectivity-check
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/connectivity-check.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 2097152, min_rules: 1, max_rules: 20000, max_growth_ratio: 6.0, max_shrink_ratio: 0.2}
+
+  - id: metacubex-private
+    name: MetaCubeX private domains
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 2097152, min_rules: 1, max_rules: 20000, max_growth_ratio: 6.0, max_shrink_ratio: 0.2}
+
+  - id: metacubex-games-cn
+    name: MetaCubeX category-games at cn
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 10485760, min_rules: 5, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-netease
+    name: blackmatrix7 NetEase
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEase/NetEase.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-tencent
+    name: blackmatrix7 Tencent classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent_Classical.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-meituan
+    name: blackmatrix7 MeiTuan
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MeiTuan/MeiTuan.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-blizzard
+    name: blackmatrix7 Blizzard
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  # Fake-IP force supplements
+  - id: blackmatrix-ebay
+    name: blackmatrix7 eBay
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-amazon
+    name: blackmatrix7 Amazon
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 20971520, min_rules: 1, max_rules: 400000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-amazon-trust
+    name: blackmatrix7 AmazonTrust
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonTrust/AmazonTrust.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-amazon-cn
+    name: blackmatrix7 AmazonCN
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-microsoft
+    name: blackmatrix7 Microsoft
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 20971520, min_rules: 1, max_rules: 400000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: loyalsoldier-gfw
+    name: Loyalsoldier GFW domains
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/Loyalsoldier/clash-rules
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 20971520, min_rules: 100, max_rules: 400000, max_growth_ratio: 3.0, max_shrink_ratio: 0.4}
+
+  - id: metacubex-geolocation-not-cn
+    name: MetaCubeX geolocation not CN
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 52428800, min_rules: 100, max_rules: 1000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.4}
+
+  - id: blackmatrix-google
+    name: blackmatrix7 Google
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 20971520, min_rules: 1, max_rules: 400000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-gemini
+    name: blackmatrix7 Gemini
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  # Advertising
+  - id: loyalsoldier-reject
+    name: Loyalsoldier reject
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
+    format: mihomo-domain-yaml
+    behavior: domain
+    polarity: block
+    license: GPL-3.0
+    homepage: https://github.com/Loyalsoldier/clash-rules
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 104857600, min_rules: 100, max_rules: 3000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.4}
+
+  - id: snapei-reject
+    name: snapei clash-pro-rules reject
+    url: https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt
+    format: mihomo-domain-yaml
+    behavior: domain
+    polarity: block
+    license: GPL-3.0
+    homepage: https://github.com/snapei/clash-pro-rules
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 104857600, min_rules: 100, max_rules: 3000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.4}
+
+  - id: awavenue-ads
+    name: AWAvenue Ads Rule classical
+    url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    polarity: block
+    license: GPL-3.0
+    homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 104857600, min_rules: 100, max_rules: 3000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.4}
+
+  - id: metacubex-ads
+    name: MetaCubeX category-ads-all
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list
+    format: mihomo-domain-text
+    behavior: domain
+    polarity: block
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 104857600, min_rules: 100, max_rules: 3000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.4}
+
+  # AI
+  - id: metacubex-ai-not-cn
+    name: MetaCubeX category-ai not CN
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 128, max_bytes: 10485760, min_rules: 10, max_rules: 200000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+
+  - id: blackmatrix-openai
+    name: blackmatrix7 OpenAI
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
+    format: clash-classical-text
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-twitter
+    name: blackmatrix7 Twitter
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 32, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-claude
+    name: blackmatrix7 Claude
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  # GlobalLegal
+  - id: blackmatrix-nvidia
+    name: blackmatrix7 Nvidia
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-samsung
+    name: blackmatrix7 Samsung
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Samsung/Samsung.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-intel
+    name: blackmatrix7 Intel
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Intel/Intel.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-amd
+    name: blackmatrix7 AMD
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AMD/AMD.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-lenovo
+    name: blackmatrix7 Lenovo
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lenovo/Lenovo.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: blackmatrix-dell
+    name: blackmatrix7 Dell
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dell/Dell.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: GPL-2.0
+    homepage: https://github.com/blackmatrix7/ios_rule_script
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  # Cross-border finance
+  - id: void-finance-fallback
+    name: VoidInTheShell cross-border finance fallback
+    url: https://raw.githubusercontent.com/VoidInTheShell/cross-border-finance-rules/main/rules/cross-border-finance-fallback.yaml
+    format: mihomo-domain-yaml
+    behavior: domain
+    license: MIT
+    homepage: https://github.com/VoidInTheShell/cross-border-finance-rules
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 10485760, min_rules: 400, max_rules: 200000, max_growth_ratio: 4.0, max_shrink_ratio: 0.7}
+
+  - id: metacubex-finance
+    name: MetaCubeX category-finance
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 1024, max_bytes: 52428800, min_rules: 100, max_rules: 1000000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+
+  - id: metacubex-cryptocurrency
+    name: MetaCubeX category-cryptocurrency
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 512, max_bytes: 52428800, min_rules: 50, max_rules: 1000000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
+
+  # PCDN: current aggregate plus its five declared upstreams
+  - id: void-pcdn-aggregate
+    name: VoidInTheShell PCDN aggregate
+    url: https://raw.githubusercontent.com/VoidInTheShell/pcdn-block-list/master/pcdn_block_clash.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    polarity: block
+    license: NOASSERTION
+    homepage: https://github.com/VoidInTheShell/pcdn-block-list
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 128, max_bytes: 52428800, min_rules: 10, max_rules: 1000000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
+
+  - id: uselibrary-pcdn
+    name: uselibrary PCDN
+    url: https://raw.githubusercontent.com/uselibrary/PCDN/main/pcdn.list
+    format: clash-classical-text
+    behavior: classical
+    polarity: block
+    license: NOASSERTION
+    homepage: https://github.com/uselibrary/PCDN
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 52428800, min_rules: 1, max_rules: 1000000, max_growth_ratio: 6.0, max_shrink_ratio: 0.1}
+
+  - id: anti-ad-pcdn
+    name: anti-AD PCDN discretion list
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/pcdn.txt
+    format: plain-domain
+    behavior: domain
+    polarity: block
+    license: NOASSERTION
+    homepage: https://github.com/privacy-protection-tools/anti-AD
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 52428800, min_rules: 1, max_rules: 1000000, max_growth_ratio: 6.0, max_shrink_ratio: 0.1}
+
+  - id: block-pcdn-domains
+    name: thhbdd Block-pcdn-domains
+    url: https://raw.githubusercontent.com/thhbdd/Block-pcdn-domains/main/ban.txt
+    format: adguard
+    behavior: domain
+    polarity: block
+    license: NOASSERTION
+    homepage: https://github.com/thhbdd/Block-pcdn-domains
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 52428800, min_rules: 1, max_rules: 1000000, max_growth_ratio: 6.0, max_shrink_ratio: 0.1}
+
+  - id: pcdnfilter-chn
+    name: susetao PCDNFilter CHN
+    url: https://raw.githubusercontent.com/susetao/PCDNFilter-CHN-/main/PCDNFilter.txt
+    format: adguard
+    behavior: domain
+    polarity: block
+    license: NOASSERTION
+    homepage: https://github.com/susetao/PCDNFilter-CHN-
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 52428800, min_rules: 1, max_rules: 1000000, max_growth_ratio: 6.0, max_shrink_ratio: 0.1}
+
+  - id: my-ad-block-rules-p2pcdn
+    name: Womsxd MyAdBlockRules P2PCDN
+    url: https://raw.githubusercontent.com/Womsxd/MyAdBlockRules/master/p2pcdnblock.txt
+    format: adguard
+    behavior: domain
+    polarity: block
+    license: NOASSERTION
+    homepage: https://github.com/Womsxd/MyAdBlockRules
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 16, max_bytes: 52428800, min_rules: 1, max_rules: 1000000, max_growth_ratio: 6.0, max_shrink_ratio: 0.1}

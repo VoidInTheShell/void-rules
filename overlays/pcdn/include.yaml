@@ -1,0 +1,5 @@
+version: 1
+ruleset: pcdn
+format: clash-classical
+default_reason: Reserved for user-owned PCDN gap fills; current coverage comes from the aggregate plus five direct upstreams.
+rules: []

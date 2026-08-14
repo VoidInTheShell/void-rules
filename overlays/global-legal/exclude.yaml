@@ -1,0 +1,4 @@
+version: 1
+ruleset: global-legal
+format: selectors
+selectors: []

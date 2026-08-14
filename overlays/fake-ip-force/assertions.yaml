@@ -1,0 +1,10 @@
+version: 1
+ruleset: fake-ip-force
+format: assertions
+required:
+  - {kind: domain_suffix, value: openai.com}
+  - {kind: domain_suffix, value: anthropic.com}
+  - {kind: domain_suffix, value: bybit.com}
+  - {kind: domain_suffix, value: plasma.to}
+  - {kind: domain_suffix, value: standardchartered.com}
+forbidden: []

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/schemas/overlay.schema.json",
+  "title": "void-rules protected overlay",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "ruleset"],
+  "properties": {
+    "version": { "const": 1 },
+    "ruleset": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "format": { "enum": ["mihomo-domain", "clash-classical", "plain", "selectors", "assertions", "conflicts"] },
+    "default_reason": { "type": "string" },
+    "rules": { "type": "array", "items": { "$ref": "#/$defs/rule" } },
+    "selectors": { "type": "array", "items": { "$ref": "#/$defs/selector" } },
+    "required": { "type": "array", "items": { "$ref": "#/$defs/selector" } },
+    "forbidden": { "type": "array", "items": { "$ref": "#/$defs/selector" } },
+    "allow": { "type": "array", "items": { "$ref": "#/$defs/conflict" } }
+  },
+  "$defs": {
+    "rule": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "value", "reason"],
+          "properties": {
+            "kind": { "type": "string", "minLength": 1 },
+            "value": { "type": "string", "minLength": 1 },
+            "action": { "type": "string", "minLength": 1 },
+            "reason": { "type": "string", "minLength": 1 },
+            "evidence": { "type": "string", "format": "uri" },
+            "attributes": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      ]
+    },
+    "selector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "value"],
+      "properties": {
+        "kind": { "type": "string", "minLength": 1 },
+        "value": { "type": "string", "minLength": 1 },
+        "action": { "type": "string" },
+        "source_id": { "type": "string" },
+        "reason": { "type": "string" }
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "value", "winner", "reason"],
+      "properties": {
+        "kind": { "type": "string" },
+        "value": { "type": "string" },
+        "winner": { "enum": ["fake-ip-bypass", "fake-ip-force", "both"] },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

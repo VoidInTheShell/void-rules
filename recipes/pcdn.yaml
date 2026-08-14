@@ -1,0 +1,28 @@
+version: 1
+id: pcdn
+description: PCDN and P2P-CDN block rules synchronized from the existing aggregate and its five upstreams.
+action: block
+sources:
+  - void-pcdn-aggregate
+  - uselibrary-pcdn
+  - anti-ad-pcdn
+  - block-pcdn-domains
+  - pcdnfilter-chn
+  - my-ad-block-rules-p2pcdn
+rulesets: []
+include: overlays/pcdn/include.yaml
+exclude: overlays/pcdn/exclude.yaml
+assertions: overlays/pcdn/assertions.yaml
+outputs:
+  - jsonl
+  - plain-domain
+  - mihomo-classical-yaml
+  - mihomo-classical-text
+  - mihomo-domain-yaml
+  - mihomo-domain-text
+  - mihomo-domain-mrs
+  - adguard-block
+  - adguard-allow
+  - xray-domain-list
+  - xray-geosite-dat
+limits: {min_rules: 10, max_rules: 2000000, max_growth_ratio: 5.0, max_shrink_ratio: 0.3}

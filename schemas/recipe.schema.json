@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/schemas/recipe.schema.json",
+  "title": "void-rules recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version", "id", "description", "action", "sources", "rulesets",
+    "include", "exclude", "assertions", "outputs", "limits"
+  ],
+  "properties": {
+    "version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "description": { "type": "string", "minLength": 1 },
+    "action": { "enum": ["match", "block", "allow", "fake_ip_force", "fake_ip_bypass"] },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+      "uniqueItems": true
+    },
+    "rulesets": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+      "uniqueItems": true
+    },
+    "include": { "type": "string", "pattern": "^overlays/" },
+    "exclude": { "type": "string", "pattern": "^overlays/" },
+    "assertions": { "type": "string", "pattern": "^overlays/" },
+    "conflict_resolutions": { "type": "string", "pattern": "^overlays/" },
+    "outputs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "jsonl", "plain-domain", "plain-ip",
+          "mihomo-classical-yaml", "mihomo-classical-text",
+          "mihomo-domain-yaml", "mihomo-domain-text", "mihomo-domain-mrs",
+          "mihomo-ipcidr-yaml", "mihomo-ipcidr-text", "mihomo-ipcidr-mrs",
+          "adguard-block", "adguard-allow",
+          "xray-domain-list", "xray-geosite-dat", "xray-geoip-dat"
+        ]
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min_rules", "max_rules", "max_growth_ratio", "max_shrink_ratio"],
+      "properties": {
+        "min_rules": { "type": "integer", "minimum": 0 },
+        "max_rules": { "type": "integer", "minimum": 1 },
+        "max_growth_ratio": { "type": "number", "minimum": 1 },
+        "max_shrink_ratio": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}

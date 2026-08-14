@@ -1,0 +1,9 @@
+version: 1
+ruleset: ads
+format: clash-classical
+default_reason: Preserve local reject rules when upstream providers are consolidated.
+rules:
+  - 'DOMAIN-SUFFIX,ping0.cc'
+  - 'DOMAIN,sgameicon.ecology.smoba.qq.com'
+  - 'DOMAIN,youxi.xunlei.com'
+  - 'DOMAIN-KEYWORD,vrdesktop'

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/schemas/sources.schema.json",
+  "title": "void-rules source catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "sources"],
+  "properties": {
+    "version": { "const": 1 },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "url", "format", "license", "homepage",
+        "allowed_hosts", "strict", "limits"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "fallback_urls": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "uniqueItems": true
+        },
+        "format": {
+          "enum": [
+            "auto", "plain", "plain-domain", "plain-ip", "hosts",
+            "clash-classical-text", "clash-classical-yaml",
+            "mihomo-domain-text", "mihomo-domain-yaml",
+            "mihomo-ipcidr-text", "mihomo-ipcidr-yaml",
+            "adguard", "xray-json", "xray-domain-list",
+            "geosite-dat", "geoip-dat", "mrs"
+          ]
+        },
+        "behavior": { "enum": ["domain", "ipcidr", "classical"] },
+        "polarity": { "enum": ["match", "block", "allow"] },
+        "whole_source_allowlist": { "type": "boolean" },
+        "select_tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "companion_source": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "license": { "type": "string", "minLength": 1 },
+        "homepage": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "allowed_hosts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9.-]+$" }
+        },
+        "strict": { "type": "boolean" },
+        "enabled": { "type": "boolean" },
+        "headers": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "limits": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min_bytes", "max_bytes", "min_rules", "max_rules"],
+          "properties": {
+            "min_bytes": { "type": "integer", "minimum": 0 },
+            "max_bytes": { "type": "integer", "minimum": 1 },
+            "min_rules": { "type": "integer", "minimum": 0 },
+            "max_rules": { "type": "integer", "minimum": 1 },
+            "max_growth_ratio": { "type": "number", "minimum": 1 },
+            "max_shrink_ratio": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

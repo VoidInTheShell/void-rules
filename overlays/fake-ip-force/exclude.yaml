@@ -1,0 +1,4 @@
+version: 1
+ruleset: fake-ip-force
+format: selectors
+selectors: []

@@ -1,0 +1,6 @@
+version: 1
+ruleset: global-legal
+format: clash-classical
+default_reason: Preserve the locally maintained ASRock route.
+rules:
+  - 'DOMAIN-SUFFIX,asrock.com'

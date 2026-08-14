@@ -1,0 +1,33 @@
+version: 1
+id: fake-ip-force
+description: Proxy-oriented names that should receive Fake-IP in whitelist mode.
+action: fake_ip_force
+sources:
+  - blackmatrix-ebay
+  - blackmatrix-amazon
+  - blackmatrix-amazon-trust
+  - blackmatrix-amazon-cn
+  - blackmatrix-microsoft
+  - loyalsoldier-gfw
+  - metacubex-geolocation-not-cn
+  - blackmatrix-google
+  - blackmatrix-gemini
+rulesets:
+  - cross-border-finance
+  - ai
+include: overlays/fake-ip-force/include.yaml
+exclude: overlays/fake-ip-force/exclude.yaml
+assertions: overlays/fake-ip-force/assertions.yaml
+conflict_resolutions: overlays/fake-ip/conflicts.yaml
+outputs:
+  - jsonl
+  - plain-domain
+  - mihomo-classical-yaml
+  - mihomo-classical-text
+  - mihomo-domain-yaml
+  - mihomo-domain-text
+  - mihomo-domain-mrs
+  - xray-domain-list
+  - xray-geosite-dat
+limits: {min_rules: 1000, max_rules: 2000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.5}
+notes: Use only with fake-ip-filter-mode whitelist; IP-only dependency rules are reported and omitted.

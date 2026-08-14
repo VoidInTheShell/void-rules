@@ -1,0 +1,124 @@
+version: 1
+ruleset: fake-ip-bypass
+format: conflicts
+allow:
+  # Connectivity and time probes must see real DNS answers.
+  - kind: domain_suffix
+    value: msftconnecttest.com
+    winner: fake-ip-bypass
+    reason: Microsoft connectivity detection is compatibility-sensitive and must use a real IP.
+  - kind: domain_suffix
+    value: msftncsi.com
+    winner: fake-ip-bypass
+    reason: Microsoft NCSI is a connectivity probe and must use a real IP.
+  - kind: domain_suffix
+    value: pool.ntp.org
+    winner: fake-ip-bypass
+    reason: NTP discovery is a direct time-service dependency and must not receive Fake-IP.
+  - kind: domain_suffix
+    value: ts.net
+    winner: fake-ip-bypass
+    reason: Tailscale MagicDNS names are private-network compatibility data and require real resolution.
+
+  # Existing templates and dedicated compatibility sources intentionally keep
+  # game login, launcher and download/CDN names out of Fake-IP.
+  - kind: domain_suffix
+    value: battle.net
+    winner: fake-ip-bypass
+    reason: Battle.net login and launcher compatibility takes precedence over broad proxy geolocation lists.
+  - kind: domain_suffix
+    value: blizzard.com
+    winner: fake-ip-bypass
+    reason: Blizzard launcher and game services are explicitly present in the compatibility source.
+  - kind: domain_suffix
+    value: blizzardgearstore.com
+    winner: fake-ip-bypass
+    reason: Keep the complete Blizzard compatibility family on real DNS answers.
+  - kind: domain_suffix
+    value: blz-contentstack.com
+    winner: fake-ip-bypass
+    reason: Blizzard content dependencies follow the launcher compatibility decision.
+  - kind: domain_suffix
+    value: diablo3.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: diabloimmortal.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: firesidegatherings.com
+    winner: fake-ip-bypass
+    reason: Hearthstone community dependency follows the Blizzard compatibility family.
+  - kind: domain_suffix
+    value: heroesofthestorm.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: playhearthstone.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: playoverwatch.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: playwarcraft3.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: starcraft.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: starcraft2.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: worldofwarcraft.com
+    winner: fake-ip-bypass
+    reason: Blizzard game connectivity is compatibility-sensitive even when traffic later uses GlobalGames.
+  - kind: domain_suffix
+    value: steamcontent.com
+    winner: fake-ip-bypass
+    reason: Steam content delivery is explicitly classified for direct download compatibility.
+  - kind: domain_suffix
+    value: steamserver.net
+    winner: fake-ip-bypass
+    reason: Steam server discovery must retain real DNS answers for direct download compatibility.
+  - kind: domain_suffix
+    value: steamusercontent.com
+    winner: fake-ip-bypass
+    reason: Steam user-content delivery follows the real-IP game content policy.
+  - kind: domain_suffix
+    value: wargaming.net
+    winner: fake-ip-bypass
+    reason: Wargaming login and game connectivity are explicitly covered by Fake-IP compatibility sources.
+  - kind: domain_suffix
+    value: xboxlive.cn
+    winner: fake-ip-bypass
+    reason: Mainland Xbox connectivity and content delivery are direct compatibility dependencies.
+  - kind: domain_suffix
+    value: xboxlive.com
+    winner: fake-ip-bypass
+    reason: Xbox connectivity and game services are explicitly covered by Fake-IP compatibility sources.
+
+  # Media services already carried explicit real-IP exceptions in the current
+  # templates; routing can still select a proxy after DNS resolution.
+  - kind: domain_suffix
+    value: joox.com
+    winner: fake-ip-bypass
+    reason: JOOX is a Tencent media compatibility rule and follows the current direct-side Fake-IP exclusion.
+  - kind: domain_suffix
+    value: nflxvideo.net
+    winner: fake-ip-bypass
+    reason: Current templates explicitly require real DNS for Netflix video CDN while traffic may still use the streaming policy.
+
+  - kind: domain_suffix
+    value: cmbchina.com
+    winner: fake-ip-bypass
+    reason: Mainland CMB login and app compatibility explicitly requires real IP in blacklist mode.
+  - kind: domain_suffix
+    value: cmbimg.com
+    winner: fake-ip-bypass
+    reason: CMB static/login dependency follows the compatibility rule.

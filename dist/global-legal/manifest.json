@@ -1,0 +1,124 @@
+{
+  "action": "match",
+  "composition": {
+    "excluded_protected_rules": 0,
+    "excluded_rules": 0
+  },
+  "counts": {
+    "by_action": {
+      "match": 491
+    },
+    "by_kind": {
+      "domain_suffix": 491
+    },
+    "protected": 1,
+    "total": 491
+  },
+  "description": "Globally operated technology vendors that are normally reachable directly in mainland China.",
+  "outputs": {
+    "jsonl": {
+      "path": "rules.jsonl.gz",
+      "represented_rules": 491,
+      "sha256": "56f5f001b7616b8707f47d5e6e68bf0b4a0d569d08e7840c11274c22fad7fa5d",
+      "size": 6976,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-text": {
+      "path": "mihomo-classical.list",
+      "represented_rules": 491,
+      "sha256": "2b32ddd6bb85c0fed8efcc2a2e2acfc793f1ad89b82b485b1aa1ba66f3afd7e2",
+      "size": 13467,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-yaml": {
+      "path": "mihomo-classical.yaml",
+      "represented_rules": 491,
+      "sha256": "ace4c9ec27ce75ee40219d168d349f658687558ad08189dc9870fb7bff86c99a",
+      "size": 14458,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-mrs": {
+      "path": "mihomo-domain.mrs",
+      "represented_rules": 491,
+      "sha256": "86ba4e66fbf5ee49b655f1126a32cd1a577671b621aa766fab3d8d1e29078151",
+      "size": 4148,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-text": {
+      "path": "mihomo-domain.list",
+      "represented_rules": 491,
+      "sha256": "3cf5ea630dcb21c7b47b3fe8ee6765458405e9f72cded94bd7a1a3901c9c6e13",
+      "size": 7575,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-yaml": {
+      "path": "mihomo-domain.yaml",
+      "represented_rules": 491,
+      "sha256": "8c55a191c6c06c8730c90bc8cfd8031e7f5f4ff3191837df514740c22314219b",
+      "size": 8566,
+      "skipped_rules": 0
+    },
+    "mihomo-ipcidr-text": {
+      "path": "mihomo-ipcidr.list",
+      "represented_rules": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "skipped_rules": 491
+    },
+    "mihomo-ipcidr-yaml": {
+      "path": "mihomo-ipcidr.yaml",
+      "represented_rules": 0,
+      "sha256": "0b2efabe5f713ed12bd02e9d9b6bee10d365dfd03845745f5ce7805ba44afae4",
+      "size": 12,
+      "skipped_rules": 491
+    },
+    "plain-domain": {
+      "path": "plain-domain.txt",
+      "represented_rules": 491,
+      "sha256": "3cf5ea630dcb21c7b47b3fe8ee6765458405e9f72cded94bd7a1a3901c9c6e13",
+      "size": 7575,
+      "skipped_rules": 0
+    },
+    "plain-ip": {
+      "path": "plain-ip.txt",
+      "represented_rules": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "skipped_rules": 491
+    },
+    "xray-domain-list": {
+      "path": "xray-domain-list.txt",
+      "represented_rules": 491,
+      "sha256": "201242ebe9190e6f33ddb150f090c53f37ea849e25cff1583dec384525483f16",
+      "size": 10030,
+      "skipped_rules": 0
+    },
+    "xray-geosite-dat": {
+      "path": "xray-geosite.dat",
+      "represented_rules": 491,
+      "sha256": "8c528c1fd0580a50aef6f75a966c28624896d27c0d2a089a1c1dd8f7121a7ebc",
+      "size": 9065,
+      "skipped_rules": 0
+    }
+  },
+  "ruleset": "global-legal",
+  "rulesets": [],
+  "source_contributions": {
+    "blackmatrix-amd": 4,
+    "blackmatrix-dell": 118,
+    "blackmatrix-intel": 261,
+    "blackmatrix-lenovo": 32,
+    "blackmatrix-nvidia": 62,
+    "blackmatrix-samsung": 13,
+    "overlay:global-legal": 1
+  },
+  "sources": [
+    "blackmatrix-nvidia",
+    "blackmatrix-samsung",
+    "blackmatrix-intel",
+    "blackmatrix-amd",
+    "blackmatrix-lenovo",
+    "blackmatrix-dell"
+  ],
+  "version": 1
+}

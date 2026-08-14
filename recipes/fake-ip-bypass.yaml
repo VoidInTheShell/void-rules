@@ -1,0 +1,33 @@
+version: 1
+id: fake-ip-bypass
+description: Direct, local and compatibility-sensitive names that must receive real IPs.
+action: fake_ip_bypass
+sources:
+  - dustinwin-fakeip
+  - rfm-fakeip
+  - quixotic-fakeip
+  - shellcrash-fakeip
+  - metacubex-connectivity-check
+  - metacubex-private
+  - metacubex-games-cn
+  - blackmatrix-netease
+  - blackmatrix-tencent
+  - blackmatrix-meituan
+  - blackmatrix-blizzard
+rulesets: []
+include: overlays/fake-ip-bypass/include.yaml
+exclude: overlays/fake-ip-bypass/exclude.yaml
+assertions: overlays/fake-ip-bypass/assertions.yaml
+conflict_resolutions: overlays/fake-ip/conflicts.yaml
+outputs:
+  - jsonl
+  - plain-domain
+  - mihomo-classical-yaml
+  - mihomo-classical-text
+  - mihomo-domain-yaml
+  - mihomo-domain-text
+  - mihomo-domain-mrs
+  - xray-domain-list
+  - xray-geosite-dat
+limits: {min_rules: 120, max_rules: 500000, max_growth_ratio: 5.0, max_shrink_ratio: 0.4}
+notes: Use only with fake-ip-filter-mode blacklist.

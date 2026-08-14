@@ -1,0 +1,1585 @@
+{
+  "outputs": {
+    "jsonl": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-text": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-classical-yaml": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-mrs": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-text": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-yaml": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-ipcidr-text": {
+      "examples": [
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "01.org"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "acpica.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "air-watch.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "airwatchexpress.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "airwatchqa.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveipc.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveitsm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveprofiler.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivercm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliverewind.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivertsm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevmax.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevue.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "altera.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforum.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforums.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforums.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforum.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforum.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforums.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforums.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amd.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amd.com.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amdfanstore.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "anrdoezrs.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "asrock.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "avinetworks.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "badaas.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "barefootnetworks.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnami.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnamiapp.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnamistudio.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "blurdev.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "buyaltera.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "celeron.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "celeron.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "centrino.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "centrino.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cfblob.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cftsupport.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "chips.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cilk.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cilk.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clearlinux.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clearlinux.org"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudchoose.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudcredibility.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudhealthtech.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudinsights.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudlive.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudvolumes.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clusterconnection.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cmpaas.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "coreduo.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "coreextreme.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cpedge.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crit-staging.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crosswalk-project.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crosswalk-project.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell-alw.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell-brand.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.in"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.kr"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.nz"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.th"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.au"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.hk"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.my"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.sg"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.tw"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dellcdn.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "doceapower.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dockerizer.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "easic.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "enpirion.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "exascale-tech.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "experience-vmware.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "exploreintel.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "fm365.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "galaxyappstore.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "galaxymobile.jp"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "game-platform.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.co.kr"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.co.uk"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.com.tw"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gemfire.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geodesummit.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getboxer.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getws1.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getwsone.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gitstar.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gitstar.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gopivotal.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gopivotal.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gordonmoore.com"
+        }
+      ],
+      "represented": 0,
+      "skipped": 491,
+      "skipped_by_kind": {
+        "domain_suffix": 491
+      }
+    },
+    "mihomo-ipcidr-yaml": {
+      "examples": [
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "01.org"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "acpica.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "air-watch.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "airwatchexpress.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "airwatchqa.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveipc.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveitsm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveprofiler.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivercm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliverewind.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivertsm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevmax.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevue.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "altera.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforum.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforums.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforums.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforum.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforum.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforums.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforums.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amd.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amd.com.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amdfanstore.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "anrdoezrs.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "asrock.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "avinetworks.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "badaas.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "barefootnetworks.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnami.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnamiapp.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnamistudio.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "blurdev.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "buyaltera.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "celeron.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "celeron.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "centrino.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "centrino.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cfblob.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cftsupport.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "chips.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cilk.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cilk.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clearlinux.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clearlinux.org"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudchoose.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudcredibility.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudhealthtech.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudinsights.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudlive.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudvolumes.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clusterconnection.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cmpaas.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "coreduo.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "coreextreme.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cpedge.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crit-staging.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crosswalk-project.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crosswalk-project.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell-alw.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell-brand.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.in"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.kr"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.nz"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.th"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.au"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.hk"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.my"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.sg"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.tw"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dellcdn.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "doceapower.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dockerizer.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "easic.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "enpirion.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "exascale-tech.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "experience-vmware.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "exploreintel.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "fm365.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "galaxyappstore.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "galaxymobile.jp"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "game-platform.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.co.kr"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.co.uk"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.com.tw"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gemfire.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geodesummit.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getboxer.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getws1.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getwsone.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gitstar.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gitstar.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gopivotal.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gopivotal.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gordonmoore.com"
+        }
+      ],
+      "represented": 0,
+      "skipped": 491,
+      "skipped_by_kind": {
+        "domain_suffix": 491
+      }
+    },
+    "plain-domain": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "plain-ip": {
+      "examples": [
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "01.org"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "acpica.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "air-watch.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "airwatchexpress.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "airwatchqa.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveipc.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveitsm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliveprofiler.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivercm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "aliverewind.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivertsm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevm.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevmax.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alivevue.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "altera.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforum.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforums.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alteraforums.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforum.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforum.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforums.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "alterauserforums.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amd.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amd.com.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "amdfanstore.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "anrdoezrs.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "asrock.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "avinetworks.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "badaas.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "barefootnetworks.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnami.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnamiapp.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "bitnamistudio.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "blurdev.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "buyaltera.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "celeron.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "celeron.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "centrino.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "centrino.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cfblob.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cftsupport.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "chips.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cilk.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cilk.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clearlinux.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clearlinux.org"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudchoose.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudcredibility.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudhealthtech.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudinsights.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudlive.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cloudvolumes.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "clusterconnection.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cmpaas.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "coreduo.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "coreextreme.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "cpedge.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crit-staging.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crosswalk-project.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "crosswalk-project.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell-alw.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell-brand.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.in"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.kr"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.nz"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.co.th"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.au"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.hk"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.my"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.sg"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dell.com.tw"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dellcdn.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "doceapower.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "dockerizer.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "easic.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "enpirion.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "exascale-tech.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "experience-vmware.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "exploreintel.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "fm365.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "galaxyappstore.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "galaxymobile.jp"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "game-platform.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.cn"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.co.kr"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.co.uk"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geforce.com.tw"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gemfire.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "geodesummit.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getboxer.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getws1.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "getwsone.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gitstar.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gitstar.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gopivotal.com"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gopivotal.net"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "gordonmoore.com"
+        }
+      ],
+      "represented": 0,
+      "skipped": 491,
+      "skipped_by_kind": {
+        "domain_suffix": 491
+      }
+    },
+    "xray-domain-list": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "xray-geosite-dat": {
+      "examples": [],
+      "represented": 491,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    }
+  }
+}

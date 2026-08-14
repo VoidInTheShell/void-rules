@@ -1,0 +1,17 @@
+version: 1
+ruleset: cross-border-finance
+format: assertions
+required:
+  - {kind: domain_suffix, value: standardchartered.com}
+  - {kind: domain_suffix, value: americanexpress.com}
+  - {kind: domain_suffix, value: n26.com}
+  - {kind: domain_suffix, value: ifastcorp.com}
+  - {kind: domain_suffix, value: bybit.com}
+  - {kind: domain_suffix, value: bybit.eu}
+  - {kind: domain_suffix, value: okx.com}
+  - {kind: domain_suffix, value: plasma.org}
+  - {kind: domain_suffix, value: plasma.to}
+  - {kind: domain_suffix, value: t-mobile.com}
+  - {kind: domain_suffix, value: o2.co.uk}
+forbidden:
+  - {kind: domain_suffix, value: plasma.io}
