@@ -1,16 +1,19 @@
 from __future__ import annotations
 
 import gzip
+from pathlib import Path
 
 from void_rules.artifacts import deterministic_gzip
 from void_rules.render import RenderedFile, _compact_mrs_domain_source
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_jsonl_gzip_is_reproducible_and_has_zero_mtime() -> None:
     raw = b'{"kind":"domain","value":"example.com"}\n'
 
-    first = deterministic_gzip(raw)
-    second = deterministic_gzip(raw)
+    first = deterministic_gzip(raw, ROOT)
+    second = deterministic_gzip(raw, ROOT)
 
     assert first == second
     assert first[4:8] == b"\x00\x00\x00\x00"

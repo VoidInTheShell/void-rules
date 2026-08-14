@@ -4,6 +4,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -80,3 +81,14 @@ def test_discovery_summary_tracks_card_catalog_and_reproducible_bundle() -> None
         for source in summary["sources"]
     )
     assert hashlib.sha256(bundle.read_bytes()).hexdigest() == summary["candidate_store"]["sha256"]
+
+
+def test_source_lock_contains_only_stable_public_urls() -> None:
+    lock = json.loads((ROOT / "generated" / "sources.lock.json").read_text(encoding="utf-8"))
+
+    for source in lock["sources"]:
+        parsed = urlsplit(source["final_url"])
+        assert parsed.username is None
+        assert parsed.password is None
+        assert not parsed.query
+        assert not parsed.fragment

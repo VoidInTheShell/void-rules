@@ -94,7 +94,7 @@ rule-providers:
 
 `python -m void_rules discover` 更新完整的 `generated/discovery/candidates.json.gz` 与便于审阅的 `summary.json`；`--offline --check` 可证明缓存输入能重现已提交候选。人工拒绝只写入 `overlays/discovery/rejected.yaml`，后续上游刷新仍按稳定候选 ID 记住该决定。
 
-完整 IR 以 `dist/<ruleset>/rules.jsonl.gz` 发布。gzip 头的时间戳固定为 0，解压后仍是逐行 JSON 且包含每条规则的来源证据；这样既不牺牲审计能力，也避免定时同步把大体积未压缩 provenance 反复写入 Git 历史。
+完整 IR 以 `dist/<ruleset>/rules.jsonl.gz` 发布。gzip 由固定 Go 工具链生成，头部时间戳固定为 0，解压后仍是逐行 JSON 且包含每条规则的来源证据；这样既不牺牲审计能力，也避免不同平台压缩实现制造伪差异或把大体积未压缩 provenance 反复写入 Git 历史。
 
 ## 许可证
 

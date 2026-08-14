@@ -7,7 +7,12 @@ import pytest
 
 from void_rules.catalog import Limits, SourceSpec
 from void_rules.errors import FetchError
-from void_rules.fetch import RestrictedRedirectHandler, _guard_payload, _read_response
+from void_rules.fetch import (
+    RestrictedRedirectHandler,
+    _guard_payload,
+    _read_response,
+    _stable_public_url,
+)
 from void_rules.model import Action
 
 
@@ -50,6 +55,14 @@ def test_redirect_handler_rejects_scheme_and_host_escape(url: str) -> None:
             {},
             url,
         )
+
+
+def test_stable_public_url_strips_ephemeral_credentials_and_fragment() -> None:
+    value = _stable_public_url(
+        "https://user:secret@release-assets.githubusercontent.com:443/path/file?sig=secret#part"
+    )
+
+    assert value == "https://release-assets.githubusercontent.com:443/path/file"
 
 
 def test_payload_guard_rejects_html_and_api_errors() -> None:
