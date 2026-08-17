@@ -20340,6 +20340,7 @@ domain:rutracker.me
 domain:rutracker.net
 domain:rutracker.nl
 domain:rutracker.org
+domain:rutracker.wiki
 domain:rutrk.org
 domain:rutube.ru
 domain:rutube.sport
