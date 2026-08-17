@@ -1,0 +1,31 @@
+version: 1
+ruleset: ip-proxy-pools
+format: assertions
+required:
+  - {kind: domain_suffix, value: seekproxy.com}
+  - {kind: domain_suffix, value: oxylabs.io}
+  - {kind: domain_suffix, value: iproyal.com}
+  - {kind: domain_suffix, value: proxy-seller.com}
+  - {kind: domain_suffix, value: proxyseller.com}
+  - {kind: domain_suffix, value: dataimpulse.com}
+  - {kind: domain_suffix, value: webshare.io}
+  - {kind: domain_suffix, value: decodo.com}
+  - {kind: domain_suffix, value: smartproxy.com}
+  - {kind: domain_suffix, value: soax.com}
+  - {kind: domain_suffix, value: brightdata.com}
+  - {kind: domain_suffix, value: superproxy.io}
+  - {kind: domain_suffix, value: netnut.io}
+  - {kind: domain_suffix, value: netnut.net}
+  - {kind: domain_suffix, value: rayobyte.com}
+  - {kind: domain_suffix, value: infatica.io}
+  - {kind: domain_suffix, value: packetstream.io}
+  - {kind: domain_suffix, value: proxy-cheap.com}
+  - {kind: domain_suffix, value: proxyempire.io}
+  - {kind: domain_suffix, value: nimbleway.com}
+  - {kind: domain_suffix, value: nodemaven.com}
+  - {kind: domain_suffix, value: stormproxies.com}
+  - {kind: domain_suffix, value: marsproxies.com}
+  - {kind: domain_suffix, value: geonode.com}
+forbidden:
+  - {kind: domain_suffix, value: smartproxy.org}
+  - {kind: domain_suffix, value: smartproxy.cn}

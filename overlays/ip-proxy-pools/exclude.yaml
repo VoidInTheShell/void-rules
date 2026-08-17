@@ -1,0 +1,10 @@
+version: 1
+ruleset: ip-proxy-pools
+format: selectors
+selectors:
+  - kind: domain_suffix
+    value: smartproxy.org
+    reason: Decodo identifies this domain as an unaffiliated impersonator.
+  - kind: domain_suffix
+    value: smartproxy.cn
+    reason: Decodo identifies this domain as an unaffiliated impersonator.

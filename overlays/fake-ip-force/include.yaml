@@ -1,7 +1,7 @@
 version: 1
 ruleset: fake-ip-force
 format: mihomo-domain
-default_reason: Durable proxy-side Fake-IP roots for finance and AI regional consistency.
+default_reason: Durable proxy-side Fake-IP roots for finance, AI and proxy-provider consistency.
 rules:
   - '+.openai.com'
   - '+.chatgpt.com'

@@ -6,91 +6,92 @@
   },
   "counts": {
     "by_action": {
-      "fake_ip_force": 32206
+      "fake_ip_force": 32233
     },
     "by_kind": {
       "domain": 764,
       "domain_keyword": 15,
-      "domain_suffix": 27016,
+      "domain_suffix": 27043,
       "ip_cidr": 28,
       "opaque_classical": 1,
       "opaque_domain": 4373,
       "process_name": 9
     },
-    "protected": 42,
-    "total": 32206
+    "protected": 70,
+    "total": 32233
   },
   "description": "Proxy-oriented names that should receive Fake-IP in whitelist mode.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 32206,
-      "sha256": "cdbf91798a991581985be991bf2a3ed158d6e9986a7679286980381a5897868d",
-      "size": 464696,
+      "represented_rules": 32233,
+      "sha256": "42303c20aff61786dbc4f7d18d0826e2339548bd986405114a87da24bc99ad0b",
+      "size": 469472,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 27833,
-      "sha256": "5e4e715f985d6213eff78cdcb458980074e819c94e4f3ddd138eb65364318b3c",
-      "size": 797716,
+      "represented_rules": 27860,
+      "sha256": "8509e744526c2136550d71eb3edbcd4cb9c1f81023a14b46200a6f599f29fffd",
+      "size": 798464,
       "skipped_rules": 4373
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 27833,
-      "sha256": "f625a9243e5e0ae80c4ea54d5601d170046120488a14ab7f13d9d00b1e3c9868",
-      "size": 853391,
+      "represented_rules": 27860,
+      "sha256": "a2eef6b834b20efa9fe53249117bca00895aa9f98ae586e7bb09f1b09109f2b6",
+      "size": 854193,
       "skipped_rules": 4373
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 11,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 27780,
-      "sha256": "74bc57730aaec6ac1b5166ae9c713c4b435e21f30b606a80ed759590a26dd1c8",
-      "size": 202432,
+      "represented_rules": 27807,
+      "sha256": "681888c3b5dc2c8260de570f4146b1639819bcd05631257da82b97b25810da11",
+      "size": 202774,
       "skipped_rules": 4426
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 27780,
-      "sha256": "4c3231f50cda5093cc922e39d0f53453f0c6874fa852739e92467322c0cdfb44",
-      "size": 466821,
+      "represented_rules": 27807,
+      "sha256": "3006d1c34c5580e004623b7adbf3d5b534ea7254759ae169a122cf4547f33d79",
+      "size": 467245,
       "skipped_rules": 4426
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 27780,
-      "sha256": "bf249835cf2f9e967839e2514a107df64ac2e9bb1d55ee2993fe2c40929f78f1",
-      "size": 522390,
+      "represented_rules": 27807,
+      "sha256": "f04f10f7fcaf108635a36c1f200bdd989e6e8c58ca75c5f707f88dda620727d4",
+      "size": 522868,
       "skipped_rules": 4426
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 27780,
-      "sha256": "4c3231f50cda5093cc922e39d0f53453f0c6874fa852739e92467322c0cdfb44",
-      "size": 466821,
+      "represented_rules": 27807,
+      "sha256": "3006d1c34c5580e004623b7adbf3d5b534ea7254759ae169a122cf4547f33d79",
+      "size": 467245,
       "skipped_rules": 4426
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 27795,
-      "sha256": "7c2a148a40ac8f87f534353585f419698fef8b48d680d40e79d7c08da3247f73",
-      "size": 605982,
+      "represented_rules": 27822,
+      "sha256": "de342aafae665ac906c70a4a51d230e59523776d45c0345ad45b972935c6f7c6",
+      "size": 606541,
       "skipped_rules": 4411
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 27795,
-      "sha256": "86df734e50e9be2e729382244247ef866bd85ccf7afdf2a97c3bbf659de1c8c3",
-      "size": 551894,
+      "represented_rules": 27822,
+      "sha256": "7e0e27d906f33450a4870aa224ccac6dc01dad06b8841a939291f0f017a03b29",
+      "size": 552399,
       "skipped_rules": 4373
     }
   },
   "ruleset": "fake-ip-force",
   "rulesets": [
     "cross-border-finance",
-    "ai"
+    "ai",
+    "ip-proxy-pools"
   ],
   "source_contributions": {
     "blackmatrix-amazon": 203,
@@ -111,6 +112,7 @@
     "overlay:ai": 9,
     "overlay:cross-border-finance": 33,
     "overlay:fake-ip-force": 16,
+    "overlay:ip-proxy-pools": 28,
     "void-finance-fallback": 476
   },
   "sources": [

@@ -6629,7 +6629,7 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 32206,
+        "represented": 32233,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -7136,7 +7136,7 @@
             "value": "- '+.acgkj.com"
           }
         ],
-        "represented": 27833,
+        "represented": 27860,
         "skipped": 4373,
         "skipped_by_kind": {
           "opaque_domain": 4373
@@ -7645,7 +7645,7 @@
             "value": "- '+.acgkj.com"
           }
         ],
-        "represented": 27833,
+        "represented": 27860,
         "skipped": 4373,
         "skipped_by_kind": {
           "opaque_domain": 4373
@@ -8154,7 +8154,7 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27780,
+        "represented": 27807,
         "skipped": 4426,
         "skipped_by_kind": {
           "domain_keyword": 15,
@@ -8667,7 +8667,7 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27780,
+        "represented": 27807,
         "skipped": 4426,
         "skipped_by_kind": {
           "domain_keyword": 15,
@@ -9180,7 +9180,7 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27780,
+        "represented": 27807,
         "skipped": 4426,
         "skipped_by_kind": {
           "domain_keyword": 15,
@@ -9693,7 +9693,7 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27780,
+        "represented": 27807,
         "skipped": 4426,
         "skipped_by_kind": {
           "domain_keyword": 15,
@@ -10206,7 +10206,7 @@
             "value": "- '+.99btgc01.com"
           }
         ],
-        "represented": 27795,
+        "represented": 27822,
         "skipped": 4411,
         "skipped_by_kind": {
           "ip_cidr": 28,
@@ -10718,7 +10718,7 @@
             "value": "- '+.acgkj.com"
           }
         ],
-        "represented": 27795,
+        "represented": 27822,
         "skipped": 4373,
         "skipped_by_kind": {
           "opaque_domain": 4373
@@ -12306,6 +12306,64 @@
       "xray-geosite-dat": {
         "examples": [],
         "represented": 491,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      }
+    }
+  },
+  "ip-proxy-pools": {
+    "outputs": {
+      "jsonl": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "mihomo-classical-text": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "mihomo-classical-yaml": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "mihomo-domain-mrs": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "mihomo-domain-text": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "mihomo-domain-yaml": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "plain-domain": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "xray-domain-list": {
+        "examples": [],
+        "represented": 28,
+        "skipped": 0,
+        "skipped_by_kind": {}
+      },
+      "xray-geosite-dat": {
+        "examples": [],
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       }

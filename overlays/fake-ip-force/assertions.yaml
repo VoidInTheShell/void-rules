@@ -7,4 +7,6 @@ required:
   - {kind: domain_suffix, value: bybit.com}
   - {kind: domain_suffix, value: plasma.to}
   - {kind: domain_suffix, value: standardchartered.com}
+  - {kind: domain_suffix, value: seekproxy.com}
+  - {kind: domain_suffix, value: brightdata.com}
 forbidden: []

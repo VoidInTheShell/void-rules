@@ -1,0 +1,36 @@
+version: 1
+ruleset: ip-proxy-pools
+format: mihomo-domain
+default_reason: Provider-owned business, dashboard, API or proxy gateway domain.
+rules:
+  # User-requested providers.
+  - {kind: domain_suffix, value: seekproxy.com, reason: "SeekProxy business and account root.", evidence: "https://seekproxy.com/"}
+  - {kind: domain_suffix, value: oxylabs.io, reason: "Oxylabs business, dashboard, API and proxy endpoint root.", evidence: "https://developers.oxylabs.io/proxies/residential-proxies/connection"}
+  - {kind: domain_suffix, value: iproyal.com, reason: "IPRoyal business, dashboard, API and proxy endpoint root.", evidence: "https://iproyal.com/"}
+  - {kind: domain_suffix, value: proxy-seller.com, reason: "Proxy-Seller canonical business and dashboard root.", evidence: "https://proxy-seller.com/"}
+  - {kind: domain_suffix, value: proxyseller.com, reason: "Proxy-Seller redirect alias retained for existing links.", evidence: "https://proxyseller.com/"}
+  - {kind: domain_suffix, value: dataimpulse.com, reason: "DataImpulse business, documentation and proxy gateway root.", evidence: "https://docs.dataimpulse.com/"}
+  - {kind: domain_suffix, value: webshare.io, reason: "Webshare business, dashboard, API and proxy endpoint root.", evidence: "https://www.webshare.io/"}
+  - {kind: domain_suffix, value: decodo.com, reason: "Decodo business, dashboard, API and proxy endpoint root.", evidence: "https://decodo.com/smartproxy"}
+  - {kind: domain_suffix, value: decodo.cn, reason: "Decodo official mainland China root.", evidence: "https://decodo.com/smartproxy"}
+  - {kind: domain_suffix, value: smartproxy.com, reason: "Decodo legacy Smartproxy root and endpoints.", evidence: "https://decodo.com/smartproxy"}
+  - {kind: domain_suffix, value: smartdaili.cn, reason: "Decodo legacy official mainland China root.", evidence: "https://decodo.com/smartproxy"}
+  - {kind: domain_suffix, value: soax.com, reason: "SOAX business, help center, dashboard and proxy endpoint root.", evidence: "https://soax.com/"}
+
+  # Other common commercial proxy pool providers.
+  - {kind: domain_suffix, value: brightdata.com, reason: "Bright Data business, dashboard and API root.", evidence: "https://brightdata.com/"}
+  - {kind: domain_suffix, value: luminati.io, reason: "Bright Data legacy Luminati business root.", evidence: "https://brightdata.com/luminati"}
+  - {kind: domain_suffix, value: superproxy.io, reason: "Bright Data current proxy gateway root.", evidence: "https://docs.brightdata.com/general/faqs"}
+  - {kind: domain_suffix, value: lum-superproxy.io, reason: "Bright Data deprecated proxy gateway root retained for legacy integrations.", evidence: "https://docs.brightdata.com/general/faqs"}
+  - {kind: domain_suffix, value: netnut.io, reason: "NetNut business, dashboard and documentation root.", evidence: "https://netnut.io/"}
+  - {kind: domain_suffix, value: netnut.net, reason: "NetNut proxy gateway root.", evidence: "https://help.netnut.io/netnut-documentation/netnut-proxies/residential-proxies/initial-setup"}
+  - {kind: domain_suffix, value: rayobyte.com, reason: "Rayobyte business, billing, dashboard and proxy endpoint root.", evidence: "https://rayobyte.com/choose-dashboard"}
+  - {kind: domain_suffix, value: infatica.io, reason: "Infatica business, dashboard, API and proxy endpoint root.", evidence: "https://infatica.io/"}
+  - {kind: domain_suffix, value: packetstream.io, reason: "PacketStream business, dashboard and proxy endpoint root.", evidence: "https://packetstream.io/"}
+  - {kind: domain_suffix, value: proxy-cheap.com, reason: "Proxy-Cheap business, dashboard and proxy endpoint root.", evidence: "https://www.proxy-cheap.com/"}
+  - {kind: domain_suffix, value: proxyempire.io, reason: "ProxyEmpire business, panel, API and proxy endpoint root.", evidence: "https://proxyempire.io/"}
+  - {kind: domain_suffix, value: nimbleway.com, reason: "Nimble business, dashboard and Proxy API root.", evidence: "https://www.nimbleway.com/integrations"}
+  - {kind: domain_suffix, value: nodemaven.com, reason: "NodeMaven business, dashboard and proxy gateway root.", evidence: "https://docs.nodemaven.com/en/articles/9596871-getting-started-with-residential-and-mobile-proxies"}
+  - {kind: domain_suffix, value: stormproxies.com, reason: "Storm Proxies business, dashboard and proxy endpoint root.", evidence: "https://stormproxies.com/"}
+  - {kind: domain_suffix, value: marsproxies.com, reason: "MarsProxies business, dashboard, API and proxy endpoint root.", evidence: "https://marsproxies.com/"}
+  - {kind: domain_suffix, value: geonode.com, reason: "Geonode business, dashboard, API and proxy endpoint root.", evidence: "https://geonode.com/"}

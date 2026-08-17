@@ -4715,6 +4715,7 @@ domain:brightcove.com
 domain:brightcove.net
 domain:brightcove.services
 domain:brightcovecdn.com
+domain:brightdata.com
 domain:brightline.tv
 domain:brill.com
 domain:brilliant.org
@@ -6491,6 +6492,7 @@ domain:data.com
 domain:data18.com
 domain:datacloudmy.com
 domain:dataframeworks.com
+domain:dataimpulse.com
 domain:dataliberation.org
 domain:datalore.io
 domain:datasheets360.com
@@ -6563,6 +6565,8 @@ domain:dechamora.com
 domain:deck.ly
 domain:deck.new
 domain:decodet.co
+domain:decodo.cn
+domain:decodo.com
 domain:decopri.net
 domain:decorativemodels.com
 domain:decrypt.day
@@ -10053,6 +10057,7 @@ domain:geobasket.ru
 domain:geodesummit.com
 domain:geogebra.org
 domain:geolytics.com
+domain:geonode.com
 domain:geoport.com
 domain:geospatialimaging.com
 domain:geospatialinfo.com
@@ -12589,6 +12594,7 @@ domain:indies-av.co.jp
 domain:indonesiaporn.name
 domain:indosatooredoo.com
 domain:industrialtoys.com
+domain:infatica.io
 domain:infini.money
 domain:infinitetoons.com
 domain:infinitetube.com
@@ -13114,6 +13120,7 @@ domain:ipredator.se
 domain:iproperty.com
 domain:iproperty.com.my
 domain:iproperty.com.sg
+domain:iproyal.com
 domain:iptvbin.com
 domain:ipvanish.com
 domain:iqiyiavlive.buzz
@@ -14639,7 +14646,9 @@ domain:luckymobile.ca
 domain:luckysrv.de
 domain:ludepress.com
 domain:lululu.one
+domain:lum-superproxy.io
 domain:lumen.com
+domain:luminati.io
 domain:lunchwithpype.com
 domain:luoli.info
 domain:luotihg-tv.buzz
@@ -14916,6 +14925,7 @@ domain:markzuckerberg.com
 domain:marqeta.com
 domain:marranazas.com
 domain:marscode.com
+domain:marsproxies.com
 domain:martau.com
 domain:martsangkagyuofficial.org
 domain:marvel.com
@@ -16811,6 +16821,8 @@ domain:netlifyusercontent.com
 domain:netlock.hu
 domain:netme.cc
 domain:netname.com.br
+domain:netnut.io
+domain:netnut.net
 domain:netpornsex.com
 domain:netpornsex.net
 domain:netsarang.com
@@ -17176,6 +17188,7 @@ domain:nikkei.com
 domain:nikkei.jp
 domain:nikkei4946.com
 domain:nikkeibp.co.jp
+domain:nimbleway.com
 domain:nimg.jp
 domain:nine.com.au
 domain:ninecommentaries.com
@@ -17264,6 +17277,7 @@ domain:nochubank.or.jp
 domain:nodeget.com
 domain:nodeimage.com
 domain:nodejs.org
+domain:nodemaven.com
 domain:nodequality.com
 domain:nodereal.io
 domain:nodeseek.com
@@ -18061,6 +18075,7 @@ domain:oxfordscholarlyeditions.com
 domain:oxfordscholarship.com
 domain:oxfordwesternmusic.com
 domain:oxlife.co
+domain:oxylabs.io
 domain:oyeloca.com
 domain:oystermercury.top
 domain:ozeex.com
@@ -18111,6 +18126,7 @@ domain:packaging-cadcam.com
 domain:packagingcadcam.com
 domain:packagist.org
 domain:packer.io
+domain:packetstream.io
 domain:pacloudflare.com
 domain:pacom.mil
 domain:pacopacomama.com
@@ -19430,9 +19446,13 @@ domain:proxifier.com
 domain:proximus.be
 domain:proxomitron.info
 domain:proxpn.com
+domain:proxy-cheap.com
+domain:proxy-seller.com
 domain:proxyadult.org
+domain:proxyempire.io
 domain:proxynetwork.org.uk
 domain:proxyrarbg.org
+domain:proxyseller.com
 domain:proxz.com
 domain:proyectoclubes.com
 domain:prpops.com
@@ -19780,6 +19800,7 @@ domain:rawgithub.com
 domain:rawstory.com
 domain:rayark.download
 domain:rayark.net
+domain:rayobyte.com
 domain:razer.com
 domain:razerofficial.com
 domain:razersupport.com
@@ -20685,6 +20706,7 @@ domain:see.xxx
 domain:seed4.me
 domain:seedmov18.com
 domain:seehorsepenis.com
+domain:seekproxy.com
 domain:seematureporn.com
 domain:seemilfporn.com
 domain:seemygf.com
@@ -21369,6 +21391,7 @@ domain:smart.com.kh
 domain:smart.com.ph
 domain:smartcommunitiescoalition.com
 domain:smartcommunitiescoalition.org
+domain:smartdaili.cn
 domain:smartdnsproxy.com
 domain:smartedge.info
 domain:smartexpos.com
@@ -21380,6 +21403,7 @@ domain:smartoneholdings.com
 domain:smartonerobotics.com
 domain:smartonesolutions.com.hk
 domain:smartonesolutions.hk
+domain:smartproxy.com
 domain:smartstream.ne.jp
 domain:smartthings.com
 domain:smashed.xxx
@@ -21429,6 +21453,7 @@ domain:snowmiku.com
 domain:so-net.ne.jp
 domain:so-net.net.tw
 domain:soasta-dswb.com
+domain:soax.com
 domain:sobees.com
 domain:soc.mil
 domain:socailcam.com
@@ -22014,6 +22039,7 @@ domain:storesense.com
 domain:storiesonline.net
 domain:storj.io
 domain:storm.mg
+domain:stormproxies.com
 domain:storry.tv
 domain:storyful.com
 domain:stoweboyd.com
@@ -22147,6 +22173,7 @@ domain:supermariogalaxy.com
 domain:supermariorun.com
 domain:superpages.com
 domain:superpapermario.com
+domain:superproxy.io
 domain:supersexeamateur.com
 domain:supersrv.de
 domain:superstation.com.tw

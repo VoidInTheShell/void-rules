@@ -222,6 +222,7 @@
     "fake-ip-bypass",
     "fake-ip-force",
     "global-legal",
+    "ip-proxy-pools",
     "pcdn"
   ],
   "version": 1

@@ -18,6 +18,7 @@ def test_repository_catalog_is_semantically_valid() -> None:
         "fake-ip-bypass",
         "fake-ip-force",
         "global-legal",
+        "ip-proxy-pools",
         "pcdn",
     }
     assert len(catalog.discovery["discoverers"]) == 2

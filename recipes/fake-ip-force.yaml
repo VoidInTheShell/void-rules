@@ -15,6 +15,7 @@ sources:
 rulesets:
   - cross-border-finance
   - ai
+  - ip-proxy-pools
 include: overlays/fake-ip-force/include.yaml
 exclude: overlays/fake-ip-force/exclude.yaml
 assertions: overlays/fake-ip-force/assertions.yaml

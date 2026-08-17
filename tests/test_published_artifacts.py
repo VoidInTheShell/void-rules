@@ -16,7 +16,7 @@ def domain_values(ruleset: str) -> set[str]:
 
 def test_all_manifest_outputs_exist_and_match_hashes() -> None:
     manifests = sorted((ROOT / "dist").glob("*/manifest.json"))
-    assert len(manifests) == 7
+    assert len(manifests) == 8
 
     for manifest_path in manifests:
         document = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -51,6 +51,28 @@ def test_cross_border_finance_protected_requirements_are_present() -> None:
         "+.o2.co.uk",
     } <= domains
     assert "+.plasma.io" not in domains
+
+
+def test_ip_proxy_pool_protected_requirements_are_present() -> None:
+    domains = domain_values("ip-proxy-pools")
+    force = domain_values("fake-ip-force")
+
+    assert {
+        "+.seekproxy.com",
+        "+.oxylabs.io",
+        "+.iproyal.com",
+        "+.proxy-seller.com",
+        "+.dataimpulse.com",
+        "+.webshare.io",
+        "+.decodo.com",
+        "+.smartproxy.com",
+        "+.soax.com",
+        "+.brightdata.com",
+        "+.netnut.net",
+    } <= domains
+    assert "+.smartproxy.org" not in domains
+    assert "+.smartproxy.cn" not in domains
+    assert domains <= force
 
 
 def test_fake_ip_force_and_bypass_remain_disjoint_and_compatible() -> None:

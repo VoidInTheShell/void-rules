@@ -1,0 +1,90 @@
+{
+  "action": "match",
+  "composition": {
+    "excluded_protected_rules": 0,
+    "excluded_rules": 0
+  },
+  "counts": {
+    "by_action": {
+      "match": 28
+    },
+    "by_kind": {
+      "domain_suffix": 28
+    },
+    "protected": 28,
+    "total": 28
+  },
+  "description": "Business, dashboard, API and gateway domains for common commercial proxy pool providers.",
+  "outputs": {
+    "jsonl": {
+      "path": "rules.jsonl.gz",
+      "represented_rules": 28,
+      "sha256": "b807b8c624698905fe8c4c688bab725ad4c300a2a15aef6062db3bea7f04e67f",
+      "size": 1396,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-text": {
+      "path": "mihomo-classical.list",
+      "represented_rules": 28,
+      "sha256": "49b065d83e10b9fba0d418e83c9b5791b89c4851c88731d687508522e639098d",
+      "size": 774,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-yaml": {
+      "path": "mihomo-classical.yaml",
+      "represented_rules": 28,
+      "sha256": "206b979de7a4bb82bab7e778b83bd305a354f00cc6e4ead4cf52fb1488c4e02e",
+      "size": 839,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-mrs": {
+      "path": "mihomo-domain.mrs",
+      "represented_rules": 28,
+      "sha256": "0dd836197445b935506f1ef7426ce04d9cc6332720d2b7295eda4a10d0bf5588",
+      "size": 340,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-text": {
+      "path": "mihomo-domain.list",
+      "represented_rules": 28,
+      "sha256": "3a871310ca4bcfe86782b5f6bc435e92dfcda5def7e0cf1ec19124713e40b604",
+      "size": 438,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-yaml": {
+      "path": "mihomo-domain.yaml",
+      "represented_rules": 28,
+      "sha256": "607029059278274defef91c7141af6540bafcff2887a84b7fc137efb68275e6b",
+      "size": 503,
+      "skipped_rules": 0
+    },
+    "plain-domain": {
+      "path": "plain-domain.txt",
+      "represented_rules": 28,
+      "sha256": "3a871310ca4bcfe86782b5f6bc435e92dfcda5def7e0cf1ec19124713e40b604",
+      "size": 438,
+      "skipped_rules": 0
+    },
+    "xray-domain-list": {
+      "path": "xray-domain-list.txt",
+      "represented_rules": 28,
+      "sha256": "2e65cc3edaac18ef9c190bf391f9e0b0c56d3cf6c1d447d2e64329bc1405890d",
+      "size": 578,
+      "skipped_rules": 0
+    },
+    "xray-geosite-dat": {
+      "path": "xray-geosite.dat",
+      "represented_rules": 28,
+      "sha256": "4d29e78d6b6f13443a140804d815ddaec42792a960de7f8bfddfa7f0f18e99c1",
+      "size": 541,
+      "skipped_rules": 0
+    }
+  },
+  "ruleset": "ip-proxy-pools",
+  "rulesets": [],
+  "source_contributions": {
+    "overlay:ip-proxy-pools": 28
+  },
+  "sources": [],
+  "version": 1
+}
