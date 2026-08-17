@@ -4,14 +4,17 @@ package main
 
 import (
 	"bufio"
+	"compress/gzip"
 	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
+	"io"
 	"net/netip"
 	"os"
 	"sort"
 	"strings"
+	"time"
 
 	router "github.com/v2fly/v2ray-core/v5/app/router/routercommon"
 	"google.golang.org/protobuf/proto"
@@ -25,7 +28,38 @@ type record struct {
 }
 
 func usage() error {
-	return errors.New("usage: void-rules-geodata <decode-geosite|encode-geosite|decode-geoip|encode-geoip> -input FILE -output FILE [-tags a,b]")
+	return errors.New("usage: void-rules-geodata <decode-geosite|encode-geosite|decode-geoip|encode-geoip|gzip> -input FILE -output FILE [-tags a,b]")
+}
+
+func gzipFile(input, output string) (returnErr error) {
+	source, err := os.Open(input)
+	if err != nil {
+		return fmt.Errorf("open %s: %w", input, err)
+	}
+	defer source.Close()
+	target, err := os.Create(output)
+	if err != nil {
+		return fmt.Errorf("create %s: %w", output, err)
+	}
+	defer func() {
+		if err := target.Close(); returnErr == nil && err != nil {
+			returnErr = err
+		}
+	}()
+	archive, err := gzip.NewWriterLevel(target, gzip.BestCompression)
+	if err != nil {
+		return err
+	}
+	archive.Header.ModTime = time.Unix(0, 0).UTC()
+	archive.Header.OS = 255
+	if _, err := io.Copy(archive, source); err != nil {
+		_ = archive.Close()
+		return err
+	}
+	if err := archive.Close(); err != nil {
+		return err
+	}
+	return nil
 }
 
 func readBytes(path string) ([]byte, error) {
@@ -315,6 +349,8 @@ func run(args []string) error {
 		return decodeGeoIP(*input, *output, *tags)
 	case "encode-geoip":
 		return encodeGeoIP(*input, *output)
+	case "gzip":
+		return gzipFile(*input, *output)
 	default:
 		return usage()
 	}

@@ -2,6 +2,9 @@
 package main
 
 import (
+	"bytes"
+	"compress/gzip"
+	"io"
 	"os"
 	"path/filepath"
 	"reflect"
@@ -91,5 +94,47 @@ func TestReadJSONLRejectsMissingRequiredField(t *testing.T) {
 	path := writeFixture(t, "bad.jsonl", `{"tag":"fixture","kind":"domain"}`+"\n")
 	if _, err := readJSONL(path); err == nil {
 		t.Fatal("expected missing value to fail")
+	}
+}
+
+func TestGzipIsDeterministicAndRoundTrips(t *testing.T) {
+	directory := t.TempDir()
+	input := filepath.Join(directory, "input.txt")
+	first := filepath.Join(directory, "first.gz")
+	second := filepath.Join(directory, "second.gz")
+	payload := bytes.Repeat([]byte("deterministic gzip fixture\n"), 100)
+	if err := os.WriteFile(input, payload, 0o600); err != nil {
+		t.Fatal(err)
+	}
+	if err := gzipFile(input, first); err != nil {
+		t.Fatal(err)
+	}
+	if err := gzipFile(input, second); err != nil {
+		t.Fatal(err)
+	}
+	firstData, err := os.ReadFile(first)
+	if err != nil {
+		t.Fatal(err)
+	}
+	secondData, err := os.ReadFile(second)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !bytes.Equal(firstData, secondData) {
+		t.Fatal("gzip output is not deterministic")
+	}
+	reader, err := gzip.NewReader(bytes.NewReader(firstData))
+	if err != nil {
+		t.Fatal(err)
+	}
+	decoded, err := io.ReadAll(reader)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := reader.Close(); err != nil {
+		t.Fatal(err)
+	}
+	if !bytes.Equal(decoded, payload) {
+		t.Fatal("gzip round trip mismatch")
 	}
 }
