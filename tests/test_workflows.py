@@ -44,8 +44,8 @@ def test_workflows_use_minimum_expected_permissions_and_concurrency() -> None:
     assert "concurrency" in synchronize
 
 
-def test_sync_schedule_is_every_six_hours_at_nonzero_minute() -> None:
+def test_sync_schedule_is_every_24_hours_at_nonzero_minute() -> None:
     synchronize = load_workflow("sync.yml")
     triggers = synchronize["on"]
     assert isinstance(triggers, dict)
-    assert triggers["schedule"] == [{"cron": "17 */6 * * *"}]
+    assert triggers["schedule"] == [{"cron": "17 0 * * *"}]
