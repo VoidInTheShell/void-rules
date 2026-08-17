@@ -96,7 +96,7 @@ Fake-IP 的两种 DNS 配置和完整迁移表见 [`docs/MIHOMO.md`](docs/MIHOMO
 
 ## 自动更新和审阅
 
-GitHub Actions 每 6 小时检查来源并重建全部规则。通过安全检查且变化较小的结果可以直接更新 `main`；变化较大、发现新来源、出现冲突或需要人工确认时，会把结果推到 `automation/rules-sync`，再创建一个目标为 `main` 的 PR。自动任务只写入 `dist/` 和 `generated/`，不会覆盖来源清单、规则组合或人工补充目录。
+GitHub Actions 每 24 小时运行一次（每天 00:17 UTC）检查来源并重建全部规则。通过安全检查且变化较小的结果可以直接更新 `main`；变化较大、发现新来源、出现冲突或需要人工确认时，会把结果推到 `automation/rules-sync`，再创建一个目标为 `main` 的 PR。自动任务只写入 `dist/` 和 `generated/`，不会覆盖来源清单、规则组合或人工补充目录。
 
 > [!WARNING]
 > 如果仓库设置没有允许 GitHub Actions 创建 PR，审阅分支仍可能已经推送成功，但 PR 不会出现。此时需要在仓库的 Actions 设置中启用对应权限，或手动从 `automation/rules-sync` 创建 PR。
