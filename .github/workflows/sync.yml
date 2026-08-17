@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: void-rules-upstream-sync
@@ -67,38 +66,26 @@ jobs:
         id: decision
         run: python -m void_rules ci-decision --github-output "$GITHUB_OUTPUT"
 
+      - name: Stop unsafe update
+        if: steps.decision.outputs.mode == 'blocked'
+        env:
+          BLOCK_REASON: ${{ steps.decision.outputs.reason }}
+        run: |
+          echo "::error title=Unsafe rule update blocked::${BLOCK_REASON}"
+          exit 1
+
       - name: Configure automation identity
-        if: steps.decision.outputs.changed == 'true'
+        if: steps.decision.outputs.mode == 'direct'
         run: |
           git config user.name "void-rules[bot]"
           git config user.email "void-rules[bot]@users.noreply.github.com"
 
-      - name: Commit safe routine update directly
+      - name: Commit validated update directly
         if: steps.decision.outputs.mode == 'direct'
         run: |
           git add -- dist generated
           git commit -m "chore(rules): sync upstream datasets"
           git push origin HEAD:main
-
-      - name: Publish review branch and open pull request
-        if: steps.decision.outputs.mode == 'review'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REVIEW_REASON: ${{ steps.decision.outputs.reason }}
-        run: |
-          git switch -C automation/rules-sync
-          git add -- dist generated
-          git commit -m "chore(rules): prepare reviewed upstream sync"
-          git fetch origin automation/rules-sync:refs/remotes/origin/automation/rules-sync || true
-          git push --force-with-lease origin HEAD:automation/rules-sync
-          existing="$(gh pr list --base main --head automation/rules-sync --state open --json number --jq '.[0].number')"
-          if [ -z "$existing" ]; then
-            gh pr create \
-              --base main \
-              --head automation/rules-sync \
-              --title "chore(rules): review upstream synchronization" \
-              --body "Automated synchronization requires review. Reason: ${REVIEW_REASON}"
-          fi
 
       - name: Upload failure reports
         if: failure()
