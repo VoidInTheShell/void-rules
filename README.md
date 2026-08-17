@@ -37,62 +37,24 @@
 
 不同格式的表达能力不同。例如 `DOMAIN-KEYWORD` 可以保留在 Mihomo classical 或 Xray geosite 中，但不能伪装成精确域名；只包含 IP 的规则也不会被塞进 Fake-IP 的域名列表。生成结果会报告这类差异。
 
-## 快速开始
+## 客户端订阅直链
 
-需要 Python 3.11 或更高版本：
+下面的链接固定指向 `main` 分支。每个单元格都同时列出 GitHub Raw 和 jsDelivr 两个地址：前者直接读取仓库文件，后者适合需要 CDN 或备用入口的客户端。文件也可以在 [`dist/`](dist/) 中按路径查看。
 
-```bash
-python -m venv .venv
-python -m pip install -e ".[dev]"
-python -m void_rules validate-catalog
-python -m void_rules sync
-python -m pytest -q
-```
+- Raw 基础地址：<https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/>
+- jsDelivr 基础地址：<https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/>
 
-Windows PowerShell：
+| 规则集 | Mihomo/Clash classical YAML | Mihomo domain MRS | Xray/V2Ray geosite DAT | AdGuard Home | 通用域名文本 |
+|---|---|---|---|---|---|
+| `fake-ip-bypass` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-bypass/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-bypass/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-bypass/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-bypass/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-bypass/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-bypass/xray-geosite.dat) | — | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-bypass/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-bypass/plain-domain.txt) |
+| `fake-ip-force` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-force/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-force/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-force/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-force/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-force/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-force/xray-geosite.dat) | — | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-force/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/fake-ip-force/plain-domain.txt) |
+| `ads` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ads/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ads/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ads/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ads/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ads/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ads/xray-geosite.dat) | block：[Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ads/adguard-block.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ads/adguard-block.txt)<br>allow：[Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ads/adguard-allow.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ads/adguard-allow.txt) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ads/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ads/plain-domain.txt) |
+| `global-legal` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/global-legal/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/global-legal/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/global-legal/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/global-legal/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/global-legal/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/global-legal/xray-geosite.dat) | — | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/global-legal/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/global-legal/plain-domain.txt) |
+| `ai` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ai/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ai/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ai/xray-geosite.dat) | — | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/ai/plain-domain.txt) |
+| `cross-border-finance` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/cross-border-finance/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/cross-border-finance/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/cross-border-finance/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/cross-border-finance/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/cross-border-finance/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/cross-border-finance/xray-geosite.dat) | — | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/cross-border-finance/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/cross-border-finance/plain-domain.txt) |
+| `pcdn` | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/pcdn/mihomo-classical.yaml) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/pcdn/mihomo-classical.yaml) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/pcdn/mihomo-domain.mrs) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/pcdn/mihomo-domain.mrs) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/pcdn/xray-geosite.dat) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/pcdn/xray-geosite.dat) | block：[Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/pcdn/adguard-block.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/pcdn/adguard-block.txt)<br>allow：[Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules@main/dist/pcdn/adguard-allow.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/pcdn/adguard-allow.txt) | [Raw](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/pcdn/plain-domain.txt) / [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/pcdn/plain-domain.txt) |
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-.\.venv\Scripts\python.exe -m void_rules validate-catalog
-.\.venv\Scripts\python.exe -m void_rules sync
-.\.venv\Scripts\python.exe -m pytest -q
-```
-
-离线检查已缓存的输入是否可以重建当前结果：
-
-```bash
-python -m void_rules discover --offline --check
-python -m void_rules sync --offline --check
-```
-
-## Mihomo 使用方式
-
-稳定产物都位于 [`dist/`](dist/)。常用路径如下：
-
-| 规则集 | Mihomo provider |
-|---|---|
-| Fake-IP bypass | `dist/fake-ip-bypass/mihomo-domain.mrs` |
-| Fake-IP force | `dist/fake-ip-force/mihomo-domain.mrs` |
-| 广告 | `dist/ads/mihomo-classical.yaml` |
-| 全球厂商 | `dist/global-legal/mihomo-classical.yaml` |
-| AI | `dist/ai/mihomo-classical.yaml` |
-| 跨境金融 | `dist/cross-border-finance/mihomo-classical.yaml` |
-| PCDN | `dist/pcdn/mihomo-classical.yaml` |
-
-例如：
-
-```yaml
-rule-providers:
-  VoidAI:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 21600
-    url: "https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/mihomo-classical.yaml"
-```
-
-Fake-IP 的两种 DNS 配置和完整迁移表见 [`docs/MIHOMO.md`](docs/MIHOMO.md)。
+`fake-ip-bypass` 只用于 Fake-IP blacklist，`fake-ip-force` 只用于 Fake-IP whitelist；其他规则集按客户端对应的格式选择即可。每个目录中还提供 classical text/YAML、domain/ipcidr、Xray/V2Ray 和 `rules.jsonl.gz` 等完整输出。
 
 ## 自动更新和审阅
 
@@ -117,4 +79,4 @@ dist/                    可供客户端引用的稳定文件
 tests/                   解析、合并、格式转换和自动化测试
 ```
 
-更多 Mihomo 集成细节见 [`docs/MIHOMO.md`](docs/MIHOMO.md)；来源项目的原始条款和署名信息见 [`NOTICE.md`](NOTICE.md) 以及每个生成目录中的来源清单。
+来源项目的原始条款和署名信息见 [`NOTICE.md`](NOTICE.md) 以及每个生成目录中的来源清单。
