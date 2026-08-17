@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlsplit, urlunsplit
 
 from .catalog import SourceSpec
 from .errors import FetchError
@@ -27,6 +27,18 @@ class DownloadedSource:
     etag: str
     last_modified: str
     from_cache: bool
+
+
+def _stable_public_url(value: str) -> str:
+    """Remove ephemeral credentials/query data before metadata is persisted."""
+
+    parsed = urlsplit(value)
+    host = parsed.hostname or ""
+    if ":" in host and not host.startswith("["):
+        host = f"[{host}]"
+    if parsed.port is not None:
+        host = f"{host}:{parsed.port}"
+    return urlunsplit((parsed.scheme, host, parsed.path, "", ""))
 
 
 class RestrictedRedirectHandler(urllib.request.HTTPRedirectHandler):
@@ -45,7 +57,7 @@ class RestrictedRedirectHandler(urllib.request.HTTPRedirectHandler):
     ) -> urllib.request.Request | None:
         parsed = urlparse(newurl)
         if parsed.scheme != "https" or (parsed.hostname or "").lower() not in self.allowed_hosts:
-            raise FetchError(f"redirect to unapproved URL: {newurl}")
+            raise FetchError(f"redirect to unapproved URL: {_stable_public_url(newurl)}")
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
@@ -110,7 +122,7 @@ def fetch_source(spec: SourceSpec, work_dir: Path, *, offline: bool = False) -> 
             spec=spec,
             data=data,
             sha256=hashlib.sha256(data).hexdigest(),
-            final_url=str(metadata.get("final_url", spec.url)),
+            final_url=_stable_public_url(str(metadata.get("final_url", spec.url))),
             etag=str(metadata.get("etag", "")),
             last_modified=str(metadata.get("last_modified", "")),
             from_cache=True,
@@ -130,14 +142,15 @@ def fetch_source(spec: SourceSpec, work_dir: Path, *, offline: bool = False) -> 
             try:
                 request = urllib.request.Request(url, headers=headers)
                 with opener.open(request, timeout=60) as response:
-                    final_url = response.geturl()
-                    final_host = (urlparse(final_url).hostname or "").lower()
+                    response_url = response.geturl()
+                    final_host = (urlparse(response_url).hostname or "").lower()
                     if final_host not in spec.allowed_hosts:
                         raise FetchError(f"{spec.id}: final host {final_host!r} is not approved")
                     data = _read_response(response, spec.limits.max_bytes)
                     content_type = str(response.headers.get("Content-Type", ""))
                     etag = str(response.headers.get("ETag", ""))
                     last_modified = str(response.headers.get("Last-Modified", ""))
+                    final_url = _stable_public_url(response_url)
                 _guard_payload(spec, data, content_type)
                 sha256 = hashlib.sha256(data).hexdigest()
                 _atomic_write(cache_path, data)
@@ -222,7 +235,7 @@ def build_lock_entry(
     return {
         "id": downloaded.spec.id,
         "url": downloaded.spec.url,
-        "final_url": downloaded.final_url,
+        "final_url": _stable_public_url(downloaded.final_url),
         "format": downloaded.spec.format,
         "behavior": downloaded.spec.behavior,
         "license": downloaded.spec.license,

@@ -175,3 +175,6 @@ class GeodataCodec:
         ).encode()
         command = "encode-geosite" if kind == "geosite" else "encode-geoip"
         return self._convert(command, input_bytes=payload)
+
+    def gzip(self, data: bytes) -> bytes:
+        return self._convert("gzip", input_bytes=data)

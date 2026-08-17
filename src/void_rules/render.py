@@ -198,7 +198,7 @@ def render_outputs(
             ]
             rendered[output] = RenderedFile(
                 "rules.jsonl.gz",
-                deterministic_gzip(_text(lines)),
+                deterministic_gzip(_text(lines), root),
                 len(lines),
                 (),
             )

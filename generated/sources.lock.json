@@ -349,7 +349,7 @@
       "behavior": "classical",
       "changed_at": "2026-08-14T04:18:27+00:00",
       "etag": "\"0x8DEF96C0D089F37\"",
-      "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/782858745/a33d1d56-cac7-4769-ab39-46a1bbaa4cc5?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-14T05%3A53%3A50Z&rscd=attachment%3B+filename%3Dfakeip-filter.list&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-14T04%3A53%3A20Z&ske=2026-08-14T05%3A53%3A50Z&sks=b&skv=2018-11-09&sig=l7z3nMy0BURkRNvfvtcKN9c2mNNsnoYeE4QRz3DdqjU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NjY4MzY5MSwibmJmIjoxNzg2NjgzMzkxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.jPKS9NP1nUlM24eKsGpbWrYqRa3JbJEanruwe6RXyjM&response-content-disposition=attachment%3B%20filename%3Dfakeip-filter.list&response-content-type=application%2Foctet-stream",
+      "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/782858745/a33d1d56-cac7-4769-ab39-46a1bbaa4cc5",
       "format": "clash-classical-text",
       "id": "dustinwin-fakeip",
       "last_modified": "Thu, 13 Aug 2026 18:52:40 GMT",

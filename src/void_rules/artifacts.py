@@ -1,17 +1,11 @@
 from __future__ import annotations
 
-import gzip
-import io
+from pathlib import Path
+
+from .codecs import GeodataCodec
 
 
-def deterministic_gzip(data: bytes) -> bytes:
-    buffer = io.BytesIO()
-    with gzip.GzipFile(
-        filename="",
-        mode="wb",
-        compresslevel=9,
-        fileobj=buffer,
-        mtime=0,
-    ) as archive:
-        archive.write(data)
-    return buffer.getvalue()
+def deterministic_gzip(data: bytes, root: Path) -> bytes:
+    """Compress through the pinned Go toolchain for cross-platform byte stability."""
+
+    return GeodataCodec(root).gzip(data)
