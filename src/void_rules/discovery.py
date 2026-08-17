@@ -456,7 +456,9 @@ def discover(root: Path, *, offline: bool = False, check: bool = False) -> Disco
         json.dumps(result_document, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     ).encode()
     candidate_data = (
-        deterministic_gzip(candidate_json) if candidate_path.suffix == ".gz" else candidate_json
+        deterministic_gzip(candidate_json, root)
+        if candidate_path.suffix == ".gz"
+        else candidate_json
     )
     candidate_digest = hashlib.sha256(candidate_data).hexdigest()
     summary_document = {

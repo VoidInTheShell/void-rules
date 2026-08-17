@@ -4,7 +4,7 @@
 
 All remote rule files are untrusted input. The build downloads data only from HTTPS origins explicitly registered in `catalog/sources.yaml`; it never runs scripts obtained from a rule source.
 
-The synchronizer rejects redirects to unapproved hosts, HTML/error pages, oversized responses, unexpectedly small rule counts, unknown syntax in strict sources, path traversal and archive members outside the build directory. Downloads are written atomically and identified by SHA-256 in the source lock.
+The synchronizer rejects redirects to unapproved hosts, HTML/error pages, oversized responses, unexpectedly small rule counts, unknown syntax in strict sources, path traversal and archive members outside the build directory. Downloads are written atomically and identified by SHA-256 in the source lock. Ephemeral query credentials and fragments from signed release redirects are removed before any URL is persisted.
 
 ## Protected paths
 

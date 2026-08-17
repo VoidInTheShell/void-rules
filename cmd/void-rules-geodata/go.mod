@@ -1,6 +1,6 @@
 module github.com/VoidInTheShell/void-rules/cmd/void-rules-geodata
 
-go 1.25.5
+go 1.26.5
 
 require (
 	github.com/v2fly/v2ray-core/v5 v5.52.0
