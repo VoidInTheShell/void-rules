@@ -28,18 +28,13 @@ def decide_update(
     changed_paths: set[str],
     *,
     build_review_required: bool,
-    max_direct_files: int = 40,
 ) -> UpdateDecision:
     if not changed_paths:
         return UpdateDecision(False, "none", 0, ())
     reasons: list[str] = []
     if build_review_required:
         reasons.append("build report requires review")
-    if "generated/discovery/candidates.json.gz" in changed_paths:
-        reasons.append("discovery candidates changed")
-    if len(changed_paths) > max_direct_files:
-        reasons.append(f"{len(changed_paths)} generated files changed (limit {max_direct_files})")
-    mode = "review" if reasons else "direct"
+    mode = "blocked" if reasons else "direct"
     return UpdateDecision(True, mode, len(changed_paths), tuple(reasons))
 
 
@@ -84,7 +79,7 @@ def evaluate_repository(root: Path) -> UpdateDecision:
 
 
 def write_github_output(path: Path, decision: UpdateDecision) -> None:
-    reason = "; ".join(decision.reasons) if decision.reasons else "thresholds passed"
+    reason = "; ".join(decision.reasons) if decision.reasons else "safety checks passed"
     values = {
         "changed": str(decision.changed).lower(),
         "mode": decision.mode,

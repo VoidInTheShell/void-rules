@@ -36,10 +36,7 @@ def test_workflows_use_minimum_expected_permissions_and_concurrency() -> None:
     synchronize = load_workflow("sync.yml")
 
     assert validate["permissions"] == {"contents": "read"}
-    assert synchronize["permissions"] == {
-        "contents": "write",
-        "pull-requests": "write",
-    }
+    assert synchronize["permissions"] == {"contents": "write"}
     assert "concurrency" in validate
     assert "concurrency" in synchronize
 
@@ -49,3 +46,13 @@ def test_sync_schedule_is_every_24_hours_at_nonzero_minute() -> None:
     triggers = synchronize["on"]
     assert isinstance(triggers, dict)
     assert triggers["schedule"] == [{"cron": "17 0 * * *"}]
+
+
+def test_sync_publishes_validated_updates_without_pull_requests() -> None:
+    text = (ROOT / ".github" / "workflows" / "sync.yml").read_text(encoding="utf-8")
+
+    assert "steps.decision.outputs.mode == 'blocked'" in text
+    assert "git push origin HEAD:main" in text
+    assert "automation/rules-sync" not in text
+    assert "gh pr " not in text
+    assert "pull-requests:" not in text
