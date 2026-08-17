@@ -1,78 +1,86 @@
 # void-rules
 
-自有的多上游规则聚合与发布仓库。它把不同来源和不同格式的规则先转换成带来源信息的统一模型，叠加不会被自动任务覆盖的本地需求，完成去重、冲突检查和差异门禁，再发布给 Mihomo、AdGuard Home、Xray/V2Ray 与普通脚本使用的稳定产物。
+[![Validate rules](https://github.com/VoidInTheShell/void-rules/actions/workflows/validate.yml/badge.svg)](https://github.com/VoidInTheShell/void-rules/actions/workflows/validate.yml)
+[![Python >=3.11](https://img.shields.io/badge/Python-%3E%3D3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-现有 `cross-border-finance-rules` 和 `pcdn-block-list` 继续独立维护；void-rules 把它们作为受信上游同步，不替代或删除原仓库。
+从多个公开规则仓库读取域名、IP、CIDR 和路由规则，整理成可直接供 Mihomo、AdGuard Home、Xray/V2Ray 以及普通脚本使用的规则文件。
 
-## 首批规则集
+这个仓库只同步和整理规则数据，不执行上游仓库里的脚本。原有的 [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules) 和 [pcdn-block-list](https://github.com/VoidInTheShell/pcdn-block-list) 仍然独立维护；本仓库读取它们的公开产物，并不会替代它们。
 
-| 规则集 | 语义 | 主要输出 |
+## 提供哪些规则
+
+| 规则集 | 包含内容 | 主要来源 |
 |---|---|---|
-| `fake-ip-bypass` | 直连、局域网、时间同步和兼容性敏感域名不使用 Fake-IP | Mihomo domain YAML/text/MRS、Xray geosite、plain |
-| `fake-ip-force` | 一般为明确走代理的域名，使用 Fake-IP | Mihomo domain YAML/text/MRS、Xray geosite、plain |
-| `ads` | 广告与跟踪阻断，AdGuard 例外规则独立保留 | Mihomo classical/domain、AdGuard block/allow、Xray geosite |
-| `global-legal` | 在大陆通常可直连、但可能需要跨区的全球厂商 | Mihomo classical/domain、Xray geosite |
-| `ai` | 主流 AI 服务 | Mihomo classical/domain、Xray geosite |
-| `cross-border-finance` | 全球银行、支付、券商、交易所、加密平台、运营商及地区探测域 | Mihomo classical/domain/MRS、AdGuard、Xray geosite |
-| `pcdn` | PCDN 域名阻断 | Mihomo classical/domain/MRS、AdGuard、Xray geosite |
+| `fake-ip-bypass` | 直连、局域网、时间同步、连接检测、游戏和其他兼容性敏感域名；这些域名应返回真实 IP。 | [DustinWin/domain-list-custom](https://github.com/DustinWin/domain-list-custom)、[xixu-me/RFM](https://github.com/xixu-me/RFM)、[QuixoticHeart/rule-set](https://github.com/QuixoticHeart/rule-set)、[ShellCrash](https://github.com/juewuy/ShellCrash)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
+| `fake-ip-force` | eBay、Amazon、Microsoft、Google、Gemini、GFW、非中国地区域名，以及 AI 和跨境金融域名；这些域名在白名单模式下使用 Fake-IP。 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)、[Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)，并包含本仓库的 `ai` 和 `cross-border-finance` 规则 |
+| `ads` | 广告和跟踪域名，同时保留拦截规则与放行规则的区别。 | [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[snapei/clash-pro-rules](https://github.com/snapei/clash-pro-rules)、[TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
+| `global-legal` | Nvidia、Samsung、Intel、AMD、Lenovo、Dell 等全球厂商的域名。 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
+| `ai` | MetaCubeX 的非中国 AI 服务域名，以及 OpenAI、Twitter、Claude 规则。 | [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
+| `cross-border-finance` | 全球银行、支付、券商、交易所、加密货币平台、运营商和地区探测域名。 | [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
+| `pcdn` | PCDN、P2P-CDN 及相关域名阻断规则。 | [pcdn-block-list](https://github.com/VoidInTheShell/pcdn-block-list)、[uselibrary/PCDN](https://github.com/uselibrary/PCDN)、[privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)、[Block-pcdn-domains](https://github.com/thhbdd/Block-pcdn-domains)、[PCDNFilter-CHN](https://github.com/susetao/PCDNFilter-CHN-)、[MyAdBlockRules](https://github.com/Womsxd/MyAdBlockRules) |
 
-Fake-IP 两个集合不会混用：blacklist 模式引用 `fake-ip-bypass`，whitelist 模式引用 `fake-ip-force`。跨集合冲突默认以受保护的 bypass 为兼容性优先，同时让构建失败并要求显式处理。
+> [!IMPORTANT]
+> `fake-ip-bypass` 和 `fake-ip-force` 是两套相反用途的规则，不能互相替换：Mihomo 的 `blacklist` 模式使用 `fake-ip-bypass`，`whitelist` 模式使用 `fake-ip-force`。两套规则发生重复时，兼容性需求优先，并要求构建明确记录冲突。
 
-## 支持的输入
+## 规则来源和整理方式
 
-- 纯域名、通配域名、hosts、IPv4/IPv6 与 CIDR 列表。
-- Clash/Mihomo domain、ipcidr、classical 的 YAML 或 text。
-- Mihomo MRS v1（domain/ipcidr，通过固定版本官方 Mihomo CLI 解码）。
-- AdGuard Home/Adblock DNS block 与 `@@` allow，整源白名单和黑名单分开建模。
-- Xray/V2Ray routing JSON、domain-list-community 源格式、geosite DAT 与 geoip DAT。
-- 声明式 JSON/YAML API、GitHub raw/release 资产和受限 HTML/JSON discovery 适配器。
+来源清单位于 [`catalog/sources.yaml`](catalog/sources.yaml)，每个来源都记录了公开地址、输入格式、适用的规则类型、来源项目和下载限制。每个规则集的组合范围见 [`recipes/`](recipes/)，人工补充、排除项和兼容性断言位于 [`overlays/`](overlays/)。
 
-所有自动检测都可以被 source 的显式 `format` 覆盖。严格来源出现未知非注释行时整次构建失败，避免格式漂移被静默丢弃。
+仓库会严格检查来源内容：未知的非注释行、异常的规则数量、来源格式变化和无法表达的规则都会让构建失败或进入审阅，不会静默丢弃。每个生成目录还会保留来源清单、规则数量、哈希和无法转换项目的报告，便于追溯本次产物由哪些公开来源生成。
 
-## 支持的输出
+## 可用的输出格式
 
-- Mihomo classical/domain/ipcidr：YAML、text；domain/ipcidr 另生成 MRS。
-- AdGuard Home：block 与 allow 两份列表。
-- Xray/V2Ray：可审计 source text、geosite DAT、geoip DAT。
-- plain domain/IP、保留完整 provenance 的确定性 gzip JSON Lines IR、来源 manifest、冲突/兼容性/差异报告。
+- Mihomo/Clash：`classical`、`domain`、`ipcidr` 的 YAML 和 text；纯 domain/ipcidr 规则另提供 MRS。
+- AdGuard Home：分别提供 block 和 allow 列表。
+- Xray/V2Ray：domain list、geosite DAT 和 geoip DAT。
+- 普通域名/IP 列表，以及包含逐条来源记录的压缩 JSON Lines、来源清单和兼容性报告。
 
-并非所有规则都能无损降级到每种格式。例如 `DOMAIN-KEYWORD` 可以保留在 Mihomo classical 与 Xray geosite，但不能伪装成精确域名；IP 规则不会进入 DNS Fake-IP domain provider。每个规则集的 manifest 会列出输出时跳过的不可表达规则。
-
-## 仓库结构
-
-```text
-catalog/                 上游注册表与自动发现策略（人工维护）
-recipes/                 每个逻辑规则集的合并配方（人工维护）
-overlays/                本地 include/exclude/assertions（自动任务禁止修改）
-schemas/                 catalog、recipe 与 overlay JSON Schema
-src/void_rules/          Python 聚合器
-cmd/void-rules-geodata/  Xray/V2Ray DAT 往返工具
-generated/               来源锁、候选与构建报告
-dist/                    下游只引用这里的稳定产物
-tests/                   parser、合并、往返、差异门禁与安全测试
-```
+不同格式的表达能力不同。例如 `DOMAIN-KEYWORD` 可以保留在 Mihomo classical 或 Xray geosite 中，但不能伪装成精确域名；只包含 IP 的规则也不会被塞进 Fake-IP 的域名列表。生成结果会报告这类差异。
 
 ## 快速开始
 
-```text
+需要 Python 3.11 或更高版本：
+
+```bash
 python -m venv .venv
 python -m pip install -e ".[dev]"
 python -m void_rules validate-catalog
 python -m void_rules sync
-python -m pytest
+python -m pytest -q
 ```
 
-Windows PowerShell 示例：
+Windows PowerShell：
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.\.venv\Scripts\python.exe -m void_rules validate-catalog
 .\.venv\Scripts\python.exe -m void_rules sync
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-## Mihomo 引用
+离线检查已缓存的输入是否可以重建当前结果：
 
-客户端 URL 使用提交到 `dist/` 的稳定路径。需要 GitHub 加速时，在完整 Raw URL 前添加 `https://gh-proxy.org/`，例如：
+```bash
+python -m void_rules discover --offline --check
+python -m void_rules sync --offline --check
+```
+
+## Mihomo 使用方式
+
+稳定产物都位于 [`dist/`](dist/)。常用路径如下：
+
+| 规则集 | Mihomo provider |
+|---|---|
+| Fake-IP bypass | `dist/fake-ip-bypass/mihomo-domain.mrs` |
+| Fake-IP force | `dist/fake-ip-force/mihomo-domain.mrs` |
+| 广告 | `dist/ads/mihomo-classical.yaml` |
+| 全球厂商 | `dist/global-legal/mihomo-classical.yaml` |
+| AI | `dist/ai/mihomo-classical.yaml` |
+| 跨境金融 | `dist/cross-border-finance/mihomo-classical.yaml` |
+| PCDN | `dist/pcdn/mihomo-classical.yaml` |
+
+例如：
 
 ```yaml
 rule-providers:
@@ -81,21 +89,32 @@ rule-providers:
     behavior: classical
     format: yaml
     interval: 21600
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/mihomo-classical.yaml"
+    url: "https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/ai/mihomo-classical.yaml"
 ```
 
-配置模板的最终迁移表见 `docs/MIHOMO.md`。
+Fake-IP 的两种 DNS 配置和完整迁移表见 [`docs/MIHOMO.md`](docs/MIHOMO.md)。
 
-## 自动更新与补规则
+## 自动更新和审阅
 
-定时任务每 6 小时同步注册上游并重建全部产物。小幅且通过门禁的上游更新可以自动提交；超阈值变化、来源格式改变、新发现来源和跨集合冲突进入 review 分支/PR。自动任务只写 `dist/` 与 `generated/`，因此不会覆盖 `overlays/` 中的长期需求或人工拒绝记录。
+GitHub Actions 每 6 小时检查来源并重建全部规则。通过安全检查且变化较小的结果可以直接更新 `main`；变化较大、发现新来源、出现冲突或需要人工确认时，会把结果推到 `automation/rules-sync`，再创建一个目标为 `main` 的 PR。自动任务只写入 `dist/` 和 `generated/`，不会覆盖来源清单、规则组合或人工补充目录。
 
-自动发现不是无边界爬虫。它只在 catalog 声明的主机、仓库目录、release 资产、JSON path 或 HTML 规则内工作；新域名必须满足已批准官方根域或多来源证据才可能自动晋级，否则只进入候选报告。
+> [!WARNING]
+> 如果仓库设置没有允许 GitHub Actions 创建 PR，审阅分支仍可能已经推送成功，但 PR 不会出现。此时需要在仓库的 Actions 设置中启用对应权限，或手动从 `automation/rules-sync` 创建 PR。
 
-`python -m void_rules discover` 更新完整的 `generated/discovery/candidates.json.gz` 与便于审阅的 `summary.json`；`--offline --check` 可证明缓存输入能重现已提交候选。人工拒绝只写入 `overlays/discovery/rejected.yaml`，后续上游刷新仍按稳定候选 ID 记住该决定。
+自动发现只在来源清单声明的仓库、目录、发布文件、JSON 路径或网页规则内工作；新候选默认进入审阅，不会把任意网页内容直接加入正式规则。
 
-完整 IR 以 `dist/<ruleset>/rules.jsonl.gz` 发布。gzip 由固定 Go 工具链生成，头部时间戳固定为 0，解压后仍是逐行 JSON 且包含每条规则的来源证据；这样既不牺牲审计能力，也避免不同平台压缩实现制造伪差异或把大体积未压缩 provenance 反复写入 Git 历史。
+## 目录说明
 
-## 许可证
+```text
+catalog/                 公开来源和自动发现范围
+recipes/                 每个规则集包含哪些来源
+overlays/                人工补充、排除项和兼容性断言
+schemas/                 配置格式检查
+src/void_rules/          Python 规则整理程序
+cmd/void-rules-geodata/  Xray/V2Ray DAT 工具
+generated/               来源锁和构建报告
+dist/                    可供客户端引用的稳定文件
+tests/                   解析、合并、格式转换和自动化测试
+```
 
-聚合器代码采用 MIT License。第三方规则数据保留各自来源条款，不由本仓库重新许可；详见 `DATA-LICENSE.md`、`NOTICE.md` 与每份生成 manifest。
+更多 Mihomo 集成细节见 [`docs/MIHOMO.md`](docs/MIHOMO.md)；来源项目的原始条款和署名信息见 [`NOTICE.md`](NOTICE.md) 以及每个生成目录中的来源清单。
