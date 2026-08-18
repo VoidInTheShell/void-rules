@@ -6,7 +6,7 @@
   },
   "counts": {
     "by_action": {
-      "fake_ip_force": 32233
+      "fake_ip_force": 32234
     },
     "by_kind": {
       "domain": 764,
@@ -14,19 +14,19 @@
       "domain_suffix": 27043,
       "ip_cidr": 28,
       "opaque_classical": 1,
-      "opaque_domain": 4373,
+      "opaque_domain": 4374,
       "process_name": 9
     },
     "protected": 70,
-    "total": 32233
+    "total": 32234
   },
   "description": "Proxy-oriented names that should receive Fake-IP in whitelist mode.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 32233,
-      "sha256": "42303c20aff61786dbc4f7d18d0826e2339548bd986405114a87da24bc99ad0b",
-      "size": 469472,
+      "represented_rules": 32234,
+      "sha256": "c6db3be1eb692d6bc97ceff20bb21390a413a2492dcb3fd36ef371b9814fb484",
+      "size": 469582,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
@@ -34,14 +34,14 @@
       "represented_rules": 27860,
       "sha256": "8509e744526c2136550d71eb3edbcd4cb9c1f81023a14b46200a6f599f29fffd",
       "size": 798464,
-      "skipped_rules": 4373
+      "skipped_rules": 4374
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
       "represented_rules": 27860,
       "sha256": "a2eef6b834b20efa9fe53249117bca00895aa9f98ae586e7bb09f1b09109f2b6",
       "size": 854193,
-      "skipped_rules": 4373
+      "skipped_rules": 4374
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 11,
@@ -49,42 +49,42 @@
       "represented_rules": 27807,
       "sha256": "681888c3b5dc2c8260de570f4146b1639819bcd05631257da82b97b25810da11",
       "size": 202774,
-      "skipped_rules": 4426
+      "skipped_rules": 4427
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
       "represented_rules": 27807,
       "sha256": "3006d1c34c5580e004623b7adbf3d5b534ea7254759ae169a122cf4547f33d79",
       "size": 467245,
-      "skipped_rules": 4426
+      "skipped_rules": 4427
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
       "represented_rules": 27807,
       "sha256": "f04f10f7fcaf108635a36c1f200bdd989e6e8c58ca75c5f707f88dda620727d4",
       "size": 522868,
-      "skipped_rules": 4426
+      "skipped_rules": 4427
     },
     "plain-domain": {
       "path": "plain-domain.txt",
       "represented_rules": 27807,
       "sha256": "3006d1c34c5580e004623b7adbf3d5b534ea7254759ae169a122cf4547f33d79",
       "size": 467245,
-      "skipped_rules": 4426
+      "skipped_rules": 4427
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
       "represented_rules": 27822,
       "sha256": "de342aafae665ac906c70a4a51d230e59523776d45c0345ad45b972935c6f7c6",
       "size": 606541,
-      "skipped_rules": 4411
+      "skipped_rules": 4412
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
       "represented_rules": 27822,
       "sha256": "7e0e27d906f33450a4870aa224ccac6dc01dad06b8841a939291f0f017a03b29",
       "size": 552399,
-      "skipped_rules": 4373
+      "skipped_rules": 4374
     }
   },
   "ruleset": "fake-ip-force",
@@ -104,7 +104,7 @@
     "blackmatrix-microsoft": 667,
     "blackmatrix-openai": 35,
     "blackmatrix-twitter": 33,
-    "loyalsoldier-gfw": 4373,
+    "loyalsoldier-gfw": 4374,
     "metacubex-ai-not-cn": 173,
     "metacubex-cryptocurrency": 232,
     "metacubex-finance": 612,

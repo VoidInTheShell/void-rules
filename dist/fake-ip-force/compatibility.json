@@ -2,7 +2,7 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 32233,
+      "represented": 32234,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -510,9 +510,9 @@
         }
       ],
       "represented": 27860,
-      "skipped": 4373,
+      "skipped": 4374,
       "skipped_by_kind": {
-        "opaque_domain": 4373
+        "opaque_domain": 4374
       }
     },
     "mihomo-classical-yaml": {
@@ -1019,9 +1019,9 @@
         }
       ],
       "represented": 27860,
-      "skipped": 4373,
+      "skipped": 4374,
       "skipped_by_kind": {
-        "opaque_domain": 4373
+        "opaque_domain": 4374
       }
     },
     "mihomo-domain-mrs": {
@@ -1528,12 +1528,12 @@
         }
       ],
       "represented": 27807,
-      "skipped": 4426,
+      "skipped": 4427,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4373,
+        "opaque_domain": 4374,
         "process_name": 9
       }
     },
@@ -2041,12 +2041,12 @@
         }
       ],
       "represented": 27807,
-      "skipped": 4426,
+      "skipped": 4427,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4373,
+        "opaque_domain": 4374,
         "process_name": 9
       }
     },
@@ -2554,12 +2554,12 @@
         }
       ],
       "represented": 27807,
-      "skipped": 4426,
+      "skipped": 4427,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4373,
+        "opaque_domain": 4374,
         "process_name": 9
       }
     },
@@ -3067,12 +3067,12 @@
         }
       ],
       "represented": 27807,
-      "skipped": 4426,
+      "skipped": 4427,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4373,
+        "opaque_domain": 4374,
         "process_name": 9
       }
     },
@@ -3580,11 +3580,11 @@
         }
       ],
       "represented": 27822,
-      "skipped": 4411,
+      "skipped": 4412,
       "skipped_by_kind": {
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4373,
+        "opaque_domain": 4374,
         "process_name": 9
       }
     },
@@ -4092,9 +4092,9 @@
         }
       ],
       "represented": 27822,
-      "skipped": 4373,
+      "skipped": 4374,
       "skipped_by_kind": {
-        "opaque_domain": 4373
+        "opaque_domain": 4374
       }
     }
   }
