@@ -2,19 +2,19 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 230,
+      "represented": 236,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 230,
+      "represented": 236,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 230,
+      "represented": 236,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -76,7 +76,7 @@
           "value": "IP-ASN,20473,no-resolve"
         }
       ],
-      "represented": 219,
+      "represented": 225,
       "skipped": 11,
       "skipped_by_kind": {
         "domain_keyword": 2,
@@ -142,7 +142,7 @@
           "value": "IP-ASN,20473,no-resolve"
         }
       ],
-      "represented": 219,
+      "represented": 225,
       "skipped": 11,
       "skipped_by_kind": {
         "domain_keyword": 2,
@@ -208,7 +208,7 @@
           "value": "IP-ASN,20473,no-resolve"
         }
       ],
-      "represented": 219,
+      "represented": 225,
       "skipped": 11,
       "skipped_by_kind": {
         "domain_keyword": 2,
@@ -716,15 +716,15 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
-          "value": "duck.ai"
+          "value": "dreamgen.com"
         }
       ],
       "represented": 8,
-      "skipped": 222,
+      "skipped": 228,
       "skipped_by_kind": {
         "domain": 32,
         "domain_keyword": 2,
-        "domain_suffix": 187,
+        "domain_suffix": 193,
         "opaque_classical": 1
       }
     },
@@ -1228,15 +1228,15 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
-          "value": "duck.ai"
+          "value": "dreamgen.com"
         }
       ],
       "represented": 8,
-      "skipped": 222,
+      "skipped": 228,
       "skipped_by_kind": {
         "domain": 32,
         "domain_keyword": 2,
-        "domain_suffix": 187,
+        "domain_suffix": 193,
         "opaque_classical": 1
       }
     },
@@ -1740,15 +1740,15 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
-          "value": "duck.ai"
+          "value": "dreamgen.com"
         }
       ],
       "represented": 8,
-      "skipped": 222,
+      "skipped": 228,
       "skipped_by_kind": {
         "domain": 32,
         "domain_keyword": 2,
-        "domain_suffix": 187,
+        "domain_suffix": 193,
         "opaque_classical": 1
       }
     },
@@ -1810,7 +1810,7 @@
           "value": "IP-ASN,20473,no-resolve"
         }
       ],
-      "represented": 219,
+      "represented": 225,
       "skipped": 11,
       "skipped_by_kind": {
         "domain_keyword": 2,
@@ -2318,15 +2318,15 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
-          "value": "duck.ai"
+          "value": "dreamgen.com"
         }
       ],
       "represented": 8,
-      "skipped": 222,
+      "skipped": 228,
       "skipped_by_kind": {
         "domain": 32,
         "domain_keyword": 2,
-        "domain_suffix": 187,
+        "domain_suffix": 193,
         "opaque_classical": 1
       }
     },
@@ -2378,7 +2378,7 @@
           "value": "IP-ASN,20473,no-resolve"
         }
       ],
-      "represented": 221,
+      "represented": 227,
       "skipped": 9,
       "skipped_by_kind": {
         "ip_cidr": 8,
@@ -2393,7 +2393,7 @@
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 221,
+      "represented": 227,
       "skipped": 0,
       "skipped_by_kind": {}
     }

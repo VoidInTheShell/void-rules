@@ -6,82 +6,82 @@
   },
   "counts": {
     "by_action": {
-      "fake_ip_bypass": 3148
+      "fake_ip_bypass": 3147
     },
     "by_kind": {
-      "domain": 96,
+      "domain": 95,
       "domain_regex": 29,
       "domain_suffix": 2873,
       "domain_wildcard": 79,
       "ip_cidr": 71
     },
     "protected": 120,
-    "total": 3148
+    "total": 3147
   },
   "description": "Direct, local and compatibility-sensitive names that must receive real IPs.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 3148,
-      "sha256": "4b0a842d9da45dccf5781d2e7e88a4bcf793dc846105a72916782a15ea7917c2",
-      "size": 45763,
+      "represented_rules": 3147,
+      "sha256": "5b730c0dace482f986cd288242edea6b7e811eae6d64ab28ef234a992f1efc37",
+      "size": 45721,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 3148,
-      "sha256": "fc13d600d702151462750fe045a23c9048f55ecf97161cb507bea4d50d9211a5",
-      "size": 91768,
+      "represented_rules": 3147,
+      "sha256": "003d98a47c4fbd9249e35f58d3ba78df36185488615f0a9aed04e4f3ed869ed3",
+      "size": 91731,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 3148,
-      "sha256": "3025a1c292a442ca4a4cf7c01068baa2d697536e8aaebd1e45c60769b11fdae4",
-      "size": 98073,
+      "represented_rules": 3147,
+      "sha256": "d39b42412eea5407761b86593aac159abfa7afc352fa390ac6e9508430a3ca45",
+      "size": 98034,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 12,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 3048,
-      "sha256": "ddcc918e706c4c776dbb39ca6441565c3a153552581ddf7d688b160ac4a6287f",
-      "size": 21900,
+      "represented_rules": 3047,
+      "sha256": "1a4a473c757e43be6320af220c1bbba1037cea53472339eff37d2ad1e93a2a4e",
+      "size": 21894,
       "skipped_rules": 100
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 3048,
-      "sha256": "9c38a4e4bf20e6ba6c40862152fb057e7102becd7af620e34e4ae8475e71d2a1",
-      "size": 51988,
+      "represented_rules": 3047,
+      "sha256": "f49c8a44c1521d3352f22eda19d0cbcb1417dd4d63ddcfc86172907caafa7c24",
+      "size": 51958,
       "skipped_rules": 100
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 3048,
-      "sha256": "193e4c0777043ce4fca54769e46747ca87e290801b3005a023bdffbfac478c13",
-      "size": 58181,
+      "represented_rules": 3047,
+      "sha256": "04768ebfefa79efaa9285459c7025cdd926a8d45452781cc5818694a0fe34d3d",
+      "size": 58149,
       "skipped_rules": 100
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 3048,
-      "sha256": "9c38a4e4bf20e6ba6c40862152fb057e7102becd7af620e34e4ae8475e71d2a1",
-      "size": 51988,
+      "represented_rules": 3047,
+      "sha256": "f49c8a44c1521d3352f22eda19d0cbcb1417dd4d63ddcfc86172907caafa7c24",
+      "size": 51958,
       "skipped_rules": 100
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 3077,
-      "sha256": "91a2cf3d3d2149def59854bf4962450585cb3d7e055d6f172f32abd59a41aae5",
-      "size": 69050,
+      "represented_rules": 3076,
+      "sha256": "a03b42008b6a9f1da57d0f4d7365e55eef8de4c1b0e7910795fccb644d853b0d",
+      "size": 69015,
       "skipped_rules": 71
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 3077,
-      "sha256": "beeefba7b8e24d5917142082a68c9d08d2007be8d08908b600e96ff641d32520",
-      "size": 63108,
+      "represented_rules": 3076,
+      "sha256": "441a2b1c0b37df60835a12c54932c1e17d18e8e81c154d572ae21574910601b3",
+      "size": 63073,
       "skipped_rules": 0
     }
   },
@@ -94,7 +94,7 @@
     "blackmatrix-tencent": 2518,
     "dustinwin-fakeip": 116,
     "metacubex-connectivity-check": 27,
-    "metacubex-games-cn": 38,
+    "metacubex-games-cn": 37,
     "metacubex-private": 130,
     "overlay:fake-ip-bypass": 120,
     "quixotic-fakeip": 139,

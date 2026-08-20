@@ -2,7 +2,7 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 32237,
+      "represented": 32250,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -509,10 +509,10 @@
           "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 27861,
-      "skipped": 4376,
+      "represented": 27873,
+      "skipped": 4377,
       "skipped_by_kind": {
-        "opaque_domain": 4376
+        "opaque_domain": 4377
       }
     },
     "mihomo-classical-yaml": {
@@ -1018,10 +1018,10 @@
           "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 27861,
-      "skipped": 4376,
+      "represented": 27873,
+      "skipped": 4377,
       "skipped_by_kind": {
-        "opaque_domain": 4376
+        "opaque_domain": 4377
       }
     },
     "mihomo-domain-mrs": {
@@ -1527,13 +1527,13 @@
           "value": "- '+.6parker.com"
         }
       ],
-      "represented": 27808,
-      "skipped": 4429,
+      "represented": 27820,
+      "skipped": 4430,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4376,
+        "opaque_domain": 4377,
         "process_name": 9
       }
     },
@@ -2040,13 +2040,13 @@
           "value": "- '+.6parker.com"
         }
       ],
-      "represented": 27808,
-      "skipped": 4429,
+      "represented": 27820,
+      "skipped": 4430,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4376,
+        "opaque_domain": 4377,
         "process_name": 9
       }
     },
@@ -2553,13 +2553,13 @@
           "value": "- '+.6parker.com"
         }
       ],
-      "represented": 27808,
-      "skipped": 4429,
+      "represented": 27820,
+      "skipped": 4430,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4376,
+        "opaque_domain": 4377,
         "process_name": 9
       }
     },
@@ -3066,13 +3066,13 @@
           "value": "- '+.6parker.com"
         }
       ],
-      "represented": 27808,
-      "skipped": 4429,
+      "represented": 27820,
+      "skipped": 4430,
       "skipped_by_kind": {
         "domain_keyword": 15,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4376,
+        "opaque_domain": 4377,
         "process_name": 9
       }
     },
@@ -3579,12 +3579,12 @@
           "value": "- '+.99btgc01.com"
         }
       ],
-      "represented": 27823,
-      "skipped": 4414,
+      "represented": 27835,
+      "skipped": 4415,
       "skipped_by_kind": {
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4376,
+        "opaque_domain": 4377,
         "process_name": 9
       }
     },
@@ -4091,10 +4091,10 @@
           "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 27823,
-      "skipped": 4376,
+      "represented": 27835,
+      "skipped": 4377,
       "skipped_by_kind": {
-        "opaque_domain": 4376
+        "opaque_domain": 4377
       }
     }
   }

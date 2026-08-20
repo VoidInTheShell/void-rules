@@ -420,6 +420,7 @@ domain:592r.com
 domain:59mvmv.com
 domain:5axis-machining.com
 domain:5beatsbydre.com
+domain:5ch.io
 domain:5ch.net
 domain:5fang.cc
 domain:5i01.com
@@ -1681,6 +1682,7 @@ domain:amazonuniversity.jobs
 domain:amazonvideo.cc
 domain:amazonvideo.com
 domain:amazonvideodirect.com
+domain:amazonwebservices.com
 domain:amazonwebservices.com.cn
 domain:amazonworkdocs.cn
 domain:amazonworkdocs.com
@@ -7386,6 +7388,7 @@ domain:drdreprobeatssale.com
 domain:dreamamateurs.com
 domain:dreambmw.ca
 domain:dreamforce.com
+domain:dreamgen.com
 domain:dreammovies.com
 domain:dreamorder.com
 domain:dreamteamfc.com
@@ -8801,6 +8804,7 @@ domain:fans-here.com
 domain:fans17.com
 domain:fans66.tw
 domain:fansking.tw
+domain:fansly.com
 domain:fansnudes.com
 domain:fansone.co
 domain:fanspot.jp
@@ -13940,6 +13944,7 @@ domain:killercb.ru
 domain:killwall.com
 domain:kilmeadeandfriends.com
 domain:kimchi.tv
+domain:kimi.ai
 domain:kimogirl.cc
 domain:kimosex.com
 domain:kindgirls.com
@@ -16111,6 +16116,7 @@ domain:moomootrustee.com
 domain:moon.fm
 domain:moonbbs.com
 domain:moonbingo.com
+domain:moonshot.ai
 domain:moov.hk
 domain:moozporn.com
 domain:moptt.tw
@@ -17016,6 +17022,8 @@ domain:nichost.ru
 domain:nickscipio.com
 domain:nicky.xxx
 domain:nico
+domain:nico.ms
+domain:nicochannel.jp
 domain:nicodic.jp
 domain:nicolepeters.com
 domain:nicomanga.jp
@@ -17312,6 +17320,7 @@ domain:nos.pt
 domain:notebook.google.com
 domain:notebooklm.google
 domain:notebooklm.google.com
+domain:notegpt.io
 domain:notepad-plus-plus.org
 domain:noticias-rt.com
 domain:notimundo.press
@@ -17324,6 +17333,7 @@ domain:notion.so
 domain:notionusercontent.com
 domain:nottinghampost.com
 domain:nova.gr
+domain:novelai.net
 domain:noveltrove.com
 domain:novids.com
 domain:novinhabucetuda.com
@@ -17742,6 +17752,7 @@ domain:older-women-porn.com
 domain:older.tube
 domain:oldhornymilfs.com
 domain:oldje.com
+domain:oldmapsonline.org
 domain:olehd.com
 domain:olehdtv.com
 domain:olelive.com
@@ -22395,6 +22406,7 @@ domain:takporn.com
 domain:talantix.ru
 domain:talentlens.com
 domain:taleofthenight.com
+domain:talkai.info
 domain:talkatone.com
 domain:talkboxapp.com
 domain:talkcc.com

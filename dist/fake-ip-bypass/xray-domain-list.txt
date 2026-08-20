@@ -2956,7 +2956,6 @@ full:time-macos.apple.com
 full:time1.cloud.tencent.com
 full:tplogin.cn
 full:trackercdn.kugou.com
-full:uplaypc-s-ubisoft.cdn.ubi.com
 full:wifi.vivo.com.cn
 full:www.asusrouter.com
 full:www.gstatic.com

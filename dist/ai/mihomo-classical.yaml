@@ -98,6 +98,7 @@ payload:
 - DOMAIN-SUFFIX,diabrowser.engineering
 - DOMAIN-SUFFIX,dify.ai
 - DOMAIN-SUFFIX,dola.com
+- DOMAIN-SUFFIX,dreamgen.com
 - DOMAIN-SUFFIX,duck.ai
 - DOMAIN-SUFFIX,elevenlabs.com
 - DOMAIN-SUFFIX,elevenlabs.io
@@ -133,6 +134,7 @@ payload:
 - DOMAIN-SUFFIX,jetbrains.ai
 - DOMAIN-SUFFIX,jules.google
 - DOMAIN-SUFFIX,jules.google.com
+- DOMAIN-SUFFIX,kimi.ai
 - DOMAIN-SUFFIX,kiro.dev
 - DOMAIN-SUFFIX,labs.google
 - DOMAIN-SUFFIX,labs.google.com
@@ -150,10 +152,13 @@ payload:
 - DOMAIN-SUFFIX,midjourney.com
 - DOMAIN-SUFFIX,minimax.io
 - DOMAIN-SUFFIX,mistral.ai
+- DOMAIN-SUFFIX,moonshot.ai
 - DOMAIN-SUFFIX,mozilla.ai
 - DOMAIN-SUFFIX,notebook.google.com
 - DOMAIN-SUFFIX,notebooklm.google
 - DOMAIN-SUFFIX,notebooklm.google.com
+- DOMAIN-SUFFIX,notegpt.io
+- DOMAIN-SUFFIX,novelai.net
 - DOMAIN-SUFFIX,oaistatic.com
 - DOMAIN-SUFFIX,oaistatsig.com
 - DOMAIN-SUFFIX,oaiusercontent.com
@@ -189,6 +194,7 @@ payload:
 - DOMAIN-SUFFIX,stitch.withgoogle.com
 - DOMAIN-SUFFIX,stripe.com
 - DOMAIN-SUFFIX,t.co
+- DOMAIN-SUFFIX,talkai.info
 - DOMAIN-SUFFIX,tapnow.ai
 - DOMAIN-SUFFIX,tellapart.com
 - DOMAIN-SUFFIX,themeforest.net

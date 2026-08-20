@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 224240,
+        "represented": 224549,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 224240,
+        "represented": 224549,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 224240,
+        "represented": 224549,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 224240,
+        "represented": 224549,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -64,7 +64,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 224234,
+        "represented": 224543,
         "skipped": 6,
         "skipped_by_kind": {
           "domain_keyword": 6
@@ -103,7 +103,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 224234,
+        "represented": 224543,
         "skipped": 6,
         "skipped_by_kind": {
           "domain_keyword": 6
@@ -142,7 +142,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 224234,
+        "represented": 224543,
         "skipped": 6,
         "skipped_by_kind": {
           "domain_keyword": 6
@@ -652,11 +652,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 224240,
+        "skipped": 224549,
         "skipped_by_kind": {
           "domain": 1045,
           "domain_keyword": 6,
-          "domain_suffix": 223189
+          "domain_suffix": 223498
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1163,11 +1163,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 224240,
+        "skipped": 224549,
         "skipped_by_kind": {
           "domain": 1045,
           "domain_keyword": 6,
-          "domain_suffix": 223189
+          "domain_suffix": 223498
         }
       },
       "plain-domain": {
@@ -1203,7 +1203,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 224234,
+        "represented": 224543,
         "skipped": 6,
         "skipped_by_kind": {
           "domain_keyword": 6
@@ -1713,22 +1713,22 @@
           }
         ],
         "represented": 0,
-        "skipped": 224240,
+        "skipped": 224549,
         "skipped_by_kind": {
           "domain": 1045,
           "domain_keyword": 6,
-          "domain_suffix": 223189
+          "domain_suffix": 223498
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 224240,
+        "represented": 224549,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 224240,
+        "represented": 224549,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -1738,19 +1738,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 230,
+        "represented": 236,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 230,
+        "represented": 236,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 230,
+        "represented": 236,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -1812,7 +1812,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 219,
+        "represented": 225,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1878,7 +1878,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 219,
+        "represented": 225,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1944,7 +1944,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 219,
+        "represented": 225,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -2452,15 +2452,15 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
-            "value": "duck.ai"
+            "value": "dreamgen.com"
           }
         ],
         "represented": 8,
-        "skipped": 222,
+        "skipped": 228,
         "skipped_by_kind": {
           "domain": 32,
           "domain_keyword": 2,
-          "domain_suffix": 187,
+          "domain_suffix": 193,
           "opaque_classical": 1
         }
       },
@@ -2964,15 +2964,15 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
-            "value": "duck.ai"
+            "value": "dreamgen.com"
           }
         ],
         "represented": 8,
-        "skipped": 222,
+        "skipped": 228,
         "skipped_by_kind": {
           "domain": 32,
           "domain_keyword": 2,
-          "domain_suffix": 187,
+          "domain_suffix": 193,
           "opaque_classical": 1
         }
       },
@@ -3476,15 +3476,15 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
-            "value": "duck.ai"
+            "value": "dreamgen.com"
           }
         ],
         "represented": 8,
-        "skipped": 222,
+        "skipped": 228,
         "skipped_by_kind": {
           "domain": 32,
           "domain_keyword": 2,
-          "domain_suffix": 187,
+          "domain_suffix": 193,
           "opaque_classical": 1
         }
       },
@@ -3546,7 +3546,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 219,
+        "represented": 225,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -4054,15 +4054,15 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
-            "value": "duck.ai"
+            "value": "dreamgen.com"
           }
         ],
         "represented": 8,
-        "skipped": 222,
+        "skipped": 228,
         "skipped_by_kind": {
           "domain": 32,
           "domain_keyword": 2,
-          "domain_suffix": 187,
+          "domain_suffix": 193,
           "opaque_classical": 1
         }
       },
@@ -4114,7 +4114,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 221,
+        "represented": 227,
         "skipped": 9,
         "skipped_by_kind": {
           "ip_cidr": 8,
@@ -4129,7 +4129,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 221,
+        "represented": 227,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -4197,19 +4197,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 3148,
+        "represented": 3147,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 3148,
+        "represented": 3147,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 3148,
+        "represented": 3147,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -4716,7 +4716,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3048,
+        "represented": 3047,
         "skipped": 100,
         "skipped_by_kind": {
           "domain_regex": 29,
@@ -5226,7 +5226,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3048,
+        "represented": 3047,
         "skipped": 100,
         "skipped_by_kind": {
           "domain_regex": 29,
@@ -5736,7 +5736,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3048,
+        "represented": 3047,
         "skipped": 100,
         "skipped_by_kind": {
           "domain_regex": 29,
@@ -6246,7 +6246,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3048,
+        "represented": 3047,
         "skipped": 100,
         "skipped_by_kind": {
           "domain_regex": 29,
@@ -6611,7 +6611,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3077,
+        "represented": 3076,
         "skipped": 71,
         "skipped_by_kind": {
           "ip_cidr": 71
@@ -6619,7 +6619,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 3077,
+        "represented": 3076,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6629,7 +6629,7 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 32237,
+        "represented": 32250,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -7136,10 +7136,10 @@
             "value": "- '+.acgkj.com"
           }
         ],
-        "represented": 27861,
-        "skipped": 4376,
+        "represented": 27873,
+        "skipped": 4377,
         "skipped_by_kind": {
-          "opaque_domain": 4376
+          "opaque_domain": 4377
         }
       },
       "mihomo-classical-yaml": {
@@ -7645,10 +7645,10 @@
             "value": "- '+.acgkj.com"
           }
         ],
-        "represented": 27861,
-        "skipped": 4376,
+        "represented": 27873,
+        "skipped": 4377,
         "skipped_by_kind": {
-          "opaque_domain": 4376
+          "opaque_domain": 4377
         }
       },
       "mihomo-domain-mrs": {
@@ -8154,13 +8154,13 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27808,
-        "skipped": 4429,
+        "represented": 27820,
+        "skipped": 4430,
         "skipped_by_kind": {
           "domain_keyword": 15,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4376,
+          "opaque_domain": 4377,
           "process_name": 9
         }
       },
@@ -8667,13 +8667,13 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27808,
-        "skipped": 4429,
+        "represented": 27820,
+        "skipped": 4430,
         "skipped_by_kind": {
           "domain_keyword": 15,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4376,
+          "opaque_domain": 4377,
           "process_name": 9
         }
       },
@@ -9180,13 +9180,13 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27808,
-        "skipped": 4429,
+        "represented": 27820,
+        "skipped": 4430,
         "skipped_by_kind": {
           "domain_keyword": 15,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4376,
+          "opaque_domain": 4377,
           "process_name": 9
         }
       },
@@ -9693,13 +9693,13 @@
             "value": "- '+.6parker.com"
           }
         ],
-        "represented": 27808,
-        "skipped": 4429,
+        "represented": 27820,
+        "skipped": 4430,
         "skipped_by_kind": {
           "domain_keyword": 15,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4376,
+          "opaque_domain": 4377,
           "process_name": 9
         }
       },
@@ -10206,12 +10206,12 @@
             "value": "- '+.99btgc01.com"
           }
         ],
-        "represented": 27823,
-        "skipped": 4414,
+        "represented": 27835,
+        "skipped": 4415,
         "skipped_by_kind": {
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4376,
+          "opaque_domain": 4377,
           "process_name": 9
         }
       },
@@ -10718,10 +10718,10 @@
             "value": "- '+.acgkj.com"
           }
         ],
-        "represented": 27823,
-        "skipped": 4376,
+        "represented": 27835,
+        "skipped": 4377,
         "skipped_by_kind": {
-          "opaque_domain": 4376
+          "opaque_domain": 4377
         }
       }
     }

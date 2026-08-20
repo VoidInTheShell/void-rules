@@ -6,61 +6,61 @@
   },
   "counts": {
     "by_action": {
-      "match": 230
+      "match": 236
     },
     "by_kind": {
       "domain": 32,
       "domain_keyword": 2,
-      "domain_suffix": 187,
+      "domain_suffix": 193,
       "ip_cidr": 8,
       "opaque_classical": 1
     },
     "protected": 9,
-    "total": 230
+    "total": 236
   },
   "description": "Mainstream global AI services from MetaCubeX and blackmatrix7 with local fallback roots.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 230,
-      "sha256": "7163bfef357917f719083b50f1919c8ba5d8c52c9d908062da98f45a1c3a5a61",
-      "size": 4277,
+      "represented_rules": 236,
+      "sha256": "e80388451a8e3409710f1cb1b253e829418de0c6b754e273d71be6fe952d5aa5",
+      "size": 4360,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 230,
-      "sha256": "9d207cd6ac4c6aa930afcd17603e5da5c05b75ef0e47d48917ef4871888d6e77",
-      "size": 6881,
+      "represented_rules": 236,
+      "sha256": "9f486a65a77bd5c0e2ee584089d73d4e40ade36390ca3d45257d0f0f7480a681",
+      "size": 7033,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 230,
-      "sha256": "5622724fbff7a75f54975e0eebff4228911bd951c1aff2d8ebcf55a85ef1c43b",
-      "size": 7350,
+      "represented_rules": 236,
+      "sha256": "93cbd2a349285038d2043b276913de31b8cad2905d9a2c8a22d9925d4a7f1434",
+      "size": 7514,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 2,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 219,
-      "sha256": "df0e558bd8c08bba183ca060607ea745e69d06b81422d195baa52f1e55420548",
-      "size": 2306,
+      "represented_rules": 225,
+      "sha256": "0a2aeb7a8d2f90f42413d18a97b5092bf01240e5c34ee30d93a438c664c49595",
+      "size": 2351,
       "skipped_rules": 11
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 219,
-      "sha256": "6e9c21ccd3bdb983dd1aa47a87419129b9386ac578a56f8b6355eec951fd8b37",
-      "size": 4127,
+      "represented_rules": 225,
+      "sha256": "080c2eb38bc0d28c2aa870b98a66bfad00f042250bb1dd1ddba7f3684b0f5e03",
+      "size": 4207,
       "skipped_rules": 11
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 219,
-      "sha256": "6800f0ef923bfe9201307f40ddf6711e444f6cc9f2f92640d0850027227f3f38",
-      "size": 4574,
+      "represented_rules": 225,
+      "sha256": "5c6fcc672853b5a62d9bcd80c4bd1a3ebd4ab445ed9e24f00284f577dc1a5c0f",
+      "size": 4666,
       "skipped_rules": 11
     },
     "mihomo-ipcidr-mrs": {
@@ -68,27 +68,27 @@
       "represented_rules": 8,
       "sha256": "db9a157bcd9d7f315b00bf877a55af417f51186d6db9f87944b64299889c6f4a",
       "size": 112,
-      "skipped_rules": 222
+      "skipped_rules": 228
     },
     "mihomo-ipcidr-text": {
       "path": "mihomo-ipcidr.list",
       "represented_rules": 8,
       "sha256": "3edf79e59fef6c7c7848e612a52a233cbee97d3b812b123b88f7e1eecaa98f07",
       "size": 131,
-      "skipped_rules": 222
+      "skipped_rules": 228
     },
     "mihomo-ipcidr-yaml": {
       "path": "mihomo-ipcidr.yaml",
       "represented_rules": 8,
       "sha256": "694e92d2c9712e051a92b7589705c30bb19f60d033e1f2a7a24b7147eab90efc",
       "size": 156,
-      "skipped_rules": 222
+      "skipped_rules": 228
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 219,
-      "sha256": "6e9c21ccd3bdb983dd1aa47a87419129b9386ac578a56f8b6355eec951fd8b37",
-      "size": 4127,
+      "represented_rules": 225,
+      "sha256": "080c2eb38bc0d28c2aa870b98a66bfad00f042250bb1dd1ddba7f3684b0f5e03",
+      "size": 4207,
       "skipped_rules": 11
     },
     "plain-ip": {
@@ -96,13 +96,13 @@
       "represented_rules": 8,
       "sha256": "3edf79e59fef6c7c7848e612a52a233cbee97d3b812b123b88f7e1eecaa98f07",
       "size": 131,
-      "skipped_rules": 222
+      "skipped_rules": 228
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 221,
-      "sha256": "665198989a19d0db37edc0f2169806198fd4945cc9863d405747e909684fe8f2",
-      "size": 5253,
+      "represented_rules": 227,
+      "sha256": "eb8660256a6439273130aab58a992ea29d36a967ff94911f82f5c3da1ffa2524",
+      "size": 5363,
       "skipped_rules": 9
     },
     "xray-geoip-dat": {
@@ -114,9 +114,9 @@
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 221,
-      "sha256": "4437aa18b7391a11bfaa4b50980d7bcf3b8ee6ed096895f86724427806243133",
-      "size": 4876,
+      "represented_rules": 227,
+      "sha256": "123829c007a38c7cf7d75cc13d90fc0d8d3796486e4c3b2284682d4a2129a7bf",
+      "size": 4974,
       "skipped_rules": 0
     }
   },
@@ -126,7 +126,7 @@
     "blackmatrix-claude": 3,
     "blackmatrix-openai": 35,
     "blackmatrix-twitter": 33,
-    "metacubex-ai-not-cn": 173,
+    "metacubex-ai-not-cn": 179,
     "overlay:ai": 9
   },
   "sources": [
