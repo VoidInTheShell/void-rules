@@ -2,7 +2,7 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 33248,
+      "represented": 32277,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -509,7 +509,7 @@
           "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 28860,
+      "represented": 27889,
       "skipped": 4388,
       "skipped_by_kind": {
         "opaque_domain": 4388
@@ -1018,7 +1018,7 @@
           "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 28860,
+      "represented": 27889,
       "skipped": 4388,
       "skipped_by_kind": {
         "opaque_domain": 4388
@@ -1029,237 +1029,7 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "10010"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "10086"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "114bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "1drv"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "1inch"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "21-school"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2degrees"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2gis"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "4epenaxa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "77bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "82bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "9mobile"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a1"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aave"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ablmm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abnamro"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aboutschwab"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absolutbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "accesspoint"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adcb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adyen"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aexp"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "afisha"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agdbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agri-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airwallex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akbars"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akita-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alefbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfadirect"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alpaca"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alrajhibank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americamovil"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americanexpress"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "amex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ankb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ansarbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "antel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "anz"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aozorabank"
         },
         {
           "kind": "domain_keyword",
@@ -1269,268 +1039,498 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ashikagabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asia-pay"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproexapi"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asx"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atom"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atomyze"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "autokreditbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avangard"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avanza"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avax"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aversbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avici"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "avoddashs"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "awabank"
+          "value": "blogspot"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "axisbank"
+          "value": "colab"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ayabank"
+          "value": "developerprofiles"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "b3"
+          "value": "generativelanguage"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "babki"
+          "value": "gmail"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "backpack"
+          "value": "google"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bancolombia"
+          "value": "microsoft"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bangkokbank"
+          "value": "onedrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-arzamas"
+          "value": "openai"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-credit-suisse-moscow"
+          "value": "plasma-one"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-maskan"
+          "value": "recaptcha"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank131"
+          "value": "skydrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bankermak"
+          "value": "twitter"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankfab"
+          "value": "13.32.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankline"
+          "value": "13.35.0.0/17"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankmellat"
+          "value": "172.110.32.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofamerica"
+          "value": "173.194.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofscotland"
+          "value": "18.184.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofsingapore"
+          "value": "18.194.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "banksepah"
+          "value": "18.208.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "barclays"
+          "value": "18.232.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "base"
+          "value": "192.133.76.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "batelco"
+          "value": "199.59.148.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bcs-bank"
+          "value": "199.96.56.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bell"
+          "value": "202.160.128.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "belo"
+          "value": "209.237.192.0/19"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "best2pay"
+          "value": "216.73.80.0/20"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bestchange"
+          "value": "24.199.123.28/32"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binance"
+          "value": "2620:120:e000::/40"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceapi"
+          "value": "52.200.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancecnt"
+          "value": "52.58.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceru"
+          "value": "52.74.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancezh"
+          "value": "52.77.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bingx"
+          "value": "52.84.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bisq"
+          "value": "54.156.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bit2me"
+          "value": "54.226.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitbank"
+          "value": "54.230.156.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitcoin"
+          "value": "54.93.0.0/16"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "64.23.132.171/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "69.195.160.0/19"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "74.125.0.0/16"
+        },
+        {
+          "kind": "opaque_classical",
+          "reason": "not representable",
+          "value": "IP-ASN,20473,no-resolve"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.000webhost.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.0rz.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1-apple.com.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1000giri.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10beasts.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10musume.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12bet.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1337x.to"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.141jj.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1688.com.au"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.173ng.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18board.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.vip"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18mh.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1984bbs.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1991way.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1e100.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1lib.sk"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1point3acres.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1pondo.tv"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2008xianzhang.info"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2021hkcharter.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.name"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.one"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2049bbs.xyz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.233abc.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hbook.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hrs.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.32red.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.36rain.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.404museum.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.466453.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4bluestones.biz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4everproxy.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4rbtv.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4shared.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4sqi.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51jav.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51luoben.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.5278.cc"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.icu"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.63i.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.666pool.cn"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.69shuba.cx"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.news"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.world"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6park.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6parkbbs.com"
         }
       ],
       "represented": 27835,
-      "skipped": 5413,
+      "skipped": 4442,
       "skipped_by_kind": {
-        "domain_keyword": 987,
+        "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
         "opaque_domain": 4388,
@@ -1542,237 +1542,7 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "10010"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "10086"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "114bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "1drv"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "1inch"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "21-school"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2degrees"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2gis"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "4epenaxa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "77bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "82bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "9mobile"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a1"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aave"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ablmm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abnamro"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aboutschwab"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absolutbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "accesspoint"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adcb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adyen"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aexp"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "afisha"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agdbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agri-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airwallex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akbars"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akita-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alefbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfadirect"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alpaca"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alrajhibank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americamovil"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americanexpress"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "amex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ankb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ansarbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "antel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "anz"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aozorabank"
         },
         {
           "kind": "domain_keyword",
@@ -1782,268 +1552,498 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ashikagabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asia-pay"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproexapi"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asx"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atom"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atomyze"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "autokreditbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avangard"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avanza"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avax"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aversbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avici"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "avoddashs"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "awabank"
+          "value": "blogspot"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "axisbank"
+          "value": "colab"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ayabank"
+          "value": "developerprofiles"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "b3"
+          "value": "generativelanguage"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "babki"
+          "value": "gmail"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "backpack"
+          "value": "google"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bancolombia"
+          "value": "microsoft"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bangkokbank"
+          "value": "onedrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-arzamas"
+          "value": "openai"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-credit-suisse-moscow"
+          "value": "plasma-one"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-maskan"
+          "value": "recaptcha"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank131"
+          "value": "skydrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bankermak"
+          "value": "twitter"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankfab"
+          "value": "13.32.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankline"
+          "value": "13.35.0.0/17"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankmellat"
+          "value": "172.110.32.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofamerica"
+          "value": "173.194.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofscotland"
+          "value": "18.184.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofsingapore"
+          "value": "18.194.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "banksepah"
+          "value": "18.208.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "barclays"
+          "value": "18.232.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "base"
+          "value": "192.133.76.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "batelco"
+          "value": "199.59.148.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bcs-bank"
+          "value": "199.96.56.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bell"
+          "value": "202.160.128.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "belo"
+          "value": "209.237.192.0/19"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "best2pay"
+          "value": "216.73.80.0/20"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bestchange"
+          "value": "24.199.123.28/32"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binance"
+          "value": "2620:120:e000::/40"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceapi"
+          "value": "52.200.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancecnt"
+          "value": "52.58.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceru"
+          "value": "52.74.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancezh"
+          "value": "52.77.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bingx"
+          "value": "52.84.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bisq"
+          "value": "54.156.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bit2me"
+          "value": "54.226.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitbank"
+          "value": "54.230.156.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitcoin"
+          "value": "54.93.0.0/16"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "64.23.132.171/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "69.195.160.0/19"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "74.125.0.0/16"
+        },
+        {
+          "kind": "opaque_classical",
+          "reason": "not representable",
+          "value": "IP-ASN,20473,no-resolve"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.000webhost.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.0rz.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1-apple.com.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1000giri.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10beasts.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10musume.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12bet.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1337x.to"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.141jj.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1688.com.au"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.173ng.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18board.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.vip"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18mh.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1984bbs.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1991way.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1e100.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1lib.sk"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1point3acres.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1pondo.tv"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2008xianzhang.info"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2021hkcharter.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.name"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.one"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2049bbs.xyz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.233abc.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hbook.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hrs.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.32red.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.36rain.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.404museum.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.466453.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4bluestones.biz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4everproxy.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4rbtv.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4shared.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4sqi.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51jav.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51luoben.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.5278.cc"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.icu"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.63i.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.666pool.cn"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.69shuba.cx"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.news"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.world"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6park.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6parkbbs.com"
         }
       ],
       "represented": 27835,
-      "skipped": 5413,
+      "skipped": 4442,
       "skipped_by_kind": {
-        "domain_keyword": 987,
+        "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
         "opaque_domain": 4388,
@@ -2055,237 +2055,7 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "10010"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "10086"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "114bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "1drv"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "1inch"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "21-school"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2degrees"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2gis"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "4epenaxa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "77bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "82bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "9mobile"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a1"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aave"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ablmm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abnamro"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aboutschwab"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absolutbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "accesspoint"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adcb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adyen"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aexp"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "afisha"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agdbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agri-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airwallex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akbars"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akita-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alefbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfadirect"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alpaca"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alrajhibank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americamovil"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americanexpress"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "amex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ankb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ansarbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "antel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "anz"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aozorabank"
         },
         {
           "kind": "domain_keyword",
@@ -2295,268 +2065,498 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ashikagabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asia-pay"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproexapi"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asx"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atom"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atomyze"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "autokreditbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avangard"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avanza"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avax"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aversbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avici"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "avoddashs"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "awabank"
+          "value": "blogspot"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "axisbank"
+          "value": "colab"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ayabank"
+          "value": "developerprofiles"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "b3"
+          "value": "generativelanguage"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "babki"
+          "value": "gmail"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "backpack"
+          "value": "google"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bancolombia"
+          "value": "microsoft"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bangkokbank"
+          "value": "onedrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-arzamas"
+          "value": "openai"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-credit-suisse-moscow"
+          "value": "plasma-one"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-maskan"
+          "value": "recaptcha"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank131"
+          "value": "skydrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bankermak"
+          "value": "twitter"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankfab"
+          "value": "13.32.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankline"
+          "value": "13.35.0.0/17"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankmellat"
+          "value": "172.110.32.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofamerica"
+          "value": "173.194.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofscotland"
+          "value": "18.184.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofsingapore"
+          "value": "18.194.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "banksepah"
+          "value": "18.208.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "barclays"
+          "value": "18.232.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "base"
+          "value": "192.133.76.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "batelco"
+          "value": "199.59.148.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bcs-bank"
+          "value": "199.96.56.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bell"
+          "value": "202.160.128.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "belo"
+          "value": "209.237.192.0/19"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "best2pay"
+          "value": "216.73.80.0/20"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bestchange"
+          "value": "24.199.123.28/32"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binance"
+          "value": "2620:120:e000::/40"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceapi"
+          "value": "52.200.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancecnt"
+          "value": "52.58.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceru"
+          "value": "52.74.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancezh"
+          "value": "52.77.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bingx"
+          "value": "52.84.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bisq"
+          "value": "54.156.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bit2me"
+          "value": "54.226.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitbank"
+          "value": "54.230.156.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitcoin"
+          "value": "54.93.0.0/16"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "64.23.132.171/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "69.195.160.0/19"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "74.125.0.0/16"
+        },
+        {
+          "kind": "opaque_classical",
+          "reason": "not representable",
+          "value": "IP-ASN,20473,no-resolve"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.000webhost.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.0rz.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1-apple.com.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1000giri.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10beasts.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10musume.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12bet.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1337x.to"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.141jj.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1688.com.au"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.173ng.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18board.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.vip"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18mh.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1984bbs.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1991way.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1e100.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1lib.sk"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1point3acres.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1pondo.tv"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2008xianzhang.info"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2021hkcharter.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.name"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.one"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2049bbs.xyz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.233abc.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hbook.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hrs.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.32red.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.36rain.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.404museum.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.466453.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4bluestones.biz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4everproxy.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4rbtv.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4shared.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4sqi.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51jav.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51luoben.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.5278.cc"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.icu"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.63i.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.666pool.cn"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.69shuba.cx"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.news"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.world"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6park.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6parkbbs.com"
         }
       ],
       "represented": 27835,
-      "skipped": 5413,
+      "skipped": 4442,
       "skipped_by_kind": {
-        "domain_keyword": 987,
+        "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
         "opaque_domain": 4388,
@@ -2568,237 +2568,7 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "10010"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "10086"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "114bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "1drv"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "1inch"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "21-school"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2degrees"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "2gis"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "4epenaxa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "77bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "82bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "9mobile"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "a1"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aave"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ablmm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "abnamro"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aboutschwab"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "absolutbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "accesspoint"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adcb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "adyen"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aexp"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "afisha"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agdbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "agri-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airtm"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "airwallex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akbars"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "akita-bank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alefbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfa"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alfadirect"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alpaca"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "alrajhibank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americamovil"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "americanexpress"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "amex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ankb"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "ansarbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "antel"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "anz"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aozorabank"
         },
         {
           "kind": "domain_keyword",
@@ -2808,268 +2578,498 @@
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ashikagabank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asia-pay"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproex"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asproexapi"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "asx"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atom"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "atomyze"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "autokreditbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avangard"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avanza"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avax"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "aversbank"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
-          "value": "avici"
-        },
-        {
-          "kind": "domain_keyword",
-          "reason": "not representable",
           "value": "avoddashs"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "awabank"
+          "value": "blogspot"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "axisbank"
+          "value": "colab"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "ayabank"
+          "value": "developerprofiles"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "b3"
+          "value": "generativelanguage"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "babki"
+          "value": "gmail"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "backpack"
+          "value": "google"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bancolombia"
+          "value": "microsoft"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bangkokbank"
+          "value": "onedrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-arzamas"
+          "value": "openai"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-credit-suisse-moscow"
+          "value": "plasma-one"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank-maskan"
+          "value": "recaptcha"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bank131"
+          "value": "skydrive"
         },
         {
           "kind": "domain_keyword",
           "reason": "not representable",
-          "value": "bankermak"
+          "value": "twitter"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankfab"
+          "value": "13.32.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankline"
+          "value": "13.35.0.0/17"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankmellat"
+          "value": "172.110.32.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofamerica"
+          "value": "173.194.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofscotland"
+          "value": "18.184.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bankofsingapore"
+          "value": "18.194.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "banksepah"
+          "value": "18.208.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "barclays"
+          "value": "18.232.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "base"
+          "value": "192.133.76.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "batelco"
+          "value": "199.59.148.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bcs-bank"
+          "value": "199.96.56.0/21"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bell"
+          "value": "202.160.128.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "belo"
+          "value": "209.237.192.0/19"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "best2pay"
+          "value": "216.73.80.0/20"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bestchange"
+          "value": "24.199.123.28/32"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binance"
+          "value": "2620:120:e000::/40"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceapi"
+          "value": "52.200.0.0/13"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancecnt"
+          "value": "52.58.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binanceru"
+          "value": "52.74.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "binancezh"
+          "value": "52.77.0.0/16"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bingx"
+          "value": "52.84.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bisq"
+          "value": "54.156.0.0/14"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bit2me"
+          "value": "54.226.0.0/15"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitbank"
+          "value": "54.230.156.0/22"
         },
         {
-          "kind": "domain_keyword",
+          "kind": "ip_cidr",
           "reason": "not representable",
-          "value": "bitcoin"
+          "value": "54.93.0.0/16"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "64.23.132.171/32"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "69.195.160.0/19"
+        },
+        {
+          "kind": "ip_cidr",
+          "reason": "not representable",
+          "value": "74.125.0.0/16"
+        },
+        {
+          "kind": "opaque_classical",
+          "reason": "not representable",
+          "value": "IP-ASN,20473,no-resolve"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.000webhost.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.0rz.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1-apple.com.tw"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1000giri.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10beasts.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.10musume.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12bet.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.12vpn.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1337x.to"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.141jj.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1688.com.au"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.173ng.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18board.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18comic.vip"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.18mh.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1984bbs.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1991way.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1e100.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1lib.sk"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1point3acres.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.1pondo.tv"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2008xianzhang.info"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2021hkcharter.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.name"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2047.one"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.2049bbs.xyz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.233abc.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hbook.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.24hrs.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.32red.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.36rain.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.404museum.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.466453.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4bluestones.biz"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4everproxy.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4rbtv.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4shared.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.4sqi.net"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.500px.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51.ca"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51jav.org"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.51luoben.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.5278.cc"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.611study.icu"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.63i.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.666pool.cn"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.69shuba.cx"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.news"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6do.world"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6park.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.6parkbbs.com"
         }
       ],
       "represented": 27835,
-      "skipped": 5413,
+      "skipped": 4442,
       "skipped_by_kind": {
-        "domain_keyword": 987,
+        "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
         "opaque_domain": 4388,
@@ -3579,7 +3579,7 @@
           "value": "- '+.99btgc01.com"
         }
       ],
-      "represented": 28822,
+      "represented": 27851,
       "skipped": 4426,
       "skipped_by_kind": {
         "ip_cidr": 28,
@@ -4091,7 +4091,7 @@
           "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 28822,
+      "represented": 27851,
       "skipped": 4388,
       "skipped_by_kind": {
         "opaque_domain": 4388

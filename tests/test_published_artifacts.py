@@ -23,6 +23,23 @@ def classical_keywords(ruleset: str) -> set[str]:
     }
 
 
+def classical_domain_matches(ruleset: str, host: str) -> bool:
+    path = ROOT / "dist" / ruleset / "mihomo-classical.list"
+    normalized = host.casefold().rstrip(".")
+    for line in path.read_text(encoding="utf-8").splitlines():
+        kind, separator, value = line.partition(",")
+        if not separator:
+            continue
+        value = value.casefold().rstrip(".")
+        if kind == "DOMAIN" and normalized == value:
+            return True
+        if kind == "DOMAIN-SUFFIX" and (normalized == value or normalized.endswith("." + value)):
+            return True
+        if kind == "DOMAIN-KEYWORD" and value in normalized:
+            return True
+    return False
+
+
 def test_all_manifest_outputs_exist_and_match_hashes() -> None:
     manifests = sorted((ROOT / "dist").glob("*/manifest.json"))
     assert len(manifests) == 8
@@ -62,26 +79,31 @@ def test_cross_border_finance_protected_requirements_are_present() -> None:
     assert "+.plasma.io" not in domains
 
 
-def test_cross_border_finance_has_repository_wide_keyword_fallbacks() -> None:
+def test_cross_border_finance_only_has_explicit_keyword_rules() -> None:
     domains = domain_values("cross-border-finance")
     keywords = classical_keywords("cross-border-finance")
 
-    assert {
-        "binance",
-        "bitget",
-        "bybit",
-        "hsbc",
-        "interactivebrokers",
-        "okx",
-        "plasma-one",
-    } <= keywords
-    assert len(keywords) >= len(domains) * 0.7
-    assert {"cash", "crypto", "home", "payment", "plasma"}.isdisjoint(keywords)
+    assert "+.play.pl" in domains
+    assert keywords == {"plasma-one"}
     xray = (ROOT / "dist" / "cross-border-finance" / "xray-domain-list.txt").read_text(
         encoding="utf-8"
     )
-    assert "keyword:bitget\n" in xray
     assert "keyword:plasma-one\n" in xray
+    assert "keyword:play\n" not in xray
+
+
+def test_cross_border_finance_does_not_capture_google_play_domains() -> None:
+    for host in (
+        "play.google.com",
+        "play.googleapis.com",
+        "play-fe.googleapis.com",
+        "play-lh.googleusercontent.com",
+    ):
+        assert not classical_domain_matches("cross-border-finance", host)
+
+    assert classical_domain_matches("cross-border-finance", "play.pl")
+    assert classical_domain_matches("cross-border-finance", "api.play.pl")
+    assert classical_domain_matches("cross-border-finance", "account.plasma-one.example")
 
 
 def test_ip_proxy_pool_protected_requirements_are_present() -> None:

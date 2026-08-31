@@ -6,41 +6,41 @@
   },
   "counts": {
     "by_action": {
-      "fake_ip_force": 33248
+      "fake_ip_force": 32277
     },
     "by_kind": {
       "domain": 764,
-      "domain_keyword": 987,
+      "domain_keyword": 16,
       "domain_suffix": 27071,
       "ip_cidr": 28,
       "opaque_classical": 1,
       "opaque_domain": 4388,
       "process_name": 9
     },
-    "protected": 93,
-    "total": 33248
+    "protected": 71,
+    "total": 32277
   },
   "description": "Proxy-oriented names that should receive Fake-IP in whitelist mode.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 33248,
-      "sha256": "2a206b64fb500a672c01778ad5513844362f50a37eb1ee9a5faf8903f8f5e640",
-      "size": 493007,
+      "represented_rules": 32277,
+      "sha256": "3f4c905020a9cf0489c090636c13d3e0ca3d640cc5e1a24563946661ea6a04b2",
+      "size": 470683,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 28860,
-      "sha256": "16c0d9e53e52217212ef5de20daaf8b69a793a16db27f962d133c39828e9b682",
-      "size": 822761,
+      "represented_rules": 27889,
+      "sha256": "2ece4671981d2bd615c3ef6979a35c4079dadf92c3cdd25adf6bfc123aa60ffa",
+      "size": 799232,
       "skipped_rules": 4388
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 28860,
-      "sha256": "a08f405e7aefc929dd0bd77e3f90b23e02c7935dad4d96f66224993210314258",
-      "size": 880490,
+      "represented_rules": 27889,
+      "sha256": "95269bc74e1acb953d846624cbb2fbad055b9806032c6633143410ada172b628",
+      "size": 855019,
       "skipped_rules": 4388
     },
     "mihomo-domain-mrs": {
@@ -49,41 +49,41 @@
       "represented_rules": 27835,
       "sha256": "d9403d171f56d4f1ff6eb1b065d513a354f49827e361175673d69c2db3d7e07f",
       "size": 202838,
-      "skipped_rules": 5413
+      "skipped_rules": 4442
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
       "represented_rules": 27835,
       "sha256": "528591ffacff01bd1c2579ed27b200a2f717fee18a0fac340db5a538c9e9dc2f",
       "size": 467651,
-      "skipped_rules": 5413
+      "skipped_rules": 4442
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
       "represented_rules": 27835,
       "sha256": "f71a60871eac9532fbeb087d3e26f2177dde881c7bbbd19c696199fffccf3b5f",
       "size": 523330,
-      "skipped_rules": 5413
+      "skipped_rules": 4442
     },
     "plain-domain": {
       "path": "plain-domain.txt",
       "represented_rules": 27835,
       "sha256": "528591ffacff01bd1c2579ed27b200a2f717fee18a0fac340db5a538c9e9dc2f",
       "size": 467651,
-      "skipped_rules": 5413
+      "skipped_rules": 4442
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 28822,
-      "sha256": "18891f8f3cd8a10c64f4e7825f5792d589a8872b505adc5a673d4d87b9b1de1b",
-      "size": 623838,
+      "represented_rules": 27851,
+      "sha256": "3711f04e543a41c96187d8cf0ed1ea4f094740f4cb4449fc4b4b43d0ddfab918",
+      "size": 607106,
       "skipped_rules": 4426
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 28822,
-      "sha256": "f26d3fa4a7eeacb9ad493e93e3a251a2840d75b58e86f9fed7364ef85c481406",
-      "size": 564780,
+      "represented_rules": 27851,
+      "sha256": "8f92d3b4659555dbb3cd9716eedb0ce20d119dc5fdfc6bf1177c6b0ab2c8e34f",
+      "size": 552903,
       "skipped_rules": 4388
     }
   },
@@ -106,14 +106,14 @@
     "blackmatrix-twitter": 33,
     "loyalsoldier-gfw": 4388,
     "metacubex-ai-not-cn": 179,
-    "metacubex-cryptocurrency": 461,
-    "metacubex-finance": 1183,
+    "metacubex-cryptocurrency": 232,
+    "metacubex-finance": 612,
     "metacubex-geolocation-not-cn": 27001,
     "overlay:ai": 9,
-    "overlay:cross-border-finance": 65,
+    "overlay:cross-border-finance": 34,
     "overlay:fake-ip-force": 16,
     "overlay:ip-proxy-pools": 28,
-    "void-finance-fallback": 908
+    "void-finance-fallback": 476
   },
   "sources": [
     "blackmatrix-ebay",
