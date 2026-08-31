@@ -10,9 +10,11 @@ from typing import Any
 
 from .adapters import parse_source
 from .catalog import Catalog, Recipe, load_catalog, load_overlay
-from .errors import BuildError, ParseError
+from .errors import BuildError, FetchError, ParseError
 from .fetch import (
+    STALE_SOURCE_REASON,
     build_lock_entry,
+    build_stale_lock_entry,
     fetch_sources,
     load_previous_lock,
     write_json_atomic,
@@ -21,6 +23,7 @@ from .model import Action, ParseResult, Provenance, Rule, RuleKind, deduplicate_
 from .normalize import normalize_domain, normalize_ip_network
 from .parsers import parse_classical_line, parse_mihomo_domain_line
 from .render import RenderedFile, output_manifest, render_outputs, rule_counts
+from .snapshots import load_published_source_snapshot
 from .transforms import derive_domain_keyword_fallbacks
 
 
@@ -191,11 +194,15 @@ def _recast(rule: Rule, action: Action) -> Rule:
 def _compose_recipe(
     recipe: Recipe,
     parsed_sources: dict[str, ParseResult],
+    stale_sources: dict[str, list[Rule]],
     built_rules: dict[str, list[Rule]],
 ) -> tuple[list[Rule], dict[str, Any]]:
     rules: list[Rule] = []
     for source_id in recipe.sources:
-        rules.extend(_recast(rule, recipe.action) for rule in parsed_sources[source_id].rules)
+        if source_id in parsed_sources:
+            rules.extend(_recast(rule, recipe.action) for rule in parsed_sources[source_id].rules)
+        elif source_id not in stale_sources:
+            raise BuildError(f"{recipe.id}: source {source_id} has no fresh or published rules")
     for dependency in recipe.rulesets:
         rules.extend(_recast(rule, recipe.action) for rule in built_rules[dependency])
     rules.extend(_overlay_rules(recipe))
@@ -203,6 +210,9 @@ def _compose_recipe(
     if recipe.domain_keyword_fallback is not None:
         rules.extend(derive_domain_keyword_fallbacks(rules, recipe.domain_keyword_fallback))
         rules = deduplicate_rules(rules)
+    for source_id in recipe.sources:
+        rules.extend(stale_sources.get(source_id, []))
+    rules = deduplicate_rules(rules)
     rules, removed = _apply_excludes(recipe, rules)
     rules = deduplicate_rules(rules)
     if not recipe.limits.min_rules <= len(rules) <= recipe.limits.max_rules:
@@ -430,52 +440,136 @@ def build(
         source_id for recipe_id in expanded for source_id in catalog.recipes[recipe_id].sources
     }
     source_specs = [catalog.sources[source_id] for source_id in sorted(source_ids)]
-    work_dir = root / ".work"
-    downloaded = fetch_sources(source_specs, work_dir, offline=offline, workers=workers)
     previous_lock = load_previous_lock(root / "generated" / "sources.lock.json")
     previous_sources = _previous_by_id(previous_lock)
+    work_dir = root / ".work"
+    forced_stale = {
+        spec.id
+        for spec in source_specs
+        if offline and previous_sources.get(spec.id, {}).get("sync_status") == "stale"
+    }
+    fetch_result = fetch_sources(
+        [spec for spec in source_specs if spec.id not in forced_stale],
+        work_dir,
+        offline=offline,
+        workers=workers,
+    )
+    fetch_failures = dict(fetch_result.failures)
+    fetch_failures.update(
+        {
+            source_id: "source remains marked stale during offline rebuild"
+            for source_id in forced_stale
+        }
+    )
 
     parsed: dict[str, ParseResult] = {}
+    stale_by_recipe: dict[str, dict[str, list[Rule]]] = {}
+    stale_report: list[dict[str, Any]] = []
     lock_entries: list[dict[str, Any]] = []
     review_reasons: list[str] = []
     rejected: list[dict[str, Any]] = []
+    unrecoverable: list[str] = []
     for source_id in sorted(source_ids):
-        item = downloaded[source_id]
-        result = parse_source(item.spec, item.data, item.sha256, root=root)
-        count = len(result.rules)
-        if not item.spec.limits.min_rules <= count <= item.spec.limits.max_rules:
-            raise BuildError(
-                f"{source_id}: parsed rule count {count} outside "
-                f"[{item.spec.limits.min_rules}, {item.spec.limits.max_rules}]"
-            )
         previous = previous_sources.get(source_id)
-        if previous:
-            reason = _ratio_review(
-                f"source {source_id}",
-                count,
-                int(previous.get("parsed_rules", 0)),
-                item.spec.limits.max_growth_ratio,
-                item.spec.limits.max_shrink_ratio,
+        item = fetch_result.downloaded.get(source_id)
+        if item is not None:
+            result = parse_source(item.spec, item.data, item.sha256, root=root)
+            count = len(result.rules)
+            if not item.spec.limits.min_rules <= count <= item.spec.limits.max_rules:
+                raise BuildError(
+                    f"{source_id}: parsed rule count {count} outside "
+                    f"[{item.spec.limits.min_rules}, {item.spec.limits.max_rules}]"
+                )
+            if previous:
+                reason = _ratio_review(
+                    f"source {source_id}",
+                    count,
+                    int(previous.get("parsed_rules", 0)),
+                    item.spec.limits.max_growth_ratio,
+                    item.spec.limits.max_shrink_ratio,
+                )
+                if reason:
+                    review_reasons.append(reason)
+            parsed[source_id] = result
+            rejected.extend(entry.as_dict() for entry in result.rejected)
+            lock_entries.append(
+                build_lock_entry(
+                    item,
+                    parsed_rules=count,
+                    rejected_rules=len(result.rejected),
+                    previous=previous,
+                )
             )
-            if reason:
-                review_reasons.append(reason)
-        parsed[source_id] = result
-        rejected.extend(entry.as_dict() for entry in result.rejected)
-        lock_entries.append(
-            build_lock_entry(
-                item,
-                parsed_rules=count,
-                rejected_rules=len(result.rejected),
-                previous=previous,
+            continue
+
+        spec = catalog.sources[source_id]
+        if source_id not in fetch_failures:
+            unrecoverable.append(f"{source_id}: source fetch produced no result")
+            continue
+        if previous is None:
+            unrecoverable.append(
+                f"{source_id}: {fetch_failures[source_id]}; no previous source lock exists"
             )
+            continue
+        expected_sha = str(previous.get("sha256", ""))
+        direct_recipes = sorted(
+            recipe_id for recipe_id in expanded if source_id in catalog.recipes[recipe_id].sources
         )
+        snapshots: list[dict[str, Any]] = []
+        try:
+            if not direct_recipes:
+                raise BuildError("no selected ruleset directly references this source")
+            for recipe_id in direct_recipes:
+                snapshot = load_published_source_snapshot(
+                    root,
+                    ruleset_id=recipe_id,
+                    source_id=source_id,
+                    expected_source_sha=expected_sha,
+                )
+                stale_by_recipe.setdefault(recipe_id, {})[source_id] = list(snapshot.rules)
+                snapshots.append(
+                    {
+                        "ruleset": recipe_id,
+                        "rules": len(snapshot.rules),
+                        "provenance_records": snapshot.provenance_records,
+                    }
+                )
+            lock_entries.append(
+                build_stale_lock_entry(
+                    spec,
+                    previous=previous,
+                    preserved_rules=sum(int(entry["rules"]) for entry in snapshots),
+                    preserved_provenance=sum(
+                        int(entry["provenance_records"]) for entry in snapshots
+                    ),
+                    stale_rulesets=direct_recipes,
+                )
+            )
+        except (BuildError, FetchError) as exc:
+            unrecoverable.append(f"{source_id}: {fetch_failures[source_id]}; {exc}")
+            continue
+        stale_report.append(
+            {
+                "id": source_id,
+                "reason": STALE_SOURCE_REASON,
+                "rulesets": snapshots,
+            }
+        )
+
+    if unrecoverable:
+        raise FetchError("source synchronization failed:\n- " + "\n- ".join(unrecoverable))
 
     built_rules: dict[str, list[Rule]] = {}
     compositions: dict[str, dict[str, Any]] = {}
     for recipe_id in catalog.recipe_order:
         if recipe_id not in expanded:
             continue
-        rules, composition = _compose_recipe(catalog.recipes[recipe_id], parsed, built_rules)
+        rules, composition = _compose_recipe(
+            catalog.recipes[recipe_id],
+            parsed,
+            stale_by_recipe.get(recipe_id, {}),
+            built_rules,
+        )
         built_rules[recipe_id] = rules
         compositions[recipe_id] = composition
 
@@ -536,6 +630,7 @@ def build(
         "review_reasons": sorted(set(review_reasons)),
         "fake_ip_conflicts": conflict_report,
         "rejected_lines": rejected,
+        "stale_sources": stale_report,
     }
     if not check:
         write_json_atomic(root / "generated" / "sources.lock.json", lock)

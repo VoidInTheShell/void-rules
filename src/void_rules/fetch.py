@@ -29,6 +29,15 @@ class DownloadedSource:
     from_cache: bool
 
 
+@dataclass(frozen=True, slots=True)
+class SourceFetchResult:
+    downloaded: dict[str, DownloadedSource]
+    failures: dict[str, str]
+
+
+STALE_SOURCE_REASON = "upstream unavailable; preserved from published rules"
+
+
 def _stable_public_url(value: str) -> str:
     """Remove ephemeral credentials/query data before metadata is persisted."""
 
@@ -178,7 +187,7 @@ def fetch_source(spec: SourceSpec, work_dir: Path, *, offline: bool = False) -> 
                     from_cache=False,
                 )
             except (FetchError, OSError, urllib.error.URLError) as exc:
-                errors.append(f"{url} attempt {attempt}: {exc}")
+                errors.append(f"{_stable_public_url(url)} attempt {attempt}: {exc}")
                 if attempt < 3:
                     time.sleep(0.5 * attempt)
     raise FetchError(f"{spec.id}: all download attempts failed: " + " | ".join(errors))
@@ -190,9 +199,9 @@ def fetch_sources(
     *,
     offline: bool = False,
     workers: int = 8,
-) -> dict[str, DownloadedSource]:
+) -> SourceFetchResult:
     downloaded: dict[str, DownloadedSource] = {}
-    failures: list[str] = []
+    failures: dict[str, str] = {}
     with ThreadPoolExecutor(max_workers=max(1, min(workers, len(specs) or 1))) as executor:
         futures = {
             executor.submit(fetch_source, spec, work_dir, offline=offline): spec.id
@@ -203,10 +212,8 @@ def fetch_sources(
             try:
                 downloaded[source_id] = future.result()
             except Exception as exc:
-                failures.append(f"{source_id}: {exc}")
-    if failures:
-        raise FetchError("source synchronization failed:\n- " + "\n- ".join(sorted(failures)))
-    return downloaded
+                failures[source_id] = str(exc)
+    return SourceFetchResult(downloaded=downloaded, failures=failures)
 
 
 def load_previous_lock(path: Path) -> dict[str, Any]:
@@ -247,6 +254,36 @@ def build_lock_entry(
         "rejected_rules": rejected_rules,
         "changed_at": changed_at,
     }
+
+
+def build_stale_lock_entry(
+    spec: SourceSpec,
+    *,
+    previous: dict[str, Any],
+    preserved_rules: int,
+    preserved_provenance: int,
+    stale_rulesets: list[str],
+) -> dict[str, Any]:
+    source_sha = str(previous.get("sha256", ""))
+    if previous.get("id") != spec.id or len(source_sha) != 64:
+        raise FetchError(f"{spec.id}: previous source lock is missing a valid SHA-256")
+    entry = dict(previous)
+    entry.update(
+        {
+            "id": spec.id,
+            "url": spec.url,
+            "final_url": _stable_public_url(str(previous.get("final_url", spec.url))),
+            "format": spec.format,
+            "behavior": spec.behavior,
+            "license": spec.license,
+            "sync_status": "stale",
+            "stale_reason": STALE_SOURCE_REASON,
+            "preserved_rules": preserved_rules,
+            "preserved_provenance": preserved_provenance,
+            "stale_rulesets": sorted(stale_rulesets),
+        }
+    )
+    return entry
 
 
 def write_json_atomic(path: Path, value: Any) -> None:

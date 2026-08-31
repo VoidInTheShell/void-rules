@@ -115,6 +115,7 @@ def main(argv: list[str] | None = None) -> None:
                 "review_required": build_result.review_required,
                 "rulesets": {key: len(value) for key, value in sorted(build_result.rules.items())},
                 "review_reasons": build_result.report["review_reasons"],
+                "stale_sources": build_result.report["stale_sources"],
             }
             print(json.dumps(summary, ensure_ascii=False, indent=2))
             if args.check and build_result.changed:

@@ -225,5 +225,18 @@
     "ip-proxy-pools",
     "pcdn"
   ],
+  "stale_sources": [
+    {
+      "id": "rfm-fakeip",
+      "reason": "upstream unavailable; preserved from published rules",
+      "rulesets": [
+        {
+          "provenance_records": 79,
+          "rules": 79,
+          "ruleset": "fake-ip-bypass"
+        }
+      ]
+    }
+  ],
   "version": 1
 }

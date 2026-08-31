@@ -65,6 +65,16 @@ class Provenance:
             data["raw"] = self.raw
         return data
 
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> Provenance:
+        return cls(
+            source_id=str(data["source_id"]),
+            line=int(data.get("line", 0)),
+            sha256=str(data.get("sha256", "")),
+            evidence=str(data.get("evidence", "")),
+            raw=str(data.get("raw", "")),
+        )
+
 
 @dataclass(frozen=True, slots=True)
 class Rule:
@@ -108,6 +118,23 @@ class Rule:
         if include_provenance and self.provenance:
             data["provenance"] = [item.as_dict() for item in self.provenance]
         return data
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> Rule:
+        attributes = data.get("attributes", [])
+        provenance = data.get("provenance", [])
+        if not isinstance(attributes, list) or not isinstance(provenance, list):
+            raise ValueError("rule attributes and provenance must be arrays")
+        if any(not isinstance(item, dict) for item in provenance):
+            raise ValueError("rule provenance entries must be objects")
+        return cls(
+            kind=RuleKind(str(data["kind"])),
+            value=str(data["value"]),
+            action=Action(str(data.get("action", Action.MATCH.value))),
+            attributes=tuple(str(item) for item in attributes),
+            provenance=tuple(Provenance.from_dict(item) for item in provenance),
+            protected=bool(data.get("protected", False)),
+        )
 
 
 @dataclass(frozen=True, slots=True)
