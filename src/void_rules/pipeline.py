@@ -21,6 +21,7 @@ from .model import Action, ParseResult, Provenance, Rule, RuleKind, deduplicate_
 from .normalize import normalize_domain, normalize_ip_network
 from .parsers import parse_classical_line, parse_mihomo_domain_line
 from .render import RenderedFile, output_manifest, render_outputs, rule_counts
+from .transforms import derive_domain_keyword_fallbacks
 
 
 @dataclass(slots=True)
@@ -199,6 +200,9 @@ def _compose_recipe(
         rules.extend(_recast(rule, recipe.action) for rule in built_rules[dependency])
     rules.extend(_overlay_rules(recipe))
     rules = deduplicate_rules(rules)
+    if recipe.domain_keyword_fallback is not None:
+        rules.extend(derive_domain_keyword_fallbacks(rules, recipe.domain_keyword_fallback))
+        rules = deduplicate_rules(rules)
     rules, removed = _apply_excludes(recipe, rules)
     rules = deduplicate_rules(rules)
     if not recipe.limits.min_rules <= len(rules) <= recipe.limits.max_rules:

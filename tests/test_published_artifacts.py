@@ -14,6 +14,15 @@ def domain_values(ruleset: str) -> set[str]:
     return set(path.read_text(encoding="utf-8").splitlines())
 
 
+def classical_keywords(ruleset: str) -> set[str]:
+    path = ROOT / "dist" / ruleset / "mihomo-classical.list"
+    return {
+        line.removeprefix("DOMAIN-KEYWORD,")
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if line.startswith("DOMAIN-KEYWORD,")
+    }
+
+
 def test_all_manifest_outputs_exist_and_match_hashes() -> None:
     manifests = sorted((ROOT / "dist").glob("*/manifest.json"))
     assert len(manifests) == 8
@@ -51,6 +60,28 @@ def test_cross_border_finance_protected_requirements_are_present() -> None:
         "+.o2.co.uk",
     } <= domains
     assert "+.plasma.io" not in domains
+
+
+def test_cross_border_finance_has_repository_wide_keyword_fallbacks() -> None:
+    domains = domain_values("cross-border-finance")
+    keywords = classical_keywords("cross-border-finance")
+
+    assert {
+        "binance",
+        "bitget",
+        "bybit",
+        "hsbc",
+        "interactivebrokers",
+        "okx",
+        "plasma-one",
+    } <= keywords
+    assert len(keywords) >= len(domains) * 0.7
+    assert {"cash", "crypto", "home", "payment", "plasma"}.isdisjoint(keywords)
+    xray = (ROOT / "dist" / "cross-border-finance" / "xray-domain-list.txt").read_text(
+        encoding="utf-8"
+    )
+    assert "keyword:bitget\n" in xray
+    assert "keyword:plasma-one\n" in xray
 
 
 def test_ip_proxy_pool_protected_requirements_are_present() -> None:

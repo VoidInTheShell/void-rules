@@ -437,8 +437,8 @@
     },
     {
       "behavior": "domain",
-      "changed_at": "2026-08-21T01:58:09+00:00",
-      "etag": "\"3534d557644c3a31819405454c5afa90c9d323039f5c1c60a8d5a2c2b0b3cdaa\"",
+      "changed_at": "2026-08-31T03:13:09+00:00",
+      "etag": "\"79b4d4ccfe9268f2b6d9b5d9376083f323239b8027d3dd703eb7b7c000657da4\"",
       "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list",
       "format": "mihomo-domain-text",
       "id": "metacubex-cryptocurrency",
@@ -446,14 +446,14 @@
       "license": "GPL-3.0",
       "parsed_rules": 232,
       "rejected_rules": 0,
-      "sha256": "c8e7f76bc03bfa0e8929bd6e9eb92579aa1bc99574f2e833a9aaf46bd09990cb",
+      "sha256": "bb9e19352c689f4eee4ae3b200fb1b91822826f90a7515911aa353623f2e6ac4",
       "size": 3604,
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list"
     },
     {
       "behavior": "domain",
-      "changed_at": "2026-08-21T01:58:09+00:00",
-      "etag": "\"86c7083663c282c58445fb0f4332765b5d18921c3e3447b2895cc12bc66dbb16\"",
+      "changed_at": "2026-08-31T03:13:09+00:00",
+      "etag": "\"38b1285c1e35c1bb2bdcea45c68fa2392786b818d0f0d22fafdaea0e03a7fec4\"",
       "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list",
       "format": "mihomo-domain-text",
       "id": "metacubex-finance",
@@ -461,7 +461,7 @@
       "license": "GPL-3.0",
       "parsed_rules": 612,
       "rejected_rules": 0,
-      "sha256": "fc55b693ab24154b51b1f4025ae057432b082c578c9a57540da4a6ce29201da7",
+      "sha256": "4016751951efe3c20607dce313c5c15028a29f719c0dbb46dd681e1715cbdba8",
       "size": 9691,
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list"
     },

@@ -28,6 +28,9 @@ rules:
   - '+.oklink.com'
   - '+.plasma.org'
   - '+.plasma.to'
+  - kind: domain_keyword
+    value: plasma-one
+    reason: Official Plasma One service domains use changing compound roots.
   - '+.t-mobile.com'
   - '+.tmobile.com'
   - '+.metrobyt-mobile.com'

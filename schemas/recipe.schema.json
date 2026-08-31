@@ -27,6 +27,24 @@
     "exclude": { "type": "string", "pattern": "^overlays/" },
     "assertions": { "type": "string", "pattern": "^overlays/" },
     "conflict_resolutions": { "type": "string", "pattern": "^overlays/" },
+    "domain_keyword_fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min_label_length", "always_include", "exclude"],
+      "properties": {
+        "min_label_length": { "type": "integer", "minimum": 2 },
+        "always_include": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" }
+        },
+        "exclude": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" }
+        }
+      }
+    },
     "outputs": {
       "type": "array",
       "minItems": 1,

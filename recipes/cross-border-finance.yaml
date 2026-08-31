@@ -10,6 +10,73 @@ rulesets: []
 include: overlays/cross-border-finance/include.yaml
 exclude: overlays/cross-border-finance/exclude.yaml
 assertions: overlays/cross-border-finance/assertions.yaml
+domain_keyword_fallback:
+  min_label_length: 4
+  always_include:
+    - a1
+    - anz
+    - asx
+    - b3
+    - bmo
+    - cex
+    - dbs
+    - dnb
+    - htx
+    - jcb
+    - jpx
+    - jse
+    - krx
+    - m1
+    - mtn
+    - n26
+    - o2
+    - okx
+    - rbs
+    - scb
+    - seb
+    - sgx
+    - stc
+    - tmx
+    - tsx
+    - vtb
+    - xtb
+    - zb
+  exclude:
+    - account
+    - accounts
+    - ads
+    - app
+    - apps
+    - asset
+    - assets
+    - auth
+    - blog
+    - cash
+    - cdn
+    - client
+    - cloud
+    - crypto
+    - edu
+    - global
+    - help
+    - home
+    - international
+    - intl
+    - login
+    - mobile
+    - online
+    - pay
+    - payment
+    - payments
+    - portal
+    - prod
+    - production
+    - secure
+    - static
+    - stream
+    - support
+    - web
+    - www
 outputs:
   - jsonl
   - plain-domain

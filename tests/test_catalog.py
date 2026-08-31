@@ -22,3 +22,7 @@ def test_repository_catalog_is_semantically_valid() -> None:
         "pcdn",
     }
     assert len(catalog.discovery["discoverers"]) == 2
+    fallback = catalog.recipes["cross-border-finance"].domain_keyword_fallback
+    assert fallback is not None
+    assert fallback.min_label_length == 4
+    assert {"okx", "o2", "n26"} <= fallback.always_include

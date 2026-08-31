@@ -11,7 +11,12 @@ required:
   - {kind: domain_suffix, value: okx.com}
   - {kind: domain_suffix, value: plasma.org}
   - {kind: domain_suffix, value: plasma.to}
+  - {kind: domain_keyword, value: bitget}
+  - {kind: domain_keyword, value: bybit}
+  - {kind: domain_keyword, value: okx}
+  - {kind: domain_keyword, value: plasma-one}
   - {kind: domain_suffix, value: t-mobile.com}
   - {kind: domain_suffix, value: o2.co.uk}
 forbidden:
   - {kind: domain_suffix, value: plasma.io}
+  - {kind: domain_keyword, value: plasma}

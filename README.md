@@ -16,7 +16,7 @@
 | `ads` | 广告和跟踪域名，同时保留拦截规则与放行规则的区别。 | [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[snapei/clash-pro-rules](https://github.com/snapei/clash-pro-rules)、[TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
 | `global-legal` | Nvidia、Samsung、Intel、AMD、Lenovo、Dell 等全球厂商的域名。 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
 | `ai` | MetaCubeX 的非中国 AI 服务域名，以及 OpenAI、Twitter、Claude 规则。 | [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
-| `cross-border-finance` | 全球银行、支付、券商、交易所、加密货币平台、运营商和地区探测域名。 | [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
+| `cross-border-finance` | 全球银行、支付、券商、交易所、加密货币平台、运营商和地区探测域名；还会从全部合并域名中提取服务标识，生成关键词兜底以覆盖同品牌的新域名和变体域名。 | [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
 | `ip-proxy-pools` | 常见商业 IP 代理池服务商的官网、管理面板、API 和代理网关域名，并保留官方旧品牌和端点。 | 服务商官网与官方文档人工校验；未发现覆盖本业务分类且持续维护的专门社区规则集。 |
 | `pcdn` | PCDN、P2P-CDN 及相关域名阻断规则。 | [pcdn-block-list](https://github.com/VoidInTheShell/pcdn-block-list)、[uselibrary/PCDN](https://github.com/uselibrary/PCDN)、[privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)、[Block-pcdn-domains](https://github.com/thhbdd/Block-pcdn-domains)、[PCDNFilter-CHN](https://github.com/susetao/PCDNFilter-CHN-)、[MyAdBlockRules](https://github.com/Womsxd/MyAdBlockRules) |
 

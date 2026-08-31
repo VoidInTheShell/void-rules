@@ -5,3 +5,6 @@ selectors:
   - kind: domain_suffix
     value: plasma.io
     reason: Domain collision; it is not the official Plasma One service root.
+  - kind: domain_keyword
+    value: plasma
+    reason: Bare keyword would re-include the unrelated plasma.io collision.

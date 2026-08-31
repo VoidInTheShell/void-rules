@@ -35,6 +35,21 @@ class Limits:
 
 
 @dataclass(frozen=True, slots=True)
+class DomainKeywordFallback:
+    min_label_length: int
+    always_include: frozenset[str]
+    exclude: frozenset[str]
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> DomainKeywordFallback:
+        return cls(
+            min_label_length=int(data["min_label_length"]),
+            always_include=frozenset(str(item).casefold() for item in data["always_include"]),
+            exclude=frozenset(str(item).casefold() for item in data["exclude"]),
+        )
+
+
+@dataclass(frozen=True, slots=True)
 class SourceSpec:
     id: str
     name: str
@@ -95,6 +110,7 @@ class Recipe:
     exclude: Path
     assertions: Path
     conflict_resolutions: Path | None
+    domain_keyword_fallback: DomainKeywordFallback | None
     outputs: tuple[str, ...]
     limits: Limits
     notes: str
@@ -113,6 +129,11 @@ class Recipe:
             conflict_resolutions=(
                 root / str(data["conflict_resolutions"])
                 if data.get("conflict_resolutions")
+                else None
+            ),
+            domain_keyword_fallback=(
+                DomainKeywordFallback.from_dict(data["domain_keyword_fallback"])
+                if data.get("domain_keyword_fallback")
                 else None
             ),
             outputs=tuple(str(item) for item in data["outputs"]),
