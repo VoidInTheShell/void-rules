@@ -417,7 +417,10 @@ domain:futustatic.com
 domain:fututrade.com
 domain:fxcorporate.com
 domain:gainstech.ru
+domain:gate.com
 domain:gate.io
+domain:gate.tv
+domain:gateapi.io
 domain:gatedata.org
 domain:gateimg.com
 domain:gateio.live
