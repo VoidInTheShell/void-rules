@@ -1,27 +1,25 @@
-# void-rules
+# Void-Rules
 
 [![Validate rules](https://github.com/VoidInTheShell/void-rules/actions/workflows/validate.yml/badge.svg)](https://github.com/VoidInTheShell/void-rules/actions/workflows/validate.yml)
 [![Python >=3.11](https://img.shields.io/badge/Python-%3E%3D3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-从多个公开规则仓库读取域名、IP、CIDR 和路由规则，整理成可直接供 Mihomo、AdGuard Home、Xray/V2Ray 以及普通脚本使用的规则文件。
-
-这个仓库只同步和整理规则数据，不执行上游仓库里的脚本。原有的 [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules) 和 [pcdn-block-list](https://github.com/VoidInTheShell/pcdn-block-list) 仍然独立维护；本仓库读取它们的公开产物，并不会替代它们。
+支持多格式的场景化分流规则集，提供Clash、V2Ray、ADGuardHome和通用txt集合
 
 ## 提供哪些规则
 
 | 规则集 | 包含内容 | 主要来源 |
 |---|---|---|
-| `fake-ip-bypass` | 直连、局域网、时间同步、连接检测、游戏和其他兼容性敏感域名；这些域名应返回真实 IP。 | [DustinWin/domain-list-custom](https://github.com/DustinWin/domain-list-custom)、[xixu-me/RFM](https://github.com/xixu-me/RFM)、[QuixoticHeart/rule-set](https://github.com/QuixoticHeart/rule-set)、[ShellCrash](https://github.com/juewuy/ShellCrash)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
-| `fake-ip-force` | eBay、Amazon、Microsoft、Google、Gemini、GFW、非中国地区域名，以及 AI、跨境金融和 IP 代理池服务域名；这些域名在白名单模式下使用 Fake-IP。 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)、[Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)，并包含本仓库的 `ai`、`cross-border-finance` 和 `ip-proxy-pools` 规则 |
-| `ads` | 广告和跟踪域名，同时保留拦截规则与放行规则的区别。 | [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[snapei/clash-pro-rules](https://github.com/snapei/clash-pro-rules)、[TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
+| `fake-ip-bypass` | 直连、局域网、时间同步、连接检测、游戏和其他兼容性敏感域名。 | [DustinWin/domain-list-custom](https://github.com/DustinWin/domain-list-custom)、[xixu-me/RFM](https://github.com/xixu-me/RFM)、[QuixoticHeart/rule-set](https://github.com/QuixoticHeart/rule-set)、[ShellCrash](https://github.com/juewuy/ShellCrash)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
+| `fake-ip-force` | eBay、Amazon、Microsoft、Google、Gemini、GFW、非中国地区域名，以及 AI、跨境金融和 IP 代理池服务域名。 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)、[Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)，并包含本仓库的 `ai`、`cross-border-finance` 和 `ip-proxy-pools` 规则 |
+| `ads` | 广告和跟踪域名 | [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)、[snapei/clash-pro-rules](https://github.com/snapei/clash-pro-rules)、[TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
 | `global-legal` | Nvidia、Samsung、Intel、AMD、Lenovo、Dell 等全球厂商的域名。 | [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
 | `ai` | MetaCubeX 的非中国 AI 服务域名，以及 OpenAI、Twitter、Claude 规则。 | [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat)、[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script) |
-| `cross-border-finance` | 全球银行、支付、券商、交易所、加密货币平台、运营商和地区探测域名；关键词规则只保留经过人工确认、无法用固定域名表达的服务。 | [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
-| `ip-proxy-pools` | 常见商业 IP 代理池服务商的官网、管理面板、API 和代理网关域名，并保留官方旧品牌和端点。 | 服务商官网与官方文档人工校验；未发现覆盖本业务分类且持续维护的专门社区规则集。 |
+| `cross-border-finance` | 全球银行、支付、券商、交易所、加密货币平台、运营商和地区探测域名。 | [cross-border-finance-rules](https://github.com/VoidInTheShell/cross-border-finance-rules)、[MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) |
+| `ip-proxy-pools` | 常见商业 IP 代理池服务商的官网、管理面板、API 和代理网关域名，并保留官方旧品牌和端点。 | 自托管 |
 | `pcdn` | PCDN、P2P-CDN 及相关域名阻断规则。 | [pcdn-block-list](https://github.com/VoidInTheShell/pcdn-block-list)、[uselibrary/PCDN](https://github.com/uselibrary/PCDN)、[privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)、[Block-pcdn-domains](https://github.com/thhbdd/Block-pcdn-domains)、[PCDNFilter-CHN](https://github.com/susetao/PCDNFilter-CHN-)、[MyAdBlockRules](https://github.com/Womsxd/MyAdBlockRules) |
 
 > [!IMPORTANT]
-> `fake-ip-bypass` 和 `fake-ip-force` 是两套相反用途的规则，不能互相替换：Mihomo 的 `blacklist` 模式使用 `fake-ip-bypass`，`whitelist` 模式使用 `fake-ip-force`。两套规则发生重复时，兼容性需求优先，并要求构建明确记录冲突。
+> `fake-ip-bypass` 和 `fake-ip-force` 是两套相反用途的规则，前者不能使用fakeip，后者应该强制fakeip：Mihomo dns fakeip字段 的 `blacklist` 模式使用 `fake-ip-bypass`，`whitelist` 模式使用 `fake-ip-force`。两套规则发生重复时，兼容性需求优先，并要求构建明确记录冲突。
 
 ## 规则来源和整理方式
 
@@ -29,7 +27,7 @@
 
 仓库会严格检查来源内容：未知的非注释行、异常的规则数量、来源格式变化和无法表达的规则都会让构建失败或进入审阅，不会静默丢弃。每个生成目录还会保留来源清单、规则数量、哈希和无法转换项目的报告，便于追溯本次产物由哪些公开来源生成。
 
-## 可用的输出格式
+## 可用的规则格式
 
 - Mihomo/Clash：`classical`、`domain`、`ipcidr` 的 YAML 和 text；纯 domain/ipcidr 规则另提供 MRS。
 - AdGuard Home：分别提供 block 和 allow 列表。
@@ -60,11 +58,7 @@
 
 ## 自动更新
 
-GitHub Actions 每 24 小时运行一次（每天 00:17 UTC）检查来源并重建全部规则。目录和配置格式、来源数量变化、受保护文件、冲突处理、代码质量、测试以及离线重建检查全部通过后，生成结果会直接提交到 `main`，不需要人工合并 PR。自动任务只写入 `dist/` 和 `generated/`，不会覆盖来源清单、规则组合或人工补充目录。
-
-如果某个上游仓库被删除或暂时无法读取，构建会用上一版来源锁和已发布规则中的逐条来源记录核验并保留该来源最后一次成功贡献，同时继续更新其他来源；这种可验证的旧来源会在构建报告中标为 `stale`，但不会让同步失败。没有可信历史产物、历史文件损坏或来源哈希不一致时仍会直接失败，避免把缺失来源静默发布为空。
-
-来源可以读取但无法解析、规则数量异常变化、出现未处理冲突、受保护文件被修改，或者任一检查失败时，本次任务同样会失败并保留构建报告，不发布不完整结果。自动发现只在来源清单声明的仓库、目录、发布文件、JSON 路径或网页规则内工作；新候选只会记录到发现结果，不会自动登记为正式来源，也不会直接加入正式规则。
+GitHub Actions 每 24 小时运行一次（每天 00:17 UTC）检查来源并重建全部规则。目录和配置格式、来源数量变化、受保护文件、冲突处理、代码质量、测试以及离线重建检查全部通过后，生成结果会直接提交到 `main`
 
 ## 目录说明
 
