@@ -8,25 +8,25 @@
     },
     "adguard-block": {
       "examples": [],
-      "represented": 227820,
+      "represented": 228106,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "jsonl": {
       "examples": [],
-      "represented": 227820,
+      "represented": 228106,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 227820,
+      "represented": 228106,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 227820,
+      "represented": 228106,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -63,7 +63,7 @@
           "value": "vrdesktop"
         }
       ],
-      "represented": 227814,
+      "represented": 228100,
       "skipped": 6,
       "skipped_by_kind": {
         "domain_keyword": 6
@@ -102,7 +102,7 @@
           "value": "vrdesktop"
         }
       ],
-      "represented": 227814,
+      "represented": 228100,
       "skipped": 6,
       "skipped_by_kind": {
         "domain_keyword": 6
@@ -141,7 +141,7 @@
           "value": "vrdesktop"
         }
       ],
-      "represented": 227814,
+      "represented": 228100,
       "skipped": 6,
       "skipped_by_kind": {
         "domain_keyword": 6
@@ -651,11 +651,11 @@
         }
       ],
       "represented": 0,
-      "skipped": 227820,
+      "skipped": 228106,
       "skipped_by_kind": {
         "domain": 1045,
         "domain_keyword": 6,
-        "domain_suffix": 226769
+        "domain_suffix": 227055
       }
     },
     "mihomo-ipcidr-yaml": {
@@ -1162,11 +1162,11 @@
         }
       ],
       "represented": 0,
-      "skipped": 227820,
+      "skipped": 228106,
       "skipped_by_kind": {
         "domain": 1045,
         "domain_keyword": 6,
-        "domain_suffix": 226769
+        "domain_suffix": 227055
       }
     },
     "plain-domain": {
@@ -1202,7 +1202,7 @@
           "value": "vrdesktop"
         }
       ],
-      "represented": 227814,
+      "represented": 228100,
       "skipped": 6,
       "skipped_by_kind": {
         "domain_keyword": 6
@@ -1712,22 +1712,22 @@
         }
       ],
       "represented": 0,
-      "skipped": 227820,
+      "skipped": 228106,
       "skipped_by_kind": {
         "domain": 1045,
         "domain_keyword": 6,
-        "domain_suffix": 226769
+        "domain_suffix": 227055
       }
     },
     "xray-domain-list": {
       "examples": [],
-      "represented": 227820,
+      "represented": 228106,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 227820,
+      "represented": 228106,
       "skipped": 0,
       "skipped_by_kind": {}
     }
