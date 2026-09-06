@@ -36,6 +36,8 @@ domain:114bank.co.jp
 domain:119474.xyz
 domain:11jav.com
 domain:123-hp.com
+domain:123av.com
+domain:123av.me
 domain:123bin.cc
 domain:123dapp.com
 domain:123dappipad.com
@@ -20197,6 +20199,7 @@ domain:roboform.com
 domain:roborecall.com
 domain:robotoffice.com
 domain:robustnessiskey.com
+domain:roc-taiwan.org
 domain:rocket-inc.net
 domain:rocket.chat
 domain:rocketfishproducts.com
@@ -20242,6 +20245,7 @@ domain:roudao6.buzz
 domain:roudaosp.cc
 domain:roughebonysex.com
 domain:roughman.net
+domain:roushuwo.com
 domain:route53.cn
 domain:routerboard.com
 domain:routledgehandbooks.com
@@ -22408,6 +22412,7 @@ domain:taipeisociety.org
 domain:taipeitimes.com
 domain:taisounds.com
 domain:taiwanadultexpo.com
+domain:taiwanembassy.org
 domain:taiwanhot.net
 domain:taiwanjustice.net
 domain:taiwanmobile.com
@@ -25529,6 +25534,7 @@ domain:wsjmediakit.com
 domain:wsjplus.com
 domain:wsjshop.com
 domain:wsjwine.com
+domain:wtfpass.com
 domain:wtfpeople.com
 domain:wtmobile.com
 domain:wto.org

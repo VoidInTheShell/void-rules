@@ -2,7 +2,7 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 32288,
+      "represented": 32303,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -41,6 +41,16 @@
         {
           "kind": "opaque_domain",
           "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
           "value": "- '+.12bet.com"
         },
         {
@@ -497,22 +507,12 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.acg18.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acgbox.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 27897,
-      "skipped": 4391,
+      "represented": 27903,
+      "skipped": 4400,
       "skipped_by_kind": {
-        "opaque_domain": 4391
+        "opaque_domain": 4400
       }
     },
     "mihomo-classical-yaml": {
@@ -550,6 +550,16 @@
         {
           "kind": "opaque_domain",
           "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
           "value": "- '+.12bet.com"
         },
         {
@@ -1006,22 +1016,12 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.acg18.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acgbox.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 27897,
-      "skipped": 4391,
+      "represented": 27903,
+      "skipped": 4400,
       "skipped_by_kind": {
-        "opaque_domain": 4391
+        "opaque_domain": 4400
       }
     },
     "mihomo-domain-mrs": {
@@ -1284,6 +1284,16 @@
         {
           "kind": "opaque_domain",
           "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
           "value": "- '+.12bet.com"
         },
         {
@@ -1515,25 +1525,15 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
         }
       ],
-      "represented": 27843,
-      "skipped": 4445,
+      "represented": 27849,
+      "skipped": 4454,
       "skipped_by_kind": {
         "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4391,
+        "opaque_domain": 4400,
         "process_name": 9
       }
     },
@@ -1797,6 +1797,16 @@
         {
           "kind": "opaque_domain",
           "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
           "value": "- '+.12bet.com"
         },
         {
@@ -2028,25 +2038,15 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
         }
       ],
-      "represented": 27843,
-      "skipped": 4445,
+      "represented": 27849,
+      "skipped": 4454,
       "skipped_by_kind": {
         "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4391,
+        "opaque_domain": 4400,
         "process_name": 9
       }
     },
@@ -2310,6 +2310,16 @@
         {
           "kind": "opaque_domain",
           "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
           "value": "- '+.12bet.com"
         },
         {
@@ -2541,25 +2551,15 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
         }
       ],
-      "represented": 27843,
-      "skipped": 4445,
+      "represented": 27849,
+      "skipped": 4454,
       "skipped_by_kind": {
         "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4391,
+        "opaque_domain": 4400,
         "process_name": 9
       }
     },
@@ -2823,6 +2823,16 @@
         {
           "kind": "opaque_domain",
           "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
           "value": "- '+.12bet.com"
         },
         {
@@ -3054,25 +3064,15 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
         }
       ],
-      "represented": 27843,
-      "skipped": 4445,
+      "represented": 27849,
+      "skipped": 4454,
       "skipped_by_kind": {
         "domain_keyword": 16,
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4391,
+        "opaque_domain": 4400,
         "process_name": 9
       }
     },
@@ -3252,6 +3252,16 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.10musume.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
         },
         {
           "kind": "opaque_domain",
@@ -3567,24 +3577,14 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.991.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.996.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99btgc01.com"
         }
       ],
-      "represented": 27859,
-      "skipped": 4429,
+      "represented": 27865,
+      "skipped": 4438,
       "skipped_by_kind": {
         "ip_cidr": 28,
         "opaque_classical": 1,
-        "opaque_domain": 4391,
+        "opaque_domain": 4400,
         "process_name": 9
       }
     },
@@ -3619,6 +3619,16 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.10musume.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.com"
+        },
+        {
+          "kind": "opaque_domain",
+          "reason": "not representable",
+          "value": "- '+.123av.me"
         },
         {
           "kind": "opaque_domain",
@@ -4079,22 +4089,12 @@
           "kind": "opaque_domain",
           "reason": "not representable",
           "value": "- '+.acg18.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acgbox.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acgkj.com"
         }
       ],
-      "represented": 27859,
-      "skipped": 4391,
+      "represented": 27865,
+      "skipped": 4400,
       "skipped_by_kind": {
-        "opaque_domain": 4391
+        "opaque_domain": 4400
       }
     }
   }

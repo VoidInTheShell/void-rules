@@ -1,7 +1,7 @@
 {
   "candidate_store": {
     "path": "generated/discovery/candidates.json.gz",
-    "sha256": "a5771c63d284bf635c0904b4f03f27a9f6ec89ace2ef7cac22b352608a013253",
+    "sha256": "31a76b01090cf9f57844e062e288aa2b256e28aaf40074ab18db68ae9137d068",
     "size": 235567,
     "total": 4623
   },
@@ -22,7 +22,7 @@
       "discoverer": "meta-companion-views",
       "endpoints": 4,
       "matched_files": 10795,
-      "response_set_sha256": "00071c23806bd2d89fbb5b619b52113613ec2380695cdf18a4853c032f1bf7b2"
+      "response_set_sha256": "5399eab0797c0aea1eefaec6971abc84f33f1b78a93f5f773d7aaa8d78191478"
     }
   ],
   "stale_rejections": [],
