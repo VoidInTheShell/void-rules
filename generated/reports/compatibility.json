@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 226838,
+        "represented": 227542,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 226838,
+        "represented": 227542,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 226838,
+        "represented": 227542,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 226838,
+        "represented": 227542,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -59,7 +59,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 226833,
+        "represented": 227537,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -93,7 +93,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 226833,
+        "represented": 227537,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -127,7 +127,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 226833,
+        "represented": 227537,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -637,11 +637,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 226838,
+        "skipped": 227542,
         "skipped_by_kind": {
           "domain": 1094,
           "domain_keyword": 5,
-          "domain_suffix": 225739
+          "domain_suffix": 226443
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1148,11 +1148,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 226838,
+        "skipped": 227542,
         "skipped_by_kind": {
           "domain": 1094,
           "domain_keyword": 5,
-          "domain_suffix": 225739
+          "domain_suffix": 226443
         }
       },
       "plain-domain": {
@@ -1183,7 +1183,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 226833,
+        "represented": 227537,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -1693,22 +1693,22 @@
           }
         ],
         "represented": 0,
-        "skipped": 226838,
+        "skipped": 227542,
         "skipped_by_kind": {
           "domain": 1094,
           "domain_keyword": 5,
-          "domain_suffix": 225739
+          "domain_suffix": 226443
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 226838,
+        "represented": 227542,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 226838,
+        "represented": 227542,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6641,7 +6641,7 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 32305,
+        "represented": 32290,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -7148,10 +7148,10 @@
             "value": "- '+.acg18.me"
           }
         ],
-        "represented": 27905,
-        "skipped": 4400,
+        "represented": 27906,
+        "skipped": 4384,
         "skipped_by_kind": {
-          "opaque_domain": 4400
+          "opaque_domain": 4384
         }
       },
       "mihomo-classical-yaml": {
@@ -7657,10 +7657,10 @@
             "value": "- '+.acg18.me"
           }
         ],
-        "represented": 27905,
-        "skipped": 4400,
+        "represented": 27906,
+        "skipped": 4384,
         "skipped_by_kind": {
-          "opaque_domain": 4400
+          "opaque_domain": 4384
         }
       },
       "mihomo-domain-mrs": {
@@ -8166,13 +8166,13 @@
             "value": "- '+.6do.world"
           }
         ],
-        "represented": 27851,
-        "skipped": 4454,
+        "represented": 27852,
+        "skipped": 4438,
         "skipped_by_kind": {
           "domain_keyword": 16,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4400,
+          "opaque_domain": 4384,
           "process_name": 9
         }
       },
@@ -8679,13 +8679,13 @@
             "value": "- '+.6do.world"
           }
         ],
-        "represented": 27851,
-        "skipped": 4454,
+        "represented": 27852,
+        "skipped": 4438,
         "skipped_by_kind": {
           "domain_keyword": 16,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4400,
+          "opaque_domain": 4384,
           "process_name": 9
         }
       },
@@ -9192,13 +9192,13 @@
             "value": "- '+.6do.world"
           }
         ],
-        "represented": 27851,
-        "skipped": 4454,
+        "represented": 27852,
+        "skipped": 4438,
         "skipped_by_kind": {
           "domain_keyword": 16,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4400,
+          "opaque_domain": 4384,
           "process_name": 9
         }
       },
@@ -9705,13 +9705,13 @@
             "value": "- '+.6do.world"
           }
         ],
-        "represented": 27851,
-        "skipped": 4454,
+        "represented": 27852,
+        "skipped": 4438,
         "skipped_by_kind": {
           "domain_keyword": 16,
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4400,
+          "opaque_domain": 4384,
           "process_name": 9
         }
       },
@@ -10218,12 +10218,12 @@
             "value": "- '+.991.com"
           }
         ],
-        "represented": 27867,
-        "skipped": 4438,
+        "represented": 27868,
+        "skipped": 4422,
         "skipped_by_kind": {
           "ip_cidr": 28,
           "opaque_classical": 1,
-          "opaque_domain": 4400,
+          "opaque_domain": 4384,
           "process_name": 9
         }
       },
@@ -10730,10 +10730,10 @@
             "value": "- '+.acg18.me"
           }
         ],
-        "represented": 27867,
-        "skipped": 4400,
+        "represented": 27868,
+        "skipped": 4384,
         "skipped_by_kind": {
-          "opaque_domain": 4400
+          "opaque_domain": 4384
         }
       }
     }
