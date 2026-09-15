@@ -6,79 +6,79 @@
   },
   "counts": {
     "by_action": {
-      "match": 1277
+      "match": 1280
     },
     "by_kind": {
       "domain": 18,
       "domain_keyword": 1,
-      "domain_suffix": 1258
+      "domain_suffix": 1261
     },
     "protected": 34,
-    "total": 1277
+    "total": 1280
   },
   "description": "Global banks, payments, brokers, exchanges, crypto platforms, carriers and regional probes.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 1277,
-      "sha256": "f50b7c9ba18b9527d08bf7ce522609bbdf943c366add9065ab213a7ff0f089b3",
-      "size": 18563,
+      "represented_rules": 1280,
+      "sha256": "42a6eacc9653c619a7c5293d74bbbdf17d44ea01caf02bbf990b9da0afce4159",
+      "size": 18631,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 1277,
-      "sha256": "4a70da976d15288a374233afaef34114e5c67f30d9f21f6f20896ba50d813ae4",
-      "size": 34582,
+      "represented_rules": 1280,
+      "sha256": "fa99f0dabf2088b21d45c33498edb8bb6df69eadb33a165542bbc002f0578c7e",
+      "size": 34663,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 1277,
-      "sha256": "36e9615f25d43a407e8b5903e457fd8070659bcbf1b6e80da86f674aa901a3ad",
-      "size": 37145,
+      "represented_rules": 1280,
+      "sha256": "d9aa5a28b271ce70bcce0fad59d764a8728f4cbf3a129f75b78e2196c879a6ec",
+      "size": 37232,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "path": "mihomo-domain.mrs",
-      "represented_rules": 1276,
-      "sha256": "29df9ca33205da5de35e359cbb6dc793ee45f011ac66476b2bdb7d524d0e05b0",
-      "size": 10187,
+      "represented_rules": 1279,
+      "sha256": "1d29d82ba5e0570ffcde5ec509e482ffa96f834e7be4e1c588559fbc86e65659",
+      "size": 10253,
       "skipped_rules": 1
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 1276,
-      "sha256": "fb3714970c83dcdfd719ba1e2eb51aebd7952c3483ede7517ba15c90b51694ab",
-      "size": 19334,
+      "represented_rules": 1279,
+      "sha256": "873c73841875f11e995d71db866360d9643506e55a46b09052d3a6af178a10dd",
+      "size": 19379,
       "skipped_rules": 1
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 1276,
-      "sha256": "cf727a860b4b6e32bc75047ad0f06c4a6014a38ef6b4f29b5c4dbd7dd49d574d",
-      "size": 21895,
+      "represented_rules": 1279,
+      "sha256": "103cdd9f915e3ce86be7cb31bfe502bb1d91b0d947e3ad5cf23d3b82a6a540ad",
+      "size": 21946,
       "skipped_rules": 1
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 1276,
-      "sha256": "fb3714970c83dcdfd719ba1e2eb51aebd7952c3483ede7517ba15c90b51694ab",
-      "size": 19334,
+      "represented_rules": 1279,
+      "sha256": "873c73841875f11e995d71db866360d9643506e55a46b09052d3a6af178a10dd",
+      "size": 19379,
       "skipped_rules": 1
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 1277,
-      "sha256": "941cdb3e07df6cde1a435472a4322d439b18182781a97426697a94f0a576294d",
-      "size": 25733,
+      "represented_rules": 1280,
+      "sha256": "12c549aa6d6f30bc584420e5456fa11c3bfeb1e7e59483c7950dc9448c20b033",
+      "size": 25793,
       "skipped_rules": 0
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 1277,
-      "sha256": "7bcae1a93a5454ed2591f4c0a884e5325b9197c728a5a365cb247df340ad363b",
-      "size": 23238,
+      "represented_rules": 1280,
+      "sha256": "27c3756f30340f5e385b707bcedbb9e00e4fad07c1a3863149747671ea3a7a8c",
+      "size": 23292,
       "skipped_rules": 0
     }
   },
@@ -86,7 +86,7 @@
   "rulesets": [],
   "source_contributions": {
     "metacubex-cryptocurrency": 235,
-    "metacubex-finance": 612,
+    "metacubex-finance": 615,
     "overlay:cross-border-finance": 34,
     "void-finance-fallback": 476
   },

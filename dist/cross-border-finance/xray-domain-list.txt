@@ -1028,6 +1028,9 @@ domain:stonex.com
 domain:straitsx.com
 domain:stripe-terminal-local-reader.net
 domain:stripe.com
+domain:stripe.dev
+domain:stripe.events
+domain:stripe.global
 domain:stripe.network
 domain:stripecdn.com
 domain:sunrise.ch
