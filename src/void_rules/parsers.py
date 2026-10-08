@@ -151,19 +151,23 @@ def _meaningful_lines(text: str) -> Iterable[tuple[int, str]]:
         yield line_number, stripped
 
 
-def _yaml_payload(text: str) -> list[Any]:
+def _yaml_payload(text: str) -> list[str]:
     try:
         document = yaml.safe_load(text)
     except yaml.YAMLError as exc:
         raise ParseError(f"invalid YAML: {exc}") from exc
-    if isinstance(document, list):
-        return document
+    payload = document if isinstance(document, list) else None
     if isinstance(document, dict):
         for key in ("payload", "rules"):
             value = document.get(key)
             if isinstance(value, list):
-                return value
-    raise ParseError("YAML source must be a list or contain a payload/rules list")
+                payload = value
+                break
+    if payload is None:
+        raise ParseError("YAML source must be a list or contain a payload/rules list")
+    if any(not isinstance(value, str) or not value.strip() for value in payload):
+        raise ParseError("YAML rule entries must be nonempty strings")
+    return payload
 
 
 def _parse_lines(
@@ -244,6 +248,14 @@ def parse_mihomo_domain(
         payload = _yaml_payload(text)
         lines = ((index, str(value).strip()) for index, value in enumerate(payload, start=1))
     else:
+        if any(
+            re.match(r"^(?:payload|rules)\s*:", raw) or raw.startswith(("- ", "["))
+            for _, raw in _meaningful_lines(text)
+        ):
+            raise ParseError(
+                f"{source_id}: YAML container received by domain-text parser; "
+                "declare mihomo-domain-yaml"
+            )
         lines = _meaningful_lines(text)
     return _parse_lines(
         lines,

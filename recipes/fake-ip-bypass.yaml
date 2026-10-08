@@ -15,6 +15,7 @@ sources:
   - blackmatrix-meituan
   - blackmatrix-blizzard
 rulesets: []
+exclude_rulesets: [stun]
 include: overlays/fake-ip-bypass/include.yaml
 exclude: overlays/fake-ip-bypass/exclude.yaml
 assertions: overlays/fake-ip-bypass/assertions.yaml
@@ -30,4 +31,4 @@ outputs:
   - xray-domain-list
   - xray-geosite-dat
 limits: {min_rules: 120, max_rules: 500000, max_growth_ratio: 5.0, max_shrink_ratio: 0.4}
-notes: Use only with fake-ip-filter-mode blacklist.
+notes: NTP remains real-IP. STUN members are removed using the independently synchronized stun ruleset. Use with blacklist, or as the first real-ip rule in rule mode before fake-ip-force.

@@ -1,6 +1,1557 @@
 {
   "fake_ip_conflicts": {
+    "coverage_overlaps": {
+      "items": [
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "adguardteam.github.io"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "github.io"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "connectivity-check.ubuntu.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "ubuntu.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "connectivitycheck.gstatic.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "gstatic.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "detectportal.firefox.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "firefox.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "dl.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "dns.adguard.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "adguard.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "edge-http.microsoft.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "microsoft.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "enrichgw.10010.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "10010.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "injections.adguard.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "adguard.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "izattime.qcomgeo2.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "qcomgeo2.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "lens.l.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "local.adguard.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "adguard.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "mask-h2.icloud.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "icloud.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "mask.icloud.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "icloud.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "mesu.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "na.b.g-tun.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "g-tun.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "nas.synology.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "synology.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "network-test.debian.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "debian.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "networkcheck.kde.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "kde.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "nishub1.10010.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "10010.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "nmcheck.gnome.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "gnome.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "ntp-b.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "ntp-d.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "ntp-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "ntp.ubuntu.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "ubuntu.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "open.e.189.cn"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "189.cn"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "ping.archlinux.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "archlinux.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "proxy.golang.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "golang.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "redirect.archlinux.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "archlinux.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "resolver1.opendns.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "opendns.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "router.asus.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "asus.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "static.adtidy.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "adtidy.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "swcdn.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "swdist.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "swdownload.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "swquery.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "swscan.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-a-b.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-a-g.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-a-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-b-b.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-b-g.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-b-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-c-b.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-c-g.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-c-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-d-b.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-d-g.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-d-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-e-b.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-e-g.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-e-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-ios.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time-macos.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.amazonaws.cn"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "amazonaws.cn"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.asia.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.aws.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "aws.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.cloudflare.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "cloudflare.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.euro.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.facebook.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "facebook.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.windows.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "windows.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time.xtracloud.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "xtracloud.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time1.facebook.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "facebook.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time1.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time2.facebook.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "facebook.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time2.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time3.facebook.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "facebook.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time3.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time4.facebook.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "facebook.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time4.google.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "google.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "time5.facebook.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "facebook.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "ut1-wwv.nist.gov"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nist.gov"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "www.gstatic.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "gstatic.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "www.qualcomm.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "qualcomm.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain",
+            "value": "xtratime.qcomgeo2.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "qcomgeo2.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blizzard.nefficient.co.kr"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "blizzard.nefficient.co.kr"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blizzcon-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "blizzcon-a.akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blizzcon-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blzddist1-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "blzddist1-a.akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blzddist1-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blzddistkr1-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "blzddistkr1-a.akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blzddistkr1-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blzmedia-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "blzmedia-a.akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blzmedia-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blznav.akamaized.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "blznav.akamaized.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "blznav.akamaized.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaized.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "bnetcmsus-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "bnetcmsus-a.akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "bnetcmsus-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "bnetproduct-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "bnetproduct-a.akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "bnetproduct-a.akamaihd.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaihd.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "bnetshopus.akamaized.net"
+          },
+          "force": {
+            "kind": "domain",
+            "value": "bnetshopus.akamaized.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "bnetshopus.akamaized.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "akamaized.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "captive.apple.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "cdn.nintendo.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nintendo.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "cdp.cloud.unity3d.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "unity3d.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "cp.cloudflare.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "cloudflare.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "detectportal.firefox.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "firefox.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "in.th"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "bx.in.th"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "kis.v2.scr.kaspersky-labs.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "kaspersky-labs.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "media.dssott.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "dssott.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "network-test.debian.org"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "debian.org"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "qcloud.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "shortconn.im.qcloud.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "router.asus.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "asus.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "srv.nintendo.net"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "nintendo.net"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "test.steampowered.com"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "steampowered.com"
+          }
+        },
+        {
+          "bypass": {
+            "kind": "domain_suffix",
+            "value": "xn--fiqs8s"
+          },
+          "force": {
+            "kind": "domain_suffix",
+            "value": "apple.xn--fiqs8s"
+          }
+        }
+      ],
+      "total": 109
+    },
     "items": [
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp-b.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp-c.colorado.edu",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp-d.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.time.nl",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.ubuntu.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp0.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.time.nl",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.time.nl",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp3.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp4.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp5.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp6.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp7.ntp-servers.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntppool1.time.nl",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntppool2.time.nl",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-a-b.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-a-g.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-a-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-b-b.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-b-g.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-b-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-c-b.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-c-g.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-c-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-d-b.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-d-g.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-d-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-e-b.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-e-g.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time-e-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.apple.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.asia.apple.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.aws.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.cloudflare.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.euro.apple.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.facebook.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.google.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time.windows.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time1.facebook.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time1.google.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time2.facebook.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time2.google.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time3.facebook.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time3.google.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time4.facebook.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time4.google.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "time5.facebook.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ut1-time.colorado.edu",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ut1-wwv.nist.gov",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "utcnist.colorado.edu",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "utcnist2.colorado.edu",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "utcnist3.colorado.edu",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ats1.e-timing.ne.jp",
+        "winner": "fake-ip-bypass"
+      },
       {
         "explicit": true,
         "kind": "domain_suffix",
@@ -38,6 +1589,14 @@
         "kind": "domain_suffix",
         "protected_bypass": false,
         "protected_force": false,
+        "value": "clock.isc.org",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
         "value": "diablo3.com",
         "winner": "fake-ip-bypass"
       },
@@ -47,6 +1606,14 @@
         "protected_bypass": false,
         "protected_force": false,
         "value": "diabloimmortal.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "firefox-portal-detection.com",
         "winner": "fake-ip-bypass"
       },
       {
@@ -102,6 +1669,262 @@
         "kind": "domain_suffix",
         "protected_bypass": false,
         "protected_force": false,
+        "value": "ntp-os01.ocn.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp-tk01.ocn.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp-tk02.ocn.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.dnsbalance.ring.gr.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.fiord.ru",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.jst.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.nat.ms",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.nc.u-tokyo.ac.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.nic.cz",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.nict.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.ring.gr.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.ripe.net",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.se",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.t.ring.gr.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.tohoku.ac.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.tut.ac.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp.ufe.cz",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp0.ring.gr.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.jst.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.plala.or.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.ring.gr.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.tohoku.ac.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.v6.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp1.wakwak.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.jst.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.plala.or.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.ring.gr.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.tohoku.ac.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.v6.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp2.wakwak.com",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp3.jst.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "ntp3.v6.mfeed.ad.jp",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
         "value": "playhearthstone.com",
         "winner": "fake-ip-bypass"
       },
@@ -127,6 +1950,14 @@
         "protected_bypass": true,
         "protected_force": false,
         "value": "pool.ntp.org",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
+        "value": "s2csntp.miz.nao.ac.jp",
         "winner": "fake-ip-bypass"
       },
       {
@@ -174,6 +2005,14 @@
         "kind": "domain_suffix",
         "protected_bypass": false,
         "protected_force": false,
+        "value": "time.nrc.ca",
+        "winner": "fake-ip-bypass"
+      },
+      {
+        "explicit": true,
+        "kind": "domain_suffix",
+        "protected_bypass": false,
+        "protected_force": false,
         "value": "ts.net",
         "winner": "fake-ip-bypass"
       },
@@ -210,34 +2049,20 @@
         "winner": "fake-ip-bypass"
       }
     ],
-    "total": 26
+    "total": 119
   },
   "rejected_lines": [],
   "review_reasons": [],
   "review_required": false,
   "selected_rulesets": [
-    "ads",
     "ai",
     "cross-border-finance",
     "fake-ip-bypass",
     "fake-ip-force",
-    "global-legal",
     "ip-proxy-pools",
-    "pcdn",
+    "stun",
     "void-claude-rules"
   ],
-  "stale_sources": [
-    {
-      "id": "rfm-fakeip",
-      "reason": "upstream unavailable; preserved from published rules",
-      "rulesets": [
-        {
-          "provenance_records": 79,
-          "rules": 79,
-          "ruleset": "fake-ip-bypass"
-        }
-      ]
-    }
-  ],
+  "stale_sources": [],
   "version": 1
 }

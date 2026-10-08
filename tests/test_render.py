@@ -55,6 +55,15 @@ def test_mrs_domain_compaction_keeps_exact_without_same_root_suffix() -> None:
     assert compacted == 0
 
 
+def test_mrs_subdomains_only_does_not_become_an_apex_suffix() -> None:
+    source = RenderedFile(
+        "mihomo-domain.list", b".relay.example\n+.*.relay.example\nrelay.example\n", 3, ()
+    )
+    data, compacted = _compact_mrs_domain_source(source)
+    assert set(data.decode().splitlines()) == {"+.*.relay.example", "relay.example"}
+    assert compacted == 1
+
+
 def test_process_name_output_is_stable_across_hash_seeds() -> None:
     script = """from pathlib import Path
 from void_rules.model import Action, Rule, RuleKind

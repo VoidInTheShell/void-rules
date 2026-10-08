@@ -159,7 +159,7 @@ def _render_mapped(
 
 
 def _compact_mrs_domain_source(source: RenderedFile) -> tuple[bytes, int]:
-    """Remove only exact names proven redundant with the same ``+.`` suffix.
+    """Normalize subdomain-only syntax and compact equivalent same-root entries.
 
     Mihomo's domain trie performs this lossless compaction internally.  Doing
     it before encoding lets the subsequent decode comparison remain strict:
@@ -167,14 +167,18 @@ def _compact_mrs_domain_source(source: RenderedFile) -> tuple[bytes, int]:
     reports the full number of semantically represented input rules.
     """
 
-    values = set(source.data.decode().splitlines())
+    original = set(source.data.decode().splitlines())
+    # Mihomo's text decoder prints a leading-dot node as +. even when the MRS
+    # excludes the apex. Use an equivalent explicit wildcard before encoding
+    # so strict text round-tripping does not mask that semantic distinction.
+    values = {"+.*" + value if value.startswith(".") else value for value in original}
     suffix_roots = {value[2:] for value in values if value.startswith("+.")}
     redundant_exact = {
         value for value in values if value in suffix_roots and not value.startswith("+.")
     }
     compacted = values - redundant_exact
     ordered = sorted(compacted, key=lambda value: value.casefold())
-    return _text(ordered), len(redundant_exact)
+    return _text(ordered), len(original) - len(compacted)
 
 
 def _compact_mrs_ipcidr_source(source: RenderedFile) -> tuple[bytes, int]:

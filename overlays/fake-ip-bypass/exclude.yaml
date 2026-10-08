@@ -6,3 +6,17 @@ selectors:
     value: 'Mijia Cloud'
     source_id: shellcrash-fakeip
     reason: ShellCrash treats this as a sniffer skip-domain marker and excludes it from DNS rules.
+  # Legacy DustinWin regular expressions may survive in an unavailable-source
+  # snapshot. Current endpoint/wildcard membership is excluded via ruleset stun.
+  - kind: domain_regex
+    value: '^.*\.stun\.[^.]+\.[^.]+$'
+    reason: Legacy STUN bypass expression; STUN is now a standalone ruleset.
+  - kind: domain_regex
+    value: '^.*\.stun\.[^.]+\.[^.]+\.[^.]+$'
+    reason: Legacy STUN bypass expression; STUN is now a standalone ruleset.
+  - kind: domain_regex
+    value: '^.*\.stun\.[^.]+\.[^.]+\.[^.]+\.[^.]+$'
+    reason: Legacy STUN bypass expression; STUN is now a standalone ruleset.
+  - kind: domain_regex
+    value: '^.*\.stun\.[^.]+\.[^.]+\.[^.]+\.[^.]+\.[^.]+$'
+    reason: Legacy STUN bypass expression; STUN is now a standalone ruleset.

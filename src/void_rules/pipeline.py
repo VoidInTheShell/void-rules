@@ -23,6 +23,7 @@ from .model import Action, ParseResult, Provenance, Rule, RuleKind, deduplicate_
 from .normalize import normalize_domain, normalize_ip_network
 from .parsers import parse_classical_line, parse_mihomo_domain_line
 from .render import RenderedFile, output_manifest, render_outputs, rule_counts
+from .separation import exclude_ruleset_members, is_stun_turn_rule
 from .snapshots import load_published_source_snapshot
 from .transforms import derive_domain_keyword_fallbacks
 
@@ -198,14 +199,39 @@ def _compose_recipe(
     built_rules: dict[str, list[Rule]],
 ) -> tuple[list[Rule], dict[str, Any]]:
     rules: list[Rule] = []
+    local_rules = _overlay_rules(recipe)
+    membership = list(local_rules)
+    filtering: dict[str, Any] = {}
+    if recipe.filtered_sources:
+        missing = sorted(set(recipe.sources) - set(parsed_sources))
+        if missing:
+            raise FetchError(
+                f"{recipe.id}: mixed-source filtering requires fresh sources: " + ", ".join(missing)
+            )
+        for source_id in recipe.sources:
+            if source_id not in recipe.filtered_sources:
+                membership.extend(parsed_sources[source_id].rules)
+            elif recipe.source_filter == "stun-turn":
+                membership.extend(
+                    rule for rule in parsed_sources[source_id].rules if is_stun_turn_rule(rule)
+                )
     for source_id in recipe.sources:
         if source_id in parsed_sources:
-            rules.extend(_recast(rule, recipe.action) for rule in parsed_sources[source_id].rules)
+            source_rules = parsed_sources[source_id].rules
+            if source_id in recipe.filtered_sources:
+                omitted, source_rules = exclude_ruleset_members(source_rules, membership)
+                filtering[source_id] = {"selected": len(source_rules), "omitted": len(omitted)}
+                if source_id in recipe.review_unmatched_sources:
+                    filtering[source_id]["omitted_items"] = [
+                        rule.as_dict(include_provenance=False)
+                        for rule in deduplicate_rules(omitted)
+                    ]
+            rules.extend(_recast(rule, recipe.action) for rule in source_rules)
         elif source_id not in stale_sources:
             raise BuildError(f"{recipe.id}: source {source_id} has no fresh or published rules")
     for dependency in recipe.rulesets:
         rules.extend(_recast(rule, recipe.action) for rule in built_rules[dependency])
-    rules.extend(_overlay_rules(recipe))
+    rules.extend(local_rules)
     rules = deduplicate_rules(rules)
     if recipe.domain_keyword_fallback is not None:
         rules.extend(derive_domain_keyword_fallbacks(rules, recipe.domain_keyword_fallback))
@@ -214,6 +240,18 @@ def _compose_recipe(
         rules.extend(stale_sources.get(source_id, []))
     rules = deduplicate_rules(rules)
     rules, removed = _apply_excludes(recipe, rules)
+    separation: dict[str, Any] = {}
+    for dependency in recipe.exclude_rulesets:
+        rules, excluded = exclude_ruleset_members(rules, built_rules[dependency])
+        removed.extend(excluded)
+        separation[dependency] = {
+            "count": len(excluded),
+            "items": [{"kind": rule.kind.value, "value": rule.value} for rule in excluded],
+            "retained_domain_suffix_overlaps": [
+                {"excluded": pair["bypass"], "retained": pair["force"]}
+                for pair in _fakeip_coverage_overlaps(built_rules[dependency], rules)["items"]
+            ],
+        }
     rules = deduplicate_rules(rules)
     if not recipe.limits.min_rules <= len(rules) <= recipe.limits.max_rules:
         raise BuildError(
@@ -221,10 +259,68 @@ def _compose_recipe(
             f"[{recipe.limits.min_rules}, {recipe.limits.max_rules}]"
         )
     _run_assertions(recipe, rules)
-    return rules, {
+    composition: dict[str, Any] = {
         "excluded_rules": len(removed),
         "excluded_protected_rules": sum(1 for rule in removed if rule.protected),
     }
+    if filtering:
+        composition["filtered_sources"] = filtering
+    if separation:
+        return rules, {**composition, "excluded_rulesets": separation}
+    return rules, composition
+
+
+def _check_unmatched_source_changes(
+    catalog: Catalog,
+    recipe: Recipe,
+    composition: dict[str, Any],
+    previous_sources: dict[str, dict[str, Any]],
+) -> None:
+    """Reject unknown additions before writing outputs or advancing the baseline."""
+    if not recipe.review_unmatched_sources:
+        return
+    manifest_path = catalog.root / "dist" / recipe.id / "manifest.json"
+    previous: dict[str, Any] = {}
+    if manifest_path.exists():
+        try:
+            previous = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            raise BuildError(f"{recipe.id}: cannot read classification baseline: {exc}") from exc
+        if not isinstance(previous, dict):
+            raise BuildError(f"{recipe.id}: classification baseline must be an object")
+    for source_id in recipe.review_unmatched_sources:
+        if source_id not in previous_sources:
+            continue  # First build: source/recipe registration is the review boundary.
+        old_items = (
+            previous.get("composition", {})
+            .get("filtered_sources", {})
+            .get(source_id, {})
+            .get("omitted_items")
+        )
+        if old_items is not None:
+            known = {Rule.from_dict(item).content_key for item in old_items}
+        else:
+            # Migrate the old count-only manifest using verified published
+            # bypass provenance, never the just-downloaded mixed-source data.
+            known = set()
+            for consumer in catalog.recipes.values():
+                if recipe.id in consumer.exclude_rulesets and source_id in consumer.sources:
+                    snapshot = load_published_source_snapshot(
+                        catalog.root,
+                        ruleset_id=consumer.id,
+                        source_id=source_id,
+                        expected_source_sha=str(previous_sources[source_id]["sha256"]),
+                    )
+                    known.update(rule.content_key for rule in snapshot.rules)
+            if not known:
+                raise BuildError(f"{recipe.id}: no reviewed unmatched baseline for {source_id}")
+        current = composition["filtered_sources"][source_id]["omitted_items"]
+        added = [item for item in current if Rule.from_dict(item).content_key not in known]
+        if added:
+            raise BuildError(
+                f"{recipe.id}: {len(added)} unclassified additions from {source_id} "
+                "require review: " + json.dumps(added, ensure_ascii=False, sort_keys=True)
+            )
 
 
 def _load_conflict_resolutions(catalog: Catalog) -> dict[tuple[str, str], dict[str, Any]]:
@@ -248,12 +344,49 @@ def _load_conflict_resolutions(catalog: Catalog) -> dict[tuple[str, str], dict[s
     return resolutions
 
 
+def _fakeip_coverage_overlaps(bypass: list[Rule], force: list[Rule]) -> dict[str, Any]:
+    """Report domain/suffix coverage left for ordered DNS rules to resolve.
+
+    A positive domain set cannot subtract a child from a parent suffix. Keep
+    both rules and expose those intersections separately from exact conflicts.
+    Keywords, regexes and wildcards are outside this diagnostic's scope.
+    """
+
+    domain_kinds = {RuleKind.DOMAIN, RuleKind.DOMAIN_SUFFIX}
+    bypass_keys = {(rule.kind.value, rule.value) for rule in bypass if rule.kind in domain_kinds}
+    force_keys = {(rule.kind.value, rule.value) for rule in force if rule.kind in domain_kinds}
+    overlaps: set[tuple[str, str, str, str]] = set()
+    for narrow, broad, reversed_sides in (
+        (bypass_keys, force_keys, False),
+        (force_keys, bypass_keys, True),
+    ):
+        suffixes = {value for kind, value in broad if kind == RuleKind.DOMAIN_SUFFIX.value}
+        for kind, value in narrow:
+            labels = value.split(".")
+            for offset in range(len(labels)):
+                suffix = ".".join(labels[offset:])
+                if suffix not in suffixes or (offset == 0 and kind == RuleKind.DOMAIN_SUFFIX.value):
+                    continue
+                pair = (kind, value, RuleKind.DOMAIN_SUFFIX.value, suffix)
+                if reversed_sides:
+                    pair = (pair[2], pair[3], pair[0], pair[1])
+                overlaps.add(pair)
+    items = [
+        {
+            "bypass": {"kind": bypass_kind, "value": bypass_value},
+            "force": {"kind": force_kind, "value": force_value},
+        }
+        for bypass_kind, bypass_value, force_kind, force_value in sorted(overlaps)
+    ]
+    return {"total": len(items), "items": items}
+
+
 def _resolve_fakeip_conflicts(
     catalog: Catalog,
     built: dict[str, list[Rule]],
 ) -> tuple[dict[str, Any], list[str]]:
     if "fake-ip-bypass" not in built or "fake-ip-force" not in built:
-        return {"total": 0, "items": []}, []
+        return {"total": 0, "items": [], "coverage_overlaps": {"total": 0, "items": []}}, []
     bypass = {rule.content_key: rule for rule in built["fake-ip-bypass"]}
     force = {rule.content_key: rule for rule in built["fake-ip-force"]}
     overlap = sorted(set(bypass) & set(force))
@@ -301,7 +434,13 @@ def _resolve_fakeip_conflicts(
     ]
     _run_assertions(catalog.recipes["fake-ip-bypass"], built["fake-ip-bypass"])
     _run_assertions(catalog.recipes["fake-ip-force"], built["fake-ip-force"])
-    return {"total": len(items), "items": items}, review_reasons
+    return {
+        "total": len(items),
+        "items": items,
+        "coverage_overlaps": _fakeip_coverage_overlaps(
+            built["fake-ip-bypass"], built["fake-ip-force"]
+        ),
+    }, review_reasons
 
 
 def _previous_by_id(lock: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -355,7 +494,7 @@ def _manifest(
     for rule in rules:
         for provenance in rule.provenance:
             source_counts[provenance.source_id] = source_counts.get(provenance.source_id, 0) + 1
-    return {
+    manifest = {
         "version": 1,
         "ruleset": recipe.id,
         "description": recipe.description,
@@ -367,6 +506,15 @@ def _manifest(
         "composition": composition,
         "outputs": output_manifest(rendered),
     }
+    if recipe.exclude_rulesets:
+        manifest["exclude_rulesets"] = list(recipe.exclude_rulesets)
+    if recipe.filtered_sources:
+        manifest["filtered_sources"] = list(recipe.filtered_sources)
+    if recipe.source_filter:
+        manifest["source_filter"] = recipe.source_filter
+    if recipe.review_unmatched_sources:
+        manifest["review_unmatched_sources"] = list(recipe.review_unmatched_sources)
+    return manifest
 
 
 def _collect_expected_files(
@@ -433,7 +581,7 @@ def build(
         changed_dependency = False
         for recipe_id in list(expanded):
             before = len(expanded)
-            expanded.update(catalog.recipes[recipe_id].rulesets)
+            expanded.update(catalog.recipes[recipe_id].dependencies)
             changed_dependency = changed_dependency or len(expanded) != before
 
     source_ids = {
@@ -559,6 +707,26 @@ def build(
     if unrecoverable:
         raise FetchError("source synchronization failed:\n- " + "\n- ".join(unrecoverable))
 
+    # An old exclusion list could silently re-admit new members from another
+    # source. Require fresh inputs for every exclusion dependency, even when
+    # ordinary rulesets are allowed to preserve an unavailable upstream.
+    for recipe_id in sorted(expanded):
+        pending = list(catalog.recipes[recipe_id].exclude_rulesets)
+        seen: set[str] = set()
+        while pending:
+            dependency = pending.pop()
+            if dependency in seen:
+                continue
+            seen.add(dependency)
+            dependency_recipe = catalog.recipes[dependency]
+            missing = sorted(set(dependency_recipe.sources) - set(parsed))
+            if missing:
+                raise FetchError(
+                    f"{recipe_id}: exclusion dependency {dependency} requires fresh sources: "
+                    + ", ".join(missing)
+                )
+            pending.extend(dependency_recipe.dependencies)
+
     built_rules: dict[str, list[Rule]] = {}
     compositions: dict[str, dict[str, Any]] = {}
     for recipe_id in catalog.recipe_order:
@@ -569,6 +737,9 @@ def build(
             parsed,
             stale_by_recipe.get(recipe_id, {}),
             built_rules,
+        )
+        _check_unmatched_source_changes(
+            catalog, catalog.recipes[recipe_id], composition, previous_sources
         )
         built_rules[recipe_id] = rules
         compositions[recipe_id] = composition

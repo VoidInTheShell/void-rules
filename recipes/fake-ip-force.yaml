@@ -1,6 +1,6 @@
 version: 1
 id: fake-ip-force
-description: Proxy-oriented names that should receive Fake-IP in whitelist mode.
+description: Proxy-oriented names that receive Fake-IP after real-IP compatibility exceptions.
 action: fake_ip_force
 sources:
   - blackmatrix-ebay
@@ -32,4 +32,4 @@ outputs:
   - xray-domain-list
   - xray-geosite-dat
 limits: {min_rules: 1000, max_rules: 2000000, max_growth_ratio: 3.0, max_shrink_ratio: 0.5}
-notes: Use only with fake-ip-filter-mode whitelist; IP-only dependency rules are reported and omitted.
+notes: Use in rule mode after fake-ip-bypass real-ip, with MATCH real-ip; standalone whitelist cannot preserve child exceptions under parent suffixes. IP-only dependency rules are reported and omitted.

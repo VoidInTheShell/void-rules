@@ -27,6 +27,7 @@ domain:ciciaicdn.com
 domain:clau.de
 domain:claude.ai
 domain:claude.com
+domain:claude.dev
 domain:claudemcpclient.com
 domain:claudemcpcontent.com
 domain:claudeusercontent.com
@@ -73,6 +74,7 @@ domain:envatousercontent.com
 domain:events.statsigapi.net
 domain:featuregates.org
 domain:flow.google
+domain:flow.google.com
 domain:gateway.ai.cloudflare.com
 domain:geller-pa.googleapis.com
 domain:gemini.google
@@ -103,6 +105,7 @@ domain:kimi.ai
 domain:kiro.dev
 domain:labs.google
 domain:labs.google.com
+domain:labstailwind.pa.googleapis.com
 domain:langchain.com
 domain:launchdarkly.com
 domain:liveperson.net
@@ -114,11 +117,14 @@ domain:manus.im
 domain:manuscdn.com
 domain:marscode.com
 domain:meta.ai
+domain:metaaivm.com
 domain:midjourney.com
 domain:minimax.io
 domain:mistral.ai
 domain:moonshot.ai
 domain:mozilla.ai
+domain:muse.ai
+domain:notebook.google
 domain:notebook.google.com
 domain:notebooklm.google
 domain:notebooklm.google.com
@@ -137,6 +143,7 @@ domain:openaiapi-site.azureedge.net
 domain:openaicom.imgix.net
 domain:openart.ai
 domain:openclaw.ai
+domain:opencode.ai
 domain:openrouter.ai
 domain:openspec.dev
 domain:oystermercury.top
@@ -207,6 +214,8 @@ full:copilot-telemetry.githubusercontent.com
 full:copilot-workspace.githubnext.com
 full:copilotprodattachments.blob.core.windows.net
 full:daily-cloudcode-pa.googleapis.com
+full:geminiweb-pa.clients.google.com
+full:geminiweb-pa.clients6.google.com
 full:notebooklm-pa.googleapis.com
 full:notebooklm.googleapis.com
 full:o33249.ingest.sentry.io

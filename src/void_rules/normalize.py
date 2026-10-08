@@ -65,34 +65,44 @@ def classify_mihomo_domain(value: str) -> tuple[RuleKind, str]:
     for prefix, kind in prefixes:
         if lower.startswith(prefix):
             value = raw[len(prefix) :].strip()
+            if not value:
+                raise ParseError(f"empty {prefix} rule")
             if kind in {RuleKind.DOMAIN, RuleKind.DOMAIN_SUFFIX}:
                 value = normalize_domain(value)
             return kind, value
     if any(char.isspace() for char in raw):
         return RuleKind.OPAQUE_DOMAIN, normalize_domain(raw, allow_special=True)
+    _validate_mihomo_wildcard(raw)
     if raw.startswith("+.") and not any(char in raw[2:] for char in "*?"):
         return RuleKind.DOMAIN_SUFFIX, normalize_domain(raw[2:])
-    if raw.startswith(".") and not any(char in raw[1:] for char in "*?"):
-        return RuleKind.DOMAIN_SUFFIX, normalize_domain(raw[1:])
-    if "*" in raw or "?" in raw or raw.startswith("+."):
+    if "*" in raw or raw.startswith(("+.", ".")):
         return RuleKind.DOMAIN_WILDCARD, normalize_domain(raw)
     return RuleKind.DOMAIN, normalize_domain(raw)
 
 
+def _validate_mihomo_wildcard(pattern: str) -> None:
+    body = pattern.removeprefix("+.").removeprefix(".")
+    if (
+        "?" in body
+        or "+" in body
+        or any("*" in label and label != "*" for label in body.split("."))
+    ):
+        raise ParseError(
+            f"unsupported Mihomo domain wildcard {pattern!r}: "
+            "use whole-label * and leading . or +.; use regex for character patterns"
+        )
+
+
 def wildcard_to_regex(pattern: str) -> str:
-    """Convert Mihomo domain wildcard syntax to an anchored domain regex."""
+    """Match Mihomo's label trie: . excludes the apex, +. includes it."""
+    _validate_mihomo_wildcard(pattern)
     raw = pattern.lower()
     suffix_any_depth = raw.startswith("+.")
+    subdomains_only = raw.startswith(".")
     if suffix_any_depth:
         raw = raw[2:]
-    pieces: list[str] = []
-    for char in raw:
-        if char == "*":
-            pieces.append("[^.]*")
-        elif char == "?":
-            pieces.append("[^.]")
-        else:
-            pieces.append(re.escape(char))
-    body = "".join(pieces)
-    prefix = "(?:.+\\.)?" if suffix_any_depth else ""
+    elif subdomains_only:
+        raw = raw[1:]
+    body = r"\.".join(r"[^.]+" if label == "*" else re.escape(label) for label in raw.split("."))
+    prefix = r"(?:[^.]+\.)*" if suffix_any_depth else r"(?:[^.]+\.)+" if subdomains_only else ""
     return f"^{prefix}{body}$"

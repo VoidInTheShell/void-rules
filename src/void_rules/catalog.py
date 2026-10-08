@@ -105,7 +105,11 @@ class Recipe:
     description: str
     action: Action
     sources: tuple[str, ...]
+    filtered_sources: tuple[str, ...]
+    source_filter: str | None
+    review_unmatched_sources: tuple[str, ...]
     rulesets: tuple[str, ...]
+    exclude_rulesets: tuple[str, ...]
     include: Path
     exclude: Path
     assertions: Path
@@ -122,7 +126,13 @@ class Recipe:
             description=str(data["description"]),
             action=Action(str(data["action"])),
             sources=tuple(str(item) for item in data["sources"]),
+            filtered_sources=tuple(str(item) for item in data.get("filtered_sources", [])),
+            source_filter=str(data["source_filter"]) if data.get("source_filter") else None,
+            review_unmatched_sources=tuple(
+                str(item) for item in data.get("review_unmatched_sources", [])
+            ),
             rulesets=tuple(str(item) for item in data["rulesets"]),
+            exclude_rulesets=tuple(str(item) for item in data.get("exclude_rulesets", [])),
             include=root / str(data["include"]),
             exclude=root / str(data["exclude"]),
             assertions=root / str(data["assertions"]),
@@ -140,6 +150,10 @@ class Recipe:
             limits=Limits.from_dict(data["limits"]),
             notes=str(data.get("notes", "")),
         )
+
+    @property
+    def dependencies(self) -> tuple[str, ...]:
+        return tuple(dict.fromkeys((*self.rulesets, *self.exclude_rulesets)))
 
 
 @dataclass(frozen=True, slots=True)
@@ -161,7 +175,7 @@ class Catalog:
             if recipe_id in visited:
                 return
             visiting.add(recipe_id)
-            for dependency in self.recipes[recipe_id].rulesets:
+            for dependency in self.recipes[recipe_id].dependencies:
                 visit(dependency)
             visiting.remove(recipe_id)
             visited.add(recipe_id)
@@ -278,6 +292,16 @@ def load_catalog(root: Path) -> Catalog:
             raise CatalogError(f"recipe id/path mismatch: {recipe.id} vs {recipe_path.name}")
         if recipe.id in recipes:
             raise CatalogError(f"duplicate recipe id: {recipe.id}")
+        if not set(recipe.filtered_sources) <= set(recipe.sources):
+            raise CatalogError(f"{recipe.id}: filtered sources must also be listed in sources")
+        if recipe.source_filter and not recipe.filtered_sources:
+            raise CatalogError(f"{recipe.id}: source_filter requires filtered sources")
+        if not set(recipe.review_unmatched_sources) <= set(recipe.filtered_sources):
+            raise CatalogError(f"{recipe.id}: reviewed unmatched sources must be filtered sources")
+        if recipe.filtered_sources and not set(recipe.sources) - set(recipe.filtered_sources):
+            raise CatalogError(
+                f"{recipe.id}: filtered sources need an unfiltered membership source"
+            )
         for source_id in recipe.sources:
             if source_id not in sources:
                 raise CatalogError(f"{recipe.id}: unknown source {source_id}")
@@ -296,7 +320,7 @@ def load_catalog(root: Path) -> Catalog:
         recipes[recipe.id] = recipe
 
     for recipe in recipes.values():
-        for dependency in recipe.rulesets:
+        for dependency in recipe.dependencies:
             if dependency not in recipes:
                 raise CatalogError(f"{recipe.id}: unknown recipe dependency {dependency}")
 

@@ -51,12 +51,15 @@ jobs:
       - name: Verify Claude propagation into Fake-IP force
         run: python -m pytest -q tests/test_claude_rules.py
 
+      - name: Verify source parsing and automatic STUN separation
+        run: python -m pytest -q tests/test_gfw_rules.py tests/test_stun_rules.py tests/test_adapters.py tests/test_model_normalize.py
+
       - name: Run Python quality gates
         run: |
           python -m ruff format --check src tests
           python -m ruff check src tests
           python -m mypy src
-          python -m pytest -q --ignore=tests/test_claude_rules.py
+          python -m pytest -q --ignore=tests/test_claude_rules.py --ignore=tests/test_stun_rules.py --ignore=tests/test_gfw_rules.py --ignore=tests/test_adapters.py --ignore=tests/test_model_normalize.py
 
       - name: Run Go tests
         working-directory: cmd/void-rules-geodata

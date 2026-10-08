@@ -42,7 +42,7 @@ def classical_domain_matches(ruleset: str, host: str) -> bool:
 
 def test_all_manifest_outputs_exist_and_match_hashes() -> None:
     manifests = sorted((ROOT / "dist").glob("*/manifest.json"))
-    assert len(manifests) == 9
+    assert len(manifests) == 10
 
     for manifest_path in manifests:
         document = json.loads(manifest_path.read_text(encoding="utf-8"))

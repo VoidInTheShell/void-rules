@@ -1,0 +1,1124 @@
+{
+  "action": "match",
+  "composition": {
+    "excluded_protected_rules": 0,
+    "excluded_rules": 0,
+    "filtered_sources": {
+      "dustinwin-fakeip": {
+        "omitted": 198,
+        "omitted_items": [
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "adguardteam.github.io"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "adrules.top"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "amobile.music.tc.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "anti-ad.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "api-jooxtt.sanook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "api.joox.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "aqqmusic.tc.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "dl.stream.qqmusic.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ff.dorado.sdo.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "heartbeat.belkin.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "isure.stream.qqmusic.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "izattime.qcomgeo2.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "joox.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "lens.l.google.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "local.adguard.org"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "localhost.ptlogin2.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "localhost.sec.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "mesu.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "mobileoc.music.tc.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "music.taihe.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "musicapi.taihe.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "na.b.g-tun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp-b.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp-c.colorado.edu"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp-d.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp.tencent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp.time.nl"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp.ubuntu.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp0.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp1.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp1.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp1.tencent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp1.time.nl"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp2.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp2.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp2.tencent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp2.time.nl"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp3.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp3.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp3.tencent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp4.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp4.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp4.tencent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp5.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp5.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp5.tencent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp6.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp6.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp7.aliyun.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntp7.ntp-servers.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntppool1.time.nl"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ntppool2.time.nl"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "proxy.golang.org"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ps.res.netease.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "shark007.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "songsearch.kugou.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "static.adtidy.org"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "streamoc.music.tc.qq.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "swcdn.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "swdist.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "swdownload.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "swquery.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "swscan.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-a-b.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-a-g.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-a-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-b-b.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-b-g.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-b-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-c-b.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-c-g.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-c-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-d-b.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-d-g.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-d-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-e-b.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-e-g.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time-e-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.amazonaws.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.asia.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.aws.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.cloudflare.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.euro.apple.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.facebook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.google.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.izatcloud.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.windows.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time.xtracloud.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time1.facebook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time1.google.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time2.facebook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time2.google.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time3.facebook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time3.google.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time4.facebook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time4.google.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "time5.facebook.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "trackercdn.kugou.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ut1-time.colorado.edu"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "ut1-wwv.nist.gov"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "utcnist.colorado.edu"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "utcnist2.colorado.edu"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "utcnist3.colorado.edu"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "xnotify.xboxlive.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain",
+            "value": "xtratime.qcomgeo2.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "126.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "3gppnetwork.org"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ats1.e-timing.ne.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "battle.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "battlenet.com.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "cdn.nintendo.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "clock.isc.org"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "cmbchina.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "cmbimg.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "direct"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "dynv6.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "example"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ff14.sdo.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ffxiv.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "finalfantasyxiv.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "gcloudcs.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "gcloudsdk.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "home.arpa"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "invalid"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "kk-rays.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "kuwo.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "lan"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "linksys.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "linksyssmartwifi.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "local"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "localdomain"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "localhost"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "market.xiaomi.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "mcdn.bilivideo.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "media.dssott.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "msftconnecttest.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "msftncsi.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "music.163.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "music.migu.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "n0808.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp-os01.ocn.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp-tk01.ocn.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp-tk02.ocn.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.dnsbalance.ring.gr.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.fiord.ru"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.jst.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.nat.ms"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.nc.u-tokyo.ac.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.neu.edu.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.nic.cz"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.nict.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.ntsc.ac.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.org.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.ring.gr.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.ripe.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.se"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.t.ring.gr.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.tohoku.ac.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.tut.ac.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp.ufe.cz"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp0.ring.gr.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp1.jst.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp1.plala.or.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp1.ring.gr.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp1.tohoku.ac.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp1.v6.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp1.wakwak.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp2.jst.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp2.plala.or.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp2.ring.gr.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp2.tohoku.ac.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp2.v6.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp2.wakwak.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp3.jst.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "ntp3.v6.mfeed.ad.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "oray.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "orayimg.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "pool.ntp.org"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "router.asus.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "s2csntp.miz.nao.ac.jp"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "sandai.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "square-enix.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "srv.nintendo.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "steamcontent.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "test"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "time.edu.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "time.nrc.ca"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "uu.163.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "wargaming.net"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "wggames.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "wotgame.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "wowsgame.cn"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "xiami.com"
+          },
+          {
+            "action": "match",
+            "kind": "domain_suffix",
+            "value": "y.qq.com"
+          }
+        ],
+        "selected": 359
+      },
+      "quixotic-fakeip": {
+        "omitted": 135,
+        "selected": 5
+      },
+      "rfm-fakeip": {
+        "omitted": 67,
+        "selected": 12
+      },
+      "shellcrash-fakeip": {
+        "omitted": 117,
+        "selected": 4
+      }
+    }
+  },
+  "counts": {
+    "by_action": {
+      "match": 372
+    },
+    "by_kind": {
+      "domain": 358,
+      "domain_suffix": 3,
+      "domain_wildcard": 11
+    },
+    "protected": 8,
+    "total": 372
+  },
+  "description": "Standalone STUN/TURN rules synchronized from MetaCubeX and four mixed upstreams, with protected legacy rules.",
+  "filtered_sources": [
+    "dustinwin-fakeip",
+    "rfm-fakeip",
+    "quixotic-fakeip",
+    "shellcrash-fakeip"
+  ],
+  "outputs": {
+    "jsonl": {
+      "path": "rules.jsonl.gz",
+      "represented_rules": 372,
+      "sha256": "61b3e8cea86a0d92e608881138c4f0c28dba8369a12713a1d10ac90fbf74951a",
+      "size": 8699,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-text": {
+      "path": "mihomo-classical.list",
+      "represented_rules": 372,
+      "sha256": "5e5b8eebaa8783ab3ef18acda698a758901284d200f74b41cf66a55293071fb7",
+      "size": 9367,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-yaml": {
+      "path": "mihomo-classical.yaml",
+      "represented_rules": 372,
+      "sha256": "356e7c8639a76aecfd8a8cef0954e5baf1142dd7d2039185a077af3279421149",
+      "size": 10120,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-mrs": {
+      "compacted_rules": 2,
+      "path": "mihomo-domain.mrs",
+      "represented_rules": 372,
+      "sha256": "34e554cd9c88bcf81d8e2c077c37d37ced44e41bd220ee313b7cd17c0541f2ca",
+      "size": 3523,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-text": {
+      "path": "mihomo-domain.list",
+      "represented_rules": 372,
+      "sha256": "bcad6c7bf16770d48f1a509c4589b53751b7a1869398b48b93fd990b0a6d4aaf",
+      "size": 6475,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-yaml": {
+      "path": "mihomo-domain.yaml",
+      "represented_rules": 372,
+      "sha256": "24faf97075a94cc92f6388f4a540b26eb0e670d77df1780df946cefe9487ee20",
+      "size": 7234,
+      "skipped_rules": 0
+    },
+    "plain-domain": {
+      "path": "plain-domain.txt",
+      "represented_rules": 372,
+      "sha256": "bcad6c7bf16770d48f1a509c4589b53751b7a1869398b48b93fd990b0a6d4aaf",
+      "size": 6475,
+      "skipped_rules": 0
+    },
+    "xray-domain-list": {
+      "path": "xray-domain-list.txt",
+      "represented_rules": 372,
+      "sha256": "409f07da260a962dd08db4742f1efadb9df31e2c43d871d920c030571068cce7",
+      "size": 8564,
+      "skipped_rules": 0
+    },
+    "xray-geosite-dat": {
+      "path": "xray-geosite.dat",
+      "represented_rules": 372,
+      "sha256": "c69c6b27c98dc1478668264661ca851431b678f78ae72be60cc301debf2547fa",
+      "size": 8545,
+      "skipped_rules": 0
+    }
+  },
+  "review_unmatched_sources": [
+    "dustinwin-fakeip"
+  ],
+  "ruleset": "stun",
+  "rulesets": [],
+  "source_contributions": {
+    "dustinwin-fakeip": 359,
+    "metacubex-stun": 359,
+    "overlay:stun": 8,
+    "quixotic-fakeip": 5,
+    "rfm-fakeip": 12,
+    "shellcrash-fakeip": 4
+  },
+  "source_filter": "stun-turn",
+  "sources": [
+    "metacubex-stun",
+    "dustinwin-fakeip",
+    "rfm-fakeip",
+    "quixotic-fakeip",
+    "shellcrash-fakeip"
+  ],
+  "version": 1
+}

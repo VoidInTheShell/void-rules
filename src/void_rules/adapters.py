@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from typing import Any
 
 import yaml
@@ -69,18 +70,28 @@ def _parse_geodata_records(
 def _detect_format(data: bytes) -> str:
     if data.startswith(b"\x28\xb5\x2f\xfd"):
         return "mrs"
-    text = _decode_text(data[: min(len(data), 64 * 1024)], "auto-detect")
+    text = _decode_text(data, "auto-detect")
     stripped = text.lstrip()
     if stripped.startswith(("{", "[")):
         return "xray-json"
-    if "payload:" in text[:4096]:
+    first_data_line = next(
+        (
+            line.strip()
+            for line in text.splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        ),
+        "",
+    )
+    if re.search(r"(?m)^\s*(?:payload|rules)\s*:", text[:4096]) or first_data_line.startswith("- "):
         try:
             document = yaml.safe_load(text)
         except yaml.YAMLError as exc:
             raise ParseError(f"auto-detected YAML is invalid: {exc}") from exc
-        payload = document.get("payload") if isinstance(document, dict) else None
+        payload = document
+        if isinstance(document, dict):
+            payload = document.get("payload", document.get("rules"))
         if not isinstance(payload, list):
-            raise ParseError("auto-detected YAML has no payload list")
+            raise ParseError("auto-detected YAML has no payload/rules list")
         values = [str(value).strip() for value in payload]
         classical_prefixes = tuple(
             f"{name},"

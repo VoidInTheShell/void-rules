@@ -36,18 +36,20 @@ Identity is based on semantic kind, normalized value, action and relevant attrib
 
 ## Ordering and precedence
 
-1. Registered upstream rules are unioned.
+1. Registered upstream rules are unioned. A recipe's `filtered_sources` are first restricted to members matched by its unfiltered sources, local include rules or an explicit `source_filter`. The `stun-turn` filter selects existing rules with explicit STUN/TURN domain labels and recognized historical regex shapes; it does not synthesize wildcard rules or identify services by probing. This splits DustinWin, RFM, QuixoticHeart and ShellCrash into STUN while retaining their provenance, then deduplicates with MetaCubeX's category. Selection requires fresh inputs and reports selected/omitted counts. `review_unmatched_sources` stores unmatched items as a classification baseline and blocks new unmatched items before writing any artifacts. The count-only legacy baseline is migrated from checksum-verified bypass provenance. Unknown DustinWin additions cannot silently enter bypass or become accepted by rerunning a failed build.
 2. Local `include` rules are added and marked protected.
-3. Local `exclude` selectors remove matching upstream rules. Removing a protected include requires an explicit protected exclusion.
-4. Cross-ruleset policies run. Fake-IP bypass wins over force for effective output, but an unresolved overlap is still a build error unless listed in the conflict-resolution overlay.
+3. Local `exclude` selectors remove matching upstream rules. `exclude_rulesets` adds exclusion-only dependencies: build them first, then remove matching members across all input sources. Exact kind/value matches, names under an excluded suffix and exact domains matched by excluded wildcard/regex/keyword rules are removed. This explicit exclusion also applies to protected entries and is reported. Broader parents remain; positive sets cannot encode a child exception. Exclusion dependencies require fresh sources, including their transitive dependencies.
+4. Cross-ruleset policies run. Exact Fake-IP overlaps use the conflict-resolution overlay; an unreviewed overlap defaults to bypass and blocks publication. Domain/suffix coverage is reported separately in `fake_ip_conflicts.coverage_overlaps`, with both rules retained. Consumers apply bypass before force using the ordered DNS rules in [MIHOMO.md](MIHOMO.md); removing an exact child cannot override a force parent suffix.
 5. Required/forbidden assertions run against the effective set.
 6. Renderers select only representable kinds and report every omission.
 
 ## Source adapters
 
-Auto-detection is conservative. Strong signatures such as MRS magic, protobuf DAT selected by catalog, JSON/YAML roots and AdGuard markers are evaluated before plain-line heuristics. Ambiguous sources require an explicit format.
+Auto-detection is conservative. Strong signatures such as MRS magic, protobuf DAT selected by catalog, JSON/YAML roots and AdGuard markers are evaluated before plain-line heuristics. Ambiguous sources require an explicit format. YAML containers are parsed in full rather than truncating their documents; entries must be nonempty strings. A YAML payload passed to the domain-text adapter is a fatal format error, including GFW-style list markers. Empty domain/keyword/regex expressions are rejected. Native Mihomo DNS tests check suffix, wildcard and single-label matching against the separation logic.
 
 Binary MRS is decoded by a pinned official Mihomo release. DAT is decoded by the repository Go codec using the V2Ray protobuf messages. Archive extraction is optional and restricted to catalog-declared members with size/path guards.
+
+Mihomo domain wildcards match whole labels: `*` matches one label, `.example.com` excludes the apex, and `+.example.com` includes it. Character globs such as `stun?.example` or `stun*.example` are rejected instead of inventing matching behavior. Classical/Xray regex conversions preserve these boundaries. For MRS round trips, `.example.com` is encoded as equivalent `+.*.example.com`, because the native text decoder otherwise prints a misleading `+.` prefix for a subdomains-only node. See the [pinned Mihomo trie implementation](https://github.com/MetaCubeX/mihomo/blob/v1.19.28/component/trie/domain.go).
 
 ## Discovery
 

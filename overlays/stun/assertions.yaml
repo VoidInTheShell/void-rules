@@ -1,0 +1,10 @@
+version: 1
+ruleset: stun
+format: assertions
+required:
+  - {kind: domain, value: stun.l.google.com}
+  - {kind: domain, value: numb.viagenie.ca}
+  - {kind: domain_suffix, value: metered.live}
+forbidden:
+  - {kind: domain, value: time.google.com}
+  - {kind: domain_suffix, value: pool.ntp.org}

@@ -2,170 +2,25 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 3147,
+      "represented": 3217,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 3147,
+      "represented": 3217,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 3147,
+      "represented": 3217,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-domain-mrs": {
       "examples": [
         {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^Mijia\\sCloud$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.apple\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.edu\\.cn$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.gov$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
           "kind": "ip_cidr",
           "reason": "not representable",
           "value": "101.32.104.4/32"
@@ -521,161 +376,15 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3047,
-      "skipped": 100,
+      "represented": 3146,
+      "skipped": 71,
       "skipped_by_kind": {
-        "domain_regex": 29,
         "ip_cidr": 71
       }
     },
     "mihomo-domain-text": {
       "examples": [
         {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^Mijia\\sCloud$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.apple\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.edu\\.cn$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.gov$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
           "kind": "ip_cidr",
           "reason": "not representable",
           "value": "101.32.104.4/32"
@@ -1031,161 +740,15 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3047,
-      "skipped": 100,
+      "represented": 3146,
+      "skipped": 71,
       "skipped_by_kind": {
-        "domain_regex": 29,
         "ip_cidr": 71
       }
     },
     "mihomo-domain-yaml": {
       "examples": [
         {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^Mijia\\sCloud$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.apple\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.edu\\.cn$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.gov$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
           "kind": "ip_cidr",
           "reason": "not representable",
           "value": "101.32.104.4/32"
@@ -1541,161 +1104,15 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3047,
-      "skipped": 100,
+      "represented": 3146,
+      "skipped": 71,
       "skipped_by_kind": {
-        "domain_regex": 29,
         "ip_cidr": 71
       }
     },
     "plain-domain": {
       "examples": [
         {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^.*\\.stun\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+\\.[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^Mijia\\sCloud$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^[^.]+\\.[^.]+\\.xboxlive\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^localhost\\.[^.]+\\.weixin\\.qq\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^ntp\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time1\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time2\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time3\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time4\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time5\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time6\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time7\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.apple\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.edu\\.cn$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^time\\.[^.]+\\.gov$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
-          "kind": "domain_regex",
-          "reason": "not representable",
-          "value": "^xbox\\.[^.]+\\.microsoft\\.com$"
-        },
-        {
           "kind": "ip_cidr",
           "reason": "not representable",
           "value": "101.32.104.4/32"
@@ -2051,10 +1468,9 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3047,
-      "skipped": 100,
+      "represented": 3146,
+      "skipped": 71,
       "skipped_by_kind": {
-        "domain_regex": 29,
         "ip_cidr": 71
       }
     },
@@ -2416,7 +1832,7 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3076,
+      "represented": 3146,
       "skipped": 71,
       "skipped_by_kind": {
         "ip_cidr": 71
@@ -2424,7 +1840,7 @@
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 3076,
+      "represented": 3146,
       "skipped": 0,
       "skipped_by_kind": {}
     }

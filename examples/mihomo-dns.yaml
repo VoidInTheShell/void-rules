@@ -1,0 +1,30 @@
+# Merge these DNS/provider sections into an existing Mihomo configuration.
+# Preserve the user's resolvers, listener address and traffic routing policy.
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+  fake-ip-filter-mode: rule
+  fake-ip-filter:
+    - RULE-SET,VoidFakeIPBypass,real-ip
+    - RULE-SET,VoidFakeIPForce,fake-ip
+    - MATCH,real-ip
+
+rule-providers:
+  VoidFakeIPBypass:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./ruleset/void-fake-ip-bypass.mrs
+    url: https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-bypass/mihomo-domain.mrs
+    interval: 86400
+  VoidFakeIPForce:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./ruleset/void-fake-ip-force.mrs
+    url: https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/fake-ip-force/mihomo-domain.mrs
+    interval: 86400

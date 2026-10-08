@@ -122,3 +122,379 @@ allow:
     value: cmbimg.com
     winner: fake-ip-bypass
     reason: CMB static/login dependency follows the compatibility rule.
+
+  # Reviewed 2026-10-08: Mozilla captive-portal detection and V2Fly NTP
+  # categories overlap the broad geolocation-not-cn force source.
+  # Evidence and DNS precedence: docs/MIHOMO.md and docs/FAKE-IP-REVIEW.md.
+  - kind: domain
+    value: ntp-b.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp-c.colorado.edu
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp-d.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp.time.nl
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp.ubuntu.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp0.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp1.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp1.time.nl
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp2.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp2.time.nl
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp3.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp4.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp5.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp6.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntp7.ntp-servers.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntppool1.time.nl
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ntppool2.time.nl
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-a-b.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-a-g.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-a-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-b-b.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-b-g.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-b-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-c-b.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-c-g.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-c-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-d-b.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-d-g.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-d-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-e-b.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-e-g.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time-e-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.apple.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.asia.apple.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.aws.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.cloudflare.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.euro.apple.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.facebook.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.google.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time.windows.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time1.facebook.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time1.google.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time2.facebook.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time2.google.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time3.facebook.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time3.google.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time4.facebook.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time4.google.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: time5.facebook.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ut1-time.colorado.edu
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: ut1-wwv.nist.gov
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: utcnist.colorado.edu
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: utcnist2.colorado.edu
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain
+    value: utcnist3.colorado.edu
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ats1.e-timing.ne.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: clock.isc.org
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: firefox-portal-detection.com
+    winner: fake-ip-bypass
+    reason: Firefox captive-portal detection must retain real DNS answers, like other connectivity probes.
+  - kind: domain_suffix
+    value: ntp-os01.ocn.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp-tk01.ocn.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp-tk02.ocn.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.dnsbalance.ring.gr.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.fiord.ru
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.jst.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.nat.ms
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.nc.u-tokyo.ac.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.nic.cz
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.nict.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.ring.gr.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.ripe.net
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.se
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.t.ring.gr.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.tohoku.ac.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.tut.ac.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp.ufe.cz
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp0.ring.gr.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp1.jst.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp1.plala.or.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp1.ring.gr.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp1.tohoku.ac.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp1.v6.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp1.wakwak.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp2.jst.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp2.plala.or.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp2.ring.gr.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp2.tohoku.ac.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp2.v6.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp2.wakwak.com
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp3.jst.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: ntp3.v6.mfeed.ad.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: s2csntp.miz.nao.ac.jp
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.
+  - kind: domain_suffix
+    value: time.nrc.ca
+    winner: fake-ip-bypass
+    reason: Reviewed NTP service from V2Fly category-ntp/category-ntp-jp; time synchronization keeps real DNS answers.

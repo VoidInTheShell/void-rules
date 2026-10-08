@@ -25,16 +25,63 @@ dns:
     - rule-set:VoidFakeIPBypass
 ```
 
-Whitelist templates:
+To return Fake-IP only for the force set while preserving compatibility
+exceptions, use ordered rule mode (verified with the pinned Mihomo v1.19.28):
 
 ```yaml
 dns:
-  fake-ip-filter-mode: whitelist
+  fake-ip-filter-mode: rule
   fake-ip-filter:
-    - rule-set:VoidFakeIPForce
+    - RULE-SET,VoidFakeIPBypass,real-ip
+    - RULE-SET,VoidFakeIPForce,fake-ip
+    - MATCH,real-ip
 ```
 
-The two providers are not aliases. `VoidFakeIPBypass` contains direct/compatibility-sensitive names that must receive real IPs; `VoidFakeIPForce` contains proxy-oriented names that should receive Fake-IP.
+Both providers must be defined. A complete DNS/provider fragment is available in
+[`examples/mihomo-dns.yaml`](../examples/mihomo-dns.yaml); merge it into your
+existing configuration, retaining your DNS resolvers and traffic routing rules.
+
+The two providers are not aliases. `VoidFakeIPBypass` contains compatibility-sensitive
+names that must receive real IPs; `VoidFakeIPForce` contains names that should
+receive Fake-IP after those exceptions. This DNS choice does not set the traffic
+route to DIRECT.
+
+Migrate configurations using only `whitelist` and `VoidFakeIPForce` to the three
+ordered rules above. Removing `time.google.com` from the force set does not stop
+its `google.com` suffix from matching. Standalone whitelist mode cannot express
+this child exception. The final `MATCH,real-ip` preserves the former whitelist
+default for names outside the force set. For clients without rule mode, use the
+blacklist configuration above; its default for other names is Fake-IP.
+
+`generated/reports/build.json` reports remaining domain/suffix intersections in
+`fake_ip_conflicts.coverage_overlaps`. These pairs are retained for rule-mode
+precedence, rather than deleting whole parent domains. This diagnostic does not
+enumerate keyword, regex or wildcard intersections. Unreviewed exact conflicts
+and source-size anomaly gates still block automatic publication.
+
+See the [Mihomo DNS documentation](https://wiki.metacubex.one/config/dns/#fake-ip-filter-mode)
+for rule-mode syntax.
+
+## Standalone STUN
+
+`stun` is a separate subscription with `action: match`. It is not a dependency
+of `fake-ip-force`, and its members and explicit STUN/TURN wildcard exceptions
+are excluded from `fake-ip-bypass` during every build. NTP remains in bypass.
+The set merges MetaCubeX's STUN category with rules selected automatically from
+DustinWin, RFM, QuixoticHeart and ShellCrash, preserving every contributing
+source after deduplication. Selection uses current category members, explicit
+STUN/TURN labels and eight protected legacy rules. Upstream-only additions and
+deletions propagate without editing local overlays. Unknown new DustinWin
+entries block the build before they can enter bypass; existing reviewed NTP
+entries remain there. Classification does not probe arbitrary hostnames.
+The standalone outputs include domain MRS and classical YAML/text. Choose the
+client action explicitly; this repository does not add a STUN DNS rule.
+
+This separates list membership, not all possible DNS matches. Existing broad
+rules such as `+.qq.com`, and the final `MATCH,real-ip`, can still return real
+addresses for STUN names. The bypass manifest records retained domain/suffix
+coverage under `composition.excluded_rulesets.stun.retained_domain_suffix_overlaps`.
+This diagnostic does not enumerate wildcard/regex/keyword intersections.
 
 ## DNS leak boundary
 

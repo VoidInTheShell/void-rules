@@ -1,0 +1,13 @@
+version: 1
+ruleset: stun
+format: mihomo-domain
+default_reason: Preserve the eight pre-existing repository STUN rules moved out of fake-ip-bypass; upstream-only rules are synchronized separately with their original provenance.
+rules:
+  - stun.l.google.com
+  - '+.stun.playstation.net'
+  - 'stun.*.*'
+  - 'stun.*.*.*'
+  - '+.stun.*.*'
+  - '+.stun.*.*.*'
+  - '+.stun.*.*.*.*'
+  - '+.stun.*.*.*.*.*'

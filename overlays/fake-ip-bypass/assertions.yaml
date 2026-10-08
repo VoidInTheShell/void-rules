@@ -8,4 +8,9 @@ required:
   - {kind: domain_suffix, value: cmbchina.com}
   - {kind: domain, value: time1.cloud.tencent.com}
 forbidden:
+  - {kind: domain, value: stun.l.google.com}
+  - {kind: domain, value: numb.viagenie.ca}
+  - {kind: domain_suffix, value: metered.live}
+  - {kind: domain_suffix, value: stun.playstation.net}
+  - {kind: domain_wildcard, value: '+.stun.*.*'}
   - {kind: opaque_domain, value: Mijia Cloud}

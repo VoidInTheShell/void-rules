@@ -2,86 +2,1587 @@
   "action": "fake_ip_bypass",
   "composition": {
     "excluded_protected_rules": 0,
-    "excluded_rules": 1
+    "excluded_rules": 371,
+    "excluded_rulesets": {
+      "stun": {
+        "count": 370,
+        "items": [
+          {
+            "kind": "domain",
+            "value": "iphone-stun.strato-iphone.de"
+          },
+          {
+            "kind": "domain",
+            "value": "numb.viagenie.ca"
+          },
+          {
+            "kind": "domain",
+            "value": "relay.webwormhole.io"
+          },
+          {
+            "kind": "domain",
+            "value": "s1.taraba.net"
+          },
+          {
+            "kind": "domain",
+            "value": "s1.voipstation.jp"
+          },
+          {
+            "kind": "domain",
+            "value": "s2.taraba.net"
+          },
+          {
+            "kind": "domain",
+            "value": "s2.voipstation.jp"
+          },
+          {
+            "kind": "domain",
+            "value": "staticauth.openrelay.metered.ca"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.12connect.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.12voip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.1cbit.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.1und1.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.2talk.co.nz"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.2talk.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.3clogic.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.3cx.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.3deluxe.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.3wayint.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.a-mm.tv"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.aa.net.uk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.acrobits.cz"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.acronis.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.actionvoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.advfn.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.aeta-audio.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.aeta.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.allflac.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.alltel.com.au"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.alpirsbacher.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.altar.com.pl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.annatel.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.antisip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.arbuz.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.atagverwarming.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.avigora.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.avigora.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.awa-shima.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.awt.be"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.axialys.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.b2b2c.ca"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bahnhof.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.baltmannsweiler.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.barracuda.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bcs2005.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bethesda.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bitburger.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bluesip.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bmwgs.cz"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.botonakis.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.bridesbay.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.budgetphone.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.budgetsip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.business-isp.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cablenet-as.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.callromania.ro"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.callwithus.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cbsys.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cellmail.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.chathelp.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cheapvoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ciktel.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cloopen.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.colouredlines.com.au"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.comfi.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.commpeak.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.comtube.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.comtube.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cope.es"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.counterpath.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.counterpath.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.cryptonit.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.darioflaccovio.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.datamanagement.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.dcalling.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.decanet.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.demos.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.develz.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.diallog.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.dingaling.ca"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.doublerobotics.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.drogon.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.duocom.es"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.dus.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.e-fon.ch"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.easybell.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.easycall.pl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.easyvoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.efficace-factory.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.einsundeins.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.einsundeins.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ekiga.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.engineeredarts.co.uk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.eol.co.nz"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.epygi.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.etoilediese.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.eyeball.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.f.haeder.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.faktortel.com.au"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.files.fm"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.finsterwalder.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.fitauto.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.flashdance.cx"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.fmo.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.framasoft.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.freecall.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.freeswitch.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.freevoipdeal.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.frozenmountain.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.fuzemeeting.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.fwdnet.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.galeriemagnet.at"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.geesthacht.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.genymotion.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.gmx.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.gmx.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.godatenow.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.gradwell.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.graftlab.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.grazertrinkwasseringefahr.at"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.halonet.pl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.healthtap.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.heeds.eu"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.hellonanu.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.hoiio.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.hosteurope.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.hot-chilli.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ideasip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.imesh.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.imp.ch"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.infra.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.internetcalls.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.intervoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ipcomms.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ipfire.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ippi.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ipshka.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.iptel.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.irian.at"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.it1.hr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ivao.aero"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.jappix.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.jumblo.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.justvoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.kanet.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.kanojo.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.kaseya.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.kiwilink.co.nz"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.kundenserver.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.l.google.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.lebendigefluesse.at"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.linea7.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.linphone.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.linuxtrent.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.liveo.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.lleida.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.lovense.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.lowratevoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.lugosoft.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.lundimatin.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.m-online.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.magnet.ie"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.manle.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.meetwife.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.mgn.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.mit.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.mitake.com.tw"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.miwifi.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.mixvoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.modulus.gr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.moonlight-stream.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.mozcom.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.myspeciality.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.myvoiptraffic.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.mywatson.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nanocosmos.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nas.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ncic.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.neotel.co.za"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.netappel.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.netappel.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.netgsm.com.tr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nextcloud.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nfon.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.noblogs.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.noc.ams-ix.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.node4.co.uk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nonoh.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nottingham.ac.uk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nova.is"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.nventure.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.on.net.mk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.oncloud7.ch"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ooma.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ooonet.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.oriontelekom.rs"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.outland-net.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ozekiphone.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.patlive.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.peethultra.be"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.personal-voip.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.petcube.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.phone.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.phoneserve.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.pjsip.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.poetamatusel.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.poivy.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.powerpbx.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.powervoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ppdi.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.prizee.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.pure-ip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.qq.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.qvod.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rackco.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.radiojar.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rapidnet.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rb-net.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.refint.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.remote-learner.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ringostat.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rixtelecom.se"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rockenstein.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rolmail.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.romaaeterna.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.romancecompass.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.root-1.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rounds.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ru-brides.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.rynga.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.schlund.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.schulinformatik.at"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.services.mozilla.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sigmavoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.signalwire.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sip.us"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sipdiscount.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.siplogin.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sipnet.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sipnet.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sipnet.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.siportal.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sippeer.dk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sipthor.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.siptraffic.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.siptrunk.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.skydrone.aero"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.skylink.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sma.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.smartvoip.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.smsdiscount.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.snafu.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.softjoys.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.solcon.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.solnet.ch"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sonetel.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sonetel.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sovtest.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.speedy.com.ar"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.spokn.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.spreed.me"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.srce.hr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ssl7.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.stochastix.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.streamnow.ch"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.stunprotocol.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.symform.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.symplicity.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.sysadminman.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.t-online.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.tagan.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.tatneft.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.teachercreated.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.technosens.fr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.tel.lu"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.telbo.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.telefacil.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.telnyx.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.telviva.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.thinkrosystem.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.threema.ch"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.tis-dialog.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.tng.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ttmath.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.tula.nu"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.twt.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.u-blox.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.uabrides.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ucallweconn.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ucsb.edu"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ucw.cz"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.ukh.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.uls.co.za"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.unseen.is"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.usfamily.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.valorant.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vavadating.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.veoh.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.verbo.be"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vidyo.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vipgroup.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.virtual-call.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.viva.gr"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vivox.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vline.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vo.lu"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vodafone.ro"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voicetrading.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voip.aebc.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voip.blackberry.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voip.eutelia.it"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voiparound.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipblast.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipbuster.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipbusterpro.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipcheap.co.uk"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipcheap.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipfibre.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipgain.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipgate.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipia.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipinfocenter.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipplanet.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voippro.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipraider.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipstunt.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voiptia.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipwise.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voipzoom.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vomessen.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vopium.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voxgratia.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voxox.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voys.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voztele.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.voztovoice.org"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.vyke.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.webcalldirect.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.whoi.edu"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.wifirst.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.wwdl.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.xs4all.nl"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.xten.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.xtratelecom.es"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.yesdates.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.yesss.at"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.zadarma.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.zadv.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.zentauron.de"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.zepter.ru"
+          },
+          {
+            "kind": "domain",
+            "value": "stun.zoiper.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun01.sipphone.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun1.faktortel.com.au"
+          },
+          {
+            "kind": "domain",
+            "value": "stun1.l.google.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun1.voiceeclipse.net"
+          },
+          {
+            "kind": "domain",
+            "value": "stun2.l.google.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun3.l.google.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stun4.l.google.com"
+          },
+          {
+            "kind": "domain",
+            "value": "stunserver.org"
+          },
+          {
+            "kind": "domain_suffix",
+            "value": "metered.live"
+          },
+          {
+            "kind": "domain_suffix",
+            "value": "stun.playstation.net"
+          },
+          {
+            "kind": "domain_suffix",
+            "value": "turn.twilio.com"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "*.*.stun.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "*.*.turn.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "*.stun.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "+.stun.*.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "+.stun.*.*.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "+.stun.*.*.*.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "+.stun.*.*.*.*.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "stun.*"
+          },
+          {
+            "kind": "domain_wildcard",
+            "value": "turn.*"
+          }
+        ],
+        "retained_domain_suffix_overlaps": [
+          {
+            "excluded": {
+              "kind": "domain",
+              "value": "stun.qq.com"
+            },
+            "retained": {
+              "kind": "domain_suffix",
+              "value": "qq.com"
+            }
+          }
+        ]
+      }
+    }
   },
   "counts": {
     "by_action": {
-      "fake_ip_bypass": 3147
+      "fake_ip_bypass": 3217
     },
     "by_kind": {
-      "domain": 95,
-      "domain_regex": 29,
-      "domain_suffix": 2873,
-      "domain_wildcard": 79,
+      "domain": 168,
+      "domain_suffix": 2910,
+      "domain_wildcard": 68,
       "ip_cidr": 71
     },
-    "protected": 120,
-    "total": 3147
+    "protected": 112,
+    "total": 3217
   },
   "description": "Direct, local and compatibility-sensitive names that must receive real IPs.",
+  "exclude_rulesets": [
+    "stun"
+  ],
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 3147,
-      "sha256": "468a3f4e1447db51b35c7ea9a279d6a0e9b9449afad8fa060d52a04632a24fc8",
-      "size": 45727,
+      "represented_rules": 3217,
+      "sha256": "02c17f20f1bd19a97b623be7191464419d95d4caf486f32adb5a1f0d2a6555f7",
+      "size": 46389,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 3147,
-      "sha256": "003d98a47c4fbd9249e35f58d3ba78df36185488615f0a9aed04e4f3ed869ed3",
-      "size": 91731,
+      "represented_rules": 3217,
+      "sha256": "b5ea2cfce76ff4c4424d787f19c2ecf09cf6afedb33f4145606a4ae5ee0e172a",
+      "size": 93181,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 3147,
-      "sha256": "d39b42412eea5407761b86593aac159abfa7afc352fa390ac6e9508430a3ca45",
-      "size": 98034,
+      "represented_rules": 3217,
+      "sha256": "87c2c019fa657cc30c277f5d4199045bf1e05f741a8a5b0fe2ad21bfbbd81909",
+      "size": 99624,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
-      "compacted_rules": 12,
+      "compacted_rules": 10,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 3047,
-      "sha256": "1a4a473c757e43be6320af220c1bbba1037cea53472339eff37d2ad1e93a2a4e",
-      "size": 21894,
-      "skipped_rules": 100
+      "represented_rules": 3146,
+      "sha256": "f07b6bad473f5e3fe5795173178c48dce07c4b910de169b11bcab3bc2971f842",
+      "size": 22578,
+      "skipped_rules": 71
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 3047,
-      "sha256": "f49c8a44c1521d3352f22eda19d0cbcb1417dd4d63ddcfc86172907caafa7c24",
-      "size": 51958,
-      "skipped_rules": 100
+      "represented_rules": 3146,
+      "sha256": "bd8992712852cb32741be55bec00a1863f4da54d1097de0e4f8d38f7ac77b245",
+      "size": 53844,
+      "skipped_rules": 71
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 3047,
-      "sha256": "04768ebfefa79efaa9285459c7025cdd926a8d45452781cc5818694a0fe34d3d",
-      "size": 58149,
-      "skipped_rules": 100
+      "represented_rules": 3146,
+      "sha256": "b554cdd8079a231860a82388eaa3efdd00eddeccf2b719b37415dfdecc3d8b55",
+      "size": 60227,
+      "skipped_rules": 71
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 3047,
-      "sha256": "f49c8a44c1521d3352f22eda19d0cbcb1417dd4d63ddcfc86172907caafa7c24",
-      "size": 51958,
-      "skipped_rules": 100
+      "represented_rules": 3146,
+      "sha256": "bd8992712852cb32741be55bec00a1863f4da54d1097de0e4f8d38f7ac77b245",
+      "size": 53844,
+      "skipped_rules": 71
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 3076,
-      "sha256": "a03b42008b6a9f1da57d0f4d7365e55eef8de4c1b0e7910795fccb644d853b0d",
-      "size": 69015,
+      "represented_rules": 3146,
+      "sha256": "2e2c79caa9764cac881930a4102441ef3e5a0c028b4b1a3baf347f2defb6a3a0",
+      "size": 70300,
       "skipped_rules": 71
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 3076,
-      "sha256": "441a2b1c0b37df60835a12c54932c1e17d18e8e81c154d572ae21574910601b3",
-      "size": 63073,
+      "represented_rules": 3146,
+      "sha256": "7f9633ebe1b855253e76af7a84f9e6da67a98abf03eff292616acb05d7e9d7da",
+      "size": 64364,
       "skipped_rules": 0
     }
   },
@@ -92,14 +1593,14 @@
     "blackmatrix-meituan": 7,
     "blackmatrix-netease": 146,
     "blackmatrix-tencent": 2518,
-    "dustinwin-fakeip": 116,
-    "metacubex-connectivity-check": 27,
+    "dustinwin-fakeip": 198,
+    "metacubex-connectivity-check": 28,
     "metacubex-games-cn": 37,
     "metacubex-private": 130,
-    "overlay:fake-ip-bypass": 120,
-    "quixotic-fakeip": 139,
-    "rfm-fakeip": 79,
-    "shellcrash-fakeip": 120
+    "overlay:fake-ip-bypass": 112,
+    "quixotic-fakeip": 134,
+    "rfm-fakeip": 67,
+    "shellcrash-fakeip": 116
   },
   "sources": [
     "dustinwin-fakeip",

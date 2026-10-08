@@ -2,1027 +2,21 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 32335,
+      "represented": 28051,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
-      "examples": [
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.000webhost.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.0rz.tw"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1000giri.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.10beasts.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.10musume.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.123av.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.123av.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12bet.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12vpn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12vpn.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1337x.to"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.141jj.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.5278.cc"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.63i.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.666pool.cn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.69shuba.cx"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.news"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parker.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parknews.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.7capture.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8-d.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.85cc.us"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.881903.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.89-64.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8964museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8z1.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91dasai.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91porn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91porny.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91vps.club"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.991.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.996.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99btgc01.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99cn.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9bis.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9bis.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9cache.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9gag.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9news.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9oju31.launches.appsflyersdk.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.a-normal-day.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.a248.e.akamai.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aamacau.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aave.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abc.net.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abc.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abebooks.co.uk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abebooks.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abematv.akamaized.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aboluowang.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.about.gitlab.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.about.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abplive.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acast.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.accountboy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.accountkit.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acevpn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg.mn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg.rip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg18.me"
-        }
-      ],
-      "represented": 27951,
-      "skipped": 4384,
-      "skipped_by_kind": {
-        "opaque_domain": 4384
-      }
+      "examples": [],
+      "represented": 28051,
+      "skipped": 0,
+      "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
-      "examples": [
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.000webhost.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.0rz.tw"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1000giri.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.10beasts.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.10musume.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.123av.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.123av.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12bet.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12vpn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12vpn.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1337x.to"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.141jj.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.5278.cc"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.63i.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.666pool.cn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.69shuba.cx"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.news"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parker.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parknews.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.7capture.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8-d.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.85cc.us"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.881903.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.89-64.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8964museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8z1.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91dasai.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91porn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91porny.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91vps.club"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.991.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.996.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99btgc01.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99cn.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9bis.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9bis.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9cache.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9gag.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9news.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9oju31.launches.appsflyersdk.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.a-normal-day.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.a248.e.akamai.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aamacau.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aave.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abc.net.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abc.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abebooks.co.uk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abebooks.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abematv.akamaized.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aboluowang.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.about.gitlab.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.about.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abplive.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acast.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.accountboy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.accountkit.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acevpn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg.mn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg.rip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg18.me"
-        }
-      ],
-      "represented": 27951,
-      "skipped": 4384,
-      "skipped_by_kind": {
-        "opaque_domain": 4384
-      }
+      "examples": [],
+      "represented": 28051,
+      "skipped": 0,
+      "skipped_by_kind": {}
     },
     "mihomo-domain-mrs": {
       "examples": [
@@ -1292,248 +286,82 @@
           "value": "IP-ASN,399358,no-resolve"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.000webhost.com"
+          "value": "BackupandSync"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.0rz.tw"
+          "value": "Claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
+          "value": "Claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1000giri.net"
+          "value": "GoogleDriveFS.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10beasts.net"
+          "value": "OneDrive"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10musume.com"
+          "value": "OneDriveUpdater"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.com"
+          "value": "claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.me"
+          "value": "claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12bet.com"
+          "value": "com.amazon.avod.thirdpartyclient"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.com"
+          "value": "com.android.vending"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.net"
+          "value": "com.google.android.gms"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1337x.to"
+          "value": "com.google.android.gsf"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.141jj.com"
+          "value": "com.google.android.play.games"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
+          "value": "cowork-svc.exe"
         }
       ],
-      "represented": 27884,
-      "skipped": 4451,
+      "represented": 27984,
+      "skipped": 67,
       "skipped_by_kind": {
         "domain_keyword": 19,
         "ip_cidr": 32,
         "opaque_classical": 2,
-        "opaque_domain": 4384,
         "process_name": 14
       }
     },
@@ -1805,248 +633,82 @@
           "value": "IP-ASN,399358,no-resolve"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.000webhost.com"
+          "value": "BackupandSync"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.0rz.tw"
+          "value": "Claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
+          "value": "Claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1000giri.net"
+          "value": "GoogleDriveFS.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10beasts.net"
+          "value": "OneDrive"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10musume.com"
+          "value": "OneDriveUpdater"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.com"
+          "value": "claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.me"
+          "value": "claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12bet.com"
+          "value": "com.amazon.avod.thirdpartyclient"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.com"
+          "value": "com.android.vending"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.net"
+          "value": "com.google.android.gms"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1337x.to"
+          "value": "com.google.android.gsf"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.141jj.com"
+          "value": "com.google.android.play.games"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
+          "value": "cowork-svc.exe"
         }
       ],
-      "represented": 27884,
-      "skipped": 4451,
+      "represented": 27984,
+      "skipped": 67,
       "skipped_by_kind": {
         "domain_keyword": 19,
         "ip_cidr": 32,
         "opaque_classical": 2,
-        "opaque_domain": 4384,
         "process_name": 14
       }
     },
@@ -2318,248 +980,82 @@
           "value": "IP-ASN,399358,no-resolve"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.000webhost.com"
+          "value": "BackupandSync"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.0rz.tw"
+          "value": "Claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
+          "value": "Claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1000giri.net"
+          "value": "GoogleDriveFS.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10beasts.net"
+          "value": "OneDrive"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10musume.com"
+          "value": "OneDriveUpdater"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.com"
+          "value": "claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.me"
+          "value": "claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12bet.com"
+          "value": "com.amazon.avod.thirdpartyclient"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.com"
+          "value": "com.android.vending"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.net"
+          "value": "com.google.android.gms"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1337x.to"
+          "value": "com.google.android.gsf"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.141jj.com"
+          "value": "com.google.android.play.games"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
+          "value": "cowork-svc.exe"
         }
       ],
-      "represented": 27884,
-      "skipped": 4451,
+      "represented": 27984,
+      "skipped": 67,
       "skipped_by_kind": {
         "domain_keyword": 19,
         "ip_cidr": 32,
         "opaque_classical": 2,
-        "opaque_domain": 4384,
         "process_name": 14
       }
     },
@@ -2831,248 +1327,82 @@
           "value": "IP-ASN,399358,no-resolve"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.000webhost.com"
+          "value": "BackupandSync"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.0rz.tw"
+          "value": "Claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
+          "value": "Claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1000giri.net"
+          "value": "GoogleDriveFS.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10beasts.net"
+          "value": "OneDrive"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10musume.com"
+          "value": "OneDriveUpdater"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.com"
+          "value": "claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.me"
+          "value": "claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12bet.com"
+          "value": "com.amazon.avod.thirdpartyclient"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.com"
+          "value": "com.android.vending"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.net"
+          "value": "com.google.android.gms"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1337x.to"
+          "value": "com.google.android.gsf"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.141jj.com"
+          "value": "com.google.android.play.games"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
+          "value": "cowork-svc.exe"
         }
       ],
-      "represented": 27884,
-      "skipped": 4451,
+      "represented": 27984,
+      "skipped": 67,
       "skipped_by_kind": {
         "domain_keyword": 19,
         "ip_cidr": 32,
         "opaque_classical": 2,
-        "opaque_domain": 4384,
         "process_name": 14
       }
     },
@@ -3249,853 +1579,89 @@
           "value": "IP-ASN,399358,no-resolve"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.000webhost.com"
+          "value": "BackupandSync"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.0rz.tw"
+          "value": "Claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
+          "value": "Claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1000giri.net"
+          "value": "GoogleDriveFS.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10beasts.net"
+          "value": "OneDrive"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.10musume.com"
+          "value": "OneDriveUpdater"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.com"
+          "value": "claude"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.123av.me"
+          "value": "claude.exe"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12bet.com"
+          "value": "com.amazon.avod.thirdpartyclient"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.com"
+          "value": "com.android.vending"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.12vpn.net"
+          "value": "com.google.android.gms"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1337x.to"
+          "value": "com.google.android.gsf"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.141jj.com"
+          "value": "com.google.android.play.games"
         },
         {
-          "kind": "opaque_domain",
+          "kind": "process_name",
           "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.5278.cc"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.63i.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.666pool.cn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.69shuba.cx"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.news"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parker.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parknews.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.7capture.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8-d.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.85cc.us"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.881903.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.89-64.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8964museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8z1.net"
+          "value": "cowork-svc.exe"
         }
       ],
-      "represented": 27903,
-      "skipped": 4432,
+      "represented": 28003,
+      "skipped": 48,
       "skipped_by_kind": {
         "ip_cidr": 32,
         "opaque_classical": 2,
-        "opaque_domain": 4384,
         "process_name": 14
       }
     },
     "xray-geosite-dat": {
-      "examples": [
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.000webhost.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.0rz.tw"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1-apple.com.tw"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1000giri.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.10beasts.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.10musume.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.123av.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.123av.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12bet.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12vpn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.12vpn.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1337x.to"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.141jj.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1688.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.173ng.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18board.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18comic.vip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.18mh.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1984bbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1991way.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1e100.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1lib.sk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1point3acres.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.1pondo.tv"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2008xianzhang.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2021hkcharter.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.name"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2047.one"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.2049bbs.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.233abc.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hbook.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.24hrs.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.32red.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.36rain.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.404museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.466453.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4bluestones.biz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4everproxy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4rbtv.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4shared.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.4sqi.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.500px.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51.ca"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51jav.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.51luoben.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.5278.cc"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.611study.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.63i.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.666pool.cn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.69shuba.cx"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.news"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6do.world"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6park.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parkbbs.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parker.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.6parknews.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.7capture.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8-d.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.85cc.us"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.881903.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.89-64.org"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8964museum.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.8z1.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91dasai.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91porn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91porny.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.91vps.club"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.991.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.996.icu"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99btgc01.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.99cn.info"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9bis.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9bis.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9cache.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9gag.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9news.com.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.9oju31.launches.appsflyersdk.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.a-normal-day.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.a248.e.akamai.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aamacau.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aave.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abc.net.au"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abc.xyz"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abebooks.co.uk"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abebooks.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abematv.akamaized.net"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.aboluowang.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.about.gitlab.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.about.me"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.abplive.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acast.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.accountboy.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.accountkit.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acevpn.com"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg.mn"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg.rip"
-        },
-        {
-          "kind": "opaque_domain",
-          "reason": "not representable",
-          "value": "- '+.acg18.me"
-        }
-      ],
-      "represented": 27903,
-      "skipped": 4384,
-      "skipped_by_kind": {
-        "opaque_domain": 4384
-      }
+      "examples": [],
+      "represented": 28003,
+      "skipped": 0,
+      "skipped_by_kind": {}
     }
   }
 }

@@ -1,6 +1,6 @@
 version: 1
 sources:
-  # Fake-IP bypass sources
+  # Fake-IP and standalone STUN sources
   - id: dustinwin-fakeip
     name: DustinWin domain-list-custom fakeip-filter
     url: https://github.com/DustinWin/domain-list-custom/releases/download/domains/fakeip-filter.list
@@ -11,7 +11,19 @@ sources:
     allowed_hosts: [github.com, release-assets.githubusercontent.com, objects.githubusercontent.com]
     strict: true
     limits: {min_bytes: 256, max_bytes: 2097152, min_rules: 20, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.3}
-    notes: Preferred readable source for DustinWin's derived fakeip-filter MRS.
+    notes: Mixed Fake-IP upstream. The bypass recipe excludes the independently synchronized STUN ruleset before publishing.
+
+  - id: metacubex-stun
+    name: MetaCubeX STUN category
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-stun.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 256, max_bytes: 2097152, min_rules: 100, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.5}
+    notes: Standalone STUN membership, including metered.live. Used to exclude STUN from mixed bypass sources, not to choose a DNS or routing action.
 
   - id: rfm-fakeip
     name: xixu-me RFM fake-ip-filter
@@ -183,7 +195,7 @@ sources:
   - id: loyalsoldier-gfw
     name: Loyalsoldier GFW domains
     url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
-    format: mihomo-domain-text
+    format: mihomo-domain-yaml
     behavior: domain
     license: GPL-3.0
     homepage: https://github.com/Loyalsoldier/clash-rules
