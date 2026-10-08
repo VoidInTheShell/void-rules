@@ -422,6 +422,21 @@
     },
     {
       "behavior": "domain",
+      "changed_at": "2026-10-08T10:19:56+00:00",
+      "etag": "\"8ed12aad589cd37bc871ee0cb7c7e61ae18acad8cec87fd4cd5570013f1b571c\"",
+      "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list",
+      "format": "mihomo-domain-text",
+      "id": "metacubex-anthropic",
+      "last_modified": "",
+      "license": "GPL-3.0",
+      "parsed_rules": 9,
+      "rejected_rules": 0,
+      "sha256": "40158d6d6f218c6055cd4ec8bde727859435cc52d6c47e0473c3d0a841c5bc5c",
+      "size": 166,
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list"
+    },
+    {
+      "behavior": "domain",
       "changed_at": "2026-08-14T04:18:28+00:00",
       "etag": "\"beb119f39ac96b7c96205ada9f482e1fd6902c1920228220fa8160ca0aaa629d\"",
       "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/connectivity-check.list",
@@ -651,6 +666,36 @@
       "sha256": "d665bceb2fd1ff226db60c666d8d643139debd5021a475583b2c50df2c0e4897",
       "size": 4296,
       "url": "https://raw.githubusercontent.com/VoidInTheShell/pcdn-block-list/master/pcdn_block_clash.yaml"
+    },
+    {
+      "behavior": "classical",
+      "changed_at": "2026-10-08T10:19:56+00:00",
+      "etag": "\"e7c5842a83b96031060fa5ce1f0d05497ecdc1e87a6c2158a2ef7a85630b851a\"",
+      "final_url": "https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/main/rules/clash/anthropic.yaml",
+      "format": "clash-classical-yaml",
+      "id": "vpsdance-anthropic",
+      "last_modified": "",
+      "license": "MIT",
+      "parsed_rules": 50,
+      "rejected_rules": 0,
+      "sha256": "f1d4b6057b71688b3dbd11e4fee222cf48e3ba48d3de736223f33fd755c116c5",
+      "size": 1823,
+      "url": "https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/main/rules/clash/anthropic.yaml"
+    },
+    {
+      "behavior": "classical",
+      "changed_at": "2026-10-08T10:19:56+00:00",
+      "etag": "\"5bad753eaf7a87ad05ac57d5fe7e1735146a4b4c16843c2ee99f3295240b7aab\"",
+      "final_url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list",
+      "format": "clash-classical-text",
+      "id": "xiaolai-anthropic",
+      "last_modified": "",
+      "license": "MIT",
+      "parsed_rules": 13,
+      "rejected_rules": 0,
+      "sha256": "70a7b5f15b51a275f85d630e9420fac84ecb4dd3bb54c26ba58f4277761b444b",
+      "size": 858,
+      "url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list"
     }
   ],
   "version": 1

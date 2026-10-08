@@ -65,6 +65,6 @@ The lock records final URL, ETag/Last-Modified when present, byte size, SHA-256,
 
 ## Automation boundary
 
-Scheduled synchronization runs strict parsing, assertions, native MRS/DAT round trips and all tests before publication. `ci-decision` permits a direct update only when the build has no review flag, discovery candidates are unchanged and no more than 40 generated files changed. Candidate changes, anomaly gates and broad updates use the `automation/rules-sync` review pull request.
+Scheduled synchronization runs daily at 00:17 UTC and supports manual dispatch. It discovers sources and builds every recipe, including `void-claude-rules`, then verifies offline reproducibility, strict parsing, assertions, native MRS/DAT round trips and tests. `ci-decision` allows a direct commit to `main` when generated files changed and the build has no review flag; review-required builds stop without publication.
 
-Both publication paths stage only `dist/` and `generated/`. Changes to `catalog/`, `recipes/`, `overlays/`, `schemas/`, source code or tests fail the automation job instead of being committed.
+The publication step stages only `dist/` and `generated/`. Changes to `catalog/`, `recipes/`, `overlays/`, `schemas/`, source code or tests fail the automation job instead of being committed.

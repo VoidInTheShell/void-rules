@@ -1,0 +1,4 @@
+version: 1
+ruleset: void-claude-rules
+format: selectors
+selectors: []

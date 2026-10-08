@@ -1854,12 +1854,15 @@ domain:anthemgame.com
 domain:anthemthegame.com
 domain:anthonycalzadilla.com
 domain:anthropic.com
+domain:anthropic.com.cn
+domain:anthropic.team
 domain:antigravity-unleash.goog
 domain:antigravity.google
 domain:antiphishing.nl
 domain:antiphishing.ru
 domain:antiwave.net
 domain:antpool.com
+domain:antspace.dev
 domain:anudetube.com
 domain:anuneko.com
 domain:anxiangxing.com
@@ -5429,6 +5432,7 @@ domain:chat.com
 domain:chat.gle
 domain:chat.lmsys.org
 domain:chatango.com
+domain:chatbotclaude.com
 domain:chatgpt.com
 domain:chatgpt.livekit.cloud
 domain:chatgpt.site
@@ -5763,9 +5767,15 @@ domain:classicnike.com
 domain:classymomsex.com
 domain:clau.de
 domain:claude.ai
+domain:claude.app
 domain:claude.com
+domain:claude.dev
+domain:claude.new
+domain:claude.site
 domain:claudemcpclient.com
 domain:claudemcpcontent.com
+domain:claudepages.dev
+domain:claudestudio.com
 domain:claudeusercontent.com
 domain:clawhub.ai
 domain:clck.ru
@@ -12935,6 +12945,7 @@ domain:intercom.com
 domain:intercom.io
 domain:intercomassets.com
 domain:intercomcdn.com
+domain:interface.feedback
 domain:interforest.org
 domain:internationalconnectionsacademy.com
 domain:internationalsaimoe.com
@@ -14235,6 +14246,8 @@ domain:lbfmaddiction.com
 domain:lbkrs.com
 domain:lbtube.com
 domain:lcgirls.com
+domain:lcicat.org
+domain:lcicollections.org
 domain:lcsmerch.com
 domain:ldoceonline.com
 domain:ldplayer.net
@@ -15186,6 +15199,7 @@ domain:mcdonaldsparties.co.nz
 domain:mceindex.com
 domain:mcisco.com
 domain:mcpeaceofmind.com
+domain:mcpservertest.online
 domain:mcrouter.net
 domain:mcrouter.org
 domain:mcs.st
@@ -15976,6 +15990,10 @@ domain:moby.to
 domain:mochajs.org
 domain:mocloudplus.com
 domain:mod.io
+domain:modelcontextprotocol.com
+domain:modelcontextprotocol.io
+domain:modelcontextprotocol.net
+domain:modelcontextprotocol.org
 domain:modelmediaus.com
 domain:modeloswebcambogota.com
 domain:modelsfreecams.com
@@ -16409,6 +16427,7 @@ domain:musickit.net
 domain:musixmatch.com
 domain:mut.ch
 domain:muthead.com
+domain:muthos.com
 domain:muumuu-domain.com
 domain:muvluv-girls-garden.com
 domain:muycerdas.xxx
@@ -21244,6 +21263,7 @@ domain:silicagame.com
 domain:silicon-mobility.com
 domain:siliconmobility.com
 domain:silkengirl.com
+domain:sillylittleguy.org
 domain:silverchair-cdn.com
 domain:silvergatebank.com
 domain:silversluts.com
@@ -22005,6 +22025,7 @@ domain:statics-marketingsites-eas-ms-com.akamaized.net
 domain:statics-marketingsites-eus-ms-com.akamaized.net
 domain:statics-marketingsites-neu-ms-com.akamaized.net
 domain:statics-marketingsites-wcus-ms-com.akamaized.net
+domain:statsigapi.net
 domain:statsmakemecry.com
 domain:statuspage.io
 domain:staxus.com
@@ -27129,6 +27150,9 @@ full:amp.akamaized.net
 full:android.googlesource.com
 full:angle.com.tw
 full:anime-rule34-world.b-cdn.net
+full:anthropic-com.ghost.io
+full:anthropic.auth0.com
+full:anthropic.com.cdn.cloudflare.net
 full:antigravity-pa.googleapis.com
 full:antigravity.googleapis.com
 full:aod-pod-uk-live.akamaized.net
@@ -27167,6 +27191,7 @@ full:bnetproduct-a.akamaihd.net
 full:bnetshopus.akamaized.net
 full:brightcove.imgix.net
 full:browser-intake-datadoghq.com
+full:browser-intake-us5-datadoghq.com
 full:bybit-exchange.github.io
 full:bybit.ada.support
 full:c.ppy.sh
@@ -27174,6 +27199,7 @@ full:cbsi.live.ott.irdeto.com
 full:cbsplaylistserver.aws.syncbak.com
 full:cbsservice.aws.syncbak.com
 full:cdn-spotify-experiments.conductrics.com
+full:cdn.growthbook.io
 full:cdn.js7k.com
 full:cdn.usefathom.com
 full:cdngarenanow-a.akamaihd.net
@@ -27266,6 +27292,7 @@ full:dlmobilegarena-a.akamaihd.net
 full:dmqdd6hw24ucf.cloudfront.net
 full:docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 full:docker-pinata-support.s3.amazonaws.com
+full:downloads.claude.ai
 full:dqd0jw5gvbchn.cloudfront.net
 full:dqrpb9wgowsf5.cloudfront.net
 full:ds-linear-abematv.akamaized.net
@@ -27630,6 +27657,7 @@ full:steamugcquincy.blob.core.windows.net
 full:steamusercontent-a.akamaihd.net
 full:steamuserimages-a.akamaihd.net
 full:steamvideo-a.akamaihd.net
+full:storage.googleapis.com
 full:straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 full:supercell.helpshift.com
 full:supercell.zendesk.com
@@ -27859,6 +27887,7 @@ keyword:appspot
 keyword:avoddashs
 keyword:blogspot
 keyword:colab
+keyword:datadog
 keyword:developerprofiles
 keyword:generativelanguage
 keyword:gmail
@@ -27868,5 +27897,7 @@ keyword:onedrive
 keyword:openai
 keyword:plasma-one
 keyword:recaptcha
+keyword:sentry
+keyword:sift
 keyword:skydrive
 keyword:twitter

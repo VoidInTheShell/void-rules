@@ -5,6 +5,8 @@ from pathlib import Path
 import pytest
 
 from void_rules.codecs import GeodataCodec, MihomoCodec
+from void_rules.model import Action, Rule, RuleKind
+from void_rules.render import render_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -57,3 +59,24 @@ def test_v2ray_geosite_and_geoip_round_trip() -> None:
         geoip,
         key=record_key,
     )
+
+
+@pytest.mark.integration
+def test_mrs_nested_claude_cidrs_round_trip_without_losing_canonical_rules() -> None:
+    values = {"160.79.104.0/21", "160.79.104.0/23", "2607:6bc0::/32", "2607:6bc0::/48"}
+    rules = [Rule(RuleKind.IP_CIDR, value) for value in sorted(values)]
+
+    outputs = render_outputs(
+        "fixture",
+        rules,
+        Action.MATCH,
+        ("mihomo-ipcidr-text", "mihomo-ipcidr-mrs"),
+        root=ROOT,
+    )
+
+    assert set(outputs["mihomo-ipcidr-text"].data.decode().splitlines()) == values
+    mrs = outputs["mihomo-ipcidr-mrs"]
+    assert mrs.represented == 4
+    assert mrs.compacted == 2
+    decoded = MihomoCodec(ROOT).decode(mrs.data, "ipcidr")
+    assert set(decoded.decode().splitlines()) == {"160.79.104.0/21", "2607:6bc0::/32"}

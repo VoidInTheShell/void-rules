@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_repository_catalog_is_semantically_valid() -> None:
     catalog = load_catalog(ROOT)
 
-    assert len(catalog.sources) == 43
+    assert len(catalog.sources) == 46
     assert set(catalog.recipes) == {
         "ads",
         "ai",
@@ -20,6 +20,7 @@ def test_repository_catalog_is_semantically_valid() -> None:
         "global-legal",
         "ip-proxy-pools",
         "pcdn",
+        "void-claude-rules",
     }
     assert len(catalog.discovery["discoverers"]) == 2
     assert catalog.recipes["cross-border-finance"].domain_keyword_fallback is None

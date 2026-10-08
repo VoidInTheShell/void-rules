@@ -1,0 +1,139 @@
+{
+  "action": "match",
+  "composition": {
+    "excluded_protected_rules": 0,
+    "excluded_rules": 0
+  },
+  "counts": {
+    "by_action": {
+      "match": 53
+    },
+    "by_kind": {
+      "domain": 9,
+      "domain_keyword": 3,
+      "domain_suffix": 31,
+      "ip_cidr": 4,
+      "opaque_classical": 1,
+      "process_name": 5
+    },
+    "protected": 0,
+    "total": 53
+  },
+  "description": "Anthropic and Claude rules merged from VPSDance, MetaCubeX, xiaolai and blackmatrix7.",
+  "outputs": {
+    "jsonl": {
+      "path": "rules.jsonl.gz",
+      "represented_rules": 53,
+      "sha256": "075e8b77b4756546367da48392ffe447e0cb1f8875748c238c085c7dcf47661b",
+      "size": 1466,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-text": {
+      "path": "mihomo-classical.list",
+      "represented_rules": 53,
+      "sha256": "a4cbed25b5e464699808285717f17092be5fd408669baf8d8cca494903decab8",
+      "size": 1564,
+      "skipped_rules": 0
+    },
+    "mihomo-classical-yaml": {
+      "path": "mihomo-classical.yaml",
+      "represented_rules": 53,
+      "sha256": "3acb4a5b8f463d3ba011e156205cb1a15a32d0b73ec87c42c3add019b04816ad",
+      "size": 1679,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-mrs": {
+      "path": "mihomo-domain.mrs",
+      "represented_rules": 40,
+      "sha256": "787653a05a4ce8ca689b4a9cd604ee32ec3ee4b5b1ca5b008f23382f01e30a5b",
+      "size": 620,
+      "skipped_rules": 13
+    },
+    "mihomo-domain-text": {
+      "path": "mihomo-domain.list",
+      "represented_rules": 40,
+      "sha256": "b6675fba2151c8872df1a786472d1f2553847417f2f91da0281a53c0f7c13d47",
+      "size": 783,
+      "skipped_rules": 13
+    },
+    "mihomo-domain-yaml": {
+      "path": "mihomo-domain.yaml",
+      "represented_rules": 40,
+      "sha256": "65a741dea7c2a324091f7e882e81190480a0d1ced6cd9a9f157b7d6bd479f01c",
+      "size": 872,
+      "skipped_rules": 13
+    },
+    "mihomo-ipcidr-mrs": {
+      "compacted_rules": 2,
+      "path": "mihomo-ipcidr.mrs",
+      "represented_rules": 4,
+      "sha256": "31d87b2dc45d5e8188d583cb352c2dec93ff2a8d3157a9f2e9fd6cd1499ccc19",
+      "size": 60,
+      "skipped_rules": 49
+    },
+    "mihomo-ipcidr-text": {
+      "path": "mihomo-ipcidr.list",
+      "represented_rules": 4,
+      "sha256": "38159f3a2d928b7337c6473171a5b2edec64615b70ac23f1bf341c7614541b98",
+      "size": 62,
+      "skipped_rules": 49
+    },
+    "mihomo-ipcidr-yaml": {
+      "path": "mihomo-ipcidr.yaml",
+      "represented_rules": 4,
+      "sha256": "94f97f63b81125dc8520c7ebc684548705843e1aec401c2cb5b32a9c94d99ece",
+      "size": 79,
+      "skipped_rules": 49
+    },
+    "plain-domain": {
+      "path": "plain-domain.txt",
+      "represented_rules": 40,
+      "sha256": "b6675fba2151c8872df1a786472d1f2553847417f2f91da0281a53c0f7c13d47",
+      "size": 783,
+      "skipped_rules": 13
+    },
+    "plain-ip": {
+      "path": "plain-ip.txt",
+      "represented_rules": 4,
+      "sha256": "38159f3a2d928b7337c6473171a5b2edec64615b70ac23f1bf341c7614541b98",
+      "size": 62,
+      "skipped_rules": 49
+    },
+    "xray-domain-list": {
+      "path": "xray-domain-list.txt",
+      "represented_rules": 43,
+      "sha256": "d5958dbd773834681f45987508c7a875abe721503f4ce8fbbb00cd8784558021",
+      "size": 1027,
+      "skipped_rules": 10
+    },
+    "xray-geoip-dat": {
+      "path": "xray-geoip.dat",
+      "represented_rules": 4,
+      "sha256": "87a91acba9ba26d4806cb3aa3b8674d7f796d34d415224dadfc1bf7dfe2bfdc1",
+      "size": 85,
+      "skipped_rules": 0
+    },
+    "xray-geosite-dat": {
+      "path": "xray-geosite.dat",
+      "represented_rules": 43,
+      "sha256": "86d3a85f6b20d7ea9d195aa47105d02b31b3f3bbb0ab0f2c569e039fecdb5c83",
+      "size": 972,
+      "skipped_rules": 0
+    }
+  },
+  "ruleset": "void-claude-rules",
+  "rulesets": [],
+  "source_contributions": {
+    "blackmatrix-claude": 3,
+    "metacubex-anthropic": 9,
+    "vpsdance-anthropic": 50,
+    "xiaolai-anthropic": 13
+  },
+  "sources": [
+    "vpsdance-anthropic",
+    "metacubex-anthropic",
+    "xiaolai-anthropic",
+    "blackmatrix-claude"
+  ],
+  "version": 1
+}

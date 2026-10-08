@@ -223,7 +223,8 @@
     "fake-ip-force",
     "global-legal",
     "ip-proxy-pools",
-    "pcdn"
+    "pcdn",
+    "void-claude-rules"
   ],
   "stale_sources": [
     {

@@ -39,6 +39,9 @@ DOMAIN,amp.akamaized.net
 DOMAIN,android.googlesource.com
 DOMAIN,angle.com.tw
 DOMAIN,anime-rule34-world.b-cdn.net
+DOMAIN,anthropic-com.ghost.io
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,antigravity.googleapis.com
 DOMAIN,aod-pod-uk-live.akamaized.net
@@ -77,6 +80,7 @@ DOMAIN,bnetproduct-a.akamaihd.net
 DOMAIN,bnetshopus.akamaized.net
 DOMAIN,brightcove.imgix.net
 DOMAIN,browser-intake-datadoghq.com
+DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,bybit-exchange.github.io
 DOMAIN,bybit.ada.support
 DOMAIN,c.ppy.sh
@@ -84,6 +88,7 @@ DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,cdn-spotify-experiments.conductrics.com
+DOMAIN,cdn.growthbook.io
 DOMAIN,cdn.js7k.com
 DOMAIN,cdn.usefathom.com
 DOMAIN,cdngarenanow-a.akamaihd.net
@@ -176,6 +181,7 @@ DOMAIN,dlmobilegarena-a.akamaihd.net
 DOMAIN,dmqdd6hw24ucf.cloudfront.net
 DOMAIN,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
+DOMAIN,downloads.claude.ai
 DOMAIN,dqd0jw5gvbchn.cloudfront.net
 DOMAIN,dqrpb9wgowsf5.cloudfront.net
 DOMAIN,ds-linear-abematv.akamaized.net
@@ -540,6 +546,7 @@ DOMAIN,steamugcquincy.blob.core.windows.net
 DOMAIN,steamusercontent-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
 DOMAIN,steamvideo-a.akamaihd.net
+DOMAIN,storage.googleapis.com
 DOMAIN,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 DOMAIN,supercell.helpshift.com
 DOMAIN,supercell.zendesk.com
@@ -769,6 +776,7 @@ DOMAIN-KEYWORD,appspot
 DOMAIN-KEYWORD,avoddashs
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,datadog
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,gmail
@@ -778,6 +786,8 @@ DOMAIN-KEYWORD,onedrive
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,plasma-one
 DOMAIN-KEYWORD,recaptcha
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,sift
 DOMAIN-KEYWORD,skydrive
 DOMAIN-KEYWORD,twitter
 DOMAIN-SUFFIX,000webhost.com
@@ -2636,12 +2646,15 @@ DOMAIN-SUFFIX,anthemgame.com
 DOMAIN-SUFFIX,anthemthegame.com
 DOMAIN-SUFFIX,anthonycalzadilla.com
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,anthropic.com.cn
+DOMAIN-SUFFIX,anthropic.team
 DOMAIN-SUFFIX,antigravity-unleash.goog
 DOMAIN-SUFFIX,antigravity.google
 DOMAIN-SUFFIX,antiphishing.nl
 DOMAIN-SUFFIX,antiphishing.ru
 DOMAIN-SUFFIX,antiwave.net
 DOMAIN-SUFFIX,antpool.com
+DOMAIN-SUFFIX,antspace.dev
 DOMAIN-SUFFIX,anudetube.com
 DOMAIN-SUFFIX,anuneko.com
 DOMAIN-SUFFIX,anxiangxing.com
@@ -6211,6 +6224,7 @@ DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chat.gle
 DOMAIN-SUFFIX,chat.lmsys.org
 DOMAIN-SUFFIX,chatango.com
+DOMAIN-SUFFIX,chatbotclaude.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,chatgpt.site
@@ -6545,9 +6559,15 @@ DOMAIN-SUFFIX,classicnike.com
 DOMAIN-SUFFIX,classymomsex.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,clawhub.ai
 DOMAIN-SUFFIX,clck.ru
@@ -13717,6 +13737,7 @@ DOMAIN-SUFFIX,intercom.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomassets.com
 DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,interface.feedback
 DOMAIN-SUFFIX,interforest.org
 DOMAIN-SUFFIX,internationalconnectionsacademy.com
 DOMAIN-SUFFIX,internationalsaimoe.com
@@ -15017,6 +15038,8 @@ DOMAIN-SUFFIX,lbfmaddiction.com
 DOMAIN-SUFFIX,lbkrs.com
 DOMAIN-SUFFIX,lbtube.com
 DOMAIN-SUFFIX,lcgirls.com
+DOMAIN-SUFFIX,lcicat.org
+DOMAIN-SUFFIX,lcicollections.org
 DOMAIN-SUFFIX,lcsmerch.com
 DOMAIN-SUFFIX,ldoceonline.com
 DOMAIN-SUFFIX,ldplayer.net
@@ -15968,6 +15991,7 @@ DOMAIN-SUFFIX,mcdonaldsparties.co.nz
 DOMAIN-SUFFIX,mceindex.com
 DOMAIN-SUFFIX,mcisco.com
 DOMAIN-SUFFIX,mcpeaceofmind.com
+DOMAIN-SUFFIX,mcpservertest.online
 DOMAIN-SUFFIX,mcrouter.net
 DOMAIN-SUFFIX,mcrouter.org
 DOMAIN-SUFFIX,mcs.st
@@ -16758,6 +16782,10 @@ DOMAIN-SUFFIX,moby.to
 DOMAIN-SUFFIX,mochajs.org
 DOMAIN-SUFFIX,mocloudplus.com
 DOMAIN-SUFFIX,mod.io
+DOMAIN-SUFFIX,modelcontextprotocol.com
+DOMAIN-SUFFIX,modelcontextprotocol.io
+DOMAIN-SUFFIX,modelcontextprotocol.net
+DOMAIN-SUFFIX,modelcontextprotocol.org
 DOMAIN-SUFFIX,modelmediaus.com
 DOMAIN-SUFFIX,modeloswebcambogota.com
 DOMAIN-SUFFIX,modelsfreecams.com
@@ -17191,6 +17219,7 @@ DOMAIN-SUFFIX,musickit.net
 DOMAIN-SUFFIX,musixmatch.com
 DOMAIN-SUFFIX,mut.ch
 DOMAIN-SUFFIX,muthead.com
+DOMAIN-SUFFIX,muthos.com
 DOMAIN-SUFFIX,muumuu-domain.com
 DOMAIN-SUFFIX,muvluv-girls-garden.com
 DOMAIN-SUFFIX,muycerdas.xxx
@@ -22026,6 +22055,7 @@ DOMAIN-SUFFIX,silicagame.com
 DOMAIN-SUFFIX,silicon-mobility.com
 DOMAIN-SUFFIX,siliconmobility.com
 DOMAIN-SUFFIX,silkengirl.com
+DOMAIN-SUFFIX,sillylittleguy.org
 DOMAIN-SUFFIX,silverchair-cdn.com
 DOMAIN-SUFFIX,silvergatebank.com
 DOMAIN-SUFFIX,silversluts.com
@@ -22787,6 +22817,7 @@ DOMAIN-SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
 DOMAIN-SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
 DOMAIN-SUFFIX,statics-marketingsites-neu-ms-com.akamaized.net
 DOMAIN-SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net
+DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,statsmakemecry.com
 DOMAIN-SUFFIX,statuspage.io
 DOMAIN-SUFFIX,staxus.com
@@ -27871,8 +27902,11 @@ DOMAIN-SUFFIX,zzdh99.com
 DOMAIN-SUFFIX,zzgays.com
 DOMAIN-SUFFIX,zzycdz.com
 IP-ASN,20473,no-resolve
+IP-ASN,399358,no-resolve
 IP-CIDR,13.32.0.0/15
 IP-CIDR,13.35.0.0/17
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR,172.110.32.0/21
 IP-CIDR,173.194.0.0/16
 IP-CIDR,18.184.0.0/15
@@ -27898,13 +27932,20 @@ IP-CIDR,54.93.0.0/16
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR,69.195.160.0/19
 IP-CIDR,74.125.0.0/16
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
 IP-CIDR6,2620:120:e000::/40
 PROCESS-NAME,BackupandSync
+PROCESS-NAME,Claude
+PROCESS-NAME,claude
+PROCESS-NAME,Claude.exe
+PROCESS-NAME,claude.exe
 PROCESS-NAME,com.amazon.avod.thirdpartyclient
 PROCESS-NAME,com.android.vending
 PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
+PROCESS-NAME,cowork-svc.exe
 PROCESS-NAME,GoogleDriveFS.exe
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater

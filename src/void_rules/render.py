@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import ipaddress
 import json
 from collections import Counter
 from dataclasses import dataclass
@@ -152,7 +153,7 @@ def _render_mapped(
             )
         else:
             values.append(value)
-    values = sorted(set(values), key=lambda value: value.casefold())
+    values = sorted(set(values), key=lambda value: (value.casefold(), value))
     data = _yaml_payload(values) if yaml_output else _text(values)
     return RenderedFile(name, data, len(values), tuple(skipped))
 
@@ -174,6 +175,21 @@ def _compact_mrs_domain_source(source: RenderedFile) -> tuple[bytes, int]:
     compacted = values - redundant_exact
     ordered = sorted(compacted, key=lambda value: value.casefold())
     return _text(ordered), len(redundant_exact)
+
+
+def _compact_mrs_ipcidr_source(source: RenderedFile) -> tuple[bytes, int]:
+    """Match Mihomo's lossless CIDR union before strict round-trip validation."""
+    networks = [ipaddress.ip_network(value) for value in source.data.decode().splitlines()]
+    ipv4 = [item for item in networks if isinstance(item, ipaddress.IPv4Network)]
+    ipv6 = [item for item in networks if isinstance(item, ipaddress.IPv6Network)]
+    values = [
+        str(network)
+        for network in (
+            *ipaddress.collapse_addresses(ipv4),
+            *ipaddress.collapse_addresses(ipv6),
+        )
+    ]
+    return _text(sorted(values)), source.represented - len(values)
 
 
 def render_outputs(
@@ -293,14 +309,15 @@ def render_outputs(
                 "mihomo-ipcidr.list", main, _ip_value, yaml_output=False
             )
             if source.represented:
-                data = mihomo.encode(source.data, "ipcidr")
+                mrs_source, compacted = _compact_mrs_ipcidr_source(source)
+                data = mihomo.encode(mrs_source, "ipcidr")
                 ipcidr_decoded = mihomo.decode(data, "ipcidr")
                 if set(ipcidr_decoded.decode().splitlines()) != set(
-                    source.data.decode().splitlines()
+                    mrs_source.decode().splitlines()
                 ):
                     raise CodecError(f"{ruleset_id}: MRS ipcidr round-trip mismatch")
                 rendered["mihomo-ipcidr-mrs"] = RenderedFile(
-                    "mihomo-ipcidr.mrs", data, source.represented, source.skipped
+                    "mihomo-ipcidr.mrs", data, source.represented, source.skipped, compacted
                 )
 
         geodata = GeodataCodec(root)

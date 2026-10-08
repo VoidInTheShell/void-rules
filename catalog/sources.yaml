@@ -318,6 +318,42 @@ sources:
     strict: true
     limits: {min_bytes: 16, max_bytes: 10485760, min_rules: 1, max_rules: 200000, max_growth_ratio: 5.0, max_shrink_ratio: 0.2}
 
+  # Dedicated Claude aggregation; blackmatrix-claude is shared with ai.
+  - id: vpsdance-anthropic
+    name: VPSDance Anthropic and Claude
+    url: https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/main/rules/clash/anthropic.yaml
+    format: clash-classical-yaml
+    behavior: classical
+    license: MIT
+    homepage: https://github.com/VPSDance/ai-proxy-rules
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 128, max_bytes: 2097152, min_rules: 20, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.5}
+    notes: Includes process names, ASN and shared third-party services; retain upstream matching scope.
+
+  - id: metacubex-anthropic
+    name: MetaCubeX Anthropic domains
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list
+    format: mihomo-domain-text
+    behavior: domain
+    license: GPL-3.0
+    homepage: https://github.com/MetaCubeX/meta-rules-dat
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 64, max_bytes: 2097152, min_rules: 5, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.5}
+
+  - id: xiaolai-anthropic
+    name: xiaolai Anthropic and Claude proxy rules
+    url: https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list
+    format: clash-classical-text
+    behavior: classical
+    license: MIT
+    homepage: https://github.com/xiaolai/anthropic-claude-surge-rules-set
+    allowed_hosts: [raw.githubusercontent.com]
+    strict: true
+    limits: {min_bytes: 128, max_bytes: 2097152, min_rules: 8, max_rules: 20000, max_growth_ratio: 4.0, max_shrink_ratio: 0.5}
+    notes: Upstream README declares MIT; Surge DOMAIN/IP syntax is parsed as classical text.
+
   # GlobalLegal
   - id: blackmatrix-nvidia
     name: blackmatrix7 Nvidia

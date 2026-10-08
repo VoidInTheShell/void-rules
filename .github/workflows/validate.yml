@@ -48,12 +48,15 @@ jobs:
           python -m void_rules discover --offline --check
           python -m void_rules sync --offline --check
 
+      - name: Verify Claude propagation into Fake-IP force
+        run: python -m pytest -q tests/test_claude_rules.py
+
       - name: Run Python quality gates
         run: |
           python -m ruff format --check src tests
           python -m ruff check src tests
           python -m mypy src
-          python -m pytest -q
+          python -m pytest -q --ignore=tests/test_claude_rules.py
 
       - name: Run Go tests
         working-directory: cmd/void-rules-geodata

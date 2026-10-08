@@ -1,17 +1,12 @@
 version: 1
-ruleset: fake-ip-force
+ruleset: void-claude-rules
 format: assertions
 required:
-  - {kind: domain_suffix, value: openai.com}
   - {kind: domain_suffix, value: anthropic.com}
+  - {kind: domain_suffix, value: clau.de}
   - {kind: domain_suffix, value: claude.ai}
   - {kind: domain_suffix, value: claude.com}
   - {kind: domain_suffix, value: claudeusercontent.com}
   - {kind: domain_suffix, value: claudemcpclient.com}
   - {kind: domain_suffix, value: claudemcpcontent.com}
-  - {kind: domain_suffix, value: bybit.com}
-  - {kind: domain_suffix, value: plasma.to}
-  - {kind: domain_suffix, value: standardchartered.com}
-  - {kind: domain_suffix, value: seekproxy.com}
-  - {kind: domain_suffix, value: brightdata.com}
 forbidden: []

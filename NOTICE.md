@@ -17,5 +17,7 @@ Initial upstream families include:
 - VoidInTheShell/cross-border-finance-rules (GitHub reports MIT).
 - VoidInTheShell/pcdn-block-list (no SPDX license reported by the GitHub API when first registered).
 - xixu-me/RFM (GitHub reports GPL-3.0).
+- VPSDance/ai-proxy-rules (MIT, Copyright (c) 2026 VPSDance).
+- xiaolai/anthropic-claude-surge-rules-set (README declares MIT).
 
 The exact upstream list can grow through reviewed catalog changes. A generated artifact is never evidence that an upstream author endorses this project.
