@@ -2055,11 +2055,14 @@
   "review_reasons": [],
   "review_required": false,
   "selected_rulesets": [
+    "ads",
     "ai",
     "cross-border-finance",
     "fake-ip-bypass",
     "fake-ip-force",
+    "global-legal",
     "ip-proxy-pools",
+    "pcdn",
     "stun",
     "void-claude-rules"
   ],

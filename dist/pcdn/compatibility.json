@@ -8,25 +8,25 @@
     },
     "adguard-block": {
       "examples": [],
-      "represented": 127,
+      "represented": 143,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "jsonl": {
       "examples": [],
-      "represented": 127,
+      "represented": 143,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 127,
+      "represented": 143,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 127,
+      "represented": 143,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -95,6 +95,11 @@
         {
           "kind": "domain_regex",
           "reason": "not representable",
+          "value": "^.*\\.gslb\\.ubeethiesemo\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
           "value": "^.*\\.p2p\\.huya\\.com$"
         },
         {
@@ -136,6 +141,11 @@
           "kind": "domain_regex",
           "reason": "not representable",
           "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^apd\\-.*\\.teg\\.tencent\\-cloud\\.net$"
         },
         {
           "kind": "domain_regex",
@@ -188,10 +198,10 @@
           "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
         }
       ],
-      "represented": 96,
-      "skipped": 31,
+      "represented": 110,
+      "skipped": 33,
       "skipped_by_kind": {
-        "domain_regex": 31
+        "domain_regex": 33
       }
     },
     "mihomo-domain-text": {
@@ -259,6 +269,11 @@
         {
           "kind": "domain_regex",
           "reason": "not representable",
+          "value": "^.*\\.gslb\\.ubeethiesemo\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
           "value": "^.*\\.p2p\\.huya\\.com$"
         },
         {
@@ -300,6 +315,11 @@
           "kind": "domain_regex",
           "reason": "not representable",
           "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^apd\\-.*\\.teg\\.tencent\\-cloud\\.net$"
         },
         {
           "kind": "domain_regex",
@@ -352,10 +372,10 @@
           "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
         }
       ],
-      "represented": 96,
-      "skipped": 31,
+      "represented": 110,
+      "skipped": 33,
       "skipped_by_kind": {
-        "domain_regex": 31
+        "domain_regex": 33
       }
     },
     "mihomo-domain-yaml": {
@@ -423,6 +443,11 @@
         {
           "kind": "domain_regex",
           "reason": "not representable",
+          "value": "^.*\\.gslb\\.ubeethiesemo\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
           "value": "^.*\\.p2p\\.huya\\.com$"
         },
         {
@@ -464,6 +489,11 @@
           "kind": "domain_regex",
           "reason": "not representable",
           "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^apd\\-.*\\.teg\\.tencent\\-cloud\\.net$"
         },
         {
           "kind": "domain_regex",
@@ -516,10 +546,10 @@
           "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
         }
       ],
-      "represented": 96,
-      "skipped": 31,
+      "represented": 110,
+      "skipped": 33,
       "skipped_by_kind": {
-        "domain_regex": 31
+        "domain_regex": 33
       }
     },
     "plain-domain": {
@@ -587,6 +617,11 @@
         {
           "kind": "domain_regex",
           "reason": "not representable",
+          "value": "^.*\\.gslb\\.ubeethiesemo\\.com$"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
           "value": "^.*\\.p2p\\.huya\\.com$"
         },
         {
@@ -628,6 +663,11 @@
           "kind": "domain_regex",
           "reason": "not representable",
           "value": "^.*pcdn.*youku\\.com"
+        },
+        {
+          "kind": "domain_regex",
+          "reason": "not representable",
+          "value": "^apd\\-.*\\.teg\\.tencent\\-cloud\\.net$"
         },
         {
           "kind": "domain_regex",
@@ -680,21 +720,21 @@
           "value": "trk-([0-9\\-]+)\\.douyucdn\\.cn"
         }
       ],
-      "represented": 96,
-      "skipped": 31,
+      "represented": 110,
+      "skipped": 33,
       "skipped_by_kind": {
-        "domain_regex": 31
+        "domain_regex": 33
       }
     },
     "xray-domain-list": {
       "examples": [],
-      "represented": 127,
+      "represented": 143,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 127,
+      "represented": 143,
       "skipped": 0,
       "skipped_by_kind": {}
     }
