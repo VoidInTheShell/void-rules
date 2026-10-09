@@ -1,0 +1,898 @@
+{
+  "entries": {
+    "anti-ad-pcdn": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"7c34a1aa43ab2721ad1de84c14ecc64be65593bc9b73693b851566efd384d84b\"",
+        "final_url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/pcdn.txt",
+        "format": "plain-domain",
+        "id": "anti-ad-pcdn",
+        "last_modified": "",
+        "license": "NOASSERTION",
+        "parsed_rules": 30,
+        "rejected_rules": 0,
+        "sha256": "2cdde294a65230b930032816e7ce3343651f97024693f556b812110fb068b4ff",
+        "size": 546,
+        "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/pcdn.txt"
+      },
+      "sha256": "2cdde294a65230b930032816e7ce3343651f97024693f556b812110fb068b4ff",
+      "size": 546
+    },
+    "awavenue-ads": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-10-09T01:22:24+00:00",
+        "etag": "\"864ac63e7582c2abe0b78289988572487713103f3977ce21e8f05987e3d46723\"",
+        "final_url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml",
+        "format": "clash-classical-yaml",
+        "id": "awavenue-ads",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 965,
+        "rejected_rules": 0,
+        "sha256": "39efc3d0ef9a5ab9ca2cfc034a152f34b4b198567c95644dbfabcc10265d99b9",
+        "size": 31060,
+        "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml"
+      },
+      "sha256": "39efc3d0ef9a5ab9ca2cfc034a152f34b4b198567c95644dbfabcc10265d99b9",
+      "size": 31060
+    },
+    "blackmatrix-amazon": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"e2c474bf933eeada12dd8db10ef6695b06c97c4a54001c7d1a2b5c6ab94e339e\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-amazon",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 203,
+        "rejected_rules": 0,
+        "sha256": "b027faaea79923ba80ec1f7828aecb99f647774e1e1676fd74d6d05c8e4b6853",
+        "size": 6972,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml"
+      },
+      "sha256": "b027faaea79923ba80ec1f7828aecb99f647774e1e1676fd74d6d05c8e4b6853",
+      "size": 6972
+    },
+    "blackmatrix-amazon-cn": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"7d8dbd02f7ec8f393616dc9e5c5a928651370d193b6ca3850ff5950d39716e01\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-amazon-cn",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 47,
+        "rejected_rules": 0,
+        "sha256": "39194410027987277e09525500f215d0c6d3b94f2071963e461779aa5af718f5",
+        "size": 1787,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.yaml"
+      },
+      "sha256": "39194410027987277e09525500f215d0c6d3b94f2071963e461779aa5af718f5",
+      "size": 1787
+    },
+    "blackmatrix-amazon-trust": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"be5d185db0d150f774ac48cc1f445ac40aae2af77ea3cf4887c65f21c823d84f\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonTrust/AmazonTrust.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-amazon-trust",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 3,
+        "rejected_rules": 0,
+        "sha256": "4a62208a66e7c73b255b02476c3c31557b6c499e8234ff02fe3bd4d4bcbe2363",
+        "size": 259,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonTrust/AmazonTrust.yaml"
+      },
+      "sha256": "4a62208a66e7c73b255b02476c3c31557b6c499e8234ff02fe3bd4d4bcbe2363",
+      "size": 259
+    },
+    "blackmatrix-amd": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"80cb0c79a1a2088ba24e0ec369a4b9680b64713a6a44294717079edc27850a99\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AMD/AMD.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-amd",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 4,
+        "rejected_rules": 0,
+        "sha256": "6adf6445ed6e2a5f6a108ccd6a2795faec3534ab4c29f637750eccb40888fc44",
+        "size": 279,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AMD/AMD.yaml"
+      },
+      "sha256": "6adf6445ed6e2a5f6a108ccd6a2795faec3534ab4c29f637750eccb40888fc44",
+      "size": 279
+    },
+    "blackmatrix-blizzard": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-10-08T14:07:20+00:00",
+        "etag": "\"bd57eb0c521556d6afe92821b66e3a607ae5fed6f12cae7d163032539be25695\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-blizzard",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 62,
+        "rejected_rules": 0,
+        "sha256": "a3a62095bb9ce82c990102a8663d3500aee0aa0cdbb8be38d665708132c55fc5",
+        "size": 2308,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.yaml"
+      },
+      "sha256": "a3a62095bb9ce82c990102a8663d3500aee0aa0cdbb8be38d665708132c55fc5",
+      "size": 2308
+    },
+    "blackmatrix-claude": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"1293471ce6bb9f782140aad5ccad72f5796f902577de92c8a9f978c19de11509\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-claude",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 3,
+        "rejected_rules": 0,
+        "sha256": "ef21df39005b17dbd84aa65a47162b36fb5e72754cd32384146474ed488df482",
+        "size": 265,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml"
+      },
+      "sha256": "ef21df39005b17dbd84aa65a47162b36fb5e72754cd32384146474ed488df482",
+      "size": 265
+    },
+    "blackmatrix-dell": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"c7fd7326f370c6971399548469f16a53c6bde7b78d5b40458aa0e5186a8486ff\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dell/Dell.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-dell",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 118,
+        "rejected_rules": 0,
+        "sha256": "f3aceed18ff5358fa9c805fa512089a50d9f0ccbbd3f5cc975f2eff20665f14e",
+        "size": 4096,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dell/Dell.yaml"
+      },
+      "sha256": "f3aceed18ff5358fa9c805fa512089a50d9f0ccbbd3f5cc975f2eff20665f14e",
+      "size": 4096
+    },
+    "blackmatrix-ebay": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"3d3adb17153d11fc7a5f044950b8a960ddf5bfb27c4bb8bb3962bf26f12f0010\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-ebay",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 44,
+        "rejected_rules": 0,
+        "sha256": "bd35c483ef0848bea318b47bd7a2fd747ee3c0e6648380cf25b6981b00a1a536",
+        "size": 1434,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.yaml"
+      },
+      "sha256": "bd35c483ef0848bea318b47bd7a2fd747ee3c0e6648380cf25b6981b00a1a536",
+      "size": 1434
+    },
+    "blackmatrix-gemini": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"23ba7516cb00c70076b44095da4bf9e92a7a6b6e1da5ae94493362ee21436610\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-gemini",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 13,
+        "rejected_rules": 0,
+        "sha256": "d76e9822f72a69860b7d3086db61bbbef53014c57e3dc12472150c62a4f6434b",
+        "size": 666,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml"
+      },
+      "sha256": "d76e9822f72a69860b7d3086db61bbbef53014c57e3dc12472150c62a4f6434b",
+      "size": 666
+    },
+    "blackmatrix-google": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"7531d6a87b8a2df804966697a63d8636d1e88f4b8a2852bd0ddf9ae69d6fbfe3\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-google",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 701,
+        "rejected_rules": 0,
+        "sha256": "dfb4bf0a0095e48f024fbb7c31564a928e6c7d450b662aca9803119489a9237c",
+        "size": 22654,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
+      },
+      "sha256": "dfb4bf0a0095e48f024fbb7c31564a928e6c7d450b662aca9803119489a9237c",
+      "size": 22654
+    },
+    "blackmatrix-intel": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"0beb4f1a7f229313e90fd8f2961f0e29a19395e314ce3f138bef531cc038a970\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Intel/Intel.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-intel",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 261,
+        "rejected_rules": 0,
+        "sha256": "36111d61aeba67e06aa55693d3a3bf8daa8822beb6eb3459df1e2277c0f8b7f4",
+        "size": 8178,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Intel/Intel.yaml"
+      },
+      "sha256": "36111d61aeba67e06aa55693d3a3bf8daa8822beb6eb3459df1e2277c0f8b7f4",
+      "size": 8178
+    },
+    "blackmatrix-lenovo": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"dd09083646bf09941f221e301ffd3c479d41faba00df96e111114dfa7feb9c21\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lenovo/Lenovo.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-lenovo",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 32,
+        "rejected_rules": 0,
+        "sha256": "5bc3e650be2990872381ebb80158b3a5e2f12722ef82cc01437e339743d3c44a",
+        "size": 1140,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lenovo/Lenovo.yaml"
+      },
+      "sha256": "5bc3e650be2990872381ebb80158b3a5e2f12722ef82cc01437e339743d3c44a",
+      "size": 1140
+    },
+    "blackmatrix-meituan": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"4da9f3235aab8d5a9cce2fcf235f556d355679e74d2a39119697020db87943cd\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MeiTuan/MeiTuan.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-meituan",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 7,
+        "rejected_rules": 0,
+        "sha256": "a7238babc4f9385cfe0d02002ab98d834744843b8ade2684728fcfb02acd1990",
+        "size": 371,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MeiTuan/MeiTuan.yaml"
+      },
+      "sha256": "a7238babc4f9385cfe0d02002ab98d834744843b8ade2684728fcfb02acd1990",
+      "size": 371
+    },
+    "blackmatrix-microsoft": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"65a71fa816a67497fabac3cd3d6e5fa082e1296d3ab71b584cf6e3e755c1ba72\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-microsoft",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 670,
+        "rejected_rules": 0,
+        "sha256": "a289a1d52394e92ceee26a5c83953cd292609717d39fb2970d189dc7877b2a4d",
+        "size": 23208,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
+      },
+      "sha256": "a289a1d52394e92ceee26a5c83953cd292609717d39fb2970d189dc7877b2a4d",
+      "size": 23208
+    },
+    "blackmatrix-netease": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"f1d1a62af9f6c9648b4298d0550ab9860077da495b11da99519127c41041f744\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEase/NetEase.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-netease",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 146,
+        "rejected_rules": 0,
+        "sha256": "6042ebc1538821bc358a577146f3c50984d1f00fbeea6aae3506855609e344b4",
+        "size": 4571,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEase/NetEase.yaml"
+      },
+      "sha256": "6042ebc1538821bc358a577146f3c50984d1f00fbeea6aae3506855609e344b4",
+      "size": 4571
+    },
+    "blackmatrix-nvidia": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"1fbe83cb4e9256887b70e492eb14a736149d7ab8e253b0c959faa0f4897b4073\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-nvidia",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 62,
+        "rejected_rules": 0,
+        "sha256": "ee3059b08f87d73294a99396e41503a26a37f81030ddc97391f6809f0e462d20",
+        "size": 2087,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml"
+      },
+      "sha256": "ee3059b08f87d73294a99396e41503a26a37f81030ddc97391f6809f0e462d20",
+      "size": 2087
+    },
+    "blackmatrix-openai": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"5a77a047af6e3b3b01f17154a5b02f5113d0205bb83cb21a6c71319d9806eb92\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list",
+        "format": "clash-classical-text",
+        "id": "blackmatrix-openai",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 35,
+        "rejected_rules": 0,
+        "sha256": "6f4047cdbf6953cf5d9b38c4ccd6da7bc6f1acb91b7a87134f25d5b8f5d2408b",
+        "size": 1353,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list"
+      },
+      "sha256": "6f4047cdbf6953cf5d9b38c4ccd6da7bc6f1acb91b7a87134f25d5b8f5d2408b",
+      "size": 1353
+    },
+    "blackmatrix-samsung": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"8623276bba1a9e335af92bf9a3fdec243e168bde22536a194b26255fe2095738\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Samsung/Samsung.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-samsung",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 13,
+        "rejected_rules": 0,
+        "sha256": "63cc6e2e0926177ac863726376a01c8d2d6f650f151ac9a81d7e8f3da7f776a5",
+        "size": 615,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Samsung/Samsung.yaml"
+      },
+      "sha256": "63cc6e2e0926177ac863726376a01c8d2d6f650f151ac9a81d7e8f3da7f776a5",
+      "size": 615
+    },
+    "blackmatrix-tencent": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"15b57f6474628ba8b1f6cec522bb72ab73890c605d0f5594fb443950708a0850\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent_Classical.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-tencent",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 2518,
+        "rejected_rules": 0,
+        "sha256": "5677b8499e76c76275aafa3932b8ccdd0dab82bb13a7eee86a748cf6a8a771a4",
+        "size": 83088,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent_Classical.yaml"
+      },
+      "sha256": "5677b8499e76c76275aafa3932b8ccdd0dab82bb13a7eee86a748cf6a8a771a4",
+      "size": 83088
+    },
+    "blackmatrix-twitter": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"5f2128d6bfd7be790ac49f343d905603bc32b5188d1d7b4d0c9be1d551b31d58\"",
+        "final_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml",
+        "format": "clash-classical-yaml",
+        "id": "blackmatrix-twitter",
+        "last_modified": "",
+        "license": "GPL-2.0",
+        "parsed_rules": 33,
+        "rejected_rules": 0,
+        "sha256": "67c46c3988da5cdc387eacee945c2950464691af0e2746929455cd9295c3ff2b",
+        "size": 1191,
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml"
+      },
+      "sha256": "67c46c3988da5cdc387eacee945c2950464691af0e2746929455cd9295c3ff2b",
+      "size": 1191
+    },
+    "block-pcdn-domains": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:27+00:00",
+        "etag": "\"b60ba2d20e78d23b94732e212bf8634a17e4a79636515bab60b5d94a159d56e2\"",
+        "final_url": "https://raw.githubusercontent.com/thhbdd/Block-pcdn-domains/main/ban.txt",
+        "format": "adguard",
+        "id": "block-pcdn-domains",
+        "last_modified": "",
+        "license": "NOASSERTION",
+        "parsed_rules": 24,
+        "rejected_rules": 0,
+        "sha256": "a0913f98618118e17ba4a12efbfb3078878012730c4eb7a69dcf920cc01daf5d",
+        "size": 444,
+        "url": "https://raw.githubusercontent.com/thhbdd/Block-pcdn-domains/main/ban.txt"
+      },
+      "sha256": "a0913f98618118e17ba4a12efbfb3078878012730c4eb7a69dcf920cc01daf5d",
+      "size": 444
+    },
+    "dustinwin-fakeip": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-10-08T14:07:23+00:00",
+        "etag": "\"0x8DF2590AE2A7DDE\"",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/782858745/fb8906d2-8b46-4f3f-aa64-9200efc16395",
+        "format": "clash-classical-text",
+        "id": "dustinwin-fakeip",
+        "last_modified": "Thu, 08 Oct 2026 23:05:43 GMT",
+        "license": "MIT",
+        "parsed_rules": 557,
+        "rejected_rules": 0,
+        "sha256": "569642dbf432857c19137a16cdb79720afc0191d7a9ec3d7d201efc756504d58",
+        "size": 14099,
+        "url": "https://github.com/DustinWin/domain-list-custom/releases/download/domains/fakeip-filter.list"
+      },
+      "sha256": "569642dbf432857c19137a16cdb79720afc0191d7a9ec3d7d201efc756504d58",
+      "size": 14099
+    },
+    "loyalsoldier-gfw": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:24+00:00",
+        "etag": "\"2a52aa903c3f85aa433bd1189e2a25bd6e174db70434c4ea912b1531cc37cea3\"",
+        "final_url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt",
+        "format": "mihomo-domain-yaml",
+        "id": "loyalsoldier-gfw",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 4429,
+        "rejected_rules": 0,
+        "sha256": "3a34f1f5d1283bf59281ece3410319142abed48386d42b9eb36cc183c7fe26c8",
+        "size": 94930,
+        "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+      },
+      "sha256": "3a34f1f5d1283bf59281ece3410319142abed48386d42b9eb36cc183c7fe26c8",
+      "size": 94930
+    },
+    "loyalsoldier-reject": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-09T01:22:30+00:00",
+        "etag": "\"a862168f9e2c7c04479d02225798652964470a9cd0e2516383304de238b994ea\"",
+        "final_url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt",
+        "format": "mihomo-domain-yaml",
+        "id": "loyalsoldier-reject",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 188639,
+        "rejected_rules": 0,
+        "sha256": "eb99cd03eef78868a08c19dcadf8252bc06e641b2017ede674acea3d1e8fceb9",
+        "size": 5428763,
+        "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+      },
+      "sha256": "eb99cd03eef78868a08c19dcadf8252bc06e641b2017ede674acea3d1e8fceb9",
+      "size": 5428763
+    },
+    "metacubex-ads": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-09T01:22:30+00:00",
+        "etag": "\"a322e3908168435bfbbd04cbdb818f312486370c735bc92212f5e5e52fc48bc8\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-ads",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 910,
+        "rejected_rules": 0,
+        "sha256": "c9daeb53a56d1eef49baf0e9feadcc86ccb87cf17bbda5e8e18c7543500c9527",
+        "size": 17598,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list"
+      },
+      "sha256": "c9daeb53a56d1eef49baf0e9feadcc86ccb87cf17bbda5e8e18c7543500c9527",
+      "size": 17598
+    },
+    "metacubex-ai-not-cn": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:24+00:00",
+        "etag": "\"c2ba4b7ea2225edd3f3d4675ea771846c2dbf3e6133fd2eb5e3e209d50bd3ef8\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-ai-not-cn",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 188,
+        "rejected_rules": 0,
+        "sha256": "de740e7a5172bcbf55886b19410f4a827ba2c97bc0971fbf5e543248e09c3754",
+        "size": 3617,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.list"
+      },
+      "sha256": "de740e7a5172bcbf55886b19410f4a827ba2c97bc0971fbf5e543248e09c3754",
+      "size": 3617
+    },
+    "metacubex-anthropic": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T10:19:56+00:00",
+        "etag": "\"8ed12aad589cd37bc871ee0cb7c7e61ae18acad8cec87fd4cd5570013f1b571c\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-anthropic",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 9,
+        "rejected_rules": 0,
+        "sha256": "40158d6d6f218c6055cd4ec8bde727859435cc52d6c47e0473c3d0a841c5bc5c",
+        "size": 166,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list"
+      },
+      "sha256": "40158d6d6f218c6055cd4ec8bde727859435cc52d6c47e0473c3d0a841c5bc5c",
+      "size": 166
+    },
+    "metacubex-connectivity-check": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:24+00:00",
+        "etag": "\"04dbdb1e8139b06a5b2872c38a982a972a384126ed51899f86b09199cc3c5cb1\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/connectivity-check.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-connectivity-check",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 28,
+        "rejected_rules": 0,
+        "sha256": "4e4829daacf2623145685dda02cbb45b540d518c9f80e41cf34589e8fa466dec",
+        "size": 666,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/connectivity-check.list"
+      },
+      "sha256": "4e4829daacf2623145685dda02cbb45b540d518c9f80e41cf34589e8fa466dec",
+      "size": 666
+    },
+    "metacubex-cryptocurrency": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:24+00:00",
+        "etag": "\"1b04765e8c609b7df8be40dab9f960e1bb3701b07452aacd61452157d00176c6\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-cryptocurrency",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 235,
+        "rejected_rules": 0,
+        "sha256": "55a30719a32d62b034ad1b6bfe859c4c5605e0f4af95152560babb99d6a7e5d2",
+        "size": 3638,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list"
+      },
+      "sha256": "55a30719a32d62b034ad1b6bfe859c4c5605e0f4af95152560babb99d6a7e5d2",
+      "size": 3638
+    },
+    "metacubex-finance": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:24+00:00",
+        "etag": "\"271826f32065f4adbb0cd1e631ad71689ad1e584505562b384af65d875056ca3\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-finance",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 615,
+        "rejected_rules": 0,
+        "sha256": "b67adb773ea881d042818c5a069b4f8cceb1b36bdb9c53325c1f5ede655ee5b4",
+        "size": 9736,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list"
+      },
+      "sha256": "b67adb773ea881d042818c5a069b4f8cceb1b36bdb9c53325c1f5ede655ee5b4",
+      "size": 9736
+    },
+    "metacubex-games-cn": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:24+00:00",
+        "etag": "\"9f6f1debeccfda82e1bf41aa5510248a74e46ce2767af379ea84ac419e786fc9\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-games-cn",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 37,
+        "rejected_rules": 0,
+        "sha256": "8d892736d70920f43da7b9509a7ef5ce1df2ed323204726bc49e5ae09acab870",
+        "size": 749,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.list"
+      },
+      "sha256": "8d892736d70920f43da7b9509a7ef5ce1df2ed323204726bc49e5ae09acab870",
+      "size": 749
+    },
+    "metacubex-geolocation-not-cn": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:33+00:00",
+        "etag": "\"92cf7777ac8179f3dd613ddc1cc7e93008aedfb6ccc0b40c1e3ced8d8dd0e321\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-geolocation-not-cn",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 27099,
+        "rejected_rules": 0,
+        "sha256": "d525d271b4c2602549ee9713234108923b8f61e3c3d957bdd0c28453e3904cf3",
+        "size": 455262,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list"
+      },
+      "sha256": "d525d271b4c2602549ee9713234108923b8f61e3c3d957bdd0c28453e3904cf3",
+      "size": 455262
+    },
+    "metacubex-private": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:29+00:00",
+        "etag": "\"aedda372e762bfb4749961611880c746ca5c315d4bddbb3f52ac3915df2c7deb\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-private",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 130,
+        "rejected_rules": 0,
+        "sha256": "9caf8f67450f6ff72fde0d2aec4d425238b88e371628011e51aab9185b0da73e",
+        "size": 2688,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list"
+      },
+      "sha256": "9caf8f67450f6ff72fde0d2aec4d425238b88e371628011e51aab9185b0da73e",
+      "size": 2688
+    },
+    "metacubex-stun": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-08T14:07:33+00:00",
+        "etag": "\"783f322318591291763a4456fb1650b14501f667c95e3f1841499ee72e6b0177\"",
+        "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-stun.list",
+        "format": "mihomo-domain-text",
+        "id": "metacubex-stun",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 359,
+        "rejected_rules": 0,
+        "sha256": "e4155e665f098c7a61c396af9b4553c5da1d4ef2145ced6fd9bb115e16acde2a",
+        "size": 6312,
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-stun.list"
+      },
+      "sha256": "e4155e665f098c7a61c396af9b4553c5da1d4ef2145ced6fd9bb115e16acde2a",
+      "size": 6312
+    },
+    "my-ad-block-rules-p2pcdn": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-10-09T01:22:31+00:00",
+        "etag": "\"6b800c5e98289e51c9062711742ff1d3b0f4f6d5e8e7ad776dd162fb3e796304\"",
+        "final_url": "https://raw.githubusercontent.com/Womsxd/MyAdBlockRules/master/p2pcdnblock.txt",
+        "format": "adguard",
+        "id": "my-ad-block-rules-p2pcdn",
+        "last_modified": "",
+        "license": "NOASSERTION",
+        "parsed_rules": 61,
+        "rejected_rules": 0,
+        "sha256": "418826391bb43164cc46162110a3e7fc34b2030f1d22a6b98870458f52db82ae",
+        "size": 2475,
+        "url": "https://raw.githubusercontent.com/Womsxd/MyAdBlockRules/master/p2pcdnblock.txt"
+      },
+      "sha256": "418826391bb43164cc46162110a3e7fc34b2030f1d22a6b98870458f52db82ae",
+      "size": 2475
+    },
+    "pcdnfilter-chn": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:29+00:00",
+        "etag": "\"45d60cd1a6fc7e3b80ad9920e166c12072fdb279d3ef190e654b72fcebdf829f\"",
+        "final_url": "https://raw.githubusercontent.com/susetao/PCDNFilter-CHN-/main/PCDNFilter.txt",
+        "format": "adguard",
+        "id": "pcdnfilter-chn",
+        "last_modified": "",
+        "license": "NOASSERTION",
+        "parsed_rules": 37,
+        "rejected_rules": 0,
+        "sha256": "6a87203c5bf77af532eb83b07e3ca7241d7d79f92088fc66263a8c25268b7469",
+        "size": 875,
+        "url": "https://raw.githubusercontent.com/susetao/PCDNFilter-CHN-/main/PCDNFilter.txt"
+      },
+      "sha256": "6a87203c5bf77af532eb83b07e3ca7241d7d79f92088fc66263a8c25268b7469",
+      "size": 875
+    },
+    "quixotic-fakeip": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:29+00:00",
+        "etag": "\"8f86a4be014e0fd74d68cd895762d3a7e7b89781b6de8a2506bc2dea50a9b1cc\"",
+        "final_url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/meta/domain/fake-ip-filter.list",
+        "format": "mihomo-domain-text",
+        "id": "quixotic-fakeip",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 140,
+        "rejected_rules": 0,
+        "sha256": "d7e37283f21707b960063ea4ca9058af46a9714fa2f5046afec332dad77f9301",
+        "size": 2069,
+        "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/meta/domain/fake-ip-filter.list"
+      },
+      "sha256": "d7e37283f21707b960063ea4ca9058af46a9714fa2f5046afec332dad77f9301",
+      "size": 2069
+    },
+    "rfm-fakeip": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:29+00:00",
+        "etag": "\"7c2bfe292d270621036359a115f3971189686d359ce637f7e34b44f9f7deeab5\"",
+        "final_url": "https://raw.githubusercontent.com/xixu-me/RFM/basic/yaml/fake-ip-filter.yaml",
+        "format": "mihomo-domain-yaml",
+        "id": "rfm-fakeip",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 79,
+        "rejected_rules": 0,
+        "sha256": "8e3da2f23f2f1e3653e546694a99b47126c828d31a575095ba06e2e5933ea5ee",
+        "size": 1934,
+        "url": "https://raw.githubusercontent.com/xixu-me/RFM/basic/yaml/fake-ip-filter.yaml"
+      },
+      "sha256": "8e3da2f23f2f1e3653e546694a99b47126c828d31a575095ba06e2e5933ea5ee",
+      "size": 1934
+    },
+    "shellcrash-fakeip": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:29+00:00",
+        "etag": "\"438cabee2902ac077884e325b4f8f85836fc5f75acc5535712c4f0a38116e67f\"",
+        "final_url": "https://raw.githubusercontent.com/juewuy/ShellCrash/dev/public/fake_ip_filter.list",
+        "format": "mihomo-domain-text",
+        "id": "shellcrash-fakeip",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 121,
+        "rejected_rules": 0,
+        "sha256": "84f98ef3535229284368df734c56114d1a3596f0107b3373607284a655b71ec7",
+        "size": 2443,
+        "url": "https://raw.githubusercontent.com/juewuy/ShellCrash/dev/public/fake_ip_filter.list"
+      },
+      "sha256": "84f98ef3535229284368df734c56114d1a3596f0107b3373607284a655b71ec7",
+      "size": 2443
+    },
+    "snapei-reject": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:30+00:00",
+        "etag": "\"ce4d4c672eb40a6580b0d61235e06183882ce0ed9a589321c8cc367a823d4de8\"",
+        "final_url": "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt",
+        "format": "mihomo-domain-yaml",
+        "id": "snapei-reject",
+        "last_modified": "",
+        "license": "GPL-3.0",
+        "parsed_rules": 173568,
+        "rejected_rules": 0,
+        "sha256": "f2fe2378ac4c35cd47079adceee2fe57ba0d1a74c67ccc53987baf7e2c4efbc8",
+        "size": 4931126,
+        "url": "https://raw.githubusercontent.com/snapei/clash-pro-rules/release/reject.txt"
+      },
+      "sha256": "f2fe2378ac4c35cd47079adceee2fe57ba0d1a74c67ccc53987baf7e2c4efbc8",
+      "size": 4931126
+    },
+    "uselibrary-pcdn": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-08-14T04:18:30+00:00",
+        "etag": "\"27a1f83b94685bdbb809046595140e2efaf224469dea3e425a658eb5ce94d2b1\"",
+        "final_url": "https://raw.githubusercontent.com/uselibrary/PCDN/main/pcdn.list",
+        "format": "clash-classical-text",
+        "id": "uselibrary-pcdn",
+        "last_modified": "",
+        "license": "NOASSERTION",
+        "parsed_rules": 36,
+        "rejected_rules": 0,
+        "sha256": "40070869224f1851b8ccdb8fd2384ba49e62ee022a76aacf4fb8d02a775a6d3e",
+        "size": 1173,
+        "url": "https://raw.githubusercontent.com/uselibrary/PCDN/main/pcdn.list"
+      },
+      "sha256": "40070869224f1851b8ccdb8fd2384ba49e62ee022a76aacf4fb8d02a775a6d3e",
+      "size": 1173
+    },
+    "void-finance-fallback": {
+      "metadata": {
+        "behavior": "domain",
+        "changed_at": "2026-08-14T04:18:30+00:00",
+        "etag": "\"995c929cbc09a099508ff30d15472b99674d5beeaf06c9eac150b4d93081460a\"",
+        "final_url": "https://raw.githubusercontent.com/VoidInTheShell/cross-border-finance-rules/main/rules/cross-border-finance-fallback.yaml",
+        "format": "mihomo-domain-yaml",
+        "id": "void-finance-fallback",
+        "last_modified": "",
+        "license": "MIT",
+        "parsed_rules": 476,
+        "rejected_rules": 0,
+        "sha256": "f6c3e568ced7888b0a22a6792e46b85c116425ed9fb8208325c114288232d85b",
+        "size": 10253,
+        "url": "https://raw.githubusercontent.com/VoidInTheShell/cross-border-finance-rules/main/rules/cross-border-finance-fallback.yaml"
+      },
+      "sha256": "f6c3e568ced7888b0a22a6792e46b85c116425ed9fb8208325c114288232d85b",
+      "size": 10253
+    },
+    "void-pcdn-aggregate": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-10-09T01:22:36+00:00",
+        "etag": "\"0e2843b6ef9388b8830185b1eb7c20c5c76fd3fbed4d31d21e3c7a49ee4324fc\"",
+        "final_url": "https://raw.githubusercontent.com/VoidInTheShell/pcdn-block-list/master/pcdn_block_clash.yaml",
+        "format": "clash-classical-yaml",
+        "id": "void-pcdn-aggregate",
+        "last_modified": "",
+        "license": "NOASSERTION",
+        "parsed_rules": 95,
+        "rejected_rules": 0,
+        "sha256": "084ae28b740545a5bb8c1ab399b5f54f3fb01b753091cf781fc4ddb4e43e8e5c",
+        "size": 4798,
+        "url": "https://raw.githubusercontent.com/VoidInTheShell/pcdn-block-list/master/pcdn_block_clash.yaml"
+      },
+      "sha256": "084ae28b740545a5bb8c1ab399b5f54f3fb01b753091cf781fc4ddb4e43e8e5c",
+      "size": 4798
+    },
+    "vpsdance-anthropic": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-10-08T10:19:56+00:00",
+        "etag": "\"e7c5842a83b96031060fa5ce1f0d05497ecdc1e87a6c2158a2ef7a85630b851a\"",
+        "final_url": "https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/main/rules/clash/anthropic.yaml",
+        "format": "clash-classical-yaml",
+        "id": "vpsdance-anthropic",
+        "last_modified": "",
+        "license": "MIT",
+        "parsed_rules": 50,
+        "rejected_rules": 0,
+        "sha256": "f1d4b6057b71688b3dbd11e4fee222cf48e3ba48d3de736223f33fd755c116c5",
+        "size": 1823,
+        "url": "https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/main/rules/clash/anthropic.yaml"
+      },
+      "sha256": "f1d4b6057b71688b3dbd11e4fee222cf48e3ba48d3de736223f33fd755c116c5",
+      "size": 1823
+    },
+    "xiaolai-anthropic": {
+      "metadata": {
+        "behavior": "classical",
+        "changed_at": "2026-10-08T10:19:56+00:00",
+        "etag": "\"5bad753eaf7a87ad05ac57d5fe7e1735146a4b4c16843c2ee99f3295240b7aab\"",
+        "final_url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list",
+        "format": "clash-classical-text",
+        "id": "xiaolai-anthropic",
+        "last_modified": "",
+        "license": "MIT",
+        "parsed_rules": 13,
+        "rejected_rules": 0,
+        "sha256": "70a7b5f15b51a275f85d630e9420fac84ecb4dd3bb54c26ba58f4277761b444b",
+        "size": 858,
+        "url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list"
+      },
+      "sha256": "70a7b5f15b51a275f85d630e9420fac84ecb4dd3bb54c26ba58f4277761b444b",
+      "size": 858
+    }
+  },
+  "version": 1
+}

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import io
 import urllib.request
 from dataclasses import replace
@@ -20,6 +21,29 @@ from void_rules.fetch import (
     fetch_sources,
 )
 from void_rules.model import Action
+
+
+def test_same_content_keeps_published_metadata_stable() -> None:
+    data = b"example.com\n"
+    first = DownloadedSource(
+        source_spec(),
+        data,
+        hashlib.sha256(data).hexdigest(),
+        "https://example.com/release-one",
+        "etag-one",
+        "date-one",
+        False,
+    )
+    baseline = build_lock_entry(first, parsed_rules=1, rejected_rules=0, previous=None)
+    refreshed = replace(
+        first,
+        final_url="https://example.com/release-two",
+        etag="etag-two",
+        last_modified="date-two",
+    )
+    assert (
+        build_lock_entry(refreshed, parsed_rules=1, rejected_rules=0, previous=baseline) == baseline
+    )
 
 
 def source_spec(source_format: str = "plain-domain") -> SourceSpec:

@@ -35,6 +35,12 @@ discoverers:
     url: https://card.lengziyu.cn/api/cards?limit=1000&offset=0
     allowed_hosts: [card.lengziyu.cn]
     json_paths: ['$.items[*].id', '$.data[*].id', '$.cards[*].id']
+    pagination:
+      offset_parameter: offset
+      next_offset_field: nextOffset
+      total_field: total
+      items_field: items
+      max_pages: 20
     purpose: Discover exchange/card IDs; official domains still require independent verification.
     promotion: candidate-only
     max_candidates: 5000

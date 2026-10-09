@@ -1,0 +1,47 @@
+{
+  "entries": {
+    "cross-border-card-catalog-82327c7c35597af9": {
+      "metadata": {
+        "url": "https://card.lengziyu.cn/api/cards?limit=1000&offset=500"
+      },
+      "sha256": "12b171ef3c72580d2dbf52f0aa7e6a2078ad53cfac3af045aefd7cd9ea1b9041",
+      "size": 78399
+    },
+    "cross-border-card-catalog-d5430f40f63ef261": {
+      "metadata": {
+        "url": "https://card.lengziyu.cn/api/cards?limit=1000&offset=0"
+      },
+      "sha256": "f68ddb34ca6013c67862c1b5415fda7a4558a5d27f3ddac1d4f5744186ff5d53",
+      "size": 300428
+    },
+    "meta-companion-views-2cd1c768dd0e63c2": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/meta"
+      },
+      "sha256": "c97f488725f052a8c0a8b20bd6e93e8e517b51d6ae136b0bfeba9de6385ca86f",
+      "size": 816
+    },
+    "meta-companion-views-52362db6bba8b73d": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/a22a46bcc1468c5c80cdcbdc8149bd9d31bece1b"
+      },
+      "sha256": "ef1a605b0ca6e65e435b8389e24862b9610e1d024e201dbd84e56e48f35406e7",
+      "size": 610
+    },
+    "meta-companion-views-69ab4b68b23fc102": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/bf1394e3f260117a31689d6fcb271ad4657f2be7?recursive=1"
+      },
+      "sha256": "8bfa61616ce8638072f2da4f51fc591a8555957364a6c11982942498962608cd",
+      "size": 296134
+    },
+    "meta-companion-views-9d4ae0b0fa83f787": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/ce952370f85782a236fd6cc1b04d551618daffb7?recursive=1"
+      },
+      "sha256": "3b2b77da60a23cc0eb5ccaeaf4228c877c53696261e05970020123825400dbfd",
+      "size": 2213498
+    }
+  },
+  "version": 1
+}

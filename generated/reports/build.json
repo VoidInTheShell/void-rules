@@ -1,4 +1,5 @@
 {
+  "binary_outputs": true,
   "fake_ip_conflicts": {
     "coverage_overlaps": {
       "items": [

@@ -48,8 +48,8 @@ jobs:
           python -m void_rules validate-catalog
           python -m void_rules discover
           python -m void_rules sync
-          python -m void_rules discover --offline --check
-          python -m void_rules sync --offline --check
+          python -m void_rules discover --locked --check
+          python -m void_rules sync --locked --check
 
       - name: Verify protected inputs were not modified
         run: git diff --exit-code -- . ':(exclude)dist/**' ':(exclude)generated/**'
@@ -89,6 +89,8 @@ jobs:
       - name: Commit validated update directly
         if: steps.decision.outputs.mode == 'direct'
         run: |
+          remote_head=$(git ls-remote origin refs/heads/main | cut -f1)
+          test "$remote_head" = "$(git rev-parse HEAD)" || { echo "main advanced; rerun synchronization on the new head"; exit 1; }
           git add -- dist generated
           git commit -m "chore(rules): sync upstream datasets"
           git push origin HEAD:main
@@ -98,6 +100,9 @@ jobs:
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: void-rules-sync-reports
-          path: generated/reports
+          path: |
+            generated/reports
+            .work/reports
+          include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 7

@@ -2,8 +2,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
-import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -13,15 +11,26 @@ from .catalog import Catalog, Recipe, load_catalog, load_overlay
 from .errors import BuildError, FetchError, ParseError
 from .fetch import (
     STALE_SOURCE_REASON,
+    DownloadedSource,
+    SourceFetchResult,
+    _guard_payload,
     build_lock_entry,
     build_stale_lock_entry,
     fetch_sources,
     load_previous_lock,
     write_json_atomic,
 )
+from .inputs import InputStore
 from .model import Action, ParseResult, Provenance, Rule, RuleKind, deduplicate_rules
 from .normalize import normalize_domain, normalize_ip_network
 from .parsers import parse_classical_line, parse_mihomo_domain_line
+from .publication import (
+    changed_files,
+    json_bytes,
+    obsolete_files,
+    publication_digest,
+    publish_files,
+)
 from .render import RenderedFile, output_manifest, render_outputs, rule_counts
 from .separation import exclude_ruleset_members, is_stun_turn_rule
 from .snapshots import load_published_source_snapshot
@@ -37,6 +46,7 @@ class BuildResult:
     lock: dict[str, Any]
     report: dict[str, Any]
     changed: bool
+    changed_paths: tuple[str, ...]
     review_required: bool
 
 
@@ -530,41 +540,11 @@ def _collect_expected_files(
     return files
 
 
-def _directory_matches(path: Path, expected: dict[str, bytes]) -> bool:
-    actual_names = (
-        {item.name for item in path.iterdir() if item.is_file()} if path.is_dir() else set()
-    )
-    if actual_names != set(expected):
-        return False
-    return all((path / name).read_bytes() == data for name, data in expected.items())
-
-
-def _write_directory(path: Path, expected: dict[str, bytes]) -> None:
-    path.mkdir(parents=True, exist_ok=True)
-    resolved = path.resolve()
-    for existing in path.iterdir():
-        if existing.is_file() and existing.name not in expected:
-            if existing.resolve().parent != resolved:
-                raise BuildError(f"refusing to remove file outside target: {existing}")
-            existing.unlink()
-    for name, data in expected.items():
-        target = path / name
-        handle, temporary = tempfile.mkstemp(prefix=target.name + ".", dir=path)
-        try:
-            with os.fdopen(handle, "wb") as output:
-                output.write(data)
-                output.flush()
-                os.fsync(output.fileno())
-            os.replace(temporary, target)
-        finally:
-            if os.path.exists(temporary):
-                os.unlink(temporary)
-
-
-def build(
+def _build(
     root: Path,
     *,
     offline: bool = False,
+    locked: bool = False,
     check: bool = False,
     skip_binary: bool = False,
     selected_rulesets: set[str] | None = None,
@@ -575,14 +555,44 @@ def build(
     unknown = selected - set(catalog.recipes)
     if unknown:
         raise BuildError(f"unknown rulesets: {', '.join(sorted(unknown))}")
+    inputs = InputStore(root, "sources", required=locked)
+    previous_report: dict[str, Any] = {}
+    previous_compatibility: dict[str, Any] = {}
+    if selected != set(catalog.recipes):
+        try:
+            previous_report = json.loads((root / "generated/reports/build.json").read_bytes())
+            previous_compatibility = json.loads(
+                (root / "generated/reports/compatibility.json").read_bytes()
+            )
+            complete = (
+                set(previous_report["selected_rulesets"]) == set(catalog.recipes)
+                and set(previous_compatibility) == set(catalog.recipes)
+                and previous_report["review_required"] is False
+                and bool(inputs.entries)
+            )
+        except (OSError, ValueError, KeyError, TypeError):
+            complete = False
+        if not complete:
+            selected = set(catalog.recipes)
+            previous_report = {}
+            previous_compatibility = {}
     expanded = set(selected)
-    changed_dependency = True
-    while changed_dependency:
-        changed_dependency = False
-        for recipe_id in list(expanded):
-            before = len(expanded)
-            expanded.update(catalog.recipes[recipe_id].dependencies)
-            changed_dependency = changed_dependency or len(expanded) != before
+    while True:
+        before = set(expanded)
+        touched_sources = {
+            source for recipe_id in expanded for source in catalog.recipes[recipe_id].sources
+        }
+        for recipe_id, recipe in catalog.recipes.items():
+            if recipe_id in expanded:
+                expanded.update(recipe.dependencies)
+            if set(recipe.dependencies) & expanded or set(recipe.sources) & touched_sources:
+                expanded.add(recipe_id)
+        fakeip_pair = {"fake-ip-force", "fake-ip-bypass"} & set(catalog.recipes)
+        if expanded & fakeip_pair:
+            expanded.update(fakeip_pair)
+        if expanded == before:
+            break
+    selected = expanded
 
     source_ids = {
         source_id for recipe_id in expanded for source_id in catalog.recipes[recipe_id].sources
@@ -590,18 +600,40 @@ def build(
     source_specs = [catalog.sources[source_id] for source_id in sorted(source_ids)]
     previous_lock = load_previous_lock(root / "generated" / "sources.lock.json")
     previous_sources = _previous_by_id(previous_lock)
+    if locked:
+        previous_sources = {key: entry["metadata"] for key, entry in inputs.entries.items()}
     work_dir = root / ".work"
     forced_stale = {
         spec.id
         for spec in source_specs
-        if offline and previous_sources.get(spec.id, {}).get("sync_status") == "stale"
+        if (offline or locked) and previous_sources.get(spec.id, {}).get("sync_status") == "stale"
     }
-    fetch_result = fetch_sources(
-        [spec for spec in source_specs if spec.id not in forced_stale],
-        work_dir,
-        offline=offline,
-        workers=workers,
-    )
+    if locked:
+        downloaded = {}
+        for spec in source_specs:
+            data, metadata = inputs.read(spec.id)
+            _guard_payload(spec, data, "")
+            digest = hashlib.sha256(data).hexdigest()
+            if metadata.get("sha256") != digest or metadata.get("id") != spec.id:
+                raise FetchError(f"{spec.id}: locked source metadata does not match input")
+            if spec.id not in forced_stale:
+                downloaded[spec.id] = DownloadedSource(
+                    spec,
+                    data,
+                    digest,
+                    metadata["final_url"],
+                    metadata["etag"],
+                    metadata["last_modified"],
+                    True,
+                )
+        fetch_result = SourceFetchResult(downloaded, {})
+    else:
+        fetch_result = fetch_sources(
+            [spec for spec in source_specs if spec.id not in forced_stale],
+            work_dir,
+            offline=offline,
+            workers=workers,
+        )
     fetch_failures = dict(fetch_result.failures)
     fetch_failures.update(
         {
@@ -749,8 +781,10 @@ def build(
 
     rendered_by_ruleset: dict[str, dict[str, RenderedFile]] = {}
     manifests: dict[str, dict[str, Any]] = {}
-    compatibility: dict[str, dict[str, Any]] = {}
-    changed = False
+    compatibility: dict[str, dict[str, Any]] = {
+        key: value for key, value in previous_compatibility.items() if key not in selected
+    }
+    files: dict[str, bytes] = {}
     for recipe_id in sorted(selected):
         recipe = catalog.recipes[recipe_id]
         rules = built_rules[recipe_id]
@@ -781,32 +815,64 @@ def build(
                 review_reasons.append(reason)
         compatible = _compatibility_report(rendered)
         expected = _collect_expected_files(rendered, manifest, compatible)
-        target = root / "dist" / recipe_id
-        matches = _directory_matches(target, expected)
-        changed = changed or not matches
-        if check:
-            if not matches:
-                review_reasons.append(f"dist/{recipe_id} is not reproducible")
-        else:
-            _write_directory(target, expected)
+        files.update({f"dist/{recipe_id}/{name}": data for name, data in expected.items()})
         rendered_by_ruleset[recipe_id] = rendered
         manifests[recipe_id] = manifest
         compatibility[recipe_id] = compatible
 
+    active_sources = {source for recipe in catalog.recipes.values() for source in recipe.sources}
+    lock_entries.extend(
+        value for key, value in previous_sources.items() if key in active_sources - source_ids
+    )
+    lock_entries.sort(key=lambda item: str(item["id"]))
+    if {entry["id"] for entry in lock_entries} != active_sources:
+        raise BuildError("partial build has no complete source baseline; run a full sync")
+    for entry in lock_entries:
+        source_id = str(entry["id"])
+        item = fetch_result.downloaded.get(source_id)
+        if item is not None:
+            data = item.data
+        else:
+            data, _ = inputs.read(source_id)
+        if hashlib.sha256(data).hexdigest() != entry["sha256"]:
+            raise FetchError(f"{source_id}: preserved input does not match source lock")
+        inputs.capture(source_id, data, entry)
     lock = {"version": 1, "sources": lock_entries}
+    if selected != set(catalog.recipes):
+        rejected.extend(
+            entry
+            for entry in previous_report["rejected_lines"]
+            if entry["source_id"] not in source_ids
+        )
+        stale_report.extend(
+            entry for entry in previous_report["stale_sources"] if entry["id"] not in source_ids
+        )
+        if not {"fake-ip-force", "fake-ip-bypass"} & selected:
+            conflict_report = previous_report["fake_ip_conflicts"]
     report = {
         "version": 1,
-        "selected_rulesets": sorted(selected),
+        "selected_rulesets": sorted(catalog.recipes),
+        "binary_outputs": not skip_binary
+        and (selected == set(catalog.recipes) or previous_report.get("binary_outputs", True)),
         "review_required": bool(review_reasons),
         "review_reasons": sorted(set(review_reasons)),
         "fake_ip_conflicts": conflict_report,
-        "rejected_lines": rejected,
-        "stale_sources": stale_report,
+        "rejected_lines": sorted(rejected, key=lambda entry: json.dumps(entry, sort_keys=True)),
+        "stale_sources": sorted(stale_report, key=lambda entry: str(entry["id"])),
     }
-    if not check:
-        write_json_atomic(root / "generated" / "sources.lock.json", lock)
-        write_json_atomic(root / "generated" / "reports" / "build.json", report)
-        write_json_atomic(root / "generated" / "reports" / "compatibility.json", compatibility)
+    files.update(inputs.files())
+    files["generated/sources.lock.json"] = json_bytes(lock)
+    files["generated/reports/build.json"] = json_bytes(report)
+    files["generated/reports/compatibility.json"] = json_bytes(compatibility)
+    directories = [f"dist/{recipe_id}" for recipe_id in selected]
+    if selected == set(catalog.recipes):
+        directories = ["dist"]
+    directories.append(inputs.directory)
+    removed = obsolete_files(root, files, directories)
+    differences = changed_files(root, files, removed)
+    changed = bool(differences)
+    if not check and not review_reasons:
+        publish_files(root, files, removed)
     return BuildResult(
         rules={key: value for key, value in built_rules.items() if key in selected},
         rendered=rendered_by_ruleset,
@@ -815,5 +881,48 @@ def build(
         lock=lock,
         report=report,
         changed=changed,
+        changed_paths=tuple(sorted(differences)),
         review_required=bool(review_reasons),
     )
+
+
+def build(
+    root: Path,
+    *,
+    offline: bool = False,
+    locked: bool = False,
+    check: bool = False,
+    skip_binary: bool = False,
+    selected_rulesets: set[str] | None = None,
+    workers: int = 8,
+) -> BuildResult:
+    root = root.resolve()
+    attempt_path = root / ".work/reports/sync-attempt.json"
+    write_json_atomic(attempt_path, {"status": "running"})
+    try:
+        result = _build(
+            root,
+            offline=offline,
+            locked=locked,
+            check=check,
+            skip_binary=skip_binary,
+            selected_rulesets=selected_rulesets,
+            workers=workers,
+        )
+    except Exception as exc:
+        write_json_atomic(attempt_path, {"status": "failed", "error": str(exc)})
+        raise
+    status = "review" if result.review_required else "changed" if check and result.changed else "ok"
+    write_json_atomic(
+        attempt_path,
+        {
+            "status": status,
+            "rulesets": sorted(result.rules),
+            "binary_outputs": not skip_binary,
+            "locked_check": locked and check,
+            "changed_paths": list(result.changed_paths),
+            "publication_sha256": publication_digest(root) if status == "ok" else None,
+            "report": result.report,
+        },
+    )
+    return result

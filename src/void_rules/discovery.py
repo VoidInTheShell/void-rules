@@ -10,7 +10,7 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote, urlparse
+from urllib.parse import parse_qsl, quote, urlencode, urlparse, urlsplit, urlunsplit
 
 import yaml
 
@@ -18,6 +18,8 @@ from .artifacts import deterministic_gzip
 from .catalog import Catalog, load_catalog
 from .errors import CatalogError, FetchError
 from .fetch import RestrictedRedirectHandler, write_bytes_atomic, write_json_atomic
+from .inputs import InputStore
+from .publication import changed_files, obsolete_files, publish_files
 
 JSON_PATH = re.compile(r"^\$\.([A-Za-z0-9_-]+)\[\*\]\.([A-Za-z0-9_-]+)$")
 
@@ -57,11 +59,20 @@ def _fetch_json(
     url: str,
     *,
     offline: bool,
+    locked: bool = False,
+    inputs: InputStore | None = None,
 ) -> tuple[Any, str]:
     discoverer_id = str(discoverer["id"])
     cache_key = hashlib.sha256(url.encode()).hexdigest()[:16]
-    cache_path = root / ".work" / "discovery" / f"{discoverer_id}-{cache_key}.json"
-    if offline:
+    key = f"{discoverer_id}-{cache_key}"
+    cache_path = root / ".work" / "discovery" / f"{key}.json"
+    if locked:
+        if inputs is None:
+            raise FetchError("locked discovery requires an input store")
+        data, metadata = inputs.read(key)
+        if metadata.get("url") != url:
+            raise FetchError(f"{discoverer_id}: locked discovery URL mismatch")
+    elif offline:
         if not cache_path.is_file():
             raise FetchError(f"{discoverer_id}: offline discovery cache is missing")
         data = cache_path.read_bytes()
@@ -101,7 +112,6 @@ def _fetch_json(
                     (b"<!doctype", b"<html", b"<head", b"<body")
                 ):
                     raise FetchError(f"{discoverer_id}: discovery endpoint returned HTML")
-                write_bytes_atomic(cache_path, data)
                 break
             except (FetchError, OSError, urllib.error.URLError) as exc:
                 errors.append(f"attempt {attempt}: {exc}")
@@ -114,6 +124,10 @@ def _fetch_json(
         document = json.loads(data.decode("utf-8-sig"))
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise FetchError(f"{discoverer_id}: invalid JSON discovery response: {exc}") from exc
+    if not offline and not locked:
+        write_bytes_atomic(cache_path, data)
+    if inputs is not None:
+        inputs.capture(key, data, {"url": url})
     return document, digest
 
 
@@ -143,6 +157,8 @@ def _github_tree_candidates(
     discoverer: dict[str, Any],
     *,
     offline: bool,
+    locked: bool = False,
+    inputs: InputStore | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     repository = str(discoverer["repository"])
     ref = str(discoverer["ref"])
@@ -159,6 +175,8 @@ def _github_tree_candidates(
             discoverer,
             endpoint,
             offline=offline,
+            locked=locked,
+            inputs=inputs,
         )
         if not isinstance(document, dict) or not isinstance(document.get("tree"), list):
             raise FetchError(f"{discoverer['id']}: GitHub tree response has no tree array")
@@ -188,7 +206,10 @@ def _github_tree_candidates(
     roots = configured_roots or [""]
     for scan_root in roots:
         if not scan_root:
-            recursive_document = fetch_tree(ref, recursive=True)
+            tree_sha = str(root_document.get("sha", ""))
+            if not tree_sha:
+                raise FetchError(f"{discoverer['id']}: root tree has no SHA")
+            recursive_document = fetch_tree(tree_sha, recursive=True)
             if recursive_document.get("truncated") is True:
                 tree_sha = str(root_document.get("sha", ""))
                 if not tree_sha:
@@ -322,47 +343,103 @@ def _json_api_candidates(
     discoverer: dict[str, Any],
     *,
     offline: bool,
+    locked: bool = False,
+    inputs: InputStore | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     url = str(discoverer["url"])
-    document, digest = _fetch_json(root, discoverer, url, offline=offline)
     by_id: dict[str, dict[str, Any]] = {}
-    for path in discoverer["json_paths"]:
-        for value in _extract_json_path(document, str(path)):
-            canonical_value = json.dumps(
-                value,
-                ensure_ascii=False,
-                sort_keys=True,
-                separators=(",", ":"),
-            )
-            candidate_id = stable_candidate_id(
-                str(discoverer["id"]),
-                "json-value",
-                canonical_value,
-            )
-            existing = by_id.get(candidate_id)
-            if existing is None:
-                by_id[candidate_id] = {
-                    "id": candidate_id,
-                    "discoverer": str(discoverer["id"]),
-                    "kind": "json-value",
-                    "identity": canonical_value,
-                    "value": value,
-                    "url": url,
-                    "evidence": {
-                        "json_paths": [str(path)],
-                    },
-                    "registered_source_ids": [],
-                }
-            else:
-                paths = existing["evidence"]["json_paths"]
-                if str(path) not in paths:
-                    paths.append(str(path))
-                    paths.sort()
+    pagination = discoverer.get("pagination")
+    responses: dict[str, str] = {}
+    offset = 0
+    total: int | None = None
+    page_url = url
+    maximum_pages = int(pagination["max_pages"]) if pagination else 1
+    for _ in range(maximum_pages):
+        document, digest = _fetch_json(
+            root,
+            discoverer,
+            page_url,
+            offline=offline,
+            locked=locked,
+            inputs=inputs,
+        )
+        responses[page_url] = digest
+        page_ids: set[str] = set()
+        for path in discoverer["json_paths"]:
+            for value in _extract_json_path(document, str(path)):
+                canonical_value = json.dumps(
+                    value,
+                    ensure_ascii=False,
+                    sort_keys=True,
+                    separators=(",", ":"),
+                )
+                candidate_id = stable_candidate_id(
+                    str(discoverer["id"]),
+                    "json-value",
+                    canonical_value,
+                )
+                existing = by_id.get(candidate_id)
+                if existing is not None and candidate_id not in page_ids:
+                    raise FetchError(f"{discoverer['id']}: duplicate ID across discovery pages")
+                if existing is None:
+                    by_id[candidate_id] = {
+                        "id": candidate_id,
+                        "discoverer": str(discoverer["id"]),
+                        "kind": "json-value",
+                        "identity": canonical_value,
+                        "value": value,
+                        "url": url,
+                        "evidence": {"json_paths": [str(path)]},
+                        "registered_source_ids": [],
+                    }
+                elif str(path) not in existing["evidence"]["json_paths"]:
+                    existing["evidence"]["json_paths"].append(str(path))
+                    existing["evidence"]["json_paths"].sort()
+                page_ids.add(candidate_id)
+        if len(by_id) > int(discoverer.get("max_candidates", 20000)):
+            raise FetchError(f"{discoverer['id']}: discovery candidate limit exceeded")
+        if not pagination:
+            if not page_ids:
+                raise FetchError(f"{discoverer['id']}: discovery response contains no IDs")
+            break
+        if not isinstance(document, dict):
+            raise FetchError(f"{discoverer['id']}: expected paginated JSON object")
+        items = document.get(pagination["items_field"])
+        page_total = document.get(pagination["total_field"])
+        if (
+            not isinstance(items, list)
+            or len(page_ids) != len(items)
+            or type(page_total) is not int
+            or page_total < 0
+            or (total is not None and total != page_total)
+            or pagination["next_offset_field"] not in document
+        ):
+            raise FetchError(f"{discoverer['id']}: invalid or changing pagination metadata/IDs")
+        total = page_total
+        next_offset = document[pagination["next_offset_field"]]
+        offset += len(items)
+        if next_offset is None:
+            if offset != total:
+                raise FetchError(
+                    f"{discoverer['id']}: incomplete discovery pages ({offset}/{total})"
+                )
+            break
+        if not items or type(next_offset) is not int or next_offset != offset or offset >= total:
+            raise FetchError(f"{discoverer['id']}: invalid/non-progressing next offset")
+        parts = urlsplit(url)
+        query = dict(parse_qsl(parts.query))
+        query[str(pagination["offset_parameter"])] = str(next_offset)
+        page_url = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), ""))
+    else:
+        raise FetchError(f"{discoverer['id']}: discovery page limit exceeded")
     candidates = sorted(by_id.values(), key=lambda item: str(item["id"]))
     return candidates, {
         "discoverer": str(discoverer["id"]),
         "endpoint": url,
-        "response_sha256": digest,
+        "endpoints": len(responses),
+        "response_set_sha256": hashlib.sha256(
+            json.dumps(responses, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest(),
         "matched": len(candidates),
     }
 
@@ -388,7 +465,13 @@ def _load_rejections(path: Path) -> dict[str, str]:
     return result
 
 
-def discover(root: Path, *, offline: bool = False, check: bool = False) -> DiscoveryResult:
+def _discover(
+    root: Path,
+    *,
+    offline: bool = False,
+    locked: bool = False,
+    check: bool = False,
+) -> DiscoveryResult:
     root = root.resolve()
     catalog = load_catalog(root)
     config = catalog.discovery
@@ -396,6 +479,7 @@ def discover(root: Path, *, offline: bool = False, check: bool = False) -> Disco
     rejections = _load_rejections(rejection_path)
     candidates: list[dict[str, Any]] = []
     sources: list[dict[str, Any]] = []
+    inputs = InputStore(root, "discovery", required=locked)
 
     for discoverer in sorted(config["discoverers"], key=lambda item: str(item["id"])):
         if discoverer["type"] == "github-tree":
@@ -404,9 +488,17 @@ def discover(root: Path, *, offline: bool = False, check: bool = False) -> Disco
                 catalog,
                 discoverer,
                 offline=offline,
+                locked=locked,
+                inputs=inputs,
             )
         elif discoverer["type"] == "json-api":
-            found, source = _json_api_candidates(root, discoverer, offline=offline)
+            found, source = _json_api_candidates(
+                root,
+                discoverer,
+                offline=offline,
+                locked=locked,
+                inputs=inputs,
+            )
         else:
             raise CatalogError(f"unsupported discoverer type: {discoverer['type']}")
         maximum = int(discoverer.get("max_candidates", 20000))
@@ -478,13 +570,35 @@ def discover(root: Path, *, offline: bool = False, check: bool = False) -> Disco
     summary_data = (
         json.dumps(summary_document, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     ).encode()
-    changed = (
-        not candidate_path.is_file()
-        or candidate_path.read_bytes() != candidate_data
-        or not summary_path.is_file()
-        or summary_path.read_bytes() != summary_data
-    )
+    files = inputs.files()
+    files[candidate_path.relative_to(root).as_posix()] = candidate_data
+    files[summary_path.relative_to(root).as_posix()] = summary_data
+    removed = obsolete_files(root, files, [inputs.directory])
+    changed = bool(changed_files(root, files, removed))
     if not check:
-        write_bytes_atomic(candidate_path, candidate_data)
-        write_json_atomic(summary_path, summary_document)
+        publish_files(root, files, removed)
     return DiscoveryResult(document=result_document, changed=changed)
+
+
+def discover(
+    root: Path,
+    *,
+    offline: bool = False,
+    locked: bool = False,
+    check: bool = False,
+) -> DiscoveryResult:
+    attempt = root / ".work/reports/discovery-attempt.json"
+    write_json_atomic(attempt, {"status": "running"})
+    try:
+        result = _discover(root, offline=offline, locked=locked, check=check)
+    except Exception as exc:
+        write_json_atomic(attempt, {"status": "failed", "error": str(exc)})
+        raise
+    write_json_atomic(
+        attempt,
+        {
+            "status": "changed" if check and result.changed else "ok",
+            "locked_check": locked and check,
+        },
+    )
+    return result

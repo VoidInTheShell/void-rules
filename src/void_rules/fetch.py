@@ -223,8 +223,19 @@ def load_previous_lock(path: Path) -> dict[str, Any]:
         value = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
         raise FetchError(f"invalid existing source lock: {exc}") from exc
-    if not isinstance(value, dict):
-        raise FetchError("existing source lock must be a JSON object")
+    if (
+        not isinstance(value, dict)
+        or value.get("version") != 1
+        or not isinstance(value.get("sources"), list)
+    ):
+        raise FetchError("existing source lock must contain version 1 and sources")
+    seen: set[str] = set()
+    for entry in value["sources"]:
+        if not isinstance(entry, dict) or not isinstance(entry.get("id"), str):
+            raise FetchError("invalid source lock entry")
+        if entry["id"] in seen:
+            raise FetchError(f"duplicate source lock entry: {entry['id']}")
+        seen.add(entry["id"])
     return value
 
 
@@ -239,17 +250,18 @@ def build_lock_entry(
     changed_at = now
     if previous and previous.get("sha256") == downloaded.sha256:
         changed_at = str(previous.get("changed_at", now))
+    stable = previous if previous and previous.get("sha256") == downloaded.sha256 else {}
     return {
         "id": downloaded.spec.id,
         "url": downloaded.spec.url,
-        "final_url": _stable_public_url(downloaded.final_url),
+        "final_url": _stable_public_url(str(stable.get("final_url", downloaded.final_url))),
         "format": downloaded.spec.format,
         "behavior": downloaded.spec.behavior,
         "license": downloaded.spec.license,
         "size": len(downloaded.data),
         "sha256": downloaded.sha256,
-        "etag": downloaded.etag,
-        "last_modified": downloaded.last_modified,
+        "etag": str(stable.get("etag", downloaded.etag)),
+        "last_modified": str(stable.get("last_modified", downloaded.last_modified)),
         "parsed_rules": parsed_rules,
         "rejected_rules": rejected_rules,
         "changed_at": changed_at,

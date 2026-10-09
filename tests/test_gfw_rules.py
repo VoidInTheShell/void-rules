@@ -5,15 +5,21 @@ import json
 import shutil
 from pathlib import Path
 
+import pytest
 import yaml
 
+from void_rules.codecs import GeodataCodec
 from void_rules.model import Action, RuleKind
 from void_rules.pipeline import build
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_gfw_yaml_additions_deletions_and_provenance_reach_force(tmp_path: Path) -> None:
+def test_gfw_yaml_additions_deletions_and_provenance_reach_force(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("VOID_RULES_GEODATA", str(GeodataCodec(ROOT).executable()))
     for directory in ("catalog", "schemas", "overlays"):
         shutil.copytree(ROOT / directory, tmp_path / directory)
     (tmp_path / "recipes").mkdir()

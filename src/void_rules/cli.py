@@ -31,16 +31,18 @@ def _parser() -> argparse.ArgumentParser:
         help="refresh constrained discovery candidates without changing overlays",
     )
     discovery.add_argument("--offline", action="store_true", help="read only discovery cache")
+    discovery.add_argument("--locked", action="store_true", help="replay committed input snapshots")
     discovery.add_argument("--check", action="store_true", help="compare without writing")
 
     ci = subparsers.add_parser(
         "ci-decision",
-        help="classify generated changes as none, direct or review",
+        help="classify generated changes as none, direct or blocked",
     )
     ci.add_argument("--github-output", type=Path, help="append GitHub Actions outputs")
 
     sync = subparsers.add_parser("sync", help="fetch, merge, validate and render rulesets")
     sync.add_argument("--offline", action="store_true", help="read only the local .work cache")
+    sync.add_argument("--locked", action="store_true", help="replay committed input snapshots")
     sync.add_argument(
         "--check", action="store_true", help="compare generated files without writing"
     )
@@ -49,7 +51,12 @@ def _parser() -> argparse.ArgumentParser:
         action="store_true",
         help="skip MRS/DAT outputs (intended only for parser/unit-test development)",
     )
-    sync.add_argument("--ruleset", action="append", default=[], help="build only this ruleset")
+    sync.add_argument(
+        "--ruleset",
+        action="append",
+        default=[],
+        help="build this ruleset and every affected dependency/consumer",
+    )
     sync.add_argument("--workers", type=int, default=8, help="parallel source fetch workers")
 
     return parser
@@ -78,6 +85,7 @@ def main(argv: list[str] | None = None) -> None:
             discovery_result = discover(
                 root,
                 offline=bool(args.offline),
+                locked=bool(args.locked),
                 check=bool(args.check),
             )
             summary = {
@@ -104,6 +112,7 @@ def main(argv: list[str] | None = None) -> None:
             build_result = build(
                 root,
                 offline=bool(args.offline),
+                locked=bool(args.locked),
                 check=bool(args.check),
                 skip_binary=bool(args.skip_binary),
                 selected_rulesets=set(args.ruleset) if args.ruleset else None,
@@ -113,11 +122,14 @@ def main(argv: list[str] | None = None) -> None:
                 "status": "review" if build_result.review_required else "ok",
                 "changed": build_result.changed,
                 "review_required": build_result.review_required,
+                "changed_paths": list(build_result.changed_paths),
                 "rulesets": {key: len(value) for key, value in sorted(build_result.rules.items())},
                 "review_reasons": build_result.report["review_reasons"],
                 "stale_sources": build_result.report["stale_sources"],
             }
             print(json.dumps(summary, ensure_ascii=False, indent=2))
+            if build_result.review_required:
+                raise SystemExit(3)
             if args.check and build_result.changed:
                 raise SystemExit(2)
             return

@@ -56,3 +56,18 @@ def test_sync_publishes_validated_updates_without_pull_requests() -> None:
     assert "automation/rules-sync" not in text
     assert "gh pr " not in text
     assert "pull-requests:" not in text
+
+
+def test_validation_replays_inputs_while_synchronization_fetches_then_replays() -> None:
+    validate = (ROOT / ".github/workflows/validate.yml").read_text()
+    synchronize = (ROOT / ".github/workflows/sync.yml").read_text()
+    for command in ("discover", "sync"):
+        locked = f"python -m void_rules {command} --locked --check"
+        online = f"python -m void_rules {command}\n"
+        assert locked in validate
+        assert online not in validate
+        assert synchronize.index(online) < synchronize.index(locked)
+        assert synchronize.index(locked) < synchronize.index("git push origin HEAD:main")
+    assert "workflow_dispatch:" in validate
+    assert ".work/reports" in validate
+    assert ".work/reports" in synchronize
