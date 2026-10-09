@@ -27,6 +27,8 @@
 
 NTP 保留在 `fake-ip-bypass`。`stun` 独立输出，不作为依赖合入 `fake-ip-force`；构建会从 DustinWin、RFM、ShellCrash 等所有 bypass 来源中排除已识别的 STUN 成员和明确的 STUN/TURN 通配规则。独立订阅不自动设置直连、代理或 Fake-IP：客户端已有的父域规则和默认 DNS 行为仍然有效，例如 `stun.qq.com` 仍可能匹配通用的 `qq.com` 规则。需要指定 STUN 行为时，应在客户端显式配置其优先级和动作。
 
+`void-claude-ai-overlap` 是 `ai` 和 `void-claude-rules` 域名覆盖的交集，由依赖 recipe 自动生成，保留两侧来源。它同时处理相同规则、父域与子域、Mihomo 整段通配符之间的覆盖，输出较窄的范围，避免把 Claude 子域扩大到无关的同级域名。用于 DNS 策略优先级时，使用 [domain MRS（Raw）](https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/void-claude-ai-overlap/mihomo-domain.mrs) 或 [jsDelivr](https://cdn.jsdelivr.net/gh/VoidInTheShell/void-rules@main/dist/void-claude-ai-overlap/mihomo-domain.mrs)，配置示例见 [Mihomo 接入说明](docs/MIHOMO.md#claudeai-dns-overlap)。
+
 ## 规则来源和整理方式
 
 来源清单位于 [`catalog/sources.yaml`](catalog/sources.yaml)，每个来源都记录了公开地址、输入格式、适用的规则类型、来源项目和下载限制。每个规则集的组合范围见 [`recipes/`](recipes/)，人工补充、排除项和兼容性断言位于 [`overlays/`](overlays/)。
@@ -80,6 +82,8 @@ PR、push 和手动验证使用 `discover --locked --check` 与 `sync --locked -
 构建会先完成全部解析、渲染和门槛检查，再写入产物、来源锁和快照。需要审查或中途失败时保留原基线，重复运行不能消除待审查项；本次失败原因保存在 `.work/reports/` 并随 Actions 失败报告上传。`--ruleset` 会扩展到依赖、下游引用方、共享来源和 Fake-IP 冲突检查涉及的规则集，其余全局来源锁和报告会保留；自动发布仍要求完整规则集通过固定输入重放及二进制校验。
 
 自动发现只生成候选项，不直接添加规则。卡片目录按接口的 `nextOffset` 遍历分页，并核对总数、重复 ID 和分页进度；发现失败会停止同步。发布前还会核对保护文件、暂存区及验证后的产物摘要；若远端 `main` 已前进，则停止并要求基于新版本重跑同步。
+
+`void-claude-ai-overlap` 通过 `intersect_rulesets: [ai, void-claude-rules]` 参与同一每日同步和固定输入校验。两侧上游增删后会重新计算交集；定时、手动和 PR/push 校验均检查域名覆盖、父子域边界、来源合并及增删传播。只有一侧包含的域名不会进入配套集合，检查失败时停止发布。
 
 ## 目录说明
 

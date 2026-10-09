@@ -20,6 +20,7 @@ def test_repository_catalog_is_semantically_valid() -> None:
         "global-legal",
         "ip-proxy-pools",
         "pcdn",
+        "void-claude-ai-overlap",
         "void-claude-rules",
         "stun",
     }

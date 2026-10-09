@@ -1,0 +1,17 @@
+domain:anthropic.com
+domain:clau.de
+domain:claude.ai
+domain:claude.com
+domain:claude.dev
+domain:claudemcpclient.com
+domain:claudemcpcontent.com
+domain:claudeusercontent.com
+domain:events.statsigapi.net
+domain:intercom.io
+domain:intercomcdn.com
+domain:sentry.io
+full:anthropic.auth0.com
+full:cdn.usefathom.com
+full:downloads.claude.ai
+full:o33249.ingest.sentry.io
+full:servd-anthropic-website.b-cdn.net

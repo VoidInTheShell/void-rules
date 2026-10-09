@@ -109,6 +109,8 @@ class Recipe:
     source_filter: str | None
     review_unmatched_sources: tuple[str, ...]
     rulesets: tuple[str, ...]
+    intersect_rulesets: tuple[str, ...]
+    intersection_kinds: tuple[str, ...]
     exclude_rulesets: tuple[str, ...]
     include: Path
     exclude: Path
@@ -132,6 +134,8 @@ class Recipe:
                 str(item) for item in data.get("review_unmatched_sources", [])
             ),
             rulesets=tuple(str(item) for item in data["rulesets"]),
+            intersect_rulesets=tuple(str(item) for item in data.get("intersect_rulesets", [])),
+            intersection_kinds=tuple(str(item) for item in data.get("intersection_kinds", [])),
             exclude_rulesets=tuple(str(item) for item in data.get("exclude_rulesets", [])),
             include=root / str(data["include"]),
             exclude=root / str(data["exclude"]),
@@ -153,7 +157,9 @@ class Recipe:
 
     @property
     def dependencies(self) -> tuple[str, ...]:
-        return tuple(dict.fromkeys((*self.rulesets, *self.exclude_rulesets)))
+        return tuple(
+            dict.fromkeys((*self.rulesets, *self.intersect_rulesets, *self.exclude_rulesets))
+        )
 
 
 @dataclass(frozen=True, slots=True)
@@ -298,6 +304,16 @@ def load_catalog(root: Path) -> Catalog:
             raise CatalogError(f"{recipe.id}: source_filter requires filtered sources")
         if not set(recipe.review_unmatched_sources) <= set(recipe.filtered_sources):
             raise CatalogError(f"{recipe.id}: reviewed unmatched sources must be filtered sources")
+        if recipe.intersect_rulesets and recipe.rulesets:
+            raise CatalogError(
+                f"{recipe.id}: rulesets and intersect_rulesets are mutually exclusive"
+            )
+        if recipe.intersect_rulesets and len(recipe.intersect_rulesets) < 2:
+            raise CatalogError(f"{recipe.id}: intersect_rulesets requires at least two rulesets")
+        if recipe.intersection_kinds and not recipe.intersect_rulesets:
+            raise CatalogError(f"{recipe.id}: intersection_kinds requires intersect_rulesets")
+        if set(recipe.intersect_rulesets) & set(recipe.exclude_rulesets):
+            raise CatalogError(f"{recipe.id}: a ruleset cannot be both intersected and excluded")
         if recipe.filtered_sources and not set(recipe.sources) - set(recipe.filtered_sources):
             raise CatalogError(
                 f"{recipe.id}: filtered sources need an unfiltered membership source"

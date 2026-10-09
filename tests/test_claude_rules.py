@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import gzip
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -11,6 +12,7 @@ import yaml
 from void_rules.catalog import load_catalog
 from void_rules.codecs import GeodataCodec
 from void_rules.model import Rule
+from void_rules.normalize import wildcard_to_regex
 from void_rules.pipeline import build
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +32,54 @@ def test_claude_recipe_joins_default_sync_with_four_strict_sources() -> None:
     )
     assert all(catalog.sources[source].strict for source in SOURCES)
     assert all(catalog.sources[source].limits.min_rules > 0 for source in SOURCES)
+
+
+def test_claude_ai_overlap_is_generated_from_both_recipe_outputs() -> None:
+    catalog = load_catalog(ROOT)
+    recipe = catalog.recipes["void-claude-ai-overlap"]
+    assert recipe.intersect_rulesets == ("ai", "void-claude-rules")
+    assert recipe.intersection_kinds == ("domain", "domain_suffix", "domain_wildcard")
+    assert catalog.recipe_order.index("ai") < catalog.recipe_order.index(recipe.id)
+    assert catalog.recipe_order.index("void-claude-rules") < catalog.recipe_order.index(recipe.id)
+
+    def read(ruleset: str) -> dict[tuple[str, str, tuple[str, ...]], Rule]:
+        with gzip.open(
+            ROOT / "dist" / ruleset / "rules.jsonl.gz", "rt", encoding="utf-8"
+        ) as handle:
+            return {
+                rule.content_key: rule
+                for line in handle
+                for rule in [Rule.from_dict(json.loads(line))]
+            }
+
+    ai = read("ai")
+    claude = read("void-claude-rules")
+    overlap = read("void-claude-ai-overlap")
+
+    def matches(domain: str, rules: dict[tuple[str, str, tuple[str, ...]], Rule]) -> bool:
+        for rule in rules.values():
+            if rule.kind.value == "domain" and rule.value == domain:
+                return True
+            if rule.kind.value == "domain_suffix" and (
+                domain == rule.value or domain.endswith("." + rule.value)
+            ):
+                return True
+            if rule.kind.value == "domain_wildcard" and re.fullmatch(
+                wildcard_to_regex(rule.value), domain
+            ):
+                return True
+        return False
+
+    samples = {"unrelated.invalid"}
+    for rule in (*ai.values(), *claude.values(), *overlap.values()):
+        if rule.kind.value not in {"domain", "domain_suffix", "domain_wildcard"}:
+            continue
+        domain = rule.value.removeprefix("+.").removeprefix(".").replace("*", "probe")
+        samples.update({domain, "child." + domain, "deep.child." + domain, "not" + domain})
+    for domain in samples:
+        assert matches(domain, overlap) == (matches(domain, ai) and matches(domain, claude)), domain
+    assert all(rule.action.value == "match" for rule in overlap.values())
+    assert len(overlap) >= 5
 
 
 def test_claude_union_deduplicates_rules_and_retains_all_source_attribution() -> None:
@@ -87,7 +137,7 @@ def test_fake_ip_force_inherits_claude_rules_and_provenance() -> None:
     assert claude_domains <= force_domains
 
 
-def test_upstream_changes_rebuild_claude_and_fake_ip_force(
+def test_upstream_changes_rebuild_claude_fake_ip_force_and_dns_overlap(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     # Use the real catalog, parsers, dependency ordering and build pipeline with
@@ -98,9 +148,18 @@ def test_upstream_changes_rebuild_claude_and_fake_ip_force(
         shutil.copytree(ROOT / directory, tmp_path / directory)
     recipe_dir = tmp_path / "recipes"
     recipe_dir.mkdir()
-    for name in ("void-claude-rules", "fake-ip-force"):
+    for name in ("ai", "void-claude-rules", "fake-ip-force", "void-claude-ai-overlap"):
         document = yaml.safe_load((ROOT / "recipes" / f"{name}.yaml").read_text())
         document["outputs"] = ["jsonl", "mihomo-classical-text", "mihomo-domain-text"]
+        if name == "ai":
+            document["sources"] = ["blackmatrix-openai"]
+            document["limits"]["min_rules"] = 1
+            for kind in ("include", "exclude", "assertions"):
+                overlay = yaml.safe_load((ROOT / document[kind]).read_text())
+                for key in ("rules", "selectors", "required", "forbidden"):
+                    if key in overlay:
+                        overlay[key] = []
+                (tmp_path / document[kind]).write_text(yaml.safe_dump(overlay))
         if name == "fake-ip-force":
             document["sources"] = []
             document["rulesets"] = [
@@ -142,19 +201,34 @@ def test_upstream_changes_rebuild_claude_and_fake_ip_force(
         (cache / f"{source_id}.blob").write_text(data)
 
     for source_id in SOURCES:
-        extra = {"retired.example"} if source_id == "vpsdance-anthropic" else set()
+        extra = (
+            {"retired.example", "child.ai-parent.example"}
+            if source_id == "vpsdance-anthropic"
+            else set()
+        )
         revision(source_id, stable | {"shared.example"} | extra)
+    ai_domains = stable | {"shared.example", "ai-only.example", "ai-parent.example"}
+    revision("blackmatrix-openai", ai_domains)
     first = build(tmp_path, offline=True)
     assert not first.review_required
-    assert set(first.rules) == {"void-claude-rules", "fake-ip-force"}
+    assert set(first.rules) == {
+        "ai",
+        "void-claude-rules",
+        "fake-ip-force",
+        "void-claude-ai-overlap",
+    }
+    first_overlap = {rule.value for rule in first.rules["void-claude-ai-overlap"]}
+    assert "child.ai-parent.example" in first_overlap
+    assert not {"ai-parent.example", "ai-only.example", "retired.example"} & first_overlap
 
     # A source adds one domain and drops two. A domain still present in other
     # sources must survive with updated provenance, while an orphan disappears.
-    revision("vpsdance-anthropic", stable | {"new.example"})
+    revision("vpsdance-anthropic", stable | {"new.example", "child.ai-parent.example"})
     updated = build(tmp_path, offline=True)
     assert updated.changed
     assert not updated.review_required
-    for name, rules in updated.rules.items():
+    for name in ("void-claude-rules", "fake-ip-force"):
+        rules = updated.rules[name]
         values = {rule.value for rule in rules}
         assert "new.example" in values
         assert "retired.example" not in values
@@ -168,6 +242,22 @@ def test_upstream_changes_rebuild_claude_and_fake_ip_force(
         assert domain_lines.count("+.shared.example") == 1
 
     assert all(rule.action.value == "fake_ip_force" for rule in updated.rules["fake-ip-force"])
+    assert "new.example" not in {rule.value for rule in updated.rules["void-claude-ai-overlap"]}
+
+    # Membership follows both sources. Adding the Claude-only domain to AI
+    # creates overlap; removing an AI parent must not retain its Claude child.
+    revision("blackmatrix-openai", ai_domains - {"ai-parent.example"} | {"new.example"})
+    joined = build(tmp_path, offline=True)
+    assert not joined.review_required
+    joined_overlap = {rule.value for rule in joined.rules["void-claude-ai-overlap"]}
+    assert "new.example" in joined_overlap
+    assert not {"child.ai-parent.example", "ai-only.example"} & joined_overlap
+    assert "child.ai-parent.example" in {rule.value for rule in joined.rules["void-claude-rules"]}
+
+    revision("vpsdance-anthropic", stable | {"child.ai-parent.example"})
+    removed = build(tmp_path, offline=True)
+    assert not removed.review_required
+    assert "new.example" not in {rule.value for rule in removed.rules["void-claude-ai-overlap"]}
     check = build(tmp_path, offline=True, check=True)
     assert not check.changed
     assert not check.review_required

@@ -1,0 +1,9 @@
+version: 1
+ruleset: void-claude-ai-overlap
+format: assertions
+required:
+  - {kind: domain_suffix, value: anthropic.com}
+  - {kind: domain_suffix, value: clau.de}
+  - {kind: domain_suffix, value: claude.ai}
+  - {kind: domain_suffix, value: claude.com}
+forbidden: []

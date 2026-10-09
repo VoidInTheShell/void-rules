@@ -1,0 +1,94 @@
+{
+  "action": "match",
+  "composition": {
+    "excluded_protected_rules": 0,
+    "excluded_rules": 0,
+    "intersect_rulesets": [
+      "ai",
+      "void-claude-rules"
+    ],
+    "intersection_kinds": [
+      "domain",
+      "domain_suffix",
+      "domain_wildcard"
+    ]
+  },
+  "counts": {
+    "by_action": {
+      "match": 17
+    },
+    "by_kind": {
+      "domain": 5,
+      "domain_suffix": 12
+    },
+    "protected": 4,
+    "total": 17
+  },
+  "description": "Intersect domain coverage from the generated Claude and AI rule sets, for ordered Claude DNS precedence.",
+  "intersect_rulesets": [
+    "ai",
+    "void-claude-rules"
+  ],
+  "intersection_kinds": [
+    "domain",
+    "domain_suffix",
+    "domain_wildcard"
+  ],
+  "outputs": {
+    "jsonl": {
+      "path": "rules.jsonl.gz",
+      "represented_rules": 17,
+      "sha256": "daa7f3ad7e0eac05536d723595bd4b8802bf7a8427457d0c712f444ae7a879bb",
+      "size": 1146,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-mrs": {
+      "path": "mihomo-domain.mrs",
+      "represented_rules": 17,
+      "sha256": "215983a9f0d40d4d82f389b83561ab7fa730a78acdd7e276e3b45754c70c686c",
+      "size": 296,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-text": {
+      "path": "mihomo-domain.list",
+      "represented_rules": 17,
+      "sha256": "eb0c2d822743e763eda4dd642c73b017d3077a9a0c34f4dae42fde851d0edfe9",
+      "size": 317,
+      "skipped_rules": 0
+    },
+    "mihomo-domain-yaml": {
+      "path": "mihomo-domain.yaml",
+      "represented_rules": 17,
+      "sha256": "06b688426badf8bd1dcdb540fb3b02020e617768740644d332017600e3b295e1",
+      "size": 360,
+      "skipped_rules": 0
+    },
+    "plain-domain": {
+      "path": "plain-domain.txt",
+      "represented_rules": 17,
+      "sha256": "eb0c2d822743e763eda4dd642c73b017d3077a9a0c34f4dae42fde851d0edfe9",
+      "size": 317,
+      "skipped_rules": 0
+    },
+    "xray-domain-list": {
+      "path": "xray-domain-list.txt",
+      "represented_rules": 17,
+      "sha256": "2561e7bc327017accc29d1b15e25936567d35c7cb9d87ad3f1e7ad64da2b322b",
+      "size": 402,
+      "skipped_rules": 0
+    }
+  },
+  "ruleset": "void-claude-ai-overlap",
+  "rulesets": [],
+  "source_contributions": {
+    "blackmatrix-claude": 4,
+    "blackmatrix-openai": 5,
+    "metacubex-ai-not-cn": 11,
+    "metacubex-anthropic": 9,
+    "overlay:ai": 4,
+    "vpsdance-anthropic": 16,
+    "xiaolai-anthropic": 7
+  },
+  "sources": [],
+  "version": 1
+}

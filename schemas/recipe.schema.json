@@ -36,6 +36,26 @@
       "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
       "uniqueItems": true
     },
+    "intersect_rulesets": {
+      "description": "Intersect these already-built rulesets instead of taking their union. Domain/suffix/whole-label wildcard coverage is intersected; other kinds require identical content.",
+      "type": "array",
+      "minItems": 2,
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+      "uniqueItems": true
+    },
+    "intersection_kinds": {
+      "description": "Optional rule kinds retained from an intersection, useful for a domain-only companion set.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "domain", "domain_suffix", "domain_keyword", "domain_regex",
+          "domain_wildcard", "opaque_domain", "ip_cidr", "src_ip_cidr",
+          "geoip", "geosite", "dst_port", "src_port", "process_name",
+          "process_path", "network", "opaque_classical"
+        ]
+      }
+    },
     "exclude_rulesets": {
       "type": "array",
       "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },

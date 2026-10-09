@@ -1,0 +1,40 @@
+{
+  "outputs": {
+    "jsonl": {
+      "examples": [],
+      "represented": 17,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-mrs": {
+      "examples": [],
+      "represented": 17,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-text": {
+      "examples": [],
+      "represented": 17,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "mihomo-domain-yaml": {
+      "examples": [],
+      "represented": 17,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "plain-domain": {
+      "examples": [],
+      "represented": 17,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    },
+    "xray-domain-list": {
+      "examples": [],
+      "represented": 17,
+      "skipped": 0,
+      "skipped_by_kind": {}
+    }
+  }
+}

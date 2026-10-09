@@ -45,7 +45,7 @@ jobs:
           python -m void_rules discover --locked --check
           python -m void_rules sync --locked --check
 
-      - name: Verify Claude propagation into Fake-IP force
+      - name: Verify Claude propagation and generated AI DNS overlap
         run: python -m pytest -q tests/test_claude_rules.py
 
       - name: Verify source parsing and automatic STUN separation

@@ -21,6 +21,7 @@ from .fetch import (
     write_json_atomic,
 )
 from .inputs import InputStore
+from .intersection import intersect_ruleset_members
 from .model import Action, ParseResult, Provenance, Rule, RuleKind, deduplicate_rules
 from .normalize import normalize_domain, normalize_ip_network
 from .parsers import parse_classical_line, parse_mihomo_domain_line
@@ -239,8 +240,20 @@ def _compose_recipe(
             rules.extend(_recast(rule, recipe.action) for rule in source_rules)
         elif source_id not in stale_sources:
             raise BuildError(f"{recipe.id}: source {source_id} has no fresh or published rules")
-    for dependency in recipe.rulesets:
-        rules.extend(_recast(rule, recipe.action) for rule in built_rules[dependency])
+    if recipe.intersect_rulesets:
+        shared_rules = built_rules[recipe.intersect_rulesets[0]]
+        for dependency in recipe.intersect_rulesets[1:]:
+            shared_rules = intersect_ruleset_members(
+                shared_rules, built_rules[dependency], recipe.action
+            )
+        rules.extend(
+            rule
+            for rule in shared_rules
+            if not recipe.intersection_kinds or rule.kind.value in recipe.intersection_kinds
+        )
+    else:
+        for dependency in recipe.rulesets:
+            rules.extend(_recast(rule, recipe.action) for rule in built_rules[dependency])
     rules.extend(local_rules)
     rules = deduplicate_rules(rules)
     if recipe.domain_keyword_fallback is not None:
@@ -275,6 +288,10 @@ def _compose_recipe(
     }
     if filtering:
         composition["filtered_sources"] = filtering
+    if recipe.intersect_rulesets:
+        composition["intersect_rulesets"] = list(recipe.intersect_rulesets)
+        if recipe.intersection_kinds:
+            composition["intersection_kinds"] = list(recipe.intersection_kinds)
     if separation:
         return rules, {**composition, "excluded_rulesets": separation}
     return rules, composition
@@ -518,6 +535,10 @@ def _manifest(
     }
     if recipe.exclude_rulesets:
         manifest["exclude_rulesets"] = list(recipe.exclude_rulesets)
+    if recipe.intersect_rulesets:
+        manifest["intersect_rulesets"] = list(recipe.intersect_rulesets)
+        if recipe.intersection_kinds:
+            manifest["intersection_kinds"] = list(recipe.intersection_kinds)
     if recipe.filtered_sources:
         manifest["filtered_sources"] = list(recipe.filtered_sources)
     if recipe.source_filter:

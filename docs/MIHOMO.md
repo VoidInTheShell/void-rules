@@ -9,6 +9,8 @@
 | Ads | classical | `dist/ads/mihomo-classical.yaml` |
 | GlobalLegal | classical | `dist/global-legal/mihomo-classical.yaml` |
 | AI | classical | `dist/ai/mihomo-classical.yaml` |
+| Claude | domain | `dist/void-claude-rules/mihomo-domain.mrs` |
+| Claude/AI DNS overlap | domain | `dist/void-claude-ai-overlap/mihomo-domain.mrs` |
 | Cross-border finance | classical | `dist/cross-border-finance/mihomo-classical.yaml` |
 | PCDN | classical | `dist/pcdn/mihomo-classical.yaml` |
 
@@ -82,6 +84,35 @@ rules such as `+.qq.com`, and the final `MATCH,real-ip`, can still return real
 addresses for STUN names. The bypass manifest records retained domain/suffix
 coverage under `composition.excluded_rulesets.stun.retained_domain_suffix_overlaps`.
 This diagnostic does not enumerate wildcard/regex/keyword intersections.
+
+## Claude/AI DNS overlap
+
+The generated `void-claude-ai-overlap` set intersects AI and Claude domain
+coverage, including parent/child and whole-label wildcard matches. Use it ahead
+of AI in `nameserver-policy` when Claude has a separate egress. The provider
+name `VoidAClaudeOverlap` sorts before `VoidAI`, preserving that priority even
+when a subscription renderer sorts YAML mapping keys.
+
+```yaml
+dns:
+  nameserver-policy:
+    'rule-set:VoidAClaudeOverlap': ['https://1.1.1.1/dns-query#Claude']
+    'rule-set:VoidClaude': ['https://1.1.1.1/dns-query#Claude']
+    'rule-set:VoidAI': ['https://1.1.1.1/dns-query#AI']
+rule-providers:
+  VoidAClaudeOverlap:
+    type: http
+    behavior: domain
+    format: mrs
+    interval: 86400
+    path: ./rules/void-claude-ai-overlap.mrs
+    url: https://raw.githubusercontent.com/VoidInTheShell/void-rules/main/dist/void-claude-ai-overlap/mihomo-domain.mrs
+```
+
+Keep the existing `VoidClaude` and `VoidAI` providers and policy groups. Traffic
+rules still put Claude before AI; the companion provider controls only DNS
+precedence. Keywords, regexes, IP and process rules are outside domain MRS and
+do not enter this companion set.
 
 ## DNS leak boundary
 

@@ -1,0 +1,18 @@
+payload:
+- +.anthropic.com
+- +.clau.de
+- +.claude.ai
+- +.claude.com
+- +.claude.dev
+- +.claudemcpclient.com
+- +.claudemcpcontent.com
+- +.claudeusercontent.com
+- +.events.statsigapi.net
+- +.intercom.io
+- +.intercomcdn.com
+- +.sentry.io
+- anthropic.auth0.com
+- cdn.usefathom.com
+- downloads.claude.ai
+- o33249.ingest.sentry.io
+- servd-anthropic-website.b-cdn.net
