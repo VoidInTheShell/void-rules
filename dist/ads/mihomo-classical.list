@@ -413,8 +413,6 @@ DOMAIN,conf.hpplay.cn
 DOMAIN,config.chsmarttv.com
 DOMAIN,config.inmobi.com
 DOMAIN,config.unityads.unity3d.com
-DOMAIN,copilot-telemetry-service.githubusercontent.com
-DOMAIN,copilot-telemetry.githubusercontent.com
 DOMAIN,cpc-service-square.aiclk.com
 DOMAIN,cpro.baidustatic.com
 DOMAIN,crash2.zhihu.com
@@ -551,8 +549,6 @@ DOMAIN,impression-asia.chinaliftoff.io
 DOMAIN,impression-asia.liftoff.io
 DOMAIN,impression.appsflyer.com
 DOMAIN,in.treasuredata.com
-DOMAIN,incoming-telemetry.thunderbird.net
-DOMAIN,incoming.telemetry.mozilla.org
 DOMAIN,informer.yandex.ru
 DOMAIN,init.supersonicads.com
 DOMAIN,inner-hw.huazirc.com
@@ -69359,8 +69355,6 @@ DOMAIN-SUFFIX,grapeshot.co.uk
 DOMAIN-SUFFIX,graph-9-1.net.mydays.de
 DOMAIN-SUFFIX,graph-fallback.instagram.com
 DOMAIN-SUFFIX,graph.instagram.com
-DOMAIN-SUFFIX,graph.whatsapp.com
-DOMAIN-SUFFIX,graph.whatsapp.net
 DOMAIN-SUFFIX,graph0-8-0.net.mydays.de
 DOMAIN-SUFFIX,graph1-01.net.mydays.de
 DOMAIN-SUFFIX,graph2-6-2.net.mydays.de

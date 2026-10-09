@@ -27540,6 +27540,8 @@ img-prod-cms-rt-microsoft-com.akamaized.net
 img-s-msn-com.akamaized.net
 impala-media-production.s3.amazonaws.com
 imperial.insendi.com
+incoming-telemetry.thunderbird.net
+incoming.telemetry.mozilla.org
 lastfm-img.freetls.fastly.net
 lastfm.freetls.fastly.net
 lazer.ppy.sh

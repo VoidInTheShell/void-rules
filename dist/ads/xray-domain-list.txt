@@ -68247,8 +68247,6 @@ domain:grapeshot.co.uk
 domain:graph-9-1.net.mydays.de
 domain:graph-fallback.instagram.com
 domain:graph.instagram.com
-domain:graph.whatsapp.com
-domain:graph.whatsapp.net
 domain:graph0-8-0.net.mydays.de
 domain:graph1-01.net.mydays.de
 domain:graph2-6-2.net.mydays.de
@@ -229324,8 +229322,6 @@ full:conf.hpplay.cn
 full:config.chsmarttv.com
 full:config.inmobi.com
 full:config.unityads.unity3d.com
-full:copilot-telemetry-service.githubusercontent.com
-full:copilot-telemetry.githubusercontent.com
 full:cpc-service-square.aiclk.com
 full:cpro.baidustatic.com
 full:crash2.zhihu.com
@@ -229462,8 +229458,6 @@ full:impression-asia.chinaliftoff.io
 full:impression-asia.liftoff.io
 full:impression.appsflyer.com
 full:in.treasuredata.com
-full:incoming-telemetry.thunderbird.net
-full:incoming.telemetry.mozilla.org
 full:informer.yandex.ru
 full:init.supersonicads.com
 full:inner-hw.huazirc.com

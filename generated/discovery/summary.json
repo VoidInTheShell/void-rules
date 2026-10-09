@@ -1,12 +1,12 @@
 {
   "candidate_store": {
     "path": "generated/discovery/candidates.json.gz",
-    "sha256": "eb60b0740d5aa16b96793e0eb3b21541b4cf128ff5a6821ecf4584777b5746fa",
-    "size": 245568,
-    "total": 4942
+    "sha256": "fe214a6adbb1e5954d76b79296187a33862f5761da872b027d4330d83f65c84c",
+    "size": 246301,
+    "total": 4952
   },
   "counts": {
-    "candidate": 4935,
+    "candidate": 4945,
     "registered": 7
   },
   "policy_sha256": "b0940936774eb94480446c357c73e91b7216e0a320030fb3257aa0339e3b1d84",
@@ -19,11 +19,11 @@
       "response_set_sha256": "d706e7d01f543932bdc5aaeda578a2cf1f8cae03c03b9b5f0f97f477225043af"
     },
     {
-      "candidates": 4328,
+      "candidates": 4338,
       "discoverer": "meta-companion-views",
       "endpoints": 4,
-      "matched_files": 10820,
-      "response_set_sha256": "839558475b9c17a93ed3051964c43333c412729ed2d2a59eeac848b9b0cfe547"
+      "matched_files": 10845,
+      "response_set_sha256": "2c8623c4f200754dc2b6fb071d6cb57ecc852067564242f4d945aec0454e3e68"
     }
   ],
   "stale_rejections": [],

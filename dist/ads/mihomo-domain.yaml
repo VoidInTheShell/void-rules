@@ -68248,8 +68248,6 @@ payload:
 - +.graph-9-1.net.mydays.de
 - +.graph-fallback.instagram.com
 - +.graph.instagram.com
-- +.graph.whatsapp.com
-- +.graph.whatsapp.net
 - +.graph0-8-0.net.mydays.de
 - +.graph1-01.net.mydays.de
 - +.graph2-6-2.net.mydays.de
@@ -229325,8 +229323,6 @@ payload:
 - config.chsmarttv.com
 - config.inmobi.com
 - config.unityads.unity3d.com
-- copilot-telemetry-service.githubusercontent.com
-- copilot-telemetry.githubusercontent.com
 - cpc-service-square.aiclk.com
 - cpro.baidustatic.com
 - crash2.zhihu.com
@@ -229463,8 +229459,6 @@ payload:
 - impression-asia.liftoff.io
 - impression.appsflyer.com
 - in.treasuredata.com
-- incoming-telemetry.thunderbird.net
-- incoming.telemetry.mozilla.org
 - informer.yandex.ru
 - init.supersonicads.com
 - inner-hw.huazirc.com
