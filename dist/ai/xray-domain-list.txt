@@ -165,6 +165,7 @@ domain:sora.com
 domain:spicywriter.com
 domain:stitch.withgoogle.com
 domain:stripe.com
+domain:syntx.ai
 domain:t.co
 domain:talkai.info
 domain:tapnow.ai

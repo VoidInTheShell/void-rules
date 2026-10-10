@@ -6,15 +6,15 @@
   },
   "counts": {
     "by_action": {
-      "block": 230017
+      "block": 233726
     },
     "by_kind": {
       "domain": 1103,
       "domain_keyword": 5,
-      "domain_suffix": 228909
+      "domain_suffix": 232618
     },
     "protected": 4,
-    "total": 230017
+    "total": 233726
   },
   "description": "Advertising and tracking rules with block and allow polarity preserved.",
   "outputs": {
@@ -27,52 +27,52 @@
     },
     "adguard-block": {
       "path": "adguard-block.txt",
-      "represented_rules": 230017,
-      "sha256": "600369921375a63bddce79a31923fc551fd21552475a03d8a305dc03bdcc256f",
-      "size": 5422813,
+      "represented_rules": 233726,
+      "sha256": "f302b1d21b7670e53129a63c00b4aaa244ad970026d327383d4225c7633e44c8",
+      "size": 5515809,
       "skipped_rules": 0
     },
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 230017,
-      "sha256": "3cabe290aa9d91f9103393e3ed230d67936f336492d2179928eca743fcef0454",
-      "size": 4610555,
+      "represented_rules": 233726,
+      "sha256": "ac95452e584ca66c1422f4655ee6233e6f6a6d6a409540720830f96ea53e2eb1",
+      "size": 4662256,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 230017,
-      "sha256": "bb409786876485fee45b32c0e7a8e1fc77f3bae9463a5ecd8d8a5b004daaedc7",
-      "size": 7946351,
+      "represented_rules": 233726,
+      "sha256": "57f1cdfac2b12f4f26c76374aec8c207c0ab0e19c4d533d797e0242ed08d9e55",
+      "size": 8080146,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 230017,
-      "sha256": "a467c0bcd30bfdcca00dcef5cdd23af7083f7a01dee9a763b3e79dd7795f615b",
-      "size": 8406394,
+      "represented_rules": 233726,
+      "sha256": "c0ba8c9fab5363fad9e6a6eb52ce9db5006c34e1d98dfd418f28913230cd322e",
+      "size": 8547607,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 285,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 230012,
-      "sha256": "6e299c418a25952c9732afe3de467733d01c4413bc95654f131882ffd61495c6",
-      "size": 2164004,
+      "represented_rules": 233721,
+      "sha256": "391bdade3c4992281181bfe618b8c2c652653c6e987020b454773638b8368234",
+      "size": 2200291,
       "skipped_rules": 5
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 230012,
-      "sha256": "bf29a29cc55acac55444314fdcba240f739a4c70a6e30feccd21330e853581e8",
-      "size": 5191558,
+      "represented_rules": 233721,
+      "sha256": "894d71c03d5d499e067e8ecb3157547154574b9bea571de84fd2958d9bdf4e4e",
+      "size": 5280845,
       "skipped_rules": 5
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 230012,
-      "sha256": "ac5025767078c2ae0a1f00a3a418978a1b733723b951b8c0548f1f24ed0b9c5e",
-      "size": 5651591,
+      "represented_rules": 233721,
+      "sha256": "3aefacd91492ffb6055d87f8ba76afa2de877d0e8f37867d8ed1aa6e85c5fe54",
+      "size": 5748296,
       "skipped_rules": 5
     },
     "mihomo-ipcidr-text": {
@@ -80,20 +80,20 @@
       "represented_rules": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "size": 0,
-      "skipped_rules": 230017
+      "skipped_rules": 233726
     },
     "mihomo-ipcidr-yaml": {
       "path": "mihomo-ipcidr.yaml",
       "represented_rules": 0,
       "sha256": "0b2efabe5f713ed12bd02e9d9b6bee10d365dfd03845745f5ce7805ba44afae4",
       "size": 12,
-      "skipped_rules": 230017
+      "skipped_rules": 233726
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 230012,
-      "sha256": "bf29a29cc55acac55444314fdcba240f739a4c70a6e30feccd21330e853581e8",
-      "size": 5191558,
+      "represented_rules": 233721,
+      "sha256": "894d71c03d5d499e067e8ecb3157547154574b9bea571de84fd2958d9bdf4e4e",
+      "size": 5280845,
       "skipped_rules": 5
     },
     "plain-ip": {
@@ -101,20 +101,20 @@
       "represented_rules": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "size": 0,
-      "skipped_rules": 230017
+      "skipped_rules": 233726
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 230017,
-      "sha256": "14127c3ba7aadaa881043458ffbc01241948cbc0400050485e00bd15483f161d",
-      "size": 6341747,
+      "represented_rules": 233726,
+      "sha256": "b389e5c6570fee74f4620f765c3be9ee8c9eb47641f4a421e660d2f7c25a4cd8",
+      "size": 6449579,
       "skipped_rules": 0
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 230017,
-      "sha256": "108fd2ce3b70ae49d245b9e58b1e75b6c2febc3ef37e2d574975890ed65f8540",
-      "size": 5883914,
+      "represented_rules": 233726,
+      "sha256": "8d0b87a914c88a52aeca41bdf27529e9981c3788f7e2b0fc9c640d459997fef5",
+      "size": 5984328,
       "skipped_rules": 0
     }
   },
@@ -122,8 +122,8 @@
   "rulesets": [],
   "source_contributions": {
     "awavenue-ads": 965,
-    "loyalsoldier-reject": 188639,
-    "metacubex-ads": 903,
+    "loyalsoldier-reject": 190677,
+    "metacubex-ads": 902,
     "overlay:ads": 4,
     "snapei-reject": 173568
   },
