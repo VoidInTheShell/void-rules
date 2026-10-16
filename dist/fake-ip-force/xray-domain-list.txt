@@ -18979,6 +18979,7 @@ domain:playshowtv.com
 domain:playstation
 domain:playstation.com
 domain:playstation.net
+domain:playstationnetwork.com
 domain:playvalorant.com
 domain:playvids.com
 domain:playyoungtube.com
@@ -20796,6 +20797,7 @@ domain:scatville.com
 domain:scb.co.th
 domain:scb.ru
 domain:scdn.co
+domain:scea.com
 domain:scene7.com
 domain:scenesource.me
 domain:scharferporno.com
@@ -21787,6 +21789,7 @@ domain:sony.com.ni
 domain:sony.com.pa
 domain:sony.com.pe
 domain:sony.com.ph
+domain:sony.com.py
 domain:sony.com.sg
 domain:sony.com.sv
 domain:sony.com.tr
@@ -21830,8 +21833,10 @@ domain:sonydesign.com
 domain:sonydna.com
 domain:sonyentertainmentnetwork.com
 domain:sonyglobalsolutions.jp
+domain:sonyinteractive.com
 domain:sonykigyo.jp
 domain:sonylatvija.com
+domain:sonymusic.com.hk
 domain:sonynetwork.co.jp
 domain:sonypcl.jp
 domain:sonypictures.com
