@@ -38,8 +38,8 @@
     "jsonl": {
       "path": "rules.jsonl.gz",
       "represented_rules": 17,
-      "sha256": "e08ca267826319e0b758605b64e7f7a2a06d5c61fa3a030bd02c0132cf25aa2d",
-      "size": 1143,
+      "sha256": "39dfcfbe8824e80136e72524f861a906e055fd94ff2960e79ad2573103df4312",
+      "size": 1145,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
