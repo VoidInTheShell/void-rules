@@ -6417,6 +6417,7 @@ payload:
 - +.cursor.com
 - +.cursor.sh
 - +.cursorapi.com
+- +.cursorvm.com
 - +.curve.com
 - +.curve.fi
 - +.curvefish.com
@@ -18079,6 +18080,7 @@ payload:
 - +.open.firstory.me
 - +.openai.com
 - +.openai.com.cdn.cloudflare.net
+- +.openai.org
 - +.openaiapi-site.azureedge.net
 - +.openaicom.imgix.net
 - +.openamt.com
@@ -20813,6 +20815,7 @@ payload:
 - +.schwab.com.hk
 - +.schwab.com.sg
 - +.schwabassetmanagement.com
+- +.schwabcdn.com
 - +.schwabplan.com
 - +.sci-hub.ee
 - +.sci-hub.it.nf
@@ -23249,6 +23252,8 @@ payload:
 - +.timestalks.com
 - +.timeweb.cloud
 - +.timeweb.com
+- +.timeweb.tech
+- +.timewebcloud.kz
 - +.timi1.me
 - +.timo0.com
 - +.timtales.com
@@ -23849,6 +23854,7 @@ payload:
 - +.typekit.net
 - +.typenetwork.com
 - +.typepad.com
+- +.typesafe.ai
 - +.typeset.io
 - +.typesquare.com
 - +.typography.com

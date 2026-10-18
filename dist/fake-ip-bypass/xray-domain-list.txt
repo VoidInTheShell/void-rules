@@ -2948,6 +2948,8 @@ full:lens.l.google.com
 full:local.adguard.org
 full:localhost.ptlogin2.qq.com
 full:localhost.sec.qq.com
+full:localhost.weixin.qq.com
+full:localhost.work.weixin.qq.com
 full:lv.queniujq.cn
 full:mask-h2.icloud.com
 full:mask.icloud.com

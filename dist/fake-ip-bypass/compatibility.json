@@ -2,19 +2,19 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 3217,
+      "represented": 3219,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 3217,
+      "represented": 3219,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 3217,
+      "represented": 3219,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -376,7 +376,7 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3146,
+      "represented": 3148,
       "skipped": 71,
       "skipped_by_kind": {
         "ip_cidr": 71
@@ -740,7 +740,7 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3146,
+      "represented": 3148,
       "skipped": 71,
       "skipped_by_kind": {
         "ip_cidr": 71
@@ -1104,7 +1104,7 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3146,
+      "represented": 3148,
       "skipped": 71,
       "skipped_by_kind": {
         "ip_cidr": 71
@@ -1468,7 +1468,7 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3146,
+      "represented": 3148,
       "skipped": 71,
       "skipped_by_kind": {
         "ip_cidr": 71
@@ -1832,7 +1832,7 @@
           "value": "59.111.238.29/32"
         }
       ],
-      "represented": 3146,
+      "represented": 3148,
       "skipped": 71,
       "skipped_by_kind": {
         "ip_cidr": 71
@@ -1840,7 +1840,7 @@
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 3146,
+      "represented": 3148,
       "skipped": 0,
       "skipped_by_kind": {}
     }

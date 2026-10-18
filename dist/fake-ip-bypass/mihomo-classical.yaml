@@ -39,6 +39,8 @@ payload:
 - DOMAIN,local.adguard.org
 - DOMAIN,localhost.ptlogin2.qq.com
 - DOMAIN,localhost.sec.qq.com
+- DOMAIN,localhost.weixin.qq.com
+- DOMAIN,localhost.work.weixin.qq.com
 - DOMAIN,lv.queniujq.cn
 - DOMAIN,mask-h2.icloud.com
 - DOMAIN,mask.icloud.com

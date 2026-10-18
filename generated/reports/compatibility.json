@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 238153,
+        "represented": 238509,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 238153,
+        "represented": 238509,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 238153,
+        "represented": 238509,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 238153,
+        "represented": 238509,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -59,7 +59,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 238148,
+        "represented": 238504,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -93,7 +93,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 238148,
+        "represented": 238504,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -127,7 +127,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 238148,
+        "represented": 238504,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -637,11 +637,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 238153,
+        "skipped": 238509,
         "skipped_by_kind": {
           "domain": 1103,
           "domain_keyword": 5,
-          "domain_suffix": 237045
+          "domain_suffix": 237401
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1148,11 +1148,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 238153,
+        "skipped": 238509,
         "skipped_by_kind": {
           "domain": 1103,
           "domain_keyword": 5,
-          "domain_suffix": 237045
+          "domain_suffix": 237401
         }
       },
       "plain-domain": {
@@ -1183,7 +1183,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 238148,
+        "represented": 238504,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -1693,22 +1693,22 @@
           }
         ],
         "represented": 0,
-        "skipped": 238153,
+        "skipped": 238509,
         "skipped_by_kind": {
           "domain": 1103,
           "domain_keyword": 5,
-          "domain_suffix": 237045
+          "domain_suffix": 237401
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 238153,
+        "represented": 238509,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 238153,
+        "represented": 238509,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -1718,19 +1718,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 246,
+        "represented": 249,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 246,
+        "represented": 249,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 246,
+        "represented": 249,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -1792,7 +1792,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 235,
+        "represented": 238,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1858,7 +1858,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 235,
+        "represented": 238,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1924,7 +1924,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 235,
+        "represented": 238,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -2402,6 +2402,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "cursorvm.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "deepmind.com"
           },
           {
@@ -2428,19 +2433,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "diabrowser.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.engineering"
           }
         ],
         "represented": 8,
-        "skipped": 238,
+        "skipped": 241,
         "skipped_by_kind": {
           "domain": 34,
           "domain_keyword": 2,
-          "domain_suffix": 201,
+          "domain_suffix": 204,
           "opaque_classical": 1
         }
       },
@@ -2914,6 +2914,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "cursorvm.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "deepmind.com"
           },
           {
@@ -2940,19 +2945,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "diabrowser.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.engineering"
           }
         ],
         "represented": 8,
-        "skipped": 238,
+        "skipped": 241,
         "skipped_by_kind": {
           "domain": 34,
           "domain_keyword": 2,
-          "domain_suffix": 201,
+          "domain_suffix": 204,
           "opaque_classical": 1
         }
       },
@@ -3426,6 +3426,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "cursorvm.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "deepmind.com"
           },
           {
@@ -3452,19 +3457,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "diabrowser.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.engineering"
           }
         ],
         "represented": 8,
-        "skipped": 238,
+        "skipped": 241,
         "skipped_by_kind": {
           "domain": 34,
           "domain_keyword": 2,
-          "domain_suffix": 201,
+          "domain_suffix": 204,
           "opaque_classical": 1
         }
       },
@@ -3526,7 +3526,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 235,
+        "represented": 238,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -4004,6 +4004,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "cursorvm.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "deepmind.com"
           },
           {
@@ -4030,19 +4035,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "diabrowser.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.engineering"
           }
         ],
         "represented": 8,
-        "skipped": 238,
+        "skipped": 241,
         "skipped_by_kind": {
           "domain": 34,
           "domain_keyword": 2,
-          "domain_suffix": 201,
+          "domain_suffix": 204,
           "opaque_classical": 1
         }
       },
@@ -4094,7 +4094,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 237,
+        "represented": 240,
         "skipped": 9,
         "skipped_by_kind": {
           "ip_cidr": 8,
@@ -4109,7 +4109,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 237,
+        "represented": 240,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -4119,19 +4119,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 1323,
+        "represented": 1324,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 1323,
+        "represented": 1324,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 1323,
+        "represented": 1324,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -4143,7 +4143,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1322,
+        "represented": 1323,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4157,7 +4157,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1322,
+        "represented": 1323,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4171,7 +4171,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1322,
+        "represented": 1323,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4185,7 +4185,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1322,
+        "represented": 1323,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4193,13 +4193,13 @@
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 1323,
+        "represented": 1324,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 1323,
+        "represented": 1324,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -4209,19 +4209,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 3217,
+        "represented": 3219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 3217,
+        "represented": 3219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 3217,
+        "represented": 3219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -4583,7 +4583,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3146,
+        "represented": 3148,
         "skipped": 71,
         "skipped_by_kind": {
           "ip_cidr": 71
@@ -4947,7 +4947,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3146,
+        "represented": 3148,
         "skipped": 71,
         "skipped_by_kind": {
           "ip_cidr": 71
@@ -5311,7 +5311,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3146,
+        "represented": 3148,
         "skipped": 71,
         "skipped_by_kind": {
           "ip_cidr": 71
@@ -5675,7 +5675,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3146,
+        "represented": 3148,
         "skipped": 71,
         "skipped_by_kind": {
           "ip_cidr": 71
@@ -6039,7 +6039,7 @@
             "value": "59.111.238.29/32"
           }
         ],
-        "represented": 3146,
+        "represented": 3148,
         "skipped": 71,
         "skipped_by_kind": {
           "ip_cidr": 71
@@ -6047,7 +6047,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 3146,
+        "represented": 3148,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6057,19 +6057,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28140,
+        "represented": 28146,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 28140,
+        "represented": 28146,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 28140,
+        "represented": 28146,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -6411,7 +6411,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28073,
+        "represented": 28079,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -6758,7 +6758,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28073,
+        "represented": 28079,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7105,7 +7105,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28073,
+        "represented": 28079,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7452,7 +7452,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28073,
+        "represented": 28079,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7704,7 +7704,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28092,
+        "represented": 28098,
         "skipped": 48,
         "skipped_by_kind": {
           "ip_cidr": 32,
@@ -7714,7 +7714,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 28092,
+        "represented": 28098,
         "skipped": 0,
         "skipped_by_kind": {}
       }

@@ -55,6 +55,7 @@ domain:cursor-cdn.com
 domain:cursor.com
 domain:cursor.sh
 domain:cursorapi.com
+domain:cursorvm.com
 domain:deepmind.com
 domain:deepmind.google
 domain:deepwiki.com
@@ -139,6 +140,7 @@ domain:opal.google
 domain:opal.google.com
 domain:openai.com
 domain:openai.com.cdn.cloudflare.net
+domain:openai.org
 domain:openaiapi-site.azureedge.net
 domain:openaicom.imgix.net
 domain:openart.ai
@@ -191,6 +193,7 @@ domain:twtrdns.net
 domain:twttr.com
 domain:twttr.net
 domain:twvid.com
+domain:typesafe.ai
 domain:vine.co
 domain:windsurf.build
 domain:windsurf.com

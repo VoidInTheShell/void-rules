@@ -2992,6 +2992,8 @@ local.adguard.org
 localhost.*.weixin.qq.com
 localhost.ptlogin2.qq.com
 localhost.sec.qq.com
+localhost.weixin.qq.com
+localhost.work.weixin.qq.com
 lv.queniujq.cn
 mask-h2.icloud.com
 mask.icloud.com

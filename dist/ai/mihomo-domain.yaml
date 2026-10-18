@@ -56,6 +56,7 @@ payload:
 - +.cursor.com
 - +.cursor.sh
 - +.cursorapi.com
+- +.cursorvm.com
 - +.deepmind.com
 - +.deepmind.google
 - +.deepwiki.com
@@ -140,6 +141,7 @@ payload:
 - +.opal.google.com
 - +.openai.com
 - +.openai.com.cdn.cloudflare.net
+- +.openai.org
 - +.openaiapi-site.azureedge.net
 - +.openaicom.imgix.net
 - +.openart.ai
@@ -192,6 +194,7 @@ payload:
 - +.twttr.com
 - +.twttr.net
 - +.twvid.com
+- +.typesafe.ai
 - +.vine.co
 - +.windsurf.build
 - +.windsurf.com
