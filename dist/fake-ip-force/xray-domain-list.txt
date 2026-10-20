@@ -14964,6 +14964,7 @@ domain:magentomobile.com
 domain:magestic.com
 domain:magicalmirai.com
 domain:magicmovies.com
+domain:magnific.com
 domain:mahajantech.com
 domain:mahjongsoul.com
 domain:maidonanews.jp
@@ -16533,6 +16534,7 @@ domain:mtao.fun
 domain:mthruf.com
 domain:mtn.co.za
 domain:mtn.com
+domain:mts-link.ru
 domain:mts-ws.net
 domain:mts.ru
 domain:mtsbank.ru
@@ -19454,6 +19456,7 @@ domain:postgresql.org
 domain:postimages.org
 domain:postimg.cc
 domain:postini.com
+domain:postman.com
 domain:posts.careerengine.us
 domain:posty.kr
 domain:postyourgirls.ws
@@ -27650,6 +27653,8 @@ full:impala-media-production.s3.amazonaws.com
 full:imperial.insendi.com
 full:incoming-telemetry.thunderbird.net
 full:incoming.telemetry.mozilla.org
+full:kp-config-smart-tv.akamaized.net
+full:kp-configs-smart-tv.s3.eu-central-1.amazonaws.com
 full:lastfm-img.freetls.fastly.net
 full:lastfm.freetls.fastly.net
 full:lazer.ppy.sh
