@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 241332,
+        "represented": 242219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 241332,
+        "represented": 242219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 241332,
+        "represented": 242219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 241332,
+        "represented": 242219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -59,7 +59,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 241327,
+        "represented": 242214,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -93,7 +93,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 241327,
+        "represented": 242214,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -127,7 +127,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 241327,
+        "represented": 242214,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -637,11 +637,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 241332,
+        "skipped": 242219,
         "skipped_by_kind": {
-          "domain": 1103,
+          "domain": 1104,
           "domain_keyword": 5,
-          "domain_suffix": 240224
+          "domain_suffix": 241110
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1148,11 +1148,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 241332,
+        "skipped": 242219,
         "skipped_by_kind": {
-          "domain": 1103,
+          "domain": 1104,
           "domain_keyword": 5,
-          "domain_suffix": 240224
+          "domain_suffix": 241110
         }
       },
       "plain-domain": {
@@ -1183,7 +1183,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 241327,
+        "represented": 242214,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -1693,22 +1693,22 @@
           }
         ],
         "represented": 0,
-        "skipped": 241332,
+        "skipped": 242219,
         "skipped_by_kind": {
-          "domain": 1103,
+          "domain": 1104,
           "domain_keyword": 5,
-          "domain_suffix": 240224
+          "domain_suffix": 241110
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 241332,
+        "represented": 242219,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 241332,
+        "represented": 242219,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -1718,19 +1718,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 250,
+        "represented": 261,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 250,
+        "represented": 261,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 250,
+        "represented": 261,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -1792,7 +1792,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 239,
+        "represented": 250,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1858,7 +1858,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 239,
+        "represented": 250,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1924,7 +1924,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 239,
+        "represented": 250,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -2042,6 +2042,11 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "o33249.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "openai-api.arkoselabs.com"
           },
           {
@@ -2162,7 +2167,17 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "anthropic.team"
           },
           {
             "kind": "domain_suffix",
@@ -2173,6 +2188,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "antigravity.google"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "antspace.dev"
           },
           {
             "kind": "domain_suffix",
@@ -2208,6 +2228,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "chat.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "chatbotclaude.com"
           },
           {
             "kind": "domain_suffix",
@@ -2257,6 +2282,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.app"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claude.com"
           },
           {
@@ -2267,12 +2297,37 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.new"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claudemcpclient.com"
           },
           {
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claudemcpcontent.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudepages.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudestudio.com"
           },
           {
             "kind": "domain_suffix",
@@ -2378,69 +2433,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "crixet.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor-cdn.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.sh"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorapi.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorvm.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.google"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "devin.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.com"
           }
         ],
         "represented": 8,
-        "skipped": 242,
+        "skipped": 253,
         "skipped_by_kind": {
-          "domain": 34,
+          "domain": 35,
           "domain_keyword": 2,
-          "domain_suffix": 205,
+          "domain_suffix": 215,
           "opaque_classical": 1
         }
       },
@@ -2554,6 +2554,11 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "o33249.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "openai-api.arkoselabs.com"
           },
           {
@@ -2674,7 +2679,17 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "anthropic.team"
           },
           {
             "kind": "domain_suffix",
@@ -2685,6 +2700,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "antigravity.google"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "antspace.dev"
           },
           {
             "kind": "domain_suffix",
@@ -2720,6 +2740,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "chat.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "chatbotclaude.com"
           },
           {
             "kind": "domain_suffix",
@@ -2769,6 +2794,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.app"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claude.com"
           },
           {
@@ -2779,12 +2809,37 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.new"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claudemcpclient.com"
           },
           {
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claudemcpcontent.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudepages.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudestudio.com"
           },
           {
             "kind": "domain_suffix",
@@ -2890,69 +2945,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "crixet.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor-cdn.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.sh"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorapi.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorvm.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.google"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "devin.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.com"
           }
         ],
         "represented": 8,
-        "skipped": 242,
+        "skipped": 253,
         "skipped_by_kind": {
-          "domain": 34,
+          "domain": 35,
           "domain_keyword": 2,
-          "domain_suffix": 205,
+          "domain_suffix": 215,
           "opaque_classical": 1
         }
       },
@@ -3066,6 +3066,11 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "o33249.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "openai-api.arkoselabs.com"
           },
           {
@@ -3186,7 +3191,17 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "anthropic.team"
           },
           {
             "kind": "domain_suffix",
@@ -3197,6 +3212,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "antigravity.google"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "antspace.dev"
           },
           {
             "kind": "domain_suffix",
@@ -3232,6 +3252,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "chat.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "chatbotclaude.com"
           },
           {
             "kind": "domain_suffix",
@@ -3281,6 +3306,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.app"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claude.com"
           },
           {
@@ -3291,12 +3321,37 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.new"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claudemcpclient.com"
           },
           {
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claudemcpcontent.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudepages.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudestudio.com"
           },
           {
             "kind": "domain_suffix",
@@ -3402,69 +3457,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "crixet.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor-cdn.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.sh"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorapi.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorvm.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.google"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "devin.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.com"
           }
         ],
         "represented": 8,
-        "skipped": 242,
+        "skipped": 253,
         "skipped_by_kind": {
-          "domain": 34,
+          "domain": 35,
           "domain_keyword": 2,
-          "domain_suffix": 205,
+          "domain_suffix": 215,
           "opaque_classical": 1
         }
       },
@@ -3526,7 +3526,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 239,
+        "represented": 250,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -3644,6 +3644,11 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "o33249.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "openai-api.arkoselabs.com"
           },
           {
@@ -3764,7 +3769,17 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "anthropic.team"
           },
           {
             "kind": "domain_suffix",
@@ -3775,6 +3790,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "antigravity.google"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "antspace.dev"
           },
           {
             "kind": "domain_suffix",
@@ -3810,6 +3830,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "chat.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "chatbotclaude.com"
           },
           {
             "kind": "domain_suffix",
@@ -3859,6 +3884,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.app"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claude.com"
           },
           {
@@ -3869,12 +3899,37 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "claude.new"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "claudemcpclient.com"
           },
           {
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claudemcpcontent.com"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudepages.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudestudio.com"
           },
           {
             "kind": "domain_suffix",
@@ -3980,69 +4035,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "crixet.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor-cdn.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursor.sh"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorapi.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "cursorvm.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepmind.google"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "deepwiki.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "devin.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "diabrowser.com"
           }
         ],
         "represented": 8,
-        "skipped": 242,
+        "skipped": 253,
         "skipped_by_kind": {
-          "domain": 34,
+          "domain": 35,
           "domain_keyword": 2,
-          "domain_suffix": 205,
+          "domain_suffix": 215,
           "opaque_classical": 1
         }
       },
@@ -4094,7 +4094,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 241,
+        "represented": 252,
         "skipped": 9,
         "skipped_by_kind": {
           "ip_cidr": 8,
@@ -4109,7 +4109,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 241,
+        "represented": 252,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6057,19 +6057,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28162,
+        "represented": 28167,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 28162,
+        "represented": 28167,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 28162,
+        "represented": 28167,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -6411,7 +6411,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28095,
+        "represented": 28100,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -6758,7 +6758,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28095,
+        "represented": 28100,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7105,7 +7105,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28095,
+        "represented": 28100,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7452,7 +7452,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28095,
+        "represented": 28100,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7704,7 +7704,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28114,
+        "represented": 28119,
         "skipped": 48,
         "skipped_by_kind": {
           "ip_cidr": 32,
@@ -7714,7 +7714,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 28114,
+        "represented": 28119,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -10167,37 +10167,37 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 17,
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-domain-mrs": {
         "examples": [],
-        "represented": 17,
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-domain-text": {
         "examples": [],
-        "represented": 17,
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-domain-yaml": {
         "examples": [],
-        "represented": 17,
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "plain-domain": {
         "examples": [],
-        "represented": 17,
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 17,
+        "represented": 28,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -10207,19 +10207,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 53,
+        "represented": 55,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 53,
+        "represented": 55,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 53,
+        "represented": 55,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -10291,7 +10291,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 40,
+        "represented": 42,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -10368,7 +10368,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 40,
+        "represented": 42,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -10445,7 +10445,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 40,
+        "represented": 42,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -10519,6 +10519,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
           },
           {
@@ -10575,6 +10580,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
           },
           {
             "kind": "domain_suffix",
@@ -10703,11 +10713,11 @@
           }
         ],
         "represented": 4,
-        "skipped": 49,
+        "skipped": 51,
         "skipped_by_kind": {
           "domain": 9,
           "domain_keyword": 3,
-          "domain_suffix": 31,
+          "domain_suffix": 33,
           "opaque_classical": 1,
           "process_name": 5
         }
@@ -10777,6 +10787,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
           },
           {
@@ -10833,6 +10848,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
           },
           {
             "kind": "domain_suffix",
@@ -10961,11 +10981,11 @@
           }
         ],
         "represented": 4,
-        "skipped": 49,
+        "skipped": 51,
         "skipped_by_kind": {
           "domain": 9,
           "domain_keyword": 3,
-          "domain_suffix": 31,
+          "domain_suffix": 33,
           "opaque_classical": 1,
           "process_name": 5
         }
@@ -11035,6 +11055,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
           },
           {
@@ -11091,6 +11116,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
           },
           {
             "kind": "domain_suffix",
@@ -11219,11 +11249,11 @@
           }
         ],
         "represented": 4,
-        "skipped": 49,
+        "skipped": 51,
         "skipped_by_kind": {
           "domain": 9,
           "domain_keyword": 3,
-          "domain_suffix": 31,
+          "domain_suffix": 33,
           "opaque_classical": 1,
           "process_name": 5
         }
@@ -11296,7 +11326,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 40,
+        "represented": 42,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -11370,6 +11400,11 @@
           {
             "kind": "domain_suffix",
             "reason": "not representable",
+            "value": "ant.dev"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
             "value": "anthropic.com"
           },
           {
@@ -11426,6 +11461,11 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "claude.site"
+          },
+          {
+            "kind": "domain_suffix",
+            "reason": "not representable",
+            "value": "claudeacademy.com"
           },
           {
             "kind": "domain_suffix",
@@ -11554,11 +11594,11 @@
           }
         ],
         "represented": 4,
-        "skipped": 49,
+        "skipped": 51,
         "skipped_by_kind": {
           "domain": 9,
           "domain_keyword": 3,
-          "domain_suffix": 31,
+          "domain_suffix": 33,
           "opaque_classical": 1,
           "process_name": 5
         }
@@ -11616,7 +11656,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 43,
+        "represented": 45,
         "skipped": 10,
         "skipped_by_kind": {
           "ip_cidr": 4,
@@ -11632,7 +11672,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 43,
+        "represented": 45,
         "skipped": 0,
         "skipped_by_kind": {}
       }

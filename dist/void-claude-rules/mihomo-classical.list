@@ -10,6 +10,7 @@ DOMAIN,storage.googleapis.com
 DOMAIN-KEYWORD,datadog
 DOMAIN-KEYWORD,sentry
 DOMAIN-KEYWORD,sift
+DOMAIN-SUFFIX,ant.dev
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,anthropic.com.cn
 DOMAIN-SUFFIX,anthropic.team
@@ -22,6 +23,7 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.dev
 DOMAIN-SUFFIX,claude.new
 DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudepages.dev

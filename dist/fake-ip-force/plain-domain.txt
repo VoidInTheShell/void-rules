@@ -1857,6 +1857,7 @@
 +.anonymouse.org
 +.ansarbank.com
 +.ansin.erodayo.com
++.ant.dev
 +.antarvasnaclips.com
 +.antarvasnax.com
 +.antel.com.uy
@@ -2795,8 +2796,10 @@
 +.avinin.com
 +.avira.com
 +.avistaz.to
++.avito.com
 +.avito.ru
 +.avito.st
++.avito.tech
 +.avizoon.site
 +.avizoone.com
 +.avjb.com
@@ -5832,6 +5835,7 @@
 +.claude.dev
 +.claude.new
 +.claude.site
++.claudeacademy.com
 +.claudemcpclient.com
 +.claudemcpcontent.com
 +.claudepages.dev
@@ -27710,6 +27714,7 @@ nurofensk-prod-env.eu-west-1.elasticbeanstalk.com
 nvidia.custhelp.com
 nvidia.tt.omtrdc.net
 o33249.ingest.sentry.io
+o33249.ingest.us.sentry.io
 ocsp.microsoft.com
 officecdn-microsoft-com.akamaized.net
 onekey.zendesk.com

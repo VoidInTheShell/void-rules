@@ -2,19 +2,19 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 53,
+      "represented": 55,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 53,
+      "represented": 55,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 53,
+      "represented": 55,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -86,7 +86,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 40,
+      "represented": 42,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -163,7 +163,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 40,
+      "represented": 42,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -240,7 +240,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 40,
+      "represented": 42,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -314,6 +314,11 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
+          "value": "ant.dev"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
           "value": "anthropic.com"
         },
         {
@@ -370,6 +375,11 @@
           "kind": "domain_suffix",
           "reason": "not representable",
           "value": "claude.site"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "claudeacademy.com"
         },
         {
           "kind": "domain_suffix",
@@ -498,11 +508,11 @@
         }
       ],
       "represented": 4,
-      "skipped": 49,
+      "skipped": 51,
       "skipped_by_kind": {
         "domain": 9,
         "domain_keyword": 3,
-        "domain_suffix": 31,
+        "domain_suffix": 33,
         "opaque_classical": 1,
         "process_name": 5
       }
@@ -572,6 +582,11 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
+          "value": "ant.dev"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
           "value": "anthropic.com"
         },
         {
@@ -628,6 +643,11 @@
           "kind": "domain_suffix",
           "reason": "not representable",
           "value": "claude.site"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "claudeacademy.com"
         },
         {
           "kind": "domain_suffix",
@@ -756,11 +776,11 @@
         }
       ],
       "represented": 4,
-      "skipped": 49,
+      "skipped": 51,
       "skipped_by_kind": {
         "domain": 9,
         "domain_keyword": 3,
-        "domain_suffix": 31,
+        "domain_suffix": 33,
         "opaque_classical": 1,
         "process_name": 5
       }
@@ -830,6 +850,11 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
+          "value": "ant.dev"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
           "value": "anthropic.com"
         },
         {
@@ -886,6 +911,11 @@
           "kind": "domain_suffix",
           "reason": "not representable",
           "value": "claude.site"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "claudeacademy.com"
         },
         {
           "kind": "domain_suffix",
@@ -1014,11 +1044,11 @@
         }
       ],
       "represented": 4,
-      "skipped": 49,
+      "skipped": 51,
       "skipped_by_kind": {
         "domain": 9,
         "domain_keyword": 3,
-        "domain_suffix": 31,
+        "domain_suffix": 33,
         "opaque_classical": 1,
         "process_name": 5
       }
@@ -1091,7 +1121,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 40,
+      "represented": 42,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -1165,6 +1195,11 @@
         {
           "kind": "domain_suffix",
           "reason": "not representable",
+          "value": "ant.dev"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
           "value": "anthropic.com"
         },
         {
@@ -1221,6 +1256,11 @@
           "kind": "domain_suffix",
           "reason": "not representable",
           "value": "claude.site"
+        },
+        {
+          "kind": "domain_suffix",
+          "reason": "not representable",
+          "value": "claudeacademy.com"
         },
         {
           "kind": "domain_suffix",
@@ -1349,11 +1389,11 @@
         }
       ],
       "represented": 4,
-      "skipped": 49,
+      "skipped": 51,
       "skipped_by_kind": {
         "domain": 9,
         "domain_keyword": 3,
-        "domain_suffix": 31,
+        "domain_suffix": 33,
         "opaque_classical": 1,
         "process_name": 5
       }
@@ -1411,7 +1451,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 43,
+      "represented": 45,
       "skipped": 10,
       "skipped_by_kind": {
         "ip_cidr": 4,
@@ -1427,7 +1467,7 @@
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 43,
+      "represented": 45,
       "skipped": 0,
       "skipped_by_kind": {}
     }

@@ -1,10 +1,20 @@
+domain:ant.dev
 domain:anthropic.com
+domain:anthropic.team
+domain:antspace.dev
+domain:chatbotclaude.com
 domain:clau.de
 domain:claude.ai
+domain:claude.app
 domain:claude.com
 domain:claude.dev
+domain:claude.new
+domain:claude.site
+domain:claudeacademy.com
 domain:claudemcpclient.com
 domain:claudemcpcontent.com
+domain:claudepages.dev
+domain:claudestudio.com
 domain:claudeusercontent.com
 domain:events.statsigapi.net
 domain:intercom.io
@@ -14,4 +24,5 @@ full:anthropic.auth0.com
 full:cdn.usefathom.com
 full:downloads.claude.ai
 full:o33249.ingest.sentry.io
+full:o33249.ingest.us.sentry.io
 full:servd-anthropic-website.b-cdn.net

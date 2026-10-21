@@ -1,10 +1,20 @@
++.ant.dev
 +.anthropic.com
++.anthropic.team
++.antspace.dev
++.chatbotclaude.com
 +.clau.de
 +.claude.ai
++.claude.app
 +.claude.com
 +.claude.dev
++.claude.new
++.claude.site
++.claudeacademy.com
 +.claudemcpclient.com
 +.claudemcpcontent.com
++.claudepages.dev
++.claudestudio.com
 +.claudeusercontent.com
 +.events.statsigapi.net
 +.intercom.io
@@ -14,4 +24,5 @@ anthropic.auth0.com
 cdn.usefathom.com
 downloads.claude.ai
 o33249.ingest.sentry.io
+o33249.ingest.us.sentry.io
 servd-anthropic-website.b-cdn.net

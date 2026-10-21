@@ -8,9 +8,12 @@ payload:
 - +.aisandbox-pa.googleapis.com
 - +.aistudio.google.com
 - +.algolia.net
+- +.ant.dev
 - +.anthropic.com
+- +.anthropic.team
 - +.antigravity-unleash.goog
 - +.antigravity.google
+- +.antspace.dev
 - +.anythingllm.com
 - +.api.statsig.com
 - +.arena.ai
@@ -18,6 +21,7 @@ payload:
 - +.bard.google.com
 - +.cerebras.ai
 - +.chat.com
+- +.chatbotclaude.com
 - +.chatgpt.com
 - +.chatgpt.livekit.cloud
 - +.chatgpt.site
@@ -27,10 +31,16 @@ payload:
 - +.ciciaicdn.com
 - +.clau.de
 - +.claude.ai
+- +.claude.app
 - +.claude.com
 - +.claude.dev
+- +.claude.new
+- +.claude.site
+- +.claudeacademy.com
 - +.claudemcpclient.com
 - +.claudemcpcontent.com
+- +.claudepages.dev
+- +.claudestudio.com
 - +.claudeusercontent.com
 - +.clawhub.ai
 - +.client-api.arkoselabs.com
@@ -225,6 +235,7 @@ payload:
 - notebooklm-pa.googleapis.com
 - notebooklm.googleapis.com
 - o33249.ingest.sentry.io
+- o33249.ingest.us.sentry.io
 - openai-api.arkoselabs.com
 - openai.qualtrics.com
 - openaiapi-site.azureedge.net

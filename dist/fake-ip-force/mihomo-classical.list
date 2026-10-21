@@ -336,6 +336,7 @@ DOMAIN,nurofensk-prod-env.eu-west-1.elasticbeanstalk.com
 DOMAIN,nvidia.custhelp.com
 DOMAIN,nvidia.tt.omtrdc.net
 DOMAIN,o33249.ingest.sentry.io
+DOMAIN,o33249.ingest.us.sentry.io
 DOMAIN,ocsp.microsoft.com
 DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,onekey.zendesk.com
@@ -2597,6 +2598,7 @@ DOMAIN-SUFFIX,anonfiles.com
 DOMAIN-SUFFIX,anonymouse.org
 DOMAIN-SUFFIX,ansarbank.com
 DOMAIN-SUFFIX,ansin.erodayo.com
+DOMAIN-SUFFIX,ant.dev
 DOMAIN-SUFFIX,antarvasnaclips.com
 DOMAIN-SUFFIX,antarvasnax.com
 DOMAIN-SUFFIX,antel.com.uy
@@ -3535,8 +3537,10 @@ DOMAIN-SUFFIX,avinetworks.com
 DOMAIN-SUFFIX,avinin.com
 DOMAIN-SUFFIX,avira.com
 DOMAIN-SUFFIX,avistaz.to
+DOMAIN-SUFFIX,avito.com
 DOMAIN-SUFFIX,avito.ru
 DOMAIN-SUFFIX,avito.st
+DOMAIN-SUFFIX,avito.tech
 DOMAIN-SUFFIX,avizoon.site
 DOMAIN-SUFFIX,avizoone.com
 DOMAIN-SUFFIX,avjb.com
@@ -6572,6 +6576,7 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.dev
 DOMAIN-SUFFIX,claude.new
 DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudepages.dev

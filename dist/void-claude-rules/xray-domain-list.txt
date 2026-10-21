@@ -1,3 +1,4 @@
+domain:ant.dev
 domain:anthropic.com
 domain:anthropic.com.cn
 domain:anthropic.team
@@ -10,6 +11,7 @@ domain:claude.com
 domain:claude.dev
 domain:claude.new
 domain:claude.site
+domain:claudeacademy.com
 domain:claudemcpclient.com
 domain:claudemcpcontent.com
 domain:claudepages.dev

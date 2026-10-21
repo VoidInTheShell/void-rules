@@ -15,14 +15,14 @@
   },
   "counts": {
     "by_action": {
-      "match": 17
+      "match": 28
     },
     "by_kind": {
-      "domain": 5,
-      "domain_suffix": 12
+      "domain": 6,
+      "domain_suffix": 22
     },
     "protected": 4,
-    "total": 17
+    "total": 28
   },
   "description": "Intersect domain coverage from the generated Claude and AI rule sets, for ordered Claude DNS precedence.",
   "intersect_rulesets": [
@@ -37,44 +37,44 @@
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 17,
-      "sha256": "4f9db0c668c410f702e82e99487da380bee3e7758259cbdd2df361c47787ba80",
-      "size": 1146,
+      "represented_rules": 28,
+      "sha256": "cac9abbc6f91a29015cd4e1035b0b49a0c5107537e4c90a855929b89aa1868c6",
+      "size": 1420,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "path": "mihomo-domain.mrs",
-      "represented_rules": 17,
-      "sha256": "215983a9f0d40d4d82f389b83561ab7fa730a78acdd7e276e3b45754c70c686c",
-      "size": 296,
+      "represented_rules": 28,
+      "sha256": "aa208f86a414e07c9c9d1607a5cc238e9d14c6f3470b04fe21095bf200ff99c4",
+      "size": 417,
       "skipped_rules": 0
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 17,
-      "sha256": "eb0c2d822743e763eda4dd642c73b017d3077a9a0c34f4dae42fde851d0edfe9",
-      "size": 317,
+      "represented_rules": 28,
+      "sha256": "4534d64f2b1f1c2a29ed4eb093a41a7e31eaeaee4340fe6450f76a9c3e47c5ef",
+      "size": 503,
       "skipped_rules": 0
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 17,
-      "sha256": "06b688426badf8bd1dcdb540fb3b02020e617768740644d332017600e3b295e1",
-      "size": 360,
+      "represented_rules": 28,
+      "sha256": "cbfac8c58280793d631f76fa645ebb66379d2f590e5b3b6617089f2247344f7b",
+      "size": 568,
       "skipped_rules": 0
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 17,
-      "sha256": "eb0c2d822743e763eda4dd642c73b017d3077a9a0c34f4dae42fde851d0edfe9",
-      "size": 317,
+      "represented_rules": 28,
+      "sha256": "4534d64f2b1f1c2a29ed4eb093a41a7e31eaeaee4340fe6450f76a9c3e47c5ef",
+      "size": 503,
       "skipped_rules": 0
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 17,
-      "sha256": "2561e7bc327017accc29d1b15e25936567d35c7cb9d87ad3f1e7ad64da2b322b",
-      "size": 402,
+      "represented_rules": 28,
+      "sha256": "ff60b1afa1813a89dd11d09f268f05f9ca8853b1e11941d2b664231d4e30e112",
+      "size": 643,
       "skipped_rules": 0
     }
   },
@@ -83,10 +83,10 @@
   "source_contributions": {
     "blackmatrix-claude": 4,
     "blackmatrix-openai": 5,
-    "metacubex-ai-not-cn": 11,
-    "metacubex-anthropic": 9,
+    "metacubex-ai-not-cn": 22,
+    "metacubex-anthropic": 19,
     "overlay:ai": 4,
-    "vpsdance-anthropic": 16,
+    "vpsdance-anthropic": 25,
     "xiaolai-anthropic": 7
   },
   "sources": [],

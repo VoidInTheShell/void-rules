@@ -7,9 +7,12 @@ domain:aida.googleapis.com
 domain:aisandbox-pa.googleapis.com
 domain:aistudio.google.com
 domain:algolia.net
+domain:ant.dev
 domain:anthropic.com
+domain:anthropic.team
 domain:antigravity-unleash.goog
 domain:antigravity.google
+domain:antspace.dev
 domain:anythingllm.com
 domain:api.statsig.com
 domain:arena.ai
@@ -17,6 +20,7 @@ domain:auth0.com
 domain:bard.google.com
 domain:cerebras.ai
 domain:chat.com
+domain:chatbotclaude.com
 domain:chatgpt.com
 domain:chatgpt.livekit.cloud
 domain:chatgpt.site
@@ -26,10 +30,16 @@ domain:ciciai.com
 domain:ciciaicdn.com
 domain:clau.de
 domain:claude.ai
+domain:claude.app
 domain:claude.com
 domain:claude.dev
+domain:claude.new
+domain:claude.site
+domain:claudeacademy.com
 domain:claudemcpclient.com
 domain:claudemcpcontent.com
+domain:claudepages.dev
+domain:claudestudio.com
 domain:claudeusercontent.com
 domain:clawhub.ai
 domain:client-api.arkoselabs.com
@@ -224,6 +234,7 @@ full:geminiweb-pa.clients6.google.com
 full:notebooklm-pa.googleapis.com
 full:notebooklm.googleapis.com
 full:o33249.ingest.sentry.io
+full:o33249.ingest.us.sentry.io
 full:openai-api.arkoselabs.com
 full:openai.qualtrics.com
 full:openaiapi-site.azureedge.net
