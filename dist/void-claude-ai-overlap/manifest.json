@@ -38,8 +38,8 @@
     "jsonl": {
       "path": "rules.jsonl.gz",
       "represented_rules": 28,
-      "sha256": "cac9abbc6f91a29015cd4e1035b0b49a0c5107537e4c90a855929b89aa1868c6",
-      "size": 1420,
+      "sha256": "1e470ab58b301fffd91fa2100a0e6f10363f15dc2d811ca2c3fe1bfc39c17ec2",
+      "size": 1426,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
@@ -86,7 +86,7 @@
     "metacubex-ai-not-cn": 22,
     "metacubex-anthropic": 19,
     "overlay:ai": 4,
-    "vpsdance-anthropic": 25,
+    "vpsdance-anthropic": 27,
     "xiaolai-anthropic": 7
   },
   "sources": [],

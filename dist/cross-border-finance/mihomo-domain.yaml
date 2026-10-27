@@ -175,6 +175,8 @@ payload:
 - +.blanc.ru
 - +.blast.io
 - +.blockchain.com
+- +.blockchair.com
+- +.blockchair.net
 - +.blockfrost.io
 - +.blofin.com
 - +.blubank.com
@@ -309,6 +311,7 @@ payload:
 - +.creditural.ru
 - +.crypto.com
 - +.cryptocompare.com
+- +.cryptoid.info
 - +.cryptomus.com
 - +.csl.com.hk
 - +.ctm.net
@@ -331,6 +334,7 @@ payload:
 - +.dcapital.ru
 - +.debank.com
 - +.degiro.com
+- +.delets.cash
 - +.delets.online
 - +.deltacredit.ru
 - +.depository.ru
@@ -661,6 +665,7 @@ payload:
 - +.kubankredit.ru
 - +.kucoin.com
 - +.kucoin.plus
+- +.kurs.expert
 - +.kuzbank.ru
 - +.kyotobank.co.jp
 - +.lanta.ru

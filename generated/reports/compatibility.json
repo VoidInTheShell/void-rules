@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 242219,
+        "represented": 239227,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 242219,
+        "represented": 239227,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 242219,
+        "represented": 239227,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 242219,
+        "represented": 239227,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -59,7 +59,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 242214,
+        "represented": 239222,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -93,7 +93,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 242214,
+        "represented": 239222,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -127,7 +127,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 242214,
+        "represented": 239222,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -203,7 +203,17 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "ad-cmp.hismarttv.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "ad-display.diwodiwo.xyz"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "ad-download.hismarttv.com"
           },
           {
             "kind": "domain",
@@ -624,24 +634,14 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "ads-marketing-vivofs.vivo.com.cn"
-          },
-          {
-            "kind": "domain",
-            "reason": "not representable",
-            "value": "ads-media.wildberries.ru"
-          },
-          {
-            "kind": "domain",
-            "reason": "not representable",
-            "value": "ads-sdk-api.ranfenghd.com"
           }
         ],
         "represented": 0,
-        "skipped": 242219,
+        "skipped": 239227,
         "skipped_by_kind": {
-          "domain": 1104,
+          "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 241110
+          "domain_suffix": 238107
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -714,7 +714,17 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "ad-cmp.hismarttv.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "ad-display.diwodiwo.xyz"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "ad-download.hismarttv.com"
           },
           {
             "kind": "domain",
@@ -1135,24 +1145,14 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "ads-marketing-vivofs.vivo.com.cn"
-          },
-          {
-            "kind": "domain",
-            "reason": "not representable",
-            "value": "ads-media.wildberries.ru"
-          },
-          {
-            "kind": "domain",
-            "reason": "not representable",
-            "value": "ads-sdk-api.ranfenghd.com"
           }
         ],
         "represented": 0,
-        "skipped": 242219,
+        "skipped": 239227,
         "skipped_by_kind": {
-          "domain": 1104,
+          "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 241110
+          "domain_suffix": 238107
         }
       },
       "plain-domain": {
@@ -1183,7 +1183,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 242214,
+        "represented": 239222,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -1259,7 +1259,17 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "ad-cmp.hismarttv.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "ad-display.diwodiwo.xyz"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "ad-download.hismarttv.com"
           },
           {
             "kind": "domain",
@@ -1680,35 +1690,25 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "ads-marketing-vivofs.vivo.com.cn"
-          },
-          {
-            "kind": "domain",
-            "reason": "not representable",
-            "value": "ads-media.wildberries.ru"
-          },
-          {
-            "kind": "domain",
-            "reason": "not representable",
-            "value": "ads-sdk-api.ranfenghd.com"
           }
         ],
         "represented": 0,
-        "skipped": 242219,
+        "skipped": 239227,
         "skipped_by_kind": {
-          "domain": 1104,
+          "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 241110
+          "domain_suffix": 238107
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 242219,
+        "represented": 239227,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 242219,
+        "represented": 239227,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -1718,19 +1718,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 261,
+        "represented": 264,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 261,
+        "represented": 264,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 261,
+        "represented": 264,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -1792,7 +1792,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 250,
+        "represented": 253,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1858,7 +1858,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 250,
+        "represented": 253,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1924,7 +1924,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 250,
+        "represented": 253,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -1962,6 +1962,21 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients6.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "browser-intake-datadoghq.com"
           },
           {
@@ -2418,27 +2433,12 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "copilot.microsoft.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "coze.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crewai.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crixet.com"
           }
         ],
         "represented": 8,
-        "skipped": 253,
+        "skipped": 256,
         "skipped_by_kind": {
-          "domain": 35,
+          "domain": 38,
           "domain_keyword": 2,
           "domain_suffix": 215,
           "opaque_classical": 1
@@ -2474,6 +2474,21 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients6.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "browser-intake-datadoghq.com"
           },
           {
@@ -2930,27 +2945,12 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "copilot.microsoft.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "coze.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crewai.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crixet.com"
           }
         ],
         "represented": 8,
-        "skipped": 253,
+        "skipped": 256,
         "skipped_by_kind": {
-          "domain": 35,
+          "domain": 38,
           "domain_keyword": 2,
           "domain_suffix": 215,
           "opaque_classical": 1
@@ -2986,6 +2986,21 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients6.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "browser-intake-datadoghq.com"
           },
           {
@@ -3442,27 +3457,12 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "copilot.microsoft.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "coze.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crewai.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crixet.com"
           }
         ],
         "represented": 8,
-        "skipped": 253,
+        "skipped": 256,
         "skipped_by_kind": {
-          "domain": 35,
+          "domain": 38,
           "domain_keyword": 2,
           "domain_suffix": 215,
           "opaque_classical": 1
@@ -3526,7 +3526,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 250,
+        "represented": 253,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -3564,6 +3564,21 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.clients6.google.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "appsgenaiserver-pa.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "browser-intake-datadoghq.com"
           },
           {
@@ -4020,27 +4035,12 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "copilot.microsoft.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "coze.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crewai.com"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "crixet.com"
           }
         ],
         "represented": 8,
-        "skipped": 253,
+        "skipped": 256,
         "skipped_by_kind": {
-          "domain": 35,
+          "domain": 38,
           "domain_keyword": 2,
           "domain_suffix": 215,
           "opaque_classical": 1
@@ -4094,7 +4094,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 252,
+        "represented": 255,
         "skipped": 9,
         "skipped_by_kind": {
           "ip_cidr": 8,
@@ -4109,7 +4109,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 252,
+        "represented": 255,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -4119,19 +4119,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 1324,
+        "represented": 1329,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 1324,
+        "represented": 1329,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 1324,
+        "represented": 1329,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -4143,7 +4143,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1323,
+        "represented": 1328,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4157,7 +4157,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1323,
+        "represented": 1328,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4171,7 +4171,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1323,
+        "represented": 1328,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4185,7 +4185,7 @@
             "value": "plasma-one"
           }
         ],
-        "represented": 1323,
+        "represented": 1328,
         "skipped": 1,
         "skipped_by_kind": {
           "domain_keyword": 1
@@ -4193,13 +4193,13 @@
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 1324,
+        "represented": 1329,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 1324,
+        "represented": 1329,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6057,19 +6057,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28167,
+        "represented": 28203,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 28167,
+        "represented": 28203,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 28167,
+        "represented": 28203,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -6411,7 +6411,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28136,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -6758,7 +6758,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28136,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7105,7 +7105,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28136,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7452,7 +7452,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28136,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7704,7 +7704,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28119,
+        "represented": 28155,
         "skipped": 48,
         "skipped_by_kind": {
           "ip_cidr": 32,
@@ -7714,7 +7714,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 28119,
+        "represented": 28155,
         "skipped": 0,
         "skipped_by_kind": {}
       }

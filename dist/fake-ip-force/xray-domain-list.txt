@@ -38,6 +38,7 @@ domain:11jav.com
 domain:123-hp.com
 domain:123av.com
 domain:123av.me
+domain:123av.org
 domain:123bin.cc
 domain:123dapp.com
 domain:123dappipad.com
@@ -178,6 +179,7 @@ domain:1password.ca
 domain:1password.co
 domain:1password.com
 domain:1password.community
+domain:1password.dev
 domain:1password.eu
 domain:1password.io
 domain:1passwordservices.com
@@ -227,6 +229,7 @@ domain:21vv.cc
 domain:22112211.xyz
 domain:233abc.com
 domain:2371tom.com
+domain:24.place
 domain:24h.tv
 domain:24hbook.com
 domain:24hjav.com
@@ -785,6 +788,7 @@ domain:addthis.com
 domain:addthiscdn.com
 domain:addthisedge.com
 domain:addtoany.com
+domain:addtodropbox.com
 domain:addyoutube.com
 domain:adelaidenow.com.au
 domain:adgoogle.net
@@ -3947,6 +3951,8 @@ domain:blip.tv
 domain:blizzak-juken.jp
 domain:blockcast.it
 domain:blockchain.com
+domain:blockchair.com
+domain:blockchair.net
 domain:blockcn.com
 domain:blockedbyhk.com
 domain:blockfrost.io
@@ -5390,6 +5396,10 @@ domain:cdnxxx-proxy.xyz
 domain:cdp1998.org
 domain:cdp2006.org
 domain:cdpeu.org
+domain:cdpred.services
+domain:cdprojekt.com
+domain:cdprojekt.red
+domain:cdprojektred.com
 domain:cdpuk.co.uk
 domain:cdpweb.org
 domain:cdpwu.org
@@ -6161,6 +6171,7 @@ domain:conscrypt.com
 domain:conscrypt.org
 domain:consentmanager.net
 domain:consentpro.com
+domain:console.typesafe.ai
 domain:constructware.com
 domain:consul.io
 domain:contactossexoecuador.com
@@ -6267,6 +6278,7 @@ domain:cq99.us
 domain:cqcorea.com
 domain:crabporn.com
 domain:crackle.com
+domain:craftifyx.com
 domain:craigslist.org
 domain:crankplayer.com
 domain:crashbandicoot.com
@@ -6342,6 +6354,7 @@ domain:crustwebsites.net
 domain:cruxpool.com
 domain:crypto.com
 domain:cryptocompare.com
+domain:cryptoid.info
 domain:cryptomus.com
 domain:crypton.co.jp
 domain:crysis.jp
@@ -6462,6 +6475,7 @@ domain:cyber-bay.org
 domain:cybercrimecon.com
 domain:cyberghostvpn.com
 domain:cybermondaybeats4sale.com
+domain:cyberpunk.net
 domain:cybersport.ru
 domain:cybertrust.co.jp
 domain:cybertrust.ne.jp
@@ -6572,6 +6586,7 @@ domain:darwinsource.com
 domain:darwinsource.org
 domain:darwinsourcecode.com
 domain:dasaob.online
+domain:dash.ai
 domain:dashlane.com
 domain:dashly.app
 domain:dashly.help
@@ -6706,6 +6721,7 @@ domain:delcamp.net
 domain:delcamtv.com
 domain:delcamuniversity.com
 domain:delcamusa.com
+domain:delets.cash
 domain:delets.online
 domain:delicious.com.au
 domain:delivery-club.ru
@@ -7353,6 +7369,7 @@ domain:docs.com
 domain:docs.new
 domain:docs.rs
 domain:docs.rw
+domain:docsend.com
 domain:doctor-videos.com
 domain:documentforce.com
 domain:documentingreality.com
@@ -7549,12 +7566,15 @@ domain:dropbox.tech
 domain:dropboxapi.com
 domain:dropboxbusiness.com
 domain:dropboxcaptcha.com
+domain:dropboxexperiment.com
 domain:dropboxforum.com
 domain:dropboxforums.com
 domain:dropboxinsiders.com
+domain:dropboxlegal.com
 domain:dropboxmail.com
 domain:dropboxpartners.com
 domain:dropboxstatic.com
+domain:dropboxteam.com
 domain:dropboxusercontent.com
 domain:drpc.org
 domain:drtuber.com
@@ -8898,6 +8918,7 @@ domain:fanatical.com
 domain:fanbox.cc
 domain:fandango.com
 domain:fandom.com
+domain:fanfiction.net
 domain:fanfictionero.com
 domain:fanfox.net
 domain:fangeqiang.com
@@ -9354,6 +9375,17 @@ domain:fluidfxapp.com
 domain:fluidpreview.com
 domain:flutter.dev
 domain:flutterapp.com
+domain:fluxer.app
+domain:fluxer.com
+domain:fluxer.dev
+domain:fluxer.gg
+domain:fluxer.gift
+domain:fluxer.media
+domain:fluxer.tools
+domain:fluxerapp.com
+domain:fluxerstatic.com
+domain:fluxerstatus.com
+domain:fluxerusercontent.com
 domain:fly.dev
 domain:fly.io
 domain:flyflv.com
@@ -9862,6 +9894,7 @@ domain:fundpaypal.com
 domain:fundraisingwithfacebook.com
 domain:fundsupermart.com
 domain:funimation.com
+domain:funko.com
 domain:funkyimg.com
 domain:funnyfacebook.org
 domain:funnyordie.com
@@ -9959,6 +9992,7 @@ domain:g0v.social
 domain:g1.com.br
 domain:g6hentai.com
 domain:g9.co.kr
+domain:ga.jspm.io
 domain:gab.com
 domain:gabocorp.com
 domain:gacebook.com
@@ -9981,6 +10015,7 @@ domain:game-platform.net
 domain:game-repack.site
 domain:game735.com
 domain:gameapps.hk
+domain:gamebanana.com
 domain:gamebase.com.tw
 domain:gamebeforethegame.com
 domain:gamebiz.jp
@@ -10242,6 +10277,7 @@ domain:getpersonas.com
 domain:getpocket.com
 domain:getporn.tv
 domain:getprintersupports.com
+domain:getsafety.com
 domain:getscorecash.com
 domain:getsentry.com
 domain:getsession.org
@@ -10411,6 +10447,8 @@ domain:glasamerike.net
 domain:glass8.eu
 domain:gle
 domain:gleline.com
+domain:glitchprod.com
+domain:glitchproductions.store
 domain:glitchwave.com
 domain:global-sci.org
 domain:global.bing.com
@@ -11338,9 +11376,11 @@ domain:heise360182.buzz
 domain:helixstudios.net
 domain:helloandroid.com
 domain:helloavgirls.com
+domain:hellofax.com
 domain:hellokittybeats.com
 domain:hellomoto.com
 domain:helloqueer.com
+domain:hellosign.com
 domain:hellosmartbook.com
 domain:hellporno.com
 domain:hellven.net
@@ -14099,6 +14139,7 @@ domain:kilmeadeandfriends.com
 domain:kimchi.tv
 domain:kimi.ai
 domain:kimogirl.cc
+domain:kimootoko.net
 domain:kimosex.com
 domain:kindgirls.com
 domain:kindindianporn.com
@@ -14287,6 +14328,7 @@ domain:kumapon.jp
 domain:kumo.com
 domain:kun66.xyz
 domain:kundun1069.com
+domain:kurs.expert
 domain:kurtmunger.com
 domain:kusugurizanmai.com
 domain:kutjeporno.com
@@ -14502,6 +14544,7 @@ domain:library.usc.cuhk.edu.hk
 domain:librarylovefest.com
 domain:libraryofthumbs.com
 domain:libredd.it
+domain:librewolf.dev
 domain:librewolf.net
 domain:libsolutions.app
 domain:libsolutions.domains
@@ -15003,6 +15046,7 @@ domain:makemymood.com
 domain:makerepeater.jp
 domain:makersuite.google.com
 domain:makesenseofdata.com
+domain:makeship.com
 domain:makeshop.jp
 domain:makingstartshere.com
 domain:maktoob.com
@@ -16023,6 +16067,7 @@ domain:miniwidget.ca
 domain:miniwindsor.com
 domain:miniworkshop.com
 domain:miniyaletown.ca
+domain:minkch.com
 domain:minnano-av.com
 domain:minne.com
 domain:minneapolisbmw.com
@@ -16385,6 +16430,7 @@ domain:movidius.com
 domain:movidius.net
 domain:movidius.org
 domain:movie-erog.com
+domain:movie.eroterest.net
 domain:movie1000.xyz
 domain:moviefap.com
 domain:moviepost.com
@@ -17476,6 +17522,7 @@ domain:nixos.wiki
 domain:nixpkgs.org
 domain:niziero.info
 domain:njactb.org
+domain:njav.com
 domain:njav.tv
 domain:njavtv.com
 domain:njpw.co.jp
@@ -18268,6 +18315,7 @@ domain:ovpn.com
 domain:ow.ly
 domain:owl.li
 domain:owltail.com
+domain:ownaj.com
 domain:owxd.xyz
 domain:oxfordaasc.com
 domain:oxfordartonline.com
@@ -18979,6 +19027,7 @@ domain:playfabapi.com
 domain:playfabcn.com
 domain:playfamily.ru
 domain:playforceone.com
+domain:playgwent.com
 domain:playmation.com
 domain:playmeow.com
 domain:playnintendo.com
@@ -19028,6 +19077,7 @@ domain:pmatehunter.com
 domain:pmem.org
 domain:pmem.us
 domain:pnas.org
+domain:po-kaki-to.com
 domain:po2b.com
 domain:pobeda.page
 domain:pobl-content.com
@@ -19778,6 +19828,7 @@ domain:pyrobot.org
 domain:python.com.tw
 domain:python.org
 domain:pythonhosted.org
+domain:pyup.io
 domain:pzforever.skin
 domain:pzforever01.homes
 domain:pzhanfor.today
@@ -19928,6 +19979,7 @@ domain:r18av.com
 domain:r18lu-avi.shop
 domain:r18lu.com
 domain:r2.dev
+domain:r2modman.com
 domain:r34porn.net
 domain:rabbitcounter.com
 domain:rabbitscams.com
@@ -20651,6 +20703,7 @@ domain:safeguarddefenders.com
 domain:safeliner.tech
 domain:safepal.com
 domain:safervpn.com
+domain:safetycli.com
 domain:saffrontech.com
 domain:sagabank.co.jp
 domain:sage-observability.tech
@@ -21517,7 +21570,6 @@ domain:situero.com
 domain:six-degrees.io
 domain:six-group.com
 domain:six9dy.pw
-domain:sixte.st
 domain:sjcollect.com
 domain:sjhsp1.buzz
 domain:skate2.com
@@ -22242,6 +22294,7 @@ domain:steamgames.com
 domain:steaminventoryhelper.com
 domain:steamladder.com
 domain:steamofporn.com
+domain:steamos.cloud
 domain:steampowered.com
 domain:steamstatic.com
 domain:steamunlocked.net
@@ -22864,29 +22917,6 @@ domain:tesla.services
 domain:teslaenergy.services
 domain:teslamotors.com
 domain:teslazta.net
-domain:test-ipv6.alpinedc.ch
-domain:test-ipv6.arauc.br
-domain:test-ipv6.belwue.net
-domain:test-ipv6.carnet.hr
-domain:test-ipv6.cl
-domain:test-ipv6.com
-domain:test-ipv6.cs.umd.edu
-domain:test-ipv6.csclub.uwaterloo.ca
-domain:test-ipv6.cz
-domain:test-ipv6.epic.network
-domain:test-ipv6.fratec.net
-domain:test-ipv6.freerangecloud.com
-domain:test-ipv6.go6.si
-domain:test-ipv6.hu
-domain:test-ipv6.is
-domain:test-ipv6.iu13.net
-domain:test-ipv6.ke.liquidtelecom.net
-domain:test-ipv6.noroutetohost.net
-domain:test-ipv6.roedu.net
-domain:test-ipv6.se
-domain:test-ipv6.sin.vr.org
-domain:test-ipv6.ttk.ru
-domain:testipv6.de
 domain:testonfox.com
 domain:tetrika-school.ru
 domain:tettediferro.it
@@ -22910,6 +22940,7 @@ domain:tgirlcentral.com
 domain:tgirlpostop.com
 domain:tgp6.com
 domain:tgstat.com
+domain:tgtime.store
 domain:tgtube.com
 domain:tgutube.com
 domain:thai-xxx.com
@@ -23082,6 +23113,7 @@ domain:theweek.com
 domain:theweek.in
 domain:thewgo.org
 domain:thewirechina.com
+domain:thewitcher.com
 domain:thewonderful101.com
 domain:theync.com
 domain:theyxxx.com
@@ -23149,6 +23181,8 @@ domain:thumbzilla.com
 domain:thunderbird.net
 domain:thunderbolttechnology.net
 domain:thundermail.com
+domain:thunderstore.io
+domain:thunderstore.org
 domain:thywords.com
 domain:thz7.net
 domain:thzu.cc
@@ -23321,6 +23355,7 @@ domain:tmdb.org
 domain:tmei-taoyuan.com
 domain:tmi.me
 domain:tmiaf.ru
+domain:tmimgcdn.com
 domain:tmobile.com
 domain:tmpp.org
 domain:tmsnrt.rs
@@ -25761,6 +25796,7 @@ domain:worldofslaves.io
 domain:worldoftanks.com
 domain:worldoftanks.eu
 domain:worldofwarplanes.com
+domain:worldofwarships.asia
 domain:worldofwarships.com
 domain:worldpay.com
 domain:worldpornvideos.com
@@ -26141,15 +26177,15 @@ domain:xn--d1acpjx3f.xn--p1ai
 domain:xn--d4ty0ojsqzfd.com
 domain:xn--e1adjldbbpv.xn--90ais
 domain:xn--e1aigb.xn--p1ai
-domain:xn--fiqs8s1bxp3anr7a.hk
-domain:xn--fiqs8s1bxp3anr7a.xn--j6w193g
-domain:xn--fiqs8s1byzqyvl.hk
-domain:xn--fiqs8s1byzqyvl.xn--j6w193g
+domain:xn--fiq80y.hk
+domain:xn--fiq80y.xn--j6w193g
+domain:xn--fiq80y3xbiwr.hk
+domain:xn--fiq80y3xbiwr.xn--j6w193g
+domain:xn--fiq80y3xbiwrs0kiu9d.hk
+domain:xn--fiq80y3xbiwrs0kiu9d.xn--j6w193g
 domain:xn--fiqs8sxootzz.xn--hxt814e
 domain:xn--flw351e
 domain:xn--flw351e.com
-domain:xn--gdt08a.hk
-domain:xn--gdt08a.xn--j6w193g
 domain:xn--ggle-55da.com
 domain:xn--gmq348bujlxrb.com
 domain:xn--gmq92kd2rm1kx34a.com
@@ -26169,8 +26205,6 @@ domain:xn--kcrv3utim32hx9f6qe.com
 domain:xn--kput3imi374g.xn--hxt814e
 domain:xn--mts47c3w9b1qr.net
 domain:xn--mtswd61ejxq.com
-domain:xn--mxtq18a.hk
-domain:xn--mxtq18a.xn--j6w193g
 domain:xn--ngstr-lra8j.com
 domain:xn--noss43i.com
 domain:xn--oiq.cc
@@ -26178,14 +26212,10 @@ domain:xn--p8j9a0d9c9a.xn--q9jyb4c
 domain:xn--pearsonenespaol-brb.com
 domain:xn--pssu7ci2j23mp9ny48b.hk
 domain:xn--pssu7ci2j23mp9ny48b.xn--j6w193g
-domain:xn--pssu7cv61af1tcs59bnvd.hk
-domain:xn--pssu7cv61af1tcs59bnvd.xn--j6w193g
+domain:xn--pssu7ci3q5oge0ai91q.xn--j6w193g
 domain:xn--pssu7cv61af44b.hk
 domain:xn--pssu7cv61af44b.xn--j6w193g
-domain:xn--pssu7cv61ahw8aq79bztd.hk
-domain:xn--pssu7cv61ahw8aq79bztd.xn--j6w193g
-domain:xn--pssu7cv61ahwcb1p2yk.hk
-domain:xn--pssu7cv61ahwcb1p2yk.xn--j6w193g
+domain:xn--pssu7cz8nr8ibkx1e8a.xn--j6w193g
 domain:xn--q41am8x.com
 domain:xn--qcka1pmc
 domain:xn--qoq462m.com
@@ -26201,11 +26231,7 @@ domain:xn--uis17aj9kmuf.com
 domain:xn--uis44a.xn--j6w193g
 domain:xn--urs05q.jp
 domain:xn--vuqv2cf7wzyig79c.com
-domain:xn--wcv22d.hk
-domain:xn--wcv22d.xn--j6w193g
 domain:xn--wcvs22d.xn--j6w193g
-domain:xn--wcvs22d1m.hk
-domain:xn--wcvs22d1m.xn--j6w193g
 domain:xn--x-qeu1ji09tzlg.biz
 domain:xn--x-qeu1ji09tzlg.net
 domain:xn--xsq421m.com
@@ -26926,6 +26952,7 @@ domain:yourwifemymeat.com
 domain:yourxxxvideos.pro
 domain:yousendit.com
 domain:youskbe.com
+domain:youtooz.com
 domain:youtrack.cloud
 domain:youtrannytube.com
 domain:youtu.be
@@ -27329,6 +27356,7 @@ domain:zorglist.com
 domain:zorrovpn.com
 domain:zotero.org
 domain:zozotown.com
+domain:zozovideo.com
 domain:zpagov.net
 domain:zpath.com
 domain:zpn.im
@@ -27431,6 +27459,9 @@ full:apple-tv-plus-press.apple.com
 full:apple.com.akadns.net
 full:appleworldwidedeveloper.hb-api.omtrdc.net
 full:appleworldwidedeveloper.sc.omtrdc.net
+full:appsgenaiserver-pa.clients.google.com
+full:appsgenaiserver-pa.clients6.google.com
+full:appsgenaiserver-pa.googleapis.com
 full:as-dash-uk-live.akamaized.net
 full:as-hls-uk-live.akamaized.net
 full:asahishimbun.sc.omtrdc.net
@@ -27532,6 +27563,7 @@ full:d3c27h4odz752x.cloudfront.net
 full:d3lh5kkip965lj.cloudfront.net
 full:d3nwj80emtnjeo.cloudfront.net
 full:d3r7nsslvs6aaf.cloudfront.net
+full:d3stzm2eumvgb4.cloudfront.net
 full:d3ucl0eqgl80l5.cloudfront.net
 full:d3vd9lfkzbru3h.cloudfront.net
 full:d6d4ismr40iw.cloudfront.net
@@ -27541,6 +27573,8 @@ full:daily-cloudcode-pa.googleapis.com
 full:databank.worldbank.org
 full:database.asahi.com
 full:datarouter.apps.netherrealm.com
+full:dc.applicationinsights.azure.com
+full:dc.services.visualstudio.com
 full:dcb0z5ovq92mz.cloudfront.net
 full:ddacn6pr5v0tl.cloudfront.net
 full:ddpjwstwtpszg.cloudfront.net
@@ -27565,6 +27599,7 @@ full:downloads.claude.ai
 full:doy2mn9upadnk.cloudfront.net
 full:dqd0jw5gvbchn.cloudfront.net
 full:dqrpb9wgowsf5.cloudfront.net
+full:dropbox.zendesk.com
 full:ds-linear-abematv.akamaized.net
 full:ds-vod-abematv.akamaized.net
 full:ds0h3roq6wcgc.cloudfront.net
@@ -27612,6 +27647,7 @@ full:firebaseremoteconfig.googleapis.com
 full:firstsearch.oclc.org
 full:fontshop-prod-responsive-images.s3.amazonaws.com
 full:foxnewsplayer-a.akamaihd.net
+full:funko.my.site.com
 full:gamedownloads-rockstargames-com.akamaized.net
 full:gamer-cds.cdn.hinet.net
 full:gamer2-cds.cdn.hinet.net
@@ -27669,6 +27705,7 @@ full:linear-abematv.akamaized.net
 full:link.theplatform.com
 full:linkedin.sc.omtrdc.net
 full:live-patreon-marketing.pantheonsite.io
+full:live.applicationinsights.azure.com
 full:lm.licenses.adobe.com
 full:lmlicenses.wip4.adobe.com
 full:location.microsoft.com
@@ -27694,7 +27731,6 @@ full:muse.jhu.edu
 full:mwf-service.akamaized.net
 full:na1r.services.adobe.com
 full:nbbb1bb7.pmhcjk.com
-full:netflix.com.edgesuite.net
 full:nix-community.github.io
 full:notary-submissions-prod.s3-accelerate.amazonaws.com
 full:notary-submissions-prod.s3.us-west-2.amazonaws.com
@@ -27800,6 +27836,7 @@ full:rsshub.rssforever.com
 full:rsshub.umzzz.com
 full:rsshub.woodland.cafe
 full:rsshub2.asailor.org
+full:rt.services.visualstudio.com
 full:rtm.tnt-ea.com
 full:sa78gs.wpc.edgecastcdn.net
 full:scc-hamivideo.cdn.hinet.net
@@ -27884,7 +27921,6 @@ full:sentry.ppy.sh
 full:servd-anthropic-website.b-cdn.net
 full:sni1dcb6gl.wpc.edgecastcdn.net
 full:spectator.ppy.sh
-full:spotify.com.edgesuite.net
 full:spotify.map.fastly.net
 full:spotify.map.fastlylb.net
 full:ssl-lvlt.cdn.ea.com

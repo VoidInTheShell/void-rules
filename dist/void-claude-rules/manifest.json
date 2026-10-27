@@ -24,8 +24,8 @@
     "jsonl": {
       "path": "rules.jsonl.gz",
       "represented_rules": 55,
-      "sha256": "0cdbe7611d432164ed0c15a5ba48a0b06c18f0265247dd241cac53fa1e24c12e",
-      "size": 1563,
+      "sha256": "3b8999981bb8c9b5cb2e4363870acb5694b51844150b6b27dd87eabd6475c5af",
+      "size": 1572,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
@@ -126,7 +126,7 @@
   "source_contributions": {
     "blackmatrix-claude": 3,
     "metacubex-anthropic": 19,
-    "vpsdance-anthropic": 50,
+    "vpsdance-anthropic": 52,
     "xiaolai-anthropic": 13
   },
   "sources": [

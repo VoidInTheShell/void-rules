@@ -189,6 +189,8 @@ payload:
 - DOMAIN-SUFFIX,blanc.ru
 - DOMAIN-SUFFIX,blast.io
 - DOMAIN-SUFFIX,blockchain.com
+- DOMAIN-SUFFIX,blockchair.com
+- DOMAIN-SUFFIX,blockchair.net
 - DOMAIN-SUFFIX,blockfrost.io
 - DOMAIN-SUFFIX,blofin.com
 - DOMAIN-SUFFIX,blubank.com
@@ -323,6 +325,7 @@ payload:
 - DOMAIN-SUFFIX,creditural.ru
 - DOMAIN-SUFFIX,crypto.com
 - DOMAIN-SUFFIX,cryptocompare.com
+- DOMAIN-SUFFIX,cryptoid.info
 - DOMAIN-SUFFIX,cryptomus.com
 - DOMAIN-SUFFIX,csl.com.hk
 - DOMAIN-SUFFIX,ctm.net
@@ -345,6 +348,7 @@ payload:
 - DOMAIN-SUFFIX,dcapital.ru
 - DOMAIN-SUFFIX,debank.com
 - DOMAIN-SUFFIX,degiro.com
+- DOMAIN-SUFFIX,delets.cash
 - DOMAIN-SUFFIX,delets.online
 - DOMAIN-SUFFIX,deltacredit.ru
 - DOMAIN-SUFFIX,depository.ru
@@ -675,6 +679,7 @@ payload:
 - DOMAIN-SUFFIX,kubankredit.ru
 - DOMAIN-SUFFIX,kucoin.com
 - DOMAIN-SUFFIX,kucoin.plus
+- DOMAIN-SUFFIX,kurs.expert
 - DOMAIN-SUFFIX,kuzbank.ru
 - DOMAIN-SUFFIX,kyotobank.co.jp
 - DOMAIN-SUFFIX,lanta.ru

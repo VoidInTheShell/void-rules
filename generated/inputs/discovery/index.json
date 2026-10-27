@@ -4,43 +4,43 @@
       "metadata": {
         "url": "https://card.lengziyu.cn/api/cards?limit=1000&offset=500"
       },
-      "sha256": "c346b745895d1526e932f268efc4393ee98826544e5174e0fa5879cf608ccbde",
-      "size": 79835
+      "sha256": "7b600a11c2d8fd179fd7a47d95ce53224ada11770dc71f89b0844bb643ebf137",
+      "size": 81358
     },
     "cross-border-card-catalog-d5430f40f63ef261": {
       "metadata": {
         "url": "https://card.lengziyu.cn/api/cards?limit=1000&offset=0"
       },
-      "sha256": "1d999bf4594599da68974675a5a907dcb2159200a5b90669fcd201edffd568c7",
-      "size": 300424
+      "sha256": "b075bd8d28cf74da577d88d7368c04adf764185ccc38e775f1d8036d8c5d60e9",
+      "size": 302216
+    },
+    "meta-companion-views-1cb2013be259c8f4": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/1dbb2b6ba9f68a41c65b2d9fb9a8033b34c0548b?recursive=1"
+      },
+      "sha256": "2b7c13c9595a4bebeb87614a08f8584f4b1c0f952af5bcc7931468bdee488c14",
+      "size": 296131
     },
     "meta-companion-views-2cd1c768dd0e63c2": {
       "metadata": {
         "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/meta"
       },
-      "sha256": "b41d921d7769cb9cf09a910cf77690229e47c802d3c9bf73a622f2b1d55d581e",
+      "sha256": "4798356371baef89b7e74a73f109b5c0f4cb0881ab0bc3921ca7775173fc6659",
       "size": 816
     },
-    "meta-companion-views-842109c0aa490d1a": {
+    "meta-companion-views-9f5146d9a86d21d4": {
       "metadata": {
-        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/1b8e63e90518b735ea5d586539d57db6e4dca748?recursive=1"
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/85a76af2b8e972a8dcbd1106178b00fa8a2c8923"
       },
-      "sha256": "205d9e53bbba48a9d1a9f1d9f3e60cf148966730e12792bf65a5d1c291a0c116",
-      "size": 2234311
-    },
-    "meta-companion-views-c58aad245f06fdbe": {
-      "metadata": {
-        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/e66ba71ccf7319fb8301c385d73d98e0825f20ba?recursive=1"
-      },
-      "sha256": "fa4cea8b93c892fd2f5963e82da4b0d2cdfc119de8380f3f9f1ee30aebccb19f",
-      "size": 296131
-    },
-    "meta-companion-views-c8865e8885dcf719": {
-      "metadata": {
-        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/926979c07ceccb10325a615de9959736377e72d8"
-      },
-      "sha256": "9f0018a535c50b7a60dde3a7f4f5d6bc8edc6590fcea8cc2acb9f500b777935a",
+      "sha256": "c8294b189aca1ac9004d64b3d082f2876be3779961028a9560b8a1bf17e49f1d",
       "size": 610
+    },
+    "meta-companion-views-ae72f961eadf4d75": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/217c146c5ab55e5f01452d9d54edb13366b1f032?recursive=1"
+      },
+      "sha256": "2dae621d3c1e7b4f2e1bf39eaa5371479926b2c41360b873fc0e15dd77d7464f",
+      "size": 2350734
     }
   },
   "version": 1
