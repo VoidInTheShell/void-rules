@@ -1131,6 +1131,7 @@ domain:telstra.com.au
 domain:telus.com
 domain:thbank.ru
 domain:theblock.co
+domain:thinkorswim.com
 domain:thirdweb.com
 domain:three.co.uk
 domain:three.com.hk
