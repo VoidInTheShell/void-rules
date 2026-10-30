@@ -10,7 +10,13 @@ import yaml
 
 from .errors import ParseError
 from .model import Action, ParseResult, Provenance, RejectedLine, Rule, RuleKind
-from .normalize import classify_mihomo_domain, normalize_domain, normalize_ip_network
+from .normalize import (
+    adguard_host_pattern,
+    classify_mihomo_domain,
+    normalize_domain_regex,
+    normalize_ip_network,
+    normalize_literal_domain,
+)
 
 CLASSICAL_KIND_MAP: dict[str, RuleKind] = {
     "DOMAIN": RuleKind.DOMAIN,
@@ -87,9 +93,20 @@ def parse_classical_line(
     if kind is None:
         if kind_name in {"MATCH", "FINAL", "RULE-SET", "SUB-RULE"}:
             raise ParseError(f"{kind_name} is not valid inside a standalone rule provider")
+        if kind_name not in {"IP-ASN", "SRC-IP-ASN"}:
+            raise ParseError(f"unsupported classical rule type: {kind_name}")
+        fields = [part.strip() for part in remainder.split(",")]
+        if (
+            not fields[0].isascii()
+            or not fields[0].isdigit()
+            or not 0 < int(fields[0]) <= 4294967295
+        ):
+            raise ParseError("invalid ASN value")
+        if len(fields) > 2 or any(part != "no-resolve" for part in fields[1:]):
+            raise ParseError("unsupported ASN rule parameters")
         return _rule(
             RuleKind.OPAQUE_CLASSICAL,
-            raw.strip(),
+            ",".join([kind_name, *fields]),
             action,
             source_id,
             line,
@@ -110,9 +127,17 @@ def parse_classical_line(
         attributes.extend(part for part in parts[1:] if part)
     if not value:
         raise ParseError("classical rule has an empty value")
+    if attributes and (
+        len(attributes) != 1
+        or attributes[0] != "no-resolve"
+        or kind not in {RuleKind.IP_CIDR, RuleKind.SRC_IP_CIDR, RuleKind.GEOIP}
+    ):
+        raise ParseError("unsupported parameters in a standalone classical provider")
 
     if kind in {RuleKind.DOMAIN, RuleKind.DOMAIN_SUFFIX}:
-        value = normalize_domain(value)
+        value = normalize_literal_domain(value)
+    elif kind is RuleKind.DOMAIN_REGEX:
+        value = normalize_domain_regex(value)
     elif kind in {RuleKind.IP_CIDR, RuleKind.SRC_IP_CIDR}:
         value = normalize_ip_network(value)
     elif kind in {RuleKind.GEOIP, RuleKind.GEOSITE}:
@@ -327,6 +352,10 @@ def _split_adguard_modifiers(raw: str) -> tuple[str, tuple[str, ...]]:
     }
     if unknown:
         raise ParseError(f"unsupported AdGuard modifiers: {', '.join(sorted(unknown))}")
+    if any(item.split("=", 1)[0].lower() == "badfilter" for item in modifiers):
+        # Cancellation is global to the filter set, not a blocking rule or
+        # a condition that can safely be dropped while merging sources.
+        raise ParseError("AdGuard badfilter cancellation requires explicit source review")
     return pattern, tuple(f"adguard:{item}" for item in modifiers)
 
 
@@ -348,13 +377,7 @@ def _normalize_adguard_regex(pattern: str) -> str:
         value = pattern[1:-1]
     else:
         raise ParseError("invalid AdGuard regular expression delimiters")
-    if not value:
-        raise ParseError("empty AdGuard regular expression")
-    try:
-        re.compile(value)
-    except re.error as exc:
-        raise ParseError(f"invalid AdGuard regular expression {value!r}: {exc}") from exc
-    return value
+    return normalize_domain_regex(value)
 
 
 def parse_adguard(
@@ -382,12 +405,10 @@ def parse_adguard(
             pattern, attributes = _split_adguard_modifiers(candidate)
             if pattern.startswith("||"):
                 body = pattern[2:-1] if pattern.endswith("^") else pattern[2:]
-                value = normalize_domain(body)
-                kind = RuleKind.DOMAIN_SUFFIX
+                kind, value = adguard_host_pattern(body, suffix=True)
             elif pattern.startswith("|"):
                 body = pattern[1:-1] if pattern.endswith("^") else pattern[1:]
-                value = normalize_domain(body)
-                kind = RuleKind.DOMAIN
+                kind, value = adguard_host_pattern(body, suffix=False)
             elif pattern.startswith("/"):
                 value = _normalize_adguard_regex(pattern)
                 kind = RuleKind.DOMAIN_REGEX
@@ -399,7 +420,7 @@ def parse_adguard(
                         rules.append(
                             _rule(
                                 RuleKind.DOMAIN,
-                                normalize_domain(host),
+                                normalize_literal_domain(host),
                                 action,
                                 source_id,
                                 line_number,
@@ -482,7 +503,7 @@ def parse_plain(
                         rules.append(
                             _rule(
                                 RuleKind.DOMAIN,
-                                normalize_domain(host),
+                                normalize_literal_domain(host),
                                 action,
                                 source_id,
                                 line_number,
