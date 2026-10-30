@@ -662,8 +662,8 @@
     },
     {
       "behavior": "classical",
-      "changed_at": "2026-10-09T01:22:36+00:00",
-      "etag": "\"0e2843b6ef9388b8830185b1eb7c20c5c76fd3fbed4d31d21e3c7a49ee4324fc\"",
+      "changed_at": "2026-10-30T16:28:18+00:00",
+      "etag": "",
       "final_url": "https://raw.githubusercontent.com/VoidInTheShell/pcdn-block-list/master/pcdn_block_clash.yaml",
       "format": "clash-classical-yaml",
       "id": "void-pcdn-aggregate",
@@ -671,8 +671,8 @@
       "license": "NOASSERTION",
       "parsed_rules": 95,
       "rejected_rules": 0,
-      "sha256": "084ae28b740545a5bb8c1ab399b5f54f3fb01b753091cf781fc4ddb4e43e8e5c",
-      "size": 4798,
+      "sha256": "efe649f10c892bd628c892635f7cf94d948f11a9451af6dc60f07c62182532de",
+      "size": 5032,
       "url": "https://raw.githubusercontent.com/VoidInTheShell/pcdn-block-list/master/pcdn_block_clash.yaml"
     },
     {

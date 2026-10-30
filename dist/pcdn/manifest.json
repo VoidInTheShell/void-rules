@@ -6,15 +6,16 @@
   },
   "counts": {
     "by_action": {
-      "block": 143
+      "block": 130
     },
     "by_kind": {
       "domain": 30,
       "domain_regex": 33,
-      "domain_suffix": 80
+      "domain_suffix": 62,
+      "domain_wildcard": 5
     },
     "protected": 0,
-    "total": 143
+    "total": 130
   },
   "description": "PCDN and P2P-CDN block rules synchronized from the existing aggregate and its five upstreams.",
   "outputs": {
@@ -27,73 +28,73 @@
     },
     "adguard-block": {
       "path": "adguard-block.txt",
-      "represented_rules": 143,
-      "sha256": "df9ad7274a5c1be4571555bbeb0cefa8024b59ce5dccb4e296c8553e5d9b916c",
-      "size": 3296,
+      "represented_rules": 130,
+      "sha256": "5d56ba7e1ccd5e15461dfcc0af74dbc762a881c399d36b79ca1d2fae49d5be68",
+      "size": 3239,
       "skipped_rules": 0
     },
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 143,
-      "sha256": "84d3201aeb29d89c673617dd31e80fabcfe583144b3b17addac483a83d00e805",
-      "size": 3764,
+      "represented_rules": 130,
+      "sha256": "d12a79cff3bceae6b3dcd68f0bd1c961956fc076b57d29fc5305afa2678c6168",
+      "size": 3743,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 143,
-      "sha256": "51783c04eaf32ce412b208ecd0e88b3c7d26e5abeb224481a2954eeb68c8dafd",
-      "size": 4647,
+      "represented_rules": 130,
+      "sha256": "d2b3783fccba76ccc713d6a2e13afe85cd77ebf212972643ab9a70db75e6702d",
+      "size": 4447,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 143,
-      "sha256": "9645f72bb466eb182a8babcce6c5edc66eda31278fba9025beee7a1b77eb37d9",
-      "size": 4942,
+      "represented_rules": 130,
+      "sha256": "b81bf309dbcafbbcd4757c7cf20c0e00865fcba882a04a6f4641870a1c4aee99",
+      "size": 4716,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 30,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 110,
-      "sha256": "baf6dd372899b9d011acbfb7882de4216fa12b242e2bfc4ac1aa66664573efb7",
-      "size": 957,
+      "represented_rules": 97,
+      "sha256": "80ba6c3f7818fd9e19711c2956991b988807191c56e37b975779790f8d805754",
+      "size": 795,
       "skipped_rules": 33
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 110,
-      "sha256": "cdb97b94447ea4a7529143860fb6740222664a36697d977b78259498823b4750",
-      "size": 2201,
+      "represented_rules": 97,
+      "sha256": "0802601d3c71ca6ef6b5c4fdc84fa87c5015d4d4f8c075db03774ee87c4729a7",
+      "size": 1861,
       "skipped_rules": 33
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 110,
-      "sha256": "7c7ff58e45b8135041eccce4865cd55190a6c54083e1b8f744c0a9ef74d0260f",
-      "size": 2430,
+      "represented_rules": 97,
+      "sha256": "0b617e5cbcc89fdb2d74652bb1ebc7e86b6c5bea450805e4cf7a1d5b145b1a9b",
+      "size": 2064,
       "skipped_rules": 33
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 110,
-      "sha256": "cdb97b94447ea4a7529143860fb6740222664a36697d977b78259498823b4750",
-      "size": 2201,
+      "represented_rules": 97,
+      "sha256": "0802601d3c71ca6ef6b5c4fdc84fa87c5015d4d4f8c075db03774ee87c4729a7",
+      "size": 1861,
       "skipped_rules": 33
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 143,
-      "sha256": "78049d21fba9c6e946fcee0594585dd8a7640c0d2ea5891d87ab3c07cd675c3c",
-      "size": 3829,
+      "represented_rules": 130,
+      "sha256": "db7c3cc38abca550fe8a3cc847c1ef56b0790fbe53fb0364696d14c1aa4d450e",
+      "size": 3725,
       "skipped_rules": 0
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 143,
-      "sha256": "60054a4ac7b4e56a298fdf7c62c2a10bbd8a2b678ec70c61590b3ab810927ee7",
-      "size": 3612,
+      "represented_rules": 130,
+      "sha256": "74e39e8fc1f3303a987b333f90ff8e2670a7b612b78330b611252ec322690ff7",
+      "size": 3534,
       "skipped_rules": 0
     }
   },

@@ -495,6 +495,34 @@ def _ratio_review(
     return None
 
 
+MRS_OUTPUT_NAMES = {
+    "mihomo-domain-mrs": "mihomo-domain.mrs",
+    "mihomo-ipcidr-mrs": "mihomo-ipcidr.mrs",
+}
+
+
+def _guard_mrs_endpoints(
+    root: Path,
+    recipe: Recipe,
+    rendered: dict[str, RenderedFile],
+    prior_manifest: dict[str, Any],
+) -> None:
+    """A still-declared published subscription must never silently become a 404."""
+    for output_id, name in MRS_OUTPUT_NAMES.items():
+        if output_id not in recipe.outputs or output_id in rendered:
+            continue
+        previously_published = (
+            output_id in prior_manifest.get("outputs", {})
+            or (root / "dist" / recipe.id / name).exists()
+        )
+        if previously_published:
+            raise BuildError(
+                f"{recipe.id}: refusing to remove published MRS endpoint {name}: "
+                "no representable rules remain; review the source/format or explicitly "
+                "retire the output in the recipe"
+            )
+
+
 def _compatibility_report(rendered: dict[str, RenderedFile]) -> dict[str, Any]:
     outputs: dict[str, Any] = {}
     for output_id, item in sorted(rendered.items()):
@@ -819,12 +847,15 @@ def _build(
         )
         manifest = _manifest(recipe, rules, rendered, compositions[recipe_id])
         prior_manifest_path = root / "dist" / recipe_id / "manifest.json"
+        prior_manifest: dict[str, Any] = {}
         if prior_manifest_path.exists():
             try:
                 prior_manifest = json.loads(prior_manifest_path.read_text(encoding="utf-8"))
                 prior_count = int(prior_manifest.get("counts", {}).get("total", 0))
-            except (json.JSONDecodeError, TypeError, ValueError):
-                prior_count = 0
+                if not isinstance(prior_manifest.get("outputs", {}), dict):
+                    raise ValueError("outputs must be an object")
+            except (OSError, AttributeError, TypeError, ValueError) as exc:
+                raise BuildError(f"{recipe_id}: invalid publication baseline: {exc}") from exc
             reason = _ratio_review(
                 f"ruleset {recipe_id}",
                 len(rules),
@@ -834,7 +865,20 @@ def _build(
             )
             if reason:
                 review_reasons.append(reason)
+        if not skip_binary:
+            _guard_mrs_endpoints(root, recipe, rendered, prior_manifest)
         compatible = _compatibility_report(rendered)
+        if not skip_binary:
+            for output_id in MRS_OUTPUT_NAMES:
+                if output_id not in recipe.outputs or output_id in rendered:
+                    continue
+                text_id = output_id.removesuffix("-mrs") + "-text"
+                source = render_outputs(
+                    recipe_id, rules, recipe.action, (text_id,), root=root, skip_binary=True
+                )[text_id]
+                missing = _compatibility_report({output_id: source})["outputs"][output_id]
+                missing["status"] = "not-generated: no representable rules"
+                compatible["outputs"][output_id] = missing
         expected = _collect_expected_files(rendered, manifest, compatible)
         files.update({f"dist/{recipe_id}/{name}": data for name, data in expected.items()})
         rendered_by_ruleset[recipe_id] = rendered

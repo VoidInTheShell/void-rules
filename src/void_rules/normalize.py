@@ -38,7 +38,66 @@ def normalize_domain(value: str, *, allow_special: bool = False) -> str:
             normalized = body.lower()
         else:
             raise ParseError(f"invalid domain {value!r}: {exc}") from exc
+    if (
+        not ASCII_DOMAINISH.fullmatch(normalized)
+        or any(
+            not label or len(label) > 63 or label.startswith("-") or label.endswith("-")
+            for label in normalized.split(".")
+        )
+        or len(normalized) > 253
+    ):
+        raise ParseError(f"invalid domain {value!r}")
     return prefix + normalized
+
+
+def normalize_literal_domain(value: str) -> str:
+    """An exact/suffix rule is a hostname, not a wildcard expression."""
+    normalized = normalize_domain(value)
+    if normalized.startswith(".") or any(char in normalized for char in "*+?"):
+        raise ParseError(f"wildcards are not valid in a literal domain: {value!r}")
+    return normalized
+
+
+def normalize_domain_regex(value: str) -> str:
+    """Validate the portable RE2 subset used by the supported DNS/routing cores."""
+    if not value or "\n" in value or "\r" in value:
+        raise ParseError("empty or multiline domain regular expression")
+    if (
+        re.search(r"\(\?(?:[=!#]|<[=!]|>|\(|[aLuxt])|\\[1-9ZNuU]|\(\?P=", value)
+        or re.search(r"(?<!\\)(?:[*+?]|\{\d+(?:,\d*)?\})\+", value)
+        or any(
+            any(flag in flags for flag in "aLux")
+            for flags in re.findall(r"\(\?([aiLmsux-]+)(?:\)|:)", value)
+        )
+        or any(
+            int(number) > 1000
+            for repeat in re.findall(r"(?<!\\)\{(\d+)(?:,(\d*))?\}", value)
+            for number in repeat
+            if number
+        )
+    ):
+        raise ParseError("domain regex uses unsupported RE2 features")
+    try:
+        re.compile(value)
+    except re.error as exc:
+        raise ParseError(f"invalid domain regular expression: {exc}") from exc
+    return value
+
+
+def adguard_host_pattern(value: str, *, suffix: bool) -> tuple[RuleKind, str]:
+    """Preserve host-glob semantics; AdGuard * can span characters and labels."""
+    normalized = normalize_domain(value)
+    if normalized.startswith(".") or any(char in normalized for char in "+?"):
+        raise ParseError(f"invalid AdGuard host pattern: {value!r}")
+    if "*" not in normalized:
+        return (RuleKind.DOMAIN_SUFFIX if suffix else RuleKind.DOMAIN), normalized
+    if normalized.startswith("*.") and normalized.count("*") == 1:
+        # Any nonempty subdomain depth, never the apex. This is losslessly
+        # expressible in Mihomo as a leading-dot domain wildcard.
+        return RuleKind.DOMAIN_WILDCARD, "." + normalized[2:]
+    prefix = r"(?:[^.]+\.)*" if suffix else ""
+    body = ".*".join(re.escape(part) for part in normalized.split("*"))
+    return RuleKind.DOMAIN_REGEX, normalize_domain_regex(f"^{prefix}{body}$")
 
 
 def normalize_ip_network(value: str) -> str:
@@ -68,7 +127,9 @@ def classify_mihomo_domain(value: str) -> tuple[RuleKind, str]:
             if not value:
                 raise ParseError(f"empty {prefix} rule")
             if kind in {RuleKind.DOMAIN, RuleKind.DOMAIN_SUFFIX}:
-                value = normalize_domain(value)
+                value = normalize_literal_domain(value)
+            elif kind is RuleKind.DOMAIN_REGEX:
+                value = normalize_domain_regex(value)
             return kind, value
     if any(char.isspace() for char in raw):
         return RuleKind.OPAQUE_DOMAIN, normalize_domain(raw, allow_special=True)
@@ -96,7 +157,7 @@ def _validate_mihomo_wildcard(pattern: str) -> None:
 def wildcard_to_regex(pattern: str) -> str:
     """Match Mihomo's label trie: . excludes the apex, +. includes it."""
     _validate_mihomo_wildcard(pattern)
-    raw = pattern.lower()
+    raw = normalize_domain(pattern)
     suffix_any_depth = raw.startswith("+.")
     subdomains_only = raw.startswith(".")
     if suffix_any_depth:

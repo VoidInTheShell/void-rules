@@ -13,7 +13,7 @@ from .artifacts import deterministic_gzip
 from .codecs import GeodataCodec, MihomoCodec
 from .errors import CodecError
 from .model import DOMAIN_KINDS, IP_KINDS, Action, Rule, RuleKind
-from .normalize import wildcard_to_regex
+from .normalize import normalize_domain_regex, normalize_literal_domain, wildcard_to_regex
 
 
 @dataclass(frozen=True, slots=True)
@@ -55,7 +55,13 @@ def _main_rules(rules: list[Rule], recipe_action: Action) -> list[Rule]:
     return [rule for rule in rules if rule.action not in {Action.BLOCK, Action.ALLOW}]
 
 
+def _has_adguard_conditions(rule: Rule) -> bool:
+    return any(item.startswith("adguard:") for item in rule.attributes)
+
+
 def _classical_value(rule: Rule) -> str | None:
+    if _has_adguard_conditions(rule):
+        return None
     mapping = {
         RuleKind.DOMAIN: "DOMAIN",
         RuleKind.DOMAIN_SUFFIX: "DOMAIN-SUFFIX",
@@ -88,6 +94,8 @@ def _classical_value(rule: Rule) -> str | None:
 
 
 def _domain_value(rule: Rule) -> str | None:
+    if _has_adguard_conditions(rule):
+        return None
     if rule.kind is RuleKind.DOMAIN:
         return rule.value
     if rule.kind is RuleKind.DOMAIN_SUFFIX:
@@ -98,10 +106,14 @@ def _domain_value(rule: Rule) -> str | None:
 
 
 def _ip_value(rule: Rule) -> str | None:
-    return rule.value if rule.kind is RuleKind.IP_CIDR else None
+    return (
+        rule.value if rule.kind is RuleKind.IP_CIDR and not _has_adguard_conditions(rule) else None
+    )
 
 
 def _xray_domain_value(rule: Rule) -> str | None:
+    if _has_adguard_conditions(rule):
+        return None
     if rule.kind is RuleKind.DOMAIN:
         return "full:" + rule.value
     if rule.kind is RuleKind.DOMAIN_SUFFIX:
@@ -123,9 +135,11 @@ def _adguard_value(rule: Rule, *, allow: bool) -> str | None:
     elif rule.kind is RuleKind.DOMAIN_KEYWORD:
         value = "*" + rule.value + "*"
     elif rule.kind is RuleKind.DOMAIN_REGEX:
-        value = "/" + rule.value + "/"
+        value = "/" + rule.value.replace("/", r"\/") + "/"
     elif rule.kind is RuleKind.DOMAIN_WILDCARD:
-        value = rule.value.removeprefix("+.")
+        # Mihomo's . / +. and whole-label * differ from AdGuard host globs.
+        # Use an anchored regex instead of stripping the prefix and broadening.
+        value = "/" + wildcard_to_regex(rule.value) + "/"
     else:
         return None
     modifiers = [
@@ -207,6 +221,15 @@ def render_outputs(
 ) -> dict[str, RenderedFile]:
     rendered: dict[str, RenderedFile] = {}
     main = _main_rules(rules, recipe_action)
+    # Validate at the output boundary too: protected overlays and preserved
+    # snapshots must not bypass the source parser's matching constraints.
+    for rule in rules:
+        if rule.kind in {RuleKind.DOMAIN, RuleKind.DOMAIN_SUFFIX}:
+            normalize_literal_domain(rule.value)
+        elif rule.kind is RuleKind.DOMAIN_REGEX:
+            normalize_domain_regex(rule.value)
+        elif rule.kind is RuleKind.DOMAIN_WILDCARD:
+            wildcard_to_regex(rule.value)
 
     for output in outputs:
         if output == "jsonl":
@@ -375,7 +398,7 @@ def render_outputs(
             geoip_records: list[dict[str, Any]] = [
                 {"tag": ruleset_id, "kind": "ip_cidr", "value": rule.value}
                 for rule in main
-                if rule.kind is RuleKind.IP_CIDR
+                if rule.kind is RuleKind.IP_CIDR and not _has_adguard_conditions(rule)
             ]
             if geoip_records:
                 geoip_data = geodata.encode(geoip_records, "geoip")

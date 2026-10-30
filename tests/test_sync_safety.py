@@ -10,7 +10,7 @@ import yaml
 
 from void_rules import pipeline
 from void_rules.cli import main
-from void_rules.codecs import GeodataCodec
+from void_rules.codecs import GeodataCodec, MihomoCodec
 from void_rules.errors import BuildError, FetchError
 from void_rules.fetch import SourceFetchResult
 from void_rules.pipeline import build
@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 @pytest.fixture
 def sync_repo(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     monkeypatch.setenv("VOID_RULES_GEODATA", str(GeodataCodec(ROOT).executable()))
+    monkeypatch.setenv("VOID_RULES_MIHOMO", str(MihomoCodec(ROOT).executable()))
     shutil.copytree(ROOT / "schemas", tmp_path / "schemas")
     shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
     shutil.copytree(ROOT / "overlays/discovery", tmp_path / "overlays/discovery")
@@ -211,3 +212,52 @@ def test_publication_rolls_back_after_replace_failure(
         publish_files(tmp_path, {"first": b"new", "second": b"new"}, set())
     assert (tmp_path / "first").read_bytes() == b"old"
     assert not (tmp_path / "second").exists()
+
+
+def _request_mrs(root: Path) -> None:
+    recipe = root / "recipes/a.yaml"
+    document = yaml.safe_load(recipe.read_text())
+    document["outputs"].append("mihomo-domain-mrs")
+    recipe.write_text(yaml.safe_dump(document))
+
+
+def _keyword_only(root: Path) -> None:
+    source_config = root / "catalog/sources.yaml"
+    document = yaml.safe_load(source_config.read_text())
+    document["sources"][0]["format"] = "clash-classical-text"
+    source_config.write_text(yaml.safe_dump(document))
+    (root / ".work/downloads/one.blob").write_text("DOMAIN-KEYWORD,fixture\n")
+
+
+def test_empty_requested_mrs_is_reported_when_never_published(
+    sync_repo: Path,
+) -> None:
+    _request_mrs(sync_repo)
+    _keyword_only(sync_repo)
+    result = pipeline.build(sync_repo, offline=True)
+    report = result.compatibility["a"]["outputs"]["mihomo-domain-mrs"]
+    assert report["status"].startswith("not-generated")
+    assert report["represented"] == 0
+    assert report["skipped_by_kind"] == {"domain_keyword": 1}
+
+
+@pytest.mark.integration
+@pytest.mark.parametrize("remove_file", [False, True])
+def test_previous_mrs_cannot_disappear_or_advance_baseline(
+    sync_repo: Path,
+    remove_file: bool,
+) -> None:
+    _request_mrs(sync_repo)
+    pipeline.build(sync_repo, offline=True)
+    endpoint = sync_repo / "dist/a/mihomo-domain.mrs"
+    assert endpoint.is_file()
+    if remove_file:
+        endpoint.unlink()  # The previous manifest must protect it independently.
+    _keyword_only(sync_repo)
+    before = publication_digest(sync_repo)
+    for _ in range(2):
+        with pytest.raises(BuildError, match="refusing to remove published MRS endpoint"):
+            pipeline.build(sync_repo, offline=True)
+        assert publication_digest(sync_repo) == before
+        attempt = json.loads((sync_repo / ".work/reports/sync-attempt.json").read_bytes())
+        assert attempt["status"] == "failed"

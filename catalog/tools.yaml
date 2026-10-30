@@ -2,21 +2,21 @@ version: 1
 tools:
   mihomo:
     repository: MetaCubeX/mihomo
-    tag: v1.19.28
-    commit: cbd11db1e13a75d8e680e0fe7742c95be4cba2be
+    tag: v1.19.33
+    commit: 3f27ef39f8c96bbfbc8b0b9bb10f5c9ef60149d8
     purpose: Decode and encode Mihomo MRS v1 rule sets.
     source_warning: The repository default branch was unrelated when this pin was created; never follow main implicitly.
     assets:
       windows-amd64:
-        url: https://github.com/MetaCubeX/mihomo/releases/download/v1.19.28/mihomo-windows-amd64-compatible-v1.19.28.zip
+        url: https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-windows-amd64-compatible-v1.19.33.zip
         format: zip
-        sha256: 6d8a079d01b3631e73e56b7b42a067afc14f9e3ad99f2880d38bb141cf8fcbe7
-        size: 17730845
+        sha256: 7aaf636a4f2172dcd8ec34ac4f52797b059195e5afd6409508c963e545f8864d
+        size: 22543546
       linux-amd64:
-        url: https://github.com/MetaCubeX/mihomo/releases/download/v1.19.28/mihomo-linux-amd64-compatible-v1.19.28.gz
+        url: https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-linux-amd64-compatible-v1.19.33.gz
         format: gzip
-        sha256: 70d01cfb8cb7bf7a92fd1af16cb4b9553d90bb4eecde3b5c4849103e27c80ddb
-        size: 18134851
+        sha256: 386508bfb1c72c43b6a0eda73708ecdce82546581b0ebcb16366c53757c622b6
+        size: 22893972
   geodata:
     module: ./cmd/void-rules-geodata
     dependencies:
