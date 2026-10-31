@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 240298,
+        "represented": 240681,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 240298,
+        "represented": 240681,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 240298,
+        "represented": 240681,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 240298,
+        "represented": 240681,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -59,7 +59,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 240293,
+        "represented": 240676,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -93,7 +93,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 240293,
+        "represented": 240676,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -127,7 +127,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 240293,
+        "represented": 240676,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -637,11 +637,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 240298,
+        "skipped": 240681,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 239178
+          "domain_suffix": 239561
         },
         "status": "not-generated: no representable rules"
       },
@@ -1149,11 +1149,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 240298,
+        "skipped": 240681,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 239178
+          "domain_suffix": 239561
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1660,11 +1660,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 240298,
+        "skipped": 240681,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 239178
+          "domain_suffix": 239561
         }
       },
       "plain-domain": {
@@ -1695,7 +1695,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 240293,
+        "represented": 240676,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -2205,22 +2205,22 @@
           }
         ],
         "represented": 0,
-        "skipped": 240298,
+        "skipped": 240681,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 239178
+          "domain_suffix": 239561
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 240298,
+        "represented": 240681,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 240298,
+        "represented": 240681,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6569,19 +6569,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28211,
+        "represented": 28220,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 28211,
+        "represented": 28220,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 28211,
+        "represented": 28220,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -6923,7 +6923,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28144,
+        "represented": 28153,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7270,7 +7270,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28144,
+        "represented": 28153,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7617,7 +7617,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28144,
+        "represented": 28153,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7964,7 +7964,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28144,
+        "represented": 28153,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -8216,7 +8216,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28163,
+        "represented": 28172,
         "skipped": 48,
         "skipped_by_kind": {
           "ip_cidr": 32,
@@ -8226,7 +8226,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 28163,
+        "represented": 28172,
         "skipped": 0,
         "skipped_by_kind": {}
       }

@@ -121,6 +121,7 @@ domain:18comic-god.club
 domain:18comic-god.xyz
 domain:18comic.cc
 domain:18comic.company
+domain:18comic.ink
 domain:18comic.org
 domain:18comic.vip
 domain:18commic.com
@@ -1869,6 +1870,7 @@ domain:antenna.co.kr
 domain:anthemgame.com
 domain:anthemthegame.com
 domain:anthonycalzadilla.com
+domain:anthropic.auth0.com
 domain:anthropic.com
 domain:anthropic.com.cn
 domain:anthropic.team
@@ -3840,6 +3842,7 @@ domain:bingpix.com
 domain:bingpk.com
 domain:bings.com
 domain:bingsandbox.com
+domain:bingstatic.com
 domain:bingtoolbar.com
 domain:bingtranslator.com
 domain:bingvisualsearch.com
@@ -4818,6 +4821,7 @@ domain:bscdnweb.com
 domain:bseindia.com
 domain:bsi.ir
 domain:bsky.app
+domain:bsky.chat
 domain:bsky.network
 domain:bsky.social
 domain:bsnl.co.in
@@ -10424,6 +10428,7 @@ domain:githubapp.com
 domain:githubassets.com
 domain:githubcopilot.com
 domain:githubhackathon.com
+domain:githubhelp.com
 domain:githubnext.com
 domain:githubpreview.dev
 domain:githubstatus.com
@@ -16538,6 +16543,7 @@ domain:msftcloudes.cn
 domain:msfteducation.ca
 domain:msftidentity.com
 domain:msftnet.org
+domain:msftstatic.com
 domain:msgamesresearch.com
 domain:msgamestudios.com
 domain:msha.gov
@@ -23281,9 +23287,12 @@ domain:tiktokeu-cdn.com
 domain:tiktokglobalshopv.com
 domain:tiktokminis.us
 domain:tiktokrow-cdn.com
+domain:tiktokshop.com
+domain:tiktokstaticb.com
 domain:tiktokv.com
 domain:tiktokv.eu
 domain:tiktokv.us
+domain:tiktokvapp.com
 domain:tiktokw.eu
 domain:tiktokw.us
 domain:tilda.cc

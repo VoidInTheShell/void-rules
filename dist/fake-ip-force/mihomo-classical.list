@@ -870,6 +870,7 @@ DOMAIN-SUFFIX,18comic-god.club
 DOMAIN-SUFFIX,18comic-god.xyz
 DOMAIN-SUFFIX,18comic.cc
 DOMAIN-SUFFIX,18comic.company
+DOMAIN-SUFFIX,18comic.ink
 DOMAIN-SUFFIX,18comic.org
 DOMAIN-SUFFIX,18comic.vip
 DOMAIN-SUFFIX,18commic.com
@@ -2618,6 +2619,7 @@ DOMAIN-SUFFIX,antenna.co.kr
 DOMAIN-SUFFIX,anthemgame.com
 DOMAIN-SUFFIX,anthemthegame.com
 DOMAIN-SUFFIX,anthonycalzadilla.com
+DOMAIN-SUFFIX,anthropic.auth0.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,anthropic.com.cn
 DOMAIN-SUFFIX,anthropic.team
@@ -4589,6 +4591,7 @@ DOMAIN-SUFFIX,bingpix.com
 DOMAIN-SUFFIX,bingpk.com
 DOMAIN-SUFFIX,bings.com
 DOMAIN-SUFFIX,bingsandbox.com
+DOMAIN-SUFFIX,bingstatic.com
 DOMAIN-SUFFIX,bingtoolbar.com
 DOMAIN-SUFFIX,bingtranslator.com
 DOMAIN-SUFFIX,bingvisualsearch.com
@@ -5567,6 +5570,7 @@ DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,bseindia.com
 DOMAIN-SUFFIX,bsi.ir
 DOMAIN-SUFFIX,bsky.app
+DOMAIN-SUFFIX,bsky.chat
 DOMAIN-SUFFIX,bsky.network
 DOMAIN-SUFFIX,bsky.social
 DOMAIN-SUFFIX,bsnl.co.in
@@ -11173,6 +11177,7 @@ DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubhelp.com
 DOMAIN-SUFFIX,githubnext.com
 DOMAIN-SUFFIX,githubpreview.dev
 DOMAIN-SUFFIX,githubstatus.com
@@ -17287,6 +17292,7 @@ DOMAIN-SUFFIX,msftcloudes.cn
 DOMAIN-SUFFIX,msfteducation.ca
 DOMAIN-SUFFIX,msftidentity.com
 DOMAIN-SUFFIX,msftnet.org
+DOMAIN-SUFFIX,msftstatic.com
 DOMAIN-SUFFIX,msgamesresearch.com
 DOMAIN-SUFFIX,msgamestudios.com
 DOMAIN-SUFFIX,msha.gov
@@ -24030,9 +24036,12 @@ DOMAIN-SUFFIX,tiktokeu-cdn.com
 DOMAIN-SUFFIX,tiktokglobalshopv.com
 DOMAIN-SUFFIX,tiktokminis.us
 DOMAIN-SUFFIX,tiktokrow-cdn.com
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokstaticb.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.eu
 DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokvapp.com
 DOMAIN-SUFFIX,tiktokw.eu
 DOMAIN-SUFFIX,tiktokw.us
 DOMAIN-SUFFIX,tilda.cc
