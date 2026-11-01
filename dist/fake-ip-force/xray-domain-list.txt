@@ -1932,6 +1932,7 @@ domain:api.recaptcha.net
 domain:api.shuaiapi.com
 domain:api.statsig.com
 domain:api.steampowered.com
+domain:api.themoviedb.org
 domain:apiary.io
 domain:apiauto.ru
 domain:apibay.org
@@ -23484,6 +23485,7 @@ domain:toroporno.com
 domain:torproject.org
 domain:torrentgalaxy.to
 domain:torrentkitty.tv
+domain:torrentleech.org
 domain:torrentprivacy.com
 domain:torrentproject.se
 domain:torrenty.org
@@ -27139,6 +27141,7 @@ domain:youtubego.in
 domain:youtubekids.com
 domain:youtubemobilesupport.com
 domain:youversion.com
+domain:youversionapi.com
 domain:youwin.com
 domain:youwuss.com
 domain:youx.xxx

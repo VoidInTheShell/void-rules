@@ -1933,6 +1933,7 @@ payload:
 - +.api.shuaiapi.com
 - +.api.statsig.com
 - +.api.steampowered.com
+- +.api.themoviedb.org
 - +.apiary.io
 - +.apiauto.ru
 - +.apibay.org
@@ -23485,6 +23486,7 @@ payload:
 - +.torproject.org
 - +.torrentgalaxy.to
 - +.torrentkitty.tv
+- +.torrentleech.org
 - +.torrentprivacy.com
 - +.torrentproject.se
 - +.torrenty.org
@@ -27140,6 +27142,7 @@ payload:
 - +.youtubekids.com
 - +.youtubemobilesupport.com
 - +.youversion.com
+- +.youversionapi.com
 - +.youwin.com
 - +.youwuss.com
 - +.youx.xxx
