@@ -3534,6 +3534,7 @@ domain:beget.app
 domain:beget.cloud
 domain:beget.com
 domain:beget.de
+domain:beget.email
 domain:beget.hosting
 domain:beget.pro
 domain:beget.ru
@@ -3761,6 +3762,7 @@ domain:bild.de
 domain:bili2.cc
 domain:bili888.com
 domain:bili999.com
+domain:bilibili.tv
 domain:bilinovel.com
 domain:biliplus.com
 domain:biliworld.com
