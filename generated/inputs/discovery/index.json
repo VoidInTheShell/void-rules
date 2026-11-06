@@ -14,19 +14,19 @@
       "sha256": "5699173da4a96d2344db141031a5bfce85e1ce7b46635a1259c8c22501611b43",
       "size": 302209
     },
-    "meta-companion-views-04bd2b998fc928bb": {
-      "metadata": {
-        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/ce8c121555905c096dfee7ef5bde591eca0bcc4e"
-      },
-      "sha256": "97e7431055a245dff5bff428ec7d9029d8aa9930b967d7ba3811baf621988171",
-      "size": 610
-    },
     "meta-companion-views-2cd1c768dd0e63c2": {
       "metadata": {
         "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/meta"
       },
-      "sha256": "7b7b46f322ae1bee062561bf93fcd79241524c5ece526071235c0524c85de4f0",
+      "sha256": "590bf009b87026e7cf6cd40ef0f5a8155d620e747b3dd28643787186f99a90b5",
       "size": 816
+    },
+    "meta-companion-views-67eaf9924d587d30": {
+      "metadata": {
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/c3d7d0565396f212e36e12b87382bd1e3e930552?recursive=1"
+      },
+      "sha256": "3d6689047fe1c1d361f5ca7c9a401d4a6ec864570aca915ec548a8d738153367",
+      "size": 2353064
     },
     "meta-companion-views-9d6401e261eb3be9": {
       "metadata": {
@@ -35,12 +35,12 @@
       "sha256": "d0973403e0b31e00e8022e4ffdd52a689e0b427c08541a7984ff1f0d9b9843e7",
       "size": 296141
     },
-    "meta-companion-views-cee37ef2d91afa04": {
+    "meta-companion-views-b45f925714b648e7": {
       "metadata": {
-        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/1ef56c98a1735df3064dc901036c5e06f045c765?recursive=1"
+        "url": "https://api.github.com/repos/MetaCubeX/meta-rules-dat/git/trees/c60f92319aa02fb6c7d9eada61c577559232152b"
       },
-      "sha256": "9bc7670dfd0a05a8e7b69d76790d24283f5f4c73a4c85b4a3f003baad55ba99d",
-      "size": 2353064
+      "sha256": "2447573dd9b7b4565963c507bbd5885b79f583852ff073ca824d08d0377c10ba",
+      "size": 610
     }
   },
   "version": 1
