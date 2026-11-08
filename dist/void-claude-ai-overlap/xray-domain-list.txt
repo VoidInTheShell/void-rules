@@ -23,6 +23,8 @@ domain:sentry.io
 full:anthropic.auth0.com
 full:cdn.usefathom.com
 full:downloads.claude.ai
+full:http-intake.logs.us5.datadoghq.com
+full:o1158394.ingest.us.sentry.io
 full:o33249.ingest.sentry.io
 full:o33249.ingest.us.sentry.io
 full:servd-anthropic-website.b-cdn.net

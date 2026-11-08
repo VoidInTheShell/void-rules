@@ -9,25 +9,25 @@
       },
       "adguard-block": {
         "examples": [],
-        "represented": 245577,
+        "represented": 245895,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "jsonl": {
         "examples": [],
-        "represented": 245577,
+        "represented": 245895,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 245577,
+        "represented": 245895,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 245577,
+        "represented": 245895,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -59,7 +59,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 245572,
+        "represented": 245890,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -93,7 +93,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 245572,
+        "represented": 245890,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -127,7 +127,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 245572,
+        "represented": 245890,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -637,11 +637,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 245577,
+        "skipped": 245895,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 244457
+          "domain_suffix": 244775
         },
         "status": "not-generated: no representable rules"
       },
@@ -1149,11 +1149,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 245577,
+        "skipped": 245895,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 244457
+          "domain_suffix": 244775
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1660,11 +1660,11 @@
           }
         ],
         "represented": 0,
-        "skipped": 245577,
+        "skipped": 245895,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 244457
+          "domain_suffix": 244775
         }
       },
       "plain-domain": {
@@ -1695,7 +1695,7 @@
             "value": "vrdesktop"
           }
         ],
-        "represented": 245572,
+        "represented": 245890,
         "skipped": 5,
         "skipped_by_kind": {
           "domain_keyword": 5
@@ -2205,22 +2205,22 @@
           }
         ],
         "represented": 0,
-        "skipped": 245577,
+        "skipped": 245895,
         "skipped_by_kind": {
           "domain": 1115,
           "domain_keyword": 5,
-          "domain_suffix": 244457
+          "domain_suffix": 244775
         }
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 245577,
+        "represented": 245895,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 245577,
+        "represented": 245895,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -2230,19 +2230,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 270,
+        "represented": 274,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 270,
+        "represented": 274,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 270,
+        "represented": 274,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -2304,7 +2304,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 259,
+        "represented": 263,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -2370,7 +2370,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 259,
+        "represented": 263,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -2436,7 +2436,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 259,
+        "represented": 263,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -2554,12 +2554,22 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "notebooklm-pa.googleapis.com"
           },
           {
             "kind": "domain",
             "reason": "not representable",
             "value": "notebooklm.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
           },
           {
             "kind": "domain",
@@ -2615,6 +2625,11 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "pplx-res.cloudinary.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "production-copilot-host-westus.webpubsub.azure.com"
           },
           {
             "kind": "domain",
@@ -2930,29 +2945,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "comfyci.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "comfyregistry.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "commandcode.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "context7.com"
           }
         ],
         "represented": 8,
-        "skipped": 262,
+        "skipped": 266,
         "skipped_by_kind": {
-          "domain": 38,
+          "domain": 41,
           "domain_keyword": 2,
-          "domain_suffix": 221,
+          "domain_suffix": 222,
           "opaque_classical": 1
         }
       },
@@ -3066,12 +3066,22 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "notebooklm-pa.googleapis.com"
           },
           {
             "kind": "domain",
             "reason": "not representable",
             "value": "notebooklm.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
           },
           {
             "kind": "domain",
@@ -3127,6 +3137,11 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "pplx-res.cloudinary.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "production-copilot-host-westus.webpubsub.azure.com"
           },
           {
             "kind": "domain",
@@ -3442,29 +3457,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "comfyci.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "comfyregistry.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "commandcode.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "context7.com"
           }
         ],
         "represented": 8,
-        "skipped": 262,
+        "skipped": 266,
         "skipped_by_kind": {
-          "domain": 38,
+          "domain": 41,
           "domain_keyword": 2,
-          "domain_suffix": 221,
+          "domain_suffix": 222,
           "opaque_classical": 1
         }
       },
@@ -3578,12 +3578,22 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "notebooklm-pa.googleapis.com"
           },
           {
             "kind": "domain",
             "reason": "not representable",
             "value": "notebooklm.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
           },
           {
             "kind": "domain",
@@ -3639,6 +3649,11 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "pplx-res.cloudinary.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "production-copilot-host-westus.webpubsub.azure.com"
           },
           {
             "kind": "domain",
@@ -3954,29 +3969,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "comfyci.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "comfyregistry.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "commandcode.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "context7.com"
           }
         ],
         "represented": 8,
-        "skipped": 262,
+        "skipped": 266,
         "skipped_by_kind": {
-          "domain": 38,
+          "domain": 41,
           "domain_keyword": 2,
-          "domain_suffix": 221,
+          "domain_suffix": 222,
           "opaque_classical": 1
         }
       },
@@ -4038,7 +4038,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 259,
+        "represented": 263,
         "skipped": 11,
         "skipped_by_kind": {
           "domain_keyword": 2,
@@ -4156,12 +4156,22 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "notebooklm-pa.googleapis.com"
           },
           {
             "kind": "domain",
             "reason": "not representable",
             "value": "notebooklm.googleapis.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
           },
           {
             "kind": "domain",
@@ -4217,6 +4227,11 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "pplx-res.cloudinary.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "production-copilot-host-westus.webpubsub.azure.com"
           },
           {
             "kind": "domain",
@@ -4532,29 +4547,14 @@
             "kind": "domain_suffix",
             "reason": "not representable",
             "value": "comfyci.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "comfyregistry.org"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "commandcode.ai"
-          },
-          {
-            "kind": "domain_suffix",
-            "reason": "not representable",
-            "value": "context7.com"
           }
         ],
         "represented": 8,
-        "skipped": 262,
+        "skipped": 266,
         "skipped_by_kind": {
-          "domain": 38,
+          "domain": 41,
           "domain_keyword": 2,
-          "domain_suffix": 221,
+          "domain_suffix": 222,
           "opaque_classical": 1
         }
       },
@@ -4606,7 +4606,7 @@
             "value": "IP-ASN,20473,no-resolve"
           }
         ],
-        "represented": 261,
+        "represented": 265,
         "skipped": 9,
         "skipped_by_kind": {
           "ip_cidr": 8,
@@ -4621,7 +4621,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 261,
+        "represented": 265,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6569,19 +6569,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28236,
+        "represented": 28240,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 28236,
+        "represented": 28240,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 28236,
+        "represented": 28240,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -6923,7 +6923,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28169,
+        "represented": 28173,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7270,7 +7270,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28169,
+        "represented": 28173,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7617,7 +7617,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28169,
+        "represented": 28173,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7964,7 +7964,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28169,
+        "represented": 28173,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -8216,7 +8216,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28188,
+        "represented": 28192,
         "skipped": 48,
         "skipped_by_kind": {
           "ip_cidr": 32,
@@ -8226,7 +8226,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 28188,
+        "represented": 28192,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -11189,37 +11189,37 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28,
+        "represented": 30,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-domain-mrs": {
         "examples": [],
-        "represented": 28,
+        "represented": 30,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-domain-text": {
         "examples": [],
-        "represented": 28,
+        "represented": 30,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-domain-yaml": {
         "examples": [],
-        "represented": 28,
+        "represented": 30,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "plain-domain": {
         "examples": [],
-        "represented": 28,
+        "represented": 30,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "xray-domain-list": {
         "examples": [],
-        "represented": 28,
+        "represented": 30,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -11229,19 +11229,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 55,
+        "represented": 57,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 55,
+        "represented": 57,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 55,
+        "represented": 57,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -11313,7 +11313,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 42,
+        "represented": 44,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -11390,7 +11390,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 42,
+        "represented": 44,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -11467,7 +11467,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 42,
+        "represented": 44,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -11516,6 +11516,16 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "servd-anthropic-website.b-cdn.net"
           },
           {
@@ -11735,9 +11745,9 @@
           }
         ],
         "represented": 4,
-        "skipped": 51,
+        "skipped": 53,
         "skipped_by_kind": {
-          "domain": 9,
+          "domain": 11,
           "domain_keyword": 3,
           "domain_suffix": 33,
           "opaque_classical": 1,
@@ -11784,6 +11794,16 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "servd-anthropic-website.b-cdn.net"
           },
           {
@@ -12003,9 +12023,9 @@
           }
         ],
         "represented": 4,
-        "skipped": 51,
+        "skipped": 53,
         "skipped_by_kind": {
-          "domain": 9,
+          "domain": 11,
           "domain_keyword": 3,
           "domain_suffix": 33,
           "opaque_classical": 1,
@@ -12052,6 +12072,16 @@
           {
             "kind": "domain",
             "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
             "value": "servd-anthropic-website.b-cdn.net"
           },
           {
@@ -12271,9 +12301,9 @@
           }
         ],
         "represented": 4,
-        "skipped": 51,
+        "skipped": 53,
         "skipped_by_kind": {
-          "domain": 9,
+          "domain": 11,
           "domain_keyword": 3,
           "domain_suffix": 33,
           "opaque_classical": 1,
@@ -12348,7 +12378,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 42,
+        "represented": 44,
         "skipped": 13,
         "skipped_by_kind": {
           "domain_keyword": 3,
@@ -12393,6 +12423,16 @@
             "kind": "domain",
             "reason": "not representable",
             "value": "downloads.claude.ai"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "http-intake.logs.us5.datadoghq.com"
+          },
+          {
+            "kind": "domain",
+            "reason": "not representable",
+            "value": "o1158394.ingest.us.sentry.io"
           },
           {
             "kind": "domain",
@@ -12616,9 +12656,9 @@
           }
         ],
         "represented": 4,
-        "skipped": 51,
+        "skipped": 53,
         "skipped_by_kind": {
-          "domain": 9,
+          "domain": 11,
           "domain_keyword": 3,
           "domain_suffix": 33,
           "opaque_classical": 1,
@@ -12678,7 +12718,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 45,
+        "represented": 47,
         "skipped": 10,
         "skipped_by_kind": {
           "ip_cidr": 4,
@@ -12694,7 +12734,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 45,
+        "represented": 47,
         "skipped": 0,
         "skipped_by_kind": {}
       }

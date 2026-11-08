@@ -2,19 +2,19 @@
   "outputs": {
     "jsonl": {
       "examples": [],
-      "represented": 55,
+      "represented": 57,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-text": {
       "examples": [],
-      "represented": 55,
+      "represented": 57,
       "skipped": 0,
       "skipped_by_kind": {}
     },
     "mihomo-classical-yaml": {
       "examples": [],
-      "represented": 55,
+      "represented": 57,
       "skipped": 0,
       "skipped_by_kind": {}
     },
@@ -86,7 +86,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 42,
+      "represented": 44,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -163,7 +163,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 42,
+      "represented": 44,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -240,7 +240,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 42,
+      "represented": 44,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -289,6 +289,16 @@
         {
           "kind": "domain",
           "reason": "not representable",
+          "value": "http-intake.logs.us5.datadoghq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "o1158394.ingest.us.sentry.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
           "value": "servd-anthropic-website.b-cdn.net"
         },
         {
@@ -508,9 +518,9 @@
         }
       ],
       "represented": 4,
-      "skipped": 51,
+      "skipped": 53,
       "skipped_by_kind": {
-        "domain": 9,
+        "domain": 11,
         "domain_keyword": 3,
         "domain_suffix": 33,
         "opaque_classical": 1,
@@ -557,6 +567,16 @@
         {
           "kind": "domain",
           "reason": "not representable",
+          "value": "http-intake.logs.us5.datadoghq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "o1158394.ingest.us.sentry.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
           "value": "servd-anthropic-website.b-cdn.net"
         },
         {
@@ -776,9 +796,9 @@
         }
       ],
       "represented": 4,
-      "skipped": 51,
+      "skipped": 53,
       "skipped_by_kind": {
-        "domain": 9,
+        "domain": 11,
         "domain_keyword": 3,
         "domain_suffix": 33,
         "opaque_classical": 1,
@@ -825,6 +845,16 @@
         {
           "kind": "domain",
           "reason": "not representable",
+          "value": "http-intake.logs.us5.datadoghq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "o1158394.ingest.us.sentry.io"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
           "value": "servd-anthropic-website.b-cdn.net"
         },
         {
@@ -1044,9 +1074,9 @@
         }
       ],
       "represented": 4,
-      "skipped": 51,
+      "skipped": 53,
       "skipped_by_kind": {
-        "domain": 9,
+        "domain": 11,
         "domain_keyword": 3,
         "domain_suffix": 33,
         "opaque_classical": 1,
@@ -1121,7 +1151,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 42,
+      "represented": 44,
       "skipped": 13,
       "skipped_by_kind": {
         "domain_keyword": 3,
@@ -1166,6 +1196,16 @@
           "kind": "domain",
           "reason": "not representable",
           "value": "downloads.claude.ai"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "http-intake.logs.us5.datadoghq.com"
+        },
+        {
+          "kind": "domain",
+          "reason": "not representable",
+          "value": "o1158394.ingest.us.sentry.io"
         },
         {
           "kind": "domain",
@@ -1389,9 +1429,9 @@
         }
       ],
       "represented": 4,
-      "skipped": 51,
+      "skipped": 53,
       "skipped_by_kind": {
-        "domain": 9,
+        "domain": 11,
         "domain_keyword": 3,
         "domain_suffix": 33,
         "opaque_classical": 1,
@@ -1451,7 +1491,7 @@
           "value": "cowork-svc.exe"
         }
       ],
-      "represented": 45,
+      "represented": 47,
       "skipped": 10,
       "skipped_by_kind": {
         "ip_cidr": 4,
@@ -1467,7 +1507,7 @@
     },
     "xray-geosite-dat": {
       "examples": [],
-      "represented": 45,
+      "represented": 47,
       "skipped": 0,
       "skipped_by_kind": {}
     }

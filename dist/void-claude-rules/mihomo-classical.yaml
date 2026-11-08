@@ -6,6 +6,8 @@ payload:
 - DOMAIN,cdn.growthbook.io
 - DOMAIN,cdn.usefathom.com
 - DOMAIN,downloads.claude.ai
+- DOMAIN,http-intake.logs.us5.datadoghq.com
+- DOMAIN,o1158394.ingest.us.sentry.io
 - DOMAIN,servd-anthropic-website.b-cdn.net
 - DOMAIN,storage.googleapis.com
 - DOMAIN-KEYWORD,datadog

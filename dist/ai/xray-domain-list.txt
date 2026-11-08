@@ -102,6 +102,7 @@ domain:grazie.ai
 domain:grazie.aws.intellij.net
 domain:grok.com
 domain:grok.x.com
+domain:grokbot.com
 domain:grokipedia.com
 domain:groq.com
 domain:h2o.ai
@@ -240,8 +241,10 @@ full:copilotprodattachments.blob.core.windows.net
 full:daily-cloudcode-pa.googleapis.com
 full:geminiweb-pa.clients.google.com
 full:geminiweb-pa.clients6.google.com
+full:http-intake.logs.us5.datadoghq.com
 full:notebooklm-pa.googleapis.com
 full:notebooklm.googleapis.com
+full:o1158394.ingest.us.sentry.io
 full:o33249.ingest.sentry.io
 full:o33249.ingest.us.sentry.io
 full:openai-api.arkoselabs.com
@@ -253,6 +256,7 @@ full:openaicom.imgix.net
 full:openaicomproductionae4b.blob.core.windows.net
 full:ppl-ai-file-upload.s3.amazonaws.com
 full:pplx-res.cloudinary.com
+full:production-copilot-host-westus.webpubsub.azure.com
 full:production-openaicom-storage.azureedge.net
 full:servd-anthropic-website.b-cdn.net
 full:static.cloudflareinsights.com

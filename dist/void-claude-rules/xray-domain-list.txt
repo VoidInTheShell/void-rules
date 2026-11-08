@@ -38,6 +38,8 @@ full:browser-intake-us5-datadoghq.com
 full:cdn.growthbook.io
 full:cdn.usefathom.com
 full:downloads.claude.ai
+full:http-intake.logs.us5.datadoghq.com
+full:o1158394.ingest.us.sentry.io
 full:servd-anthropic-website.b-cdn.net
 full:storage.googleapis.com
 keyword:datadog
