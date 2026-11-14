@@ -6,83 +6,83 @@
   },
   "counts": {
     "by_action": {
-      "fake_ip_force": 28245
+      "fake_ip_force": 28246
     },
     "by_kind": {
       "domain": 733,
       "domain_keyword": 19,
-      "domain_suffix": 27445,
+      "domain_suffix": 27446,
       "ip_cidr": 32,
       "opaque_classical": 2,
       "process_name": 14
     },
     "protected": 71,
-    "total": 28245
+    "total": 28246
   },
   "description": "Proxy-oriented names that receive Fake-IP after real-IP compatibility exceptions.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 28245,
-      "sha256": "c14eda4bfdac523357037abd75e537e8343fdc06779b889b64c398f3e10a0665",
-      "size": 460550,
+      "represented_rules": 28246,
+      "sha256": "47a94ccdcc9bcd66239f6d0279e0ea9f34f77143c6aa1e5fffb143550117331d",
+      "size": 460543,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 28245,
-      "sha256": "d15948137697b49e8d57b31174f18f78449efd734da9b0ac828e71e2005bdfcf",
-      "size": 809815,
+      "represented_rules": 28246,
+      "sha256": "cc444311b47b7f8c3bba11c793eaaca3501d904a9bba583f1a1f8ee6f37bbbf1",
+      "size": 809842,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 28245,
-      "sha256": "2f3150c97841fc70ee6280ae5588b51fbbb8db703b64b973eceef4f443adce4d",
-      "size": 866314,
+      "represented_rules": 28246,
+      "sha256": "b39600d131df141cbda2b0cffe2e52413b07494103eb147862a1e91f2952f025",
+      "size": 866343,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 16,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 28178,
-      "sha256": "80f73b02976894d9ede57203ebf05550c665b12c04dc2855422097c471d1642e",
-      "size": 204740,
+      "represented_rules": 28179,
+      "sha256": "3b0fb0f9308c15c76d08e74e8ceeeb1c1a888a2ba3746bb14a979ca116cca3a0",
+      "size": 204761,
       "skipped_rules": 67
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 28178,
-      "sha256": "d8d39e2011dac247f66ce16e1938e305952f24cba8eb79aecab0eaac0406a9c2",
-      "size": 473617,
+      "represented_rules": 28179,
+      "sha256": "56cfbf1b867ce9352e2979fac766285ff176cd7875fa0a2ef692723370100690",
+      "size": 473632,
       "skipped_rules": 67
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 28178,
-      "sha256": "c2501ba59483b43d724ff45cc195032ba094c75cd77f6310052d66eb5510cfad",
-      "size": 529982,
+      "represented_rules": 28179,
+      "sha256": "04c57f44d6a660d4102684c0db44bc939b572f085aa8f382c12adc33f41ea0fb",
+      "size": 529999,
       "skipped_rules": 67
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 28178,
-      "sha256": "d8d39e2011dac247f66ce16e1938e305952f24cba8eb79aecab0eaac0406a9c2",
-      "size": 473617,
+      "represented_rules": 28179,
+      "sha256": "56cfbf1b867ce9352e2979fac766285ff176cd7875fa0a2ef692723370100690",
+      "size": 473632,
       "skipped_rules": 67
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 28197,
-      "sha256": "49f72783e24c85282d230a763aee16637988754462455a649f2dea6d03407d40",
-      "size": 614831,
+      "represented_rules": 28198,
+      "sha256": "505614246a8f8c198d079646734f1b1c5ce06c0e489fe99614f1a697abfda795",
+      "size": 614851,
       "skipped_rules": 48
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 28197,
-      "sha256": "cad681ef8582c25ee71bd67c180937afef77782bb53c1c3f3e25c977bb4f065f",
-      "size": 559865,
+      "represented_rules": 28198,
+      "sha256": "1499086abd2b6cd84a31f107d720704ff63dfea25fc18b82df36fbe62334b31b",
+      "size": 559883,
       "skipped_rules": 0
     }
   },
@@ -104,12 +104,12 @@
     "blackmatrix-microsoft": 667,
     "blackmatrix-openai": 35,
     "blackmatrix-twitter": 33,
-    "loyalsoldier-gfw": 4451,
+    "loyalsoldier-gfw": 4452,
     "metacubex-ai-not-cn": 217,
     "metacubex-anthropic": 21,
     "metacubex-cryptocurrency": 240,
     "metacubex-finance": 661,
-    "metacubex-geolocation-not-cn": 27189,
+    "metacubex-geolocation-not-cn": 27190,
     "overlay:ai": 9,
     "overlay:cross-border-finance": 34,
     "overlay:fake-ip-force": 16,
