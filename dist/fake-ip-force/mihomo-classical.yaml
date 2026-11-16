@@ -85,6 +85,7 @@ payload:
 - DOMAIN,brightcove.imgix.net
 - DOMAIN,browser-intake-datadoghq.com
 - DOMAIN,browser-intake-us5-datadoghq.com
+- DOMAIN,builds.dotnet.microsoft.com
 - DOMAIN,bybit-exchange.github.io
 - DOMAIN,bybit.ada.support
 - DOMAIN,c.ppy.sh
@@ -190,6 +191,7 @@ payload:
 - DOMAIN,dmqdd6hw24ucf.cloudfront.net
 - DOMAIN,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 - DOMAIN,docker-pinata-support.s3.amazonaws.com
+- DOMAIN,dotnetcli.trafficmanager.net
 - DOMAIN,downloads.claude.ai
 - DOMAIN,doy2mn9upadnk.cloudfront.net
 - DOMAIN,dqd0jw5gvbchn.cloudfront.net
@@ -548,6 +550,7 @@ payload:
 - DOMAIN,steamvideo-a.akamaihd.net
 - DOMAIN,storage.googleapis.com
 - DOMAIN,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
+- DOMAIN,sundry-star-net-geo.trafficmanager.net
 - DOMAIN,supercell.helpshift.com
 - DOMAIN,supercell.zendesk.com
 - DOMAIN,t.ssp.hinet.net
@@ -7440,6 +7443,7 @@ payload:
 - DOMAIN-SUFFIX,deasians.com
 - DOMAIN-SUFFIX,debank.com
 - DOMAIN-SUFFIX,debian.org
+- DOMAIN-SUFFIX,debot.ai
 - DOMAIN-SUFFIX,debug.com
 - DOMAIN-SUFFIX,debugproject.com
 - DOMAIN-SUFFIX,decentr.net
@@ -21069,6 +21073,7 @@ payload:
 - DOMAIN-SUFFIX,religionnews.com
 - DOMAIN-SUFFIX,remirepo.net
 - DOMAIN-SUFFIX,remitly.com
+- DOMAIN-SUFFIX,remna.dev
 - DOMAIN-SUFFIX,remna.st
 - DOMAIN-SUFFIX,rencapbank.ru
 - DOMAIN-SUFFIX,renchead.com
@@ -27590,6 +27595,7 @@ payload:
 - DOMAIN-SUFFIX,yaya.cyou
 - DOMAIN-SUFFIX,yayadizhi.xyz
 - DOMAIN-SUFFIX,yazhouse8.com
+- DOMAIN-SUFFIX,yb-payment.ru
 - DOMAIN-SUFFIX,yccdn.ru
 - DOMAIN-SUFFIX,yclients.com
 - DOMAIN-SUFFIX,ycombinator.com

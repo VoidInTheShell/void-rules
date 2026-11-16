@@ -6687,6 +6687,7 @@ domain:dealtree.org
 domain:deasians.com
 domain:debank.com
 domain:debian.org
+domain:debot.ai
 domain:debug.com
 domain:debugproject.com
 domain:decentr.net
@@ -20316,6 +20317,7 @@ domain:relay.firefox.com
 domain:religionnews.com
 domain:remirepo.net
 domain:remitly.com
+domain:remna.dev
 domain:remna.st
 domain:rencapbank.ru
 domain:renchead.com
@@ -26837,6 +26839,7 @@ domain:yavtube.com
 domain:yaya.cyou
 domain:yayadizhi.xyz
 domain:yazhouse8.com
+domain:yb-payment.ru
 domain:yccdn.ru
 domain:yclients.com
 domain:ycombinator.com
@@ -27530,6 +27533,7 @@ full:bnetshopus.akamaized.net
 full:brightcove.imgix.net
 full:browser-intake-datadoghq.com
 full:browser-intake-us5-datadoghq.com
+full:builds.dotnet.microsoft.com
 full:bybit-exchange.github.io
 full:bybit.ada.support
 full:c.ppy.sh
@@ -27635,6 +27639,7 @@ full:dlmobilegarena-a.akamaihd.net
 full:dmqdd6hw24ucf.cloudfront.net
 full:docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 full:docker-pinata-support.s3.amazonaws.com
+full:dotnetcli.trafficmanager.net
 full:downloads.claude.ai
 full:doy2mn9upadnk.cloudfront.net
 full:dqd0jw5gvbchn.cloudfront.net
@@ -27993,6 +27998,7 @@ full:steamuserimages-a.akamaihd.net
 full:steamvideo-a.akamaihd.net
 full:storage.googleapis.com
 full:straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
+full:sundry-star-net-geo.trafficmanager.net
 full:supercell.helpshift.com
 full:supercell.zendesk.com
 full:t.ssp.hinet.net

@@ -332,6 +332,7 @@ domain:dbs.com
 domain:dbs.com.sg
 domain:dcapital.ru
 domain:debank.com
+domain:debot.ai
 domain:degiro.com
 domain:delets.cash
 domain:delets.online
@@ -1292,6 +1293,8 @@ domain:xverse.app
 domain:yamagatabank.co.jp
 domain:yamaguchibank.co.jp
 domain:yamanashibank.co.jp
+domain:yandex-bank.net
+domain:yb-payment.ru
 domain:yokohamabank.co.jp
 domain:yomabank.com
 domain:yoobusiness.ru

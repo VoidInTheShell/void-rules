@@ -6,87 +6,87 @@
   },
   "counts": {
     "by_action": {
-      "match": 1330
+      "match": 1333
     },
     "by_kind": {
       "domain": 13,
       "domain_keyword": 1,
-      "domain_suffix": 1316
+      "domain_suffix": 1319
     },
     "protected": 34,
-    "total": 1330
+    "total": 1333
   },
   "description": "Global banks, payments, brokers, exchanges, crypto platforms, carriers and regional probes.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 1330,
-      "sha256": "19f522628a79f9ec5d7f4ab63fca5c468873077dc4c823c5660e2289f25d96e0",
-      "size": 19122,
+      "represented_rules": 1333,
+      "sha256": "1c4218aabf94bc76c1340c9442a429da9ab1c848dc36c37e5a69070f827e5c51",
+      "size": 19190,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 1330,
-      "sha256": "a39a7d22bcf773ee646793b2f4695dd29e52992580ae7215aaff294376683770",
-      "size": 35909,
+      "represented_rules": 1333,
+      "sha256": "39e4e8499dcde0a3e4687d19a25cb95b64505a25311fe1baaf6ac65770069d3a",
+      "size": 35990,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 1330,
-      "sha256": "37fc5d72f10987c753c06db275af7e48a17797483d1ba817564b6bf74c0697fe",
-      "size": 38578,
+      "represented_rules": 1333,
+      "sha256": "cd48d762d4393fe068b1c77780d09de018e9fb6c4c70efe764dbeb5ca1166221",
+      "size": 38665,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "path": "mihomo-domain.mrs",
-      "represented_rules": 1329,
-      "sha256": "26d3c47a4e7b87c5b1c40f3448df0baef14b489669712dc79c1f0cf1c252dc23",
-      "size": 10325,
+      "represented_rules": 1332,
+      "sha256": "603c91dcee3c0359197091440846665900c6ef6044cba6b8fda367a912f6da94",
+      "size": 10403,
       "skipped_rules": 1
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 1329,
-      "sha256": "20247a5c405b3ea65c1c3869f1264b06f0c8361d7b22295043ed7e8de24d7ce9",
-      "size": 20000,
+      "represented_rules": 1332,
+      "sha256": "165e7b275898d2751c5058aa6183567a39128db117d7e57516bdcc0c873cc6ee",
+      "size": 20045,
       "skipped_rules": 1
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 1329,
-      "sha256": "016db3ff626043841eb1a5d493d2adab16ac2e15d5d728420ff11ddaf84f2626",
-      "size": 22667,
+      "represented_rules": 1332,
+      "sha256": "1435077f08d7b5c69e36b667bc3ec32936419788496d70cb89c3bd6fdb05dfae",
+      "size": 22718,
       "skipped_rules": 1
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 1329,
-      "sha256": "20247a5c405b3ea65c1c3869f1264b06f0c8361d7b22295043ed7e8de24d7ce9",
-      "size": 20000,
+      "represented_rules": 1332,
+      "sha256": "165e7b275898d2751c5058aa6183567a39128db117d7e57516bdcc0c873cc6ee",
+      "size": 20045,
       "skipped_rules": 1
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 1330,
-      "sha256": "f9336d17cdfc47aa96449887a90030a6835c392c9ce7a299a599f82642db8a78",
-      "size": 26664,
+      "represented_rules": 1333,
+      "sha256": "4c3724f9c69898b504fd88327db838d0bda6ebfb6e524f0c03cdfdbc638b0bd9",
+      "size": 26724,
       "skipped_rules": 0
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 1330,
-      "sha256": "24658f284f4b6a7f23b7699984ac0fef4674b3c2225f002d3101ef301505ab3d",
-      "size": 24053,
+      "represented_rules": 1333,
+      "sha256": "0e5e0c3f081387b8b5764038f5b302b3783fdf05383bcb3cd376fee928f63bcb",
+      "size": 24107,
       "skipped_rules": 0
     }
   },
   "ruleset": "cross-border-finance",
   "rulesets": [],
   "source_contributions": {
-    "metacubex-cryptocurrency": 240,
-    "metacubex-finance": 661,
+    "metacubex-cryptocurrency": 241,
+    "metacubex-finance": 663,
     "overlay:cross-border-finance": 34,
     "void-finance-fallback": 476
   },
