@@ -6496,6 +6496,7 @@ domain:cybertrust.co.jp
 domain:cybertrust.ne.jp
 domain:cyberx.com
 domain:cygames.co.jp
+domain:cygames.com
 domain:cygames.jp
 domain:cygwin.com
 domain:cylink.pro
