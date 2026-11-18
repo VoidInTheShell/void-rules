@@ -1,8 +1,8 @@
 {
   "candidate_store": {
     "path": "generated/discovery/candidates.json.gz",
-    "sha256": "3525032b6fd9454a9494498edc21ac73727d68aca16e1c43e435d2b4d7513a0b",
-    "size": 259962,
+    "sha256": "1836743cb7fb677a2b0c6e954de31546542b7d194d8777ca46dda19beb715fcb",
+    "size": 259961,
     "total": 5189
   },
   "counts": {
@@ -23,7 +23,7 @@
       "discoverer": "meta-companion-views",
       "endpoints": 4,
       "matched_files": 11425,
-      "response_set_sha256": "4ef43fba857109b9516899897509bb1b34f0f9dfc4c18907c9ae8b17d7e724ba"
+      "response_set_sha256": "03f0acfbe7e2111974865f204512f3a1145e7cd36f3ae9b0d8d9f0aa7d330f3b"
     }
   ],
   "stale_rejections": [],

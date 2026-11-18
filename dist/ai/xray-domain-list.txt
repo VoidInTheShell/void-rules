@@ -83,6 +83,7 @@ domain:dreamgen.com
 domain:duck.ai
 domain:elevenlabs.com
 domain:elevenlabs.io
+domain:elevenlabsusercontent.com
 domain:envato-static.com
 domain:envato.com
 domain:envatousercontent.com
