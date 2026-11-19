@@ -6,83 +6,83 @@
   },
   "counts": {
     "by_action": {
-      "fake_ip_force": 28254
+      "fake_ip_force": 28253
     },
     "by_kind": {
       "domain": 736,
       "domain_keyword": 19,
-      "domain_suffix": 27451,
+      "domain_suffix": 27450,
       "ip_cidr": 32,
       "opaque_classical": 2,
       "process_name": 14
     },
     "protected": 71,
-    "total": 28254
+    "total": 28253
   },
   "description": "Proxy-oriented names that receive Fake-IP after real-IP compatibility exceptions.",
   "outputs": {
     "jsonl": {
       "path": "rules.jsonl.gz",
-      "represented_rules": 28254,
-      "sha256": "9568fcb86fd5c16a080e50be5b6ca2e9759fba8340f00f056d3487d34348b73d",
-      "size": 461022,
+      "represented_rules": 28253,
+      "sha256": "09ac618c5f197a803bd7115bcbaa25a46f8ed8dc5bd3424df545f89430bd3795",
+      "size": 460814,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
       "path": "mihomo-classical.list",
-      "represented_rules": 28254,
-      "sha256": "7a5cdc6340f2fa4413181b72decf9795a43437e9c83c78b28c454d3191b0b651",
-      "size": 810100,
+      "represented_rules": 28253,
+      "sha256": "79cbe051e6216b3870b594c75772692350ea10037e58a970e65b5828b6a6e1c0",
+      "size": 810067,
       "skipped_rules": 0
     },
     "mihomo-classical-yaml": {
       "path": "mihomo-classical.yaml",
-      "represented_rules": 28254,
-      "sha256": "3b8d8adb8ffc2e5184ce52fe320365fa79c680b991620f95d38012d7056726d8",
-      "size": 866617,
+      "represented_rules": 28253,
+      "sha256": "acb2988d8c532f3cdb40b10c1c7ad0df503dfe0ae75d3af87720af9bf029dc18",
+      "size": 866582,
       "skipped_rules": 0
     },
     "mihomo-domain-mrs": {
       "compacted_rules": 16,
       "path": "mihomo-domain.mrs",
-      "represented_rules": 28187,
-      "sha256": "92f7b4e4134481a43451734195def1d7ccd79a6a7c163d89a5af24496b70f0f2",
-      "size": 204806,
+      "represented_rules": 28186,
+      "sha256": "d8fbe49cafdc6c29733f85ac67903fa0020025552f70d5e52aa1637fc6944e4d",
+      "size": 204730,
       "skipped_rules": 67
     },
     "mihomo-domain-text": {
       "path": "mihomo-domain.list",
-      "represented_rules": 28187,
-      "sha256": "fe27151da3b1d789d14aa4f645633188f69e7a1731a69469925b8bd63f9f1590",
-      "size": 473809,
+      "represented_rules": 28186,
+      "sha256": "c8b353a3f846173923096a9e75942219e8e77fc65ac2021fb55bcea93f41ea5e",
+      "size": 473788,
       "skipped_rules": 67
     },
     "mihomo-domain-yaml": {
       "path": "mihomo-domain.yaml",
-      "represented_rules": 28187,
-      "sha256": "e77cf769c47c898a9a9a220ed7374f448faaed33f0f28b1881bbe2eda02d7c04",
-      "size": 530192,
+      "represented_rules": 28186,
+      "sha256": "4f4a0ab8a78655d43cdec2f585435ec77d39b2abe580ff1fef28a93c33e1e968",
+      "size": 530169,
       "skipped_rules": 67
     },
     "plain-domain": {
       "path": "plain-domain.txt",
-      "represented_rules": 28187,
-      "sha256": "fe27151da3b1d789d14aa4f645633188f69e7a1731a69469925b8bd63f9f1590",
-      "size": 473809,
+      "represented_rules": 28186,
+      "sha256": "c8b353a3f846173923096a9e75942219e8e77fc65ac2021fb55bcea93f41ea5e",
+      "size": 473788,
       "skipped_rules": 67
     },
     "xray-domain-list": {
       "path": "xray-domain-list.txt",
-      "represented_rules": 28206,
-      "sha256": "cd62622c40982cdd33e486a4e6e5781e90fd9fc507e266bb571fb85da0882b1d",
-      "size": 615068,
+      "represented_rules": 28205,
+      "sha256": "b35535c76ff2c73f8cc818a76ac18062351a6ac1bd9b0b594350b6fb9d420b57",
+      "size": 615042,
       "skipped_rules": 48
     },
     "xray-geosite-dat": {
       "path": "xray-geosite.dat",
-      "represented_rules": 28206,
-      "sha256": "cacb066c85fb22d5fe2969bd01aab258f48a3e44d3234ced1ade9f66a51f4b59",
-      "size": 560090,
+      "represented_rules": 28205,
+      "sha256": "9f1a99533b61c415a14072020f326c1a9e067cc77091fec1ac2d6fe57856edae",
+      "size": 560066,
       "skipped_rules": 0
     }
   },

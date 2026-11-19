@@ -26806,7 +26806,6 @@ domain:yandexdataschool.ru
 domain:yandexgo.com
 domain:yandexlyceum.ru
 domain:yandexwebcache.net
-domain:yandexwebcache.org
 domain:yango-b2b.com
 domain:yango-team.com
 domain:yango-tech.com
