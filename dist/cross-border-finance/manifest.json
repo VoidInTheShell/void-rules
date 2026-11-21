@@ -21,8 +21,8 @@
     "jsonl": {
       "path": "rules.jsonl.gz",
       "represented_rules": 1333,
-      "sha256": "010d3823d01f45a49da57157793c24973a9820671091c1dc578f8ccbf5829771",
-      "size": 19186,
+      "sha256": "2a83dc5709b71d1cb6007d0e611ba32a7ccb76979eb14ebc70b307864b665362",
+      "size": 19219,
       "skipped_rules": 0
     },
     "mihomo-classical-text": {
