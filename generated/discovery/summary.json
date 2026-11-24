@@ -1,12 +1,12 @@
 {
   "candidate_store": {
     "path": "generated/discovery/candidates.json.gz",
-    "sha256": "88f558a887ba0bd85c12d6ba93fee501a265958e95fd67d600657f8d35c83387",
-    "size": 259961,
-    "total": 5189
+    "sha256": "3132713a33c2d6253ee6457590759bb01211ede67dd601720e19372bc8155b9d",
+    "size": 260272,
+    "total": 5200
   },
   "counts": {
-    "candidate": 5182,
+    "candidate": 5193,
     "registered": 7
   },
   "policy_sha256": "b0940936774eb94480446c357c73e91b7216e0a320030fb3257aa0339e3b1d84",
@@ -15,15 +15,15 @@
       "discoverer": "cross-border-card-catalog",
       "endpoint": "https://card.lengziyu.cn/api/cards?limit=1000&offset=0",
       "endpoints": 2,
-      "matched": 619,
-      "response_set_sha256": "d08db4c5aa868b03e980780074b74a9ac4b0eb4565b5b5c1b7bce10dc97b4ec9"
+      "matched": 630,
+      "response_set_sha256": "0f61fb3080c44c9dbb4f63021f9d5cb0965848949cb24cbb730c12383f95c512"
     },
     {
       "candidates": 4570,
       "discoverer": "meta-companion-views",
       "endpoints": 4,
       "matched_files": 11425,
-      "response_set_sha256": "d8b2f6d3ea32ae619c59ef9780645a74fd0c860252afab437d37af08a047c78c"
+      "response_set_sha256": "fef6b5ce687ed12f3a1dfa50a85422b115b4745dfe351bfe824af2a83132952b"
     }
   ],
   "stale_rejections": [],

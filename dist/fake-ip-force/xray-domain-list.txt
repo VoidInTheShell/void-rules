@@ -10179,6 +10179,7 @@ domain:gemini.com
 domain:gemini.google
 domain:gemini.google.com
 domain:gemini.gstatic.com
+domain:gemma.ai
 domain:gen.lib.rus.ec
 domain:genbank.ru
 domain:gencraft.com
