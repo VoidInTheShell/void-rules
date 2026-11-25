@@ -75,7 +75,7 @@
             "value": "38.190.225.166/32"
           }
         ],
-        "represented": 252851,
+        "represented": 253242,
         "skipped": 13,
         "skipped_by_kind": {
           "ip_cidr": 13
@@ -83,19 +83,19 @@
       },
       "jsonl": {
         "examples": [],
-        "represented": 252864,
+        "represented": 253255,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 252864,
+        "represented": 253255,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 252864,
+        "represented": 253255,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -192,7 +192,7 @@
             "value": "38.190.225.166/32"
           }
         ],
-        "represented": 252846,
+        "represented": 253237,
         "skipped": 18,
         "skipped_by_kind": {
           "domain_keyword": 5,
@@ -292,7 +292,7 @@
             "value": "38.190.225.166/32"
           }
         ],
-        "represented": 252846,
+        "represented": 253237,
         "skipped": 18,
         "skipped_by_kind": {
           "domain_keyword": 5,
@@ -392,7 +392,7 @@
             "value": "38.190.225.166/32"
           }
         ],
-        "represented": 252846,
+        "represented": 253237,
         "skipped": 18,
         "skipped_by_kind": {
           "domain_keyword": 5,
@@ -903,11 +903,11 @@
           }
         ],
         "represented": 13,
-        "skipped": 252851,
+        "skipped": 253242,
         "skipped_by_kind": {
           "domain": 1124,
           "domain_keyword": 5,
-          "domain_suffix": 251722
+          "domain_suffix": 252113
         }
       },
       "mihomo-ipcidr-text": {
@@ -1414,11 +1414,11 @@
           }
         ],
         "represented": 13,
-        "skipped": 252851,
+        "skipped": 253242,
         "skipped_by_kind": {
           "domain": 1124,
           "domain_keyword": 5,
-          "domain_suffix": 251722
+          "domain_suffix": 252113
         }
       },
       "mihomo-ipcidr-yaml": {
@@ -1925,11 +1925,11 @@
           }
         ],
         "represented": 13,
-        "skipped": 252851,
+        "skipped": 253242,
         "skipped_by_kind": {
           "domain": 1124,
           "domain_keyword": 5,
-          "domain_suffix": 251722
+          "domain_suffix": 252113
         }
       },
       "plain-domain": {
@@ -2025,7 +2025,7 @@
             "value": "38.190.225.166/32"
           }
         ],
-        "represented": 252846,
+        "represented": 253237,
         "skipped": 18,
         "skipped_by_kind": {
           "domain_keyword": 5,
@@ -2536,11 +2536,11 @@
           }
         ],
         "represented": 13,
-        "skipped": 252851,
+        "skipped": 253242,
         "skipped_by_kind": {
           "domain": 1124,
           "domain_keyword": 5,
-          "domain_suffix": 251722
+          "domain_suffix": 252113
         }
       },
       "xray-domain-list": {
@@ -2611,7 +2611,7 @@
             "value": "38.190.225.166/32"
           }
         ],
-        "represented": 252851,
+        "represented": 253242,
         "skipped": 13,
         "skipped_by_kind": {
           "ip_cidr": 13
@@ -2625,7 +2625,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 252851,
+        "represented": 253242,
         "skipped": 0,
         "skipped_by_kind": {}
       }
@@ -6974,19 +6974,19 @@
     "outputs": {
       "jsonl": {
         "examples": [],
-        "represented": 28167,
+        "represented": 28172,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-text": {
         "examples": [],
-        "represented": 28167,
+        "represented": 28172,
         "skipped": 0,
         "skipped_by_kind": {}
       },
       "mihomo-classical-yaml": {
         "examples": [],
-        "represented": 28167,
+        "represented": 28172,
         "skipped": 0,
         "skipped_by_kind": {}
       },
@@ -7328,7 +7328,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28105,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -7675,7 +7675,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28105,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -8022,7 +8022,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28105,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -8369,7 +8369,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28100,
+        "represented": 28105,
         "skipped": 67,
         "skipped_by_kind": {
           "domain_keyword": 19,
@@ -8621,7 +8621,7 @@
             "value": "cowork-svc.exe"
           }
         ],
-        "represented": 28119,
+        "represented": 28124,
         "skipped": 48,
         "skipped_by_kind": {
           "ip_cidr": 32,
@@ -8631,7 +8631,7 @@
       },
       "xray-geosite-dat": {
         "examples": [],
-        "represented": 28119,
+        "represented": 28124,
         "skipped": 0,
         "skipped_by_kind": {}
       }

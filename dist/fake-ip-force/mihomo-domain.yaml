@@ -5022,6 +5022,7 @@ payload:
 - +.cabletvdirectv.com
 - +.cachefly.com
 - +.cachefly.net
+- +.cachix.org
 - +.cacnw.com
 - +.cactusvpn.com
 - +.cad-mep.com
@@ -8988,10 +8989,12 @@ payload:
 - +.fastlane.ci
 - +.fastlane.tools
 - +.fastly-edge.com
+- +.fastly-insights.com
 - +.fastly-terrarium.com
 - +.fastly.com
 - +.fastly.io
 - +.fastly.net
+- +.fastlydns.net
 - +.fastlylabs.com
 - +.fastlylb.net
 - +.fastpic.ru
@@ -24733,6 +24736,7 @@ payload:
 - +.vivaldi.com
 - +.vivaxnxx.com
 - +.vivo.com.br
+- +.vivox.com
 - +.vivthomas.com
 - +.vixen.com
 - +.vixengroup.com
@@ -27477,6 +27481,7 @@ payload:
 - copilot-telemetry.githubusercontent.com
 - copilot-workspace.githubnext.com
 - copilotprodattachments.blob.core.windows.net
+- courses.myecnu.org
 - crl.microsoft.com
 - crl.versign.net
 - csis-prod.s3.amazonaws.com

@@ -5021,6 +5021,7 @@ domain:cabletv.com.hk
 domain:cabletvdirectv.com
 domain:cachefly.com
 domain:cachefly.net
+domain:cachix.org
 domain:cacnw.com
 domain:cactusvpn.com
 domain:cad-mep.com
@@ -8987,10 +8988,12 @@ domain:fastindianporn.com
 domain:fastlane.ci
 domain:fastlane.tools
 domain:fastly-edge.com
+domain:fastly-insights.com
 domain:fastly-terrarium.com
 domain:fastly.com
 domain:fastly.io
 domain:fastly.net
+domain:fastlydns.net
 domain:fastlylabs.com
 domain:fastlylb.net
 domain:fastpic.ru
@@ -24732,6 +24735,7 @@ domain:viu.tv
 domain:vivaldi.com
 domain:vivaxnxx.com
 domain:vivo.com.br
+domain:vivox.com
 domain:vivthomas.com
 domain:vixen.com
 domain:vixengroup.com
@@ -27476,6 +27480,7 @@ full:copilot-telemetry-service.githubusercontent.com
 full:copilot-telemetry.githubusercontent.com
 full:copilot-workspace.githubnext.com
 full:copilotprodattachments.blob.core.windows.net
+full:courses.myecnu.org
 full:crl.microsoft.com
 full:crl.versign.net
 full:csis-prod.s3.amazonaws.com
