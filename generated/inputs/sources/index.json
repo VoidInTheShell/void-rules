@@ -478,27 +478,27 @@
     "loyalsoldier-reject": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"ceb31c5c5e3dddcf5b02ed5c626ee4dd327dfe848d0c6d36e67a47340a1c2200\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"c1d4dc92d57c8132798d0dfc8328636386b08255baf7bee6624b489f37f7bd0f\"",
         "final_url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt",
         "format": "mihomo-domain-yaml",
         "id": "loyalsoldier-reject",
         "last_modified": "",
         "license": "GPL-3.0",
-        "parsed_rules": 203624,
+        "parsed_rules": 203998,
         "rejected_rules": 0,
-        "sha256": "79bd28b32a16dadb03ce9b1e2455cb41752a79b1cc76e1ae66ef309791420abb",
-        "size": 5901059,
+        "sha256": "310dfaf93d792c5954f302ab04a3c43c9caf4a5bc2cd3fdd033a9b736b0d56ff",
+        "size": 5911226,
         "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
       },
-      "sha256": "79bd28b32a16dadb03ce9b1e2455cb41752a79b1cc76e1ae66ef309791420abb",
-      "size": 5901059
+      "sha256": "310dfaf93d792c5954f302ab04a3c43c9caf4a5bc2cd3fdd033a9b736b0d56ff",
+      "size": 5911226
     },
     "metacubex-ads": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"31bd905b9faba2883d7d4392f5fca5738089093f2e05211263650cb90f2fb401\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"872ae552af75aeabf628c86f8205da2d932a5d33c94c2ff31ad13e0f73d9b455\"",
         "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list",
         "format": "mihomo-domain-text",
         "id": "metacubex-ads",
@@ -506,18 +506,18 @@
         "license": "GPL-3.0",
         "parsed_rules": 909,
         "rejected_rules": 0,
-        "sha256": "fa79166f0f806c30eb4ce3afcb81154ca0ffdb3564b345f9283b75a886e8a992",
+        "sha256": "d018387bf835434e7a3d199969e3df7ddfda74bca158393030a9a1ad4081ed1d",
         "size": 17514,
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list"
       },
-      "sha256": "fa79166f0f806c30eb4ce3afcb81154ca0ffdb3564b345f9283b75a886e8a992",
+      "sha256": "d018387bf835434e7a3d199969e3df7ddfda74bca158393030a9a1ad4081ed1d",
       "size": 17514
     },
     "metacubex-ai-not-cn": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"26070630366fa6ebf46c318cd30cbc17a9cdd70ce1925945073257a5a8fa41ce\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"2df4c0d0f21b7e36bb0c7168c5a1653dcc62e0385a86404a7f9ca306b57a1aee\"",
         "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.list",
         "format": "mihomo-domain-text",
         "id": "metacubex-ai-not-cn",
@@ -525,11 +525,11 @@
         "license": "GPL-3.0",
         "parsed_rules": 219,
         "rejected_rules": 0,
-        "sha256": "ff1ec3d5d877f98774e046cee7d9d236a34b7ecc927e0fec049ff878a940b012",
+        "sha256": "e7a0b41f23edf4c4a19638d4888e95e66749754c6bfb1b53b3ef3a5cf09169f7",
         "size": 4261,
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.list"
       },
-      "sha256": "ff1ec3d5d877f98774e046cee7d9d236a34b7ecc927e0fec049ff878a940b012",
+      "sha256": "e7a0b41f23edf4c4a19638d4888e95e66749754c6bfb1b53b3ef3a5cf09169f7",
       "size": 4261
     },
     "metacubex-anthropic": {
@@ -573,8 +573,8 @@
     "metacubex-cryptocurrency": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"93502f253c0deb3f49be7fbb7b90d123c8ab73cdc4217f1dbc394db630270217\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"42a2e6dd913addac2ecb41d8437ebf9f49ae9e2d76866ade7dbdf8af6bd7f408\"",
         "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list",
         "format": "mihomo-domain-text",
         "id": "metacubex-cryptocurrency",
@@ -582,18 +582,18 @@
         "license": "GPL-3.0",
         "parsed_rules": 241,
         "rejected_rules": 0,
-        "sha256": "1ae6e0d28fafa8e3e0e7ac6978d92f955252b0133305840bf0e70ba0f2d41a2e",
+        "sha256": "2ee398322063cbe466eeaa5128366027ce41d05b29eb3909b23a3e2a8d0daadf",
         "size": 3727,
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.list"
       },
-      "sha256": "1ae6e0d28fafa8e3e0e7ac6978d92f955252b0133305840bf0e70ba0f2d41a2e",
+      "sha256": "2ee398322063cbe466eeaa5128366027ce41d05b29eb3909b23a3e2a8d0daadf",
       "size": 3727
     },
     "metacubex-finance": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"0f9dfd60d6da48dff38e5ff42165c09b61c26b2e01d11262a5f40193cba7fd63\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"6e2704892bd417736407d033d0b4f9e6b2e05e3105b6d4ad578ed6e4760f3bcb\"",
         "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list",
         "format": "mihomo-domain-text",
         "id": "metacubex-finance",
@@ -601,18 +601,18 @@
         "license": "GPL-3.0",
         "parsed_rules": 663,
         "rejected_rules": 0,
-        "sha256": "9e66478d40a6a89925b3f427637a7fdad301c57bd71d3d530ede3c665d35c546",
+        "sha256": "c0887b908a06931878251b6560f48ebef07dea0ad5cc5830001385b4e7b1fc2b",
         "size": 10329,
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-finance.list"
       },
-      "sha256": "9e66478d40a6a89925b3f427637a7fdad301c57bd71d3d530ede3c665d35c546",
+      "sha256": "c0887b908a06931878251b6560f48ebef07dea0ad5cc5830001385b4e7b1fc2b",
       "size": 10329
     },
     "metacubex-games-cn": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"0ac3831fa1297a4d72ec84242dc7b8c981baa55449e677cc445572b5d5065f48\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"bed5a88fe3536155017ea16e9e5a1cd53f3b365d393b61b114a79ae2a74c9279\"",
         "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.list",
         "format": "mihomo-domain-text",
         "id": "metacubex-games-cn",
@@ -620,31 +620,31 @@
         "license": "GPL-3.0",
         "parsed_rules": 37,
         "rejected_rules": 0,
-        "sha256": "625f3fd9e9bc3b28980f99631dc9acf4034a3fcc3e9aefd954167e96336e9f57",
+        "sha256": "c7bb7114bdba186f62e76b331d5ba6e38437d862b14fccff8e6081aa94b8e66e",
         "size": 749,
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.list"
       },
-      "sha256": "625f3fd9e9bc3b28980f99631dc9acf4034a3fcc3e9aefd954167e96336e9f57",
+      "sha256": "c7bb7114bdba186f62e76b331d5ba6e38437d862b14fccff8e6081aa94b8e66e",
       "size": 749
     },
     "metacubex-geolocation-not-cn": {
       "metadata": {
         "behavior": "domain",
-        "changed_at": "2026-11-25T08:33:31+00:00",
-        "etag": "\"e3daf129a875dfb845e04b4a1caaa9fc0cf4115a3f237423b1f74bd13afe8c6f\"",
+        "changed_at": "2026-11-26T08:17:07+00:00",
+        "etag": "\"80a5c744f87800be5fb517549f34d10030684c8b3bb9134688f5ec2e6b38c7d7\"",
         "final_url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list",
         "format": "mihomo-domain-text",
         "id": "metacubex-geolocation-not-cn",
         "last_modified": "",
         "license": "GPL-3.0",
-        "parsed_rules": 27233,
+        "parsed_rules": 27244,
         "rejected_rules": 0,
-        "sha256": "7ba8b21ae4f98af963f53638f67a735def82c6d0036a037257c7008b7012564e",
-        "size": 457067,
+        "sha256": "a5385f5d5927e3f403001abf45c69ab81be6c815b65e5f9f3ba4341867f44fcd",
+        "size": 457233,
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list"
       },
-      "sha256": "7ba8b21ae4f98af963f53638f67a735def82c6d0036a037257c7008b7012564e",
-      "size": 457067
+      "sha256": "a5385f5d5927e3f403001abf45c69ab81be6c815b65e5f9f3ba4341867f44fcd",
+      "size": 457233
     },
     "metacubex-private": {
       "metadata": {
