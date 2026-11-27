@@ -21,7 +21,7 @@
     "jsonl": {
       "path": "rules.jsonl.gz",
       "represented_rules": 1333,
-      "sha256": "62e5e905de4cbc38231955b1df3441b946d3f8a2cdefdd725821455905d8a9b6",
+      "sha256": "b5fc6d3be0e17d1fb48fd64abf8fb50ecb02653da3571e0ab8b7c1e654d087b8",
       "size": 19186,
       "skipped_rules": 0
     },
