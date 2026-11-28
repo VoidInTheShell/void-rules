@@ -1105,6 +1105,7 @@ domain:aiaa.org
 domain:aiasahi.jp
 domain:aicode.googleapis.com
 domain:aicscience.com
+domain:aicu.cc
 domain:aida.googleapis.com
 domain:aidc.com.tw
 domain:aihub.top
@@ -6542,6 +6543,7 @@ domain:dandanplay.com
 domain:dandanplay.net
 domain:dandanzan.cc
 domain:danke4china.net
+domain:danmakus.com
 domain:danmarkbeatsbydrdre.com
 domain:danskebank.com
 domain:danskpornofilm.com
@@ -9057,6 +9059,7 @@ domain:fc2cn.com
 domain:fc2ppv.tv
 domain:fcacebook.com
 domain:fcaebook.com
+domain:fce.gg
 domain:fcebook.com
 domain:fcebookk.com
 domain:fcfacebook.com
@@ -21923,6 +21926,7 @@ domain:soyjak.party
 domain:soyjak.st
 domain:sp.cool
 domain:spacebattles.com
+domain:spacedesk.net
 domain:spaceexplored.com
 domain:spaceforce.mil
 domain:spacely.com.au
@@ -27441,6 +27445,7 @@ full:asahishimbun.sc.omtrdc.net
 full:assets.ppy.sh
 full:audio-ak-spotify-com.akamaized.net
 full:audio4-ak-spotify-com.akamaized.net
+full:aurora-customization-usw2.lithium.com
 full:avatargarenanow-a.akamaihd.net
 full:az764295.vo.msecnd.net
 full:azure.microsoft.com
